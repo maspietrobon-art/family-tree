@@ -40,6 +40,8 @@ textarea{min-height:160px}
 #status{font-size:13px;color:var(--mut)}
 img.m{max-width:100%;border-radius:8px;margin-top:6px}audio{width:100%;margin-top:6px}
 .hide{display:none}
+.bubble.hl{border-color:var(--acc);border-width:2px}
+table.ev{width:100%;border-collapse:collapse;font-size:14px}table.ev td{border-top:1px solid var(--line);padding:4px 6px;vertical-align:top}
 .pl{display:flex;justify-content:space-between;gap:8px;padding:5px 4px;border-bottom:1px solid var(--line);cursor:pointer}.pl:hover{background:var(--bg)}
 </style>
 </head>
@@ -82,7 +84,8 @@ img.m{max-width:100%;border-radius:8px;margin-top:6px}audio{width:100%;margin-to
   <label>Nome e cognome</label><input id="pN">
   <div class="two"><div><label>Nascita</label><input id="pB"></div><div><label>Luogo di nascita</label><input id="pBP"></div>
   <div><label>Morte</label><input id="pD"></div><div><label>Luogo di morte</label><input id="pDP"></div>
-  <div><label>Paese / nazionalità</label><input id="pC"></div><div><label>Ramo</label><input id="pR" list="rl"></div><div><label>Altri nomi, soprannomi</label><input id="pA"></div></div>
+  <div><label>Paese / nazionalità</label><input id="pC"></div><div><label>Ramo</label><input id="pR" list="rl"></div><div><label>Matrimonio (data, luogo)</label><input id="pMa"></div><div><label>Nome con cui scrive nelle chat</label><input id="pSp"></div><div><label>Altri nomi, soprannomi</label><input id="pA"></div></div>
+  <label>Parole che la indicano nei testi (separate da ; — maiuscole contano)</label><input id="pTe">
   <label>Padre</label><input id="pF" list="pl"><label>Madre</label><input id="pM" list="pl">
   <label>Coniugi (separati da ;)</label><input id="pS">
   <label>Figli da collegare (separati da ;)</label><input id="pK">
@@ -195,10 +198,12 @@ function render(){
     h=`<div class="card"><div class="row"><h2 style="flex:1">${esc(pe.name)}</h2><button onclick="editPerson('${pe.id}')">Modifica</button><button onclick="sel=null;render()">✕</button></div>
     <div class="mut">${[pe.birth&&'n. '+esc(pe.birth)+(pe.birthPlace?', '+esc(pe.birthPlace):''),pe.death&&'m. '+esc(pe.death)+(pe.deathPlace?', '+esc(pe.deathPlace):''),esc(pe.country),pe.alt&&'detto/a '+esc(pe.alt)].filter(Boolean).join(' · ')}</div>
     ${pe.ramo?`<div class="mut">Ramo: ${esc(pe.ramo)}</div>`:''}${pe.notes?`<p>${esc(pe.notes)}</p>`:''}
+    ${pe.marriage?`<div class="mut">Matrimonio: ${esc(pe.marriage)}</div>`:''}${pe.fsid?`<div class="mut">FamilySearch: ${esc(pe.fsid)}</div>`:''}${(pe.terms||[]).length?`<div class="mut">Nei testi: ${esc(pe.terms.join(', '))}</div>`:''}
     ${fa||mo?`<div><span class="mut">Genitori</span> ${chip(fa)}${chip(mo)}</div>`:''}
     ${pe.spouses.length?`<div><span class="mut">Coniugi</span> ${pe.spouses.map(i=>chip(P(i))).join('')}</div>`:''}
     ${sibs(pe).length?`<div><span class="mut">Fratelli e sorelle</span> ${sibs(pe).map(chip).join('')}</div>`:''}
-    ${kids(pe.id).length?`<div><span class="mut">Figli</span> ${kids(pe.id).map(chip).join('')}</div>`:''}</div>`}
+    ${kids(pe.id).length?`<div><span class="mut">Figli</span> ${kids(pe.id).map(chip).join('')}</div>`:''}
+    ${(pe.events||[]).length?`<h3 style="font:600 15px Georgia,serif;margin:12px 0 4px">Eventi documentati</h3><table class="ev">${pe.events.map(e=>`<tr><td>${esc(e.date)}</td><td>${esc(e.what)}</td><td>${esc(e.place)}</td><td class="mut">${esc(e.src)}</td></tr>`).join('')}</table>`:''}</div>`}
   else if(fS||fC||(q&&q.length>1)){const ps=DB.people.filter(p=>(!fS||norm(p.name).includes(fS))&&(!fC||norm(p.country).includes(fC))&&(!q||norm(p.name+' '+p.alt).includes(q))).slice(0,60);
     if(ps.length)h=`<div class="card"><span class="mut">Persone</span><br>${ps.map(chip).join('')}</div>`}
   if(showList&&!pe){
@@ -215,6 +220,10 @@ function render(){
   if(!DB.people.length)h=`<div class="card"><h2>Archivio vuoto</h2><p>Per cominciare con l'albero e le chat già raccolte, importa il file <b>dati-iniziali.json</b>.</p><button class="p" onclick="imp.click()">Importa dati iniziali</button></div>`;
   $('person').innerHTML=h;
   const key=s=>s.dateFrom||s.told||'9999';
+  if(window._one&&!pe){const s=DB.stories.find(x=>x.id===_one);_one=null;if(s){$('list').innerHTML='<p><button onclick="render()">← Tutte le storie</button></p>'+storyH(s);return}}
+  if(pe){const re=termsRe(pe);const hs=DB.stories.slice().sort((x,y)=>key(x)<key(y)?-1:1).map(s=>storyP(s,pe,re)).filter(Boolean);
+    const tot=hs.reduce((n,h)=>n+(+/data-n="(\d+)"/.exec(h)[1]),0);
+    $('list').innerHTML=`<p class="mut">${hs.length} conversazioni e ${tot} messaggi su ${esc(pe.name)}${pe.speaker?' (compresi quelli scritti da '+esc(pe.speaker)+')':''} · <label><input type="checkbox" ${window._full?'checked':''} onchange="_full=this.checked;render()" style="width:auto"> conversazioni intere</label></p>`+hs.slice(0,window._lim||60).join('')+(hs.length>(window._lim||60)?`<p><button onclick="_lim=9999;render()">Mostra tutte (${hs.length})</button></p>`:'');return}
   const ss=DB.stories.filter(s=>{
     if(sel&&!s.people.includes(sel))return false;
     const pn=s.people.map(i=>P(i)).filter(Boolean);
@@ -227,12 +236,23 @@ function render(){
     return true}).sort((x,y)=>key(x)<key(y)?-1:1);
   $('list').innerHTML=`<p class="mut">${ss.length} storie${sel?' su '+esc(pe.name):''} · ${DB.people.length} persone</p>`+ss.slice(0,150).map(storyH).join('')+(ss.length>150?'<p class="mut">Mostrate le prime 150: restringi la ricerca.</p>':'');
 }
+function parseS(s){const out=[];let cur=null;
+  for(const l of s.text.split('\n')){const m=/^(\d\d:\d\d) ([^:]{1,24}): (.*)$/.exec(l)||/^()([A-ZÀ-Ú][^:]{1,22}): (.*)$/.exec(l);
+    if(m){cur={t:m[1],w:m[2],x:m[3]};out.push(cur)}else if(cur&&cur.w)cur.x+='\n'+l;else{if(!cur){cur={x:l};out.push(cur)}else cur.x+='\n'+l}}return out}
+const rx=x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+function termsRe(p){const t=[p.name,...(p.terms||[]),...(p.alt||'').split(';')].map(x=>x.trim()).filter(x=>x.length>3);
+  return new RegExp('(?<![\\p{L}])('+t.map(rx).join('|')+')(?![\\p{L}])','u')}
+const bub=(o,hl)=>o.w?`<div class="bubble${o.w==='Massimo'?' me':''}${hl?' hl':''}"><b>${esc(o.w)}</b>${esc(o.x)}${o.t?`<small>${o.t}</small>`:''}</div>`:`<div class="bubble" style="max-width:100%">${esc(o.x)}</div>`;
+function storyP(s,pe,re){
+  const b=parseS(s),hit=b.map(o=>re.test(o.x)||(pe.speaker&&o.w===pe.speaker));const n=hit.filter(Boolean).length;
+  if(!n&&!s.people.includes(pe.id)&&!re.test(s.title))return '';
+  const when=[s.dateFrom&&(s.dateTo&&s.dateTo!==s.dateFrom?s.dateFrom+' → '+s.dateTo:s.dateFrom),s.told&&'raccontata il '+s.told].filter(Boolean).join(' · ');
+  const full=!n||n===b.length||window._full;let body='',gap=false;
+  b.forEach((o,i)=>{const near=hit[i]||(!pe.speaker&&(hit[i-1]||hit[i+1]));if(full||near){body+=bub(o,hit[i]&&n<b.length&&!pe.speaker);gap=false}else if(!gap){body+='<div class="mut" style="text-align:center">⋯</div>';gap=true}});
+  return `<div class="story" data-n="${n}"><div class="hd"><h3>${esc(s.title||'Senza titolo')}</h3><span class="mut">${esc(when)} · ${n} messaggi <button onclick="sel=null;$('q').value='';_one='${s.id}';render()" style="padding:2px 8px">Apri tutta</button> <button onclick="editStory('${s.id}')" style="padding:2px 8px">Modifica</button></span></div>${body}</div>`}
 function storyH(s){
   const when=[s.dateFrom&&(s.dateTo&&s.dateTo!==s.dateFrom?s.dateFrom+' → '+s.dateTo:s.dateFrom),s.told&&'raccontata il '+s.told,s.place,s.country].filter(Boolean).join(' · ');
-  const lines=s.text.split('\n');let out=[],cur=null;
-  for(const l of lines){const m=/^(\d\d:\d\d) ([^:]{1,24}): (.*)$/.exec(l);
-    if(m){cur={t:m[1],w:m[2],x:m[3]};out.push(cur)}else if(cur&&cur.t)cur.x+='\n'+l;else{if(!cur||cur.t){cur={x:l};out.push(cur)}else cur.x+='\n'+l}}
-  const body=out.map(o=>o.t?`<div class="bubble${o.w==='Massimo'?' me':''}"><b>${esc(o.w)}</b>${esc(o.x)}<small>${o.t}</small></div>`:`<div class="bubble" style="max-width:100%">${esc(o.x)}</div>`).join('');
+  const body=parseS(s).map(o=>bub(o)).join('');
   return `<div class="story"><div class="hd"><h3>${esc(s.title||'Senza titolo')}</h3><span class="mut">${esc(when)} <button onclick="editStory('${s.id}')" style="padding:2px 8px">Modifica</button></span></div>
   <div>${s.people.map(i=>chip(P(i))).join('')}</div>${body}${(s.media||[]).map(m=>`<div><button onclick="showM(this,'${m.path}','${m.type}')">▶ ${esc(m.name)}</button></div>`).join('')}</div>`}
 async function showM(btn,path,type){try{btn.textContent='Carico…';const r=await ghGetRaw(path);const u=URL.createObjectURL(new Blob([await open_(r)],{type}));
@@ -247,12 +267,12 @@ $('q').addEventListener('input',()=>{const q=norm($('q').value);const box=$('sug
 
 /* --- persona --- */
 function editPerson(id){curP=id?P(id):null;const p=curP||{spouses:[]};
-  $('pN').value=p.name||'';$('pB').value=p.birth||'';$('pBP').value=p.birthPlace||'';$('pD').value=p.death||'';$('pDP').value=p.deathPlace||'';$('pC').value=p.country||'';$('pR').value=p.ramo||'';$('pA').value=p.alt||'';$('pNo').value=p.notes||'';
+  $('pN').value=p.name||'';$('pB').value=p.birth||'';$('pBP').value=p.birthPlace||'';$('pD').value=p.death||'';$('pDP').value=p.deathPlace||'';$('pC').value=p.country||'';$('pR').value=p.ramo||'';$('pMa').value=p.marriage||'';$('pSp').value=p.speaker||'';$('pTe').value=(p.terms||[]).join('; ');$('pA').value=p.alt||'';$('pNo').value=p.notes||'';
   $('pF').value=P(p.father)?.name||'';$('pM').value=P(p.mother)?.name||'';$('pS').value=p.spouses.map(i=>P(i)?.name).filter(Boolean).join('; ');
   $('pK').value='';$('pG').value='';$('pDel').classList.toggle('hide',!curP);dlg('dp').showModal()}
 async function saveP(){const n=$('pN').value.trim();if(!n)return alert('Serve almeno il nome');
   let p=curP;if(!p){p={id:uid('p'),spouses:[],branch:''};DB.people.push(p)}
-  Object.assign(p,{name:n,birth:$('pB').value,birthPlace:$('pBP').value,death:$('pD').value,deathPlace:$('pDP').value,country:$('pC').value,ramo:$('pR').value,alt:$('pA').value,notes:$('pNo').value});
+  Object.assign(p,{name:n,birth:$('pB').value,birthPlace:$('pBP').value,death:$('pD').value,deathPlace:$('pDP').value,country:$('pC').value,ramo:$('pR').value,marriage:$('pMa').value,speaker:$('pSp').value.trim(),terms:names($('pTe').value),alt:$('pA').value,notes:$('pNo').value});
   p.father=$('pF').value.trim()?findP($('pF').value,true).id:'';p.mother=$('pM').value.trim()?findP($('pM').value,true).id:'';
   const old=p.spouses;p.spouses=names($('pS').value).map(x=>findP(x,true).id);
   old.filter(i=>!p.spouses.includes(i)).forEach(i=>{const s=P(i);if(s)s.spouses=s.spouses.filter(x=>x!==p.id)});
