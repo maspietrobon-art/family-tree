@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Storie di famiglia</title>
 <style>
-:root{--bg:#f4efe6;--card:#fffdf8;--ink:#2b2620;--mut:#7a7064;--line:#ddd3c3;--acc:#8a4b2a;--me:#e7f0dc;--bub:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#1c1a17;--card:#262320;--ink:#ece6da;--mut:#a39a8c;--line:#3b3631;--acc:#e0a070;--me:#2f3a2a;--bub:#2d2a26}}
+:root{--bg:#f3f5f7;--card:#ffffff;--ink:#1f2933;--mut:#66727f;--line:#d9dee4;--acc:#1f6f8b;--me:#dcf3e4;--bub:#ffffff}
+@media (prefers-color-scheme:dark){:root{--bg:#14181c;--card:#1d2329;--ink:#e6eaee;--mut:#98a4b0;--line:#313a44;--acc:#6cc0dd;--me:#1f3a2c;--bub:#232a31}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,sans-serif}
 header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:10px 16px}
-h1{font:600 18px Georgia,serif;margin:0 0 8px}
+h1{font:600 18px system-ui,sans-serif;margin:0 0 8px}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 input,select,textarea,button{font:inherit;color:inherit;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 button{cursor:pointer;background:var(--card)}
@@ -19,13 +19,13 @@ button.p{background:var(--acc);color:#fff;border-color:var(--acc)}
 .filters input,.filters select{width:130px;padding:6px 8px;font-size:14px}
 main{max-width:860px;margin:0 auto;padding:16px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px}
-.card h2{font:600 20px Georgia,serif;margin:0 0 4px}
+.card h2{font:600 20px system-ui,sans-serif;margin:0 0 4px}
 .mut{color:var(--mut);font-size:14px}
 .chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 10px;margin:2px 4px 2px 0;font-size:14px;cursor:pointer;background:var(--bg)}
 .chip:hover{border-color:var(--acc)}
 .story{margin-bottom:18px}
 .story .hd{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
-.story h3{font:600 16px Georgia,serif;margin:0}
+.story h3{font:600 16px system-ui,sans-serif;margin:0}
 .bubble{background:var(--bub);border:1px solid var(--line);border-radius:12px;padding:8px 12px;margin:6px 0;max-width:88%;white-space:pre-wrap;overflow-wrap:anywhere}
 .bubble.me{background:var(--me);margin-left:auto}
 .bubble b{color:var(--acc);font-size:13px;display:block}
@@ -40,6 +40,7 @@ textarea{min-height:160px}
 #status{font-size:13px;color:var(--mut)}
 img.m{max-width:100%;border-radius:8px;margin-top:6px}audio{width:100%;margin-top:6px}
 .hide{display:none}
+h2.sec{font:600 17px system-ui,sans-serif;margin:22px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--acc)}
 .bubble.hl{border-color:var(--acc);border-width:2px}
 table.ev{width:100%;border-collapse:collapse;font-size:14px}table.ev td{border-top:1px solid var(--line);padding:4px 6px;vertical-align:top}
 .pl{display:flex;justify-content:space-between;gap:8px;padding:5px 4px;border-bottom:1px solid var(--line);cursor:pointer}.pl:hover{background:var(--bg)}
@@ -206,7 +207,7 @@ function render(){
     ${pe.spouses.length?`<div><span class="mut">Coniugi</span> ${pe.spouses.map(i=>chip(P(i))).join('')}</div>`:''}
     ${sibs(pe).length?`<div><span class="mut">Fratelli e sorelle</span> ${sibs(pe).map(chip).join('')}</div>`:''}
     ${kids(pe.id).length?`<div><span class="mut">Figli</span> ${kids(pe.id).map(chip).join('')}</div>`:''}
-    ${(pe.events||[]).length?`<h3 style="font:600 15px Georgia,serif;margin:12px 0 4px">Eventi documentati</h3><table class="ev">${pe.events.map(e=>`<tr><td>${esc(e.date)}</td><td>${esc(e.what)}</td><td>${esc(e.place)}</td><td class="mut">${esc(e.src)}</td></tr>`).join('')}</table>`:''}</div>`}
+    ${(pe.events||[]).length?`<h3 style="font:600 15px system-ui,sans-serif;margin:12px 0 4px">Eventi documentati</h3><table class="ev">${pe.events.map(e=>`<tr><td>${esc(e.date)}</td><td>${esc(e.what)}</td><td>${esc(e.place)}</td><td class="mut">${esc(e.src)}</td></tr>`).join('')}</table>`:''}</div>`}
   else if(fS||fC||(q&&q.length>1)){const ps=DB.people.filter(p=>(!fS||norm(p.name).includes(fS))&&(!fC||norm(p.country).includes(fC))&&(!q||q.split(' ').filter(Boolean).every(w=>norm(p.name+' '+p.alt+' '+(p.terms||[]).join(' ')).includes(w)))).slice(0,60);
     if(ps.length)h=`<div class="card"><b>Tocca una persona per vedere tutto su di lei</b><br>${ps.map(chip).join('')}</div>`}
   if(showList&&!pe){
@@ -217,7 +218,7 @@ function render(){
     ps.sort(cmp);let last=null;
     const grp=p=>so==='ramo'?(p.ramo||'Senza ramo'):so==='nascita'?(year(p.birth)?Math.floor(year(p.birth)/50)*50+'–'+(Math.floor(year(p.birth)/50)*50+49):'Data sconosciuta'):(so==='cognome'?sur(p):norm(p.name))[0].toUpperCase();
     h=`<div class="card"><div class="row"><h2 style="flex:1">Persone (${ps.length})</h2><select onchange="_so=this.value;render()">${[['cognome','Per cognome'],['nome','Per nome'],['nascita','Per anno di nascita'],['ramo','Per ramo']].map(o=>`<option value="${o[0]}"${so===o[0]?' selected':''}>${o[1]}</option>`).join('')}</select><button onclick="showList=false;render()">✕</button></div>`+
-    ps.map(p=>{const g=grp(p);const hd=g!==last?`<h3 style="margin:12px 0 4px;font:600 15px Georgia,serif;color:var(--acc)">${esc(g)}</h3>`:'';last=g;
+    ps.map(p=>{const g=grp(p);const hd=g!==last?`<h3 style="margin:12px 0 4px;font:600 15px system-ui,sans-serif;color:var(--acc)">${esc(g)}</h3>`:'';last=g;
       return hd+`<div class="pl" onclick="pick('${p.id}')"><span>${esc(p.name)}${p.alt?` <span class="mut">(${esc(p.alt.split(';')[0])})</span>`:''}</span><span class="mut">${[year(p.birth)||'?',year(p.death)||''].join('–')}${cnt[p.id]?' · '+cnt[p.id]+' storie':''}</span></div>`}).join('')+'</div>';
     $('person').innerHTML=h;$('list').innerHTML='';return}
   if(!DB.people.length)h=`<div class="card"><h2>Archivio vuoto</h2><p>Per cominciare con l'albero e le chat già raccolte, importa il file <b>dati-iniziali.json</b>.</p><button class="p" onclick="imp.click()">Importa dati iniziali</button></div>`;
@@ -225,8 +226,10 @@ function render(){
   const key=s=>s.dateFrom||s.told||'9999';
   if(window._one&&!pe){const s=DB.stories.find(x=>x.id===_one);_one=null;if(s){$('list').innerHTML='<p><button onclick="render()">← Tutte le storie</button></p>'+storyH(s);return}}
   if(pe){const re=termsRe(pe);const hs=DB.stories.slice().sort((x,y)=>key(x)<key(y)?-1:1).map(s=>storyP(s,pe,re)).filter(Boolean);
-    const tot=hs.reduce((n,h)=>n+(+/data-n="(\d+)"/.exec(h)[1]),0);
-    $('list').innerHTML=`<p class="mut">${hs.length} conversazioni e ${tot} messaggi su ${esc(pe.name)}${pe.speaker?' (compresi quelli scritti da '+esc(pe.speaker)+')':''} · <label><input type="checkbox" ${window._full?'checked':''} onchange="_full=this.checked;render()" style="width:auto"> conversazioni intere</label></p>`+hs.slice(0,window._lim||60).join('')+(hs.length>(window._lim||60)?`<p><button onclick="_lim=9999;render()">Mostra tutte (${hs.length})</button></p>`:'');return}
+    const A=hs.filter(h=>h.includes('data-tag="1"')),B=hs.filter(h=>h.includes('data-tag="0"'));const lim=window._lim||40;
+    $('list').innerHTML=`<div class="card"><label style="margin-right:14px"><input type="checkbox" ${window._full?'checked':''} onchange="_full=this.checked;render()" style="width:auto"> mostra le conversazioni intere</label>${pe.speaker?`<label><input type="checkbox" ${window._mine?'checked':''} onchange="_mine=this.checked;render()" style="width:auto"> includi i messaggi scritti da ${esc(pe.speaker)}</label>`:''}</div>
+    <h2 class="sec">Storie su ${esc(pe.name)} (${A.length})</h2>${A.join('')||'<p class="mut">Nessuna storia collegata. Usa «+ Storia» oppure Modifica su una conversazione per aggiungere questa persona.</p>'}
+    <h2 class="sec">Altre conversazioni in cui è nominato/a (${B.length})</h2>${B.slice(0,lim).join('')||'<p class="mut">Nessuna.</p>'}${B.length>lim?`<p><button onclick="_lim=9999;render()">Mostra tutte (${B.length})</button></p>`:''}`;return}
   const ss=DB.stories.filter(s=>{
     if(sel&&!s.people.includes(sel))return false;
     const pn=s.people.map(i=>P(i)).filter(Boolean);
@@ -247,12 +250,12 @@ function termsRe(p){const t=[p.name,...(p.terms||[]),...(p.alt||'').split(';')].
   return new RegExp('(?<![\\p{L}])('+t.map(rx).join('|')+')(?![\\p{L}])','u')}
 const bub=(o,hl)=>o.w?`<div class="bubble${o.w==='Massimo'?' me':''}${hl?' hl':''}"><b>${esc(o.w)}</b>${esc(o.x)}${o.t?`<small>${o.t}</small>`:''}</div>`:`<div class="bubble" style="max-width:100%">${esc(o.x)}</div>`;
 function storyP(s,pe,re){
-  const b=parseS(s),hit=b.map(o=>re.test(o.x)||(pe.speaker&&o.w===pe.speaker));const n=hit.filter(Boolean).length;
-  if(!n&&!s.people.includes(pe.id)&&!re.test(s.title))return '';
+  const b=parseS(s),sp=pe.speaker&&window._mine,hit=b.map(o=>re.test(o.x)||(sp&&o.w===pe.speaker));const tag=s.people.includes(pe.id);const n=hit.filter(Boolean).length;
+  if(!n&&!tag&&!re.test(s.title))return '';
   const when=[s.dateFrom&&(s.dateTo&&s.dateTo!==s.dateFrom?s.dateFrom+' → '+s.dateTo:s.dateFrom),s.told&&'raccontata il '+s.told].filter(Boolean).join(' · ');
-  const full=!n||n===b.length||window._full;let body='',gap=false;
-  b.forEach((o,i)=>{const near=hit[i]||(!pe.speaker&&(hit[i-1]||hit[i+1]));if(full||near){body+=bub(o,hit[i]&&n<b.length&&!pe.speaker);gap=false}else if(!gap){body+='<div class="mut" style="text-align:center">⋯</div>';gap=true}});
-  return `<div class="story" data-n="${n}"><div class="hd"><h3>${esc(s.title||'Senza titolo')}</h3><span class="mut">${esc(when)} · ${n} messaggi <button onclick="sel=null;$('q').value='';_one='${s.id}';render()" style="padding:2px 8px">Apri tutta</button> <button onclick="editStory('${s.id}')" style="padding:2px 8px">Modifica</button></span></div>${body}</div>`}
+  const full=tag||!n||n===b.length||window._full;let body='',gap=false;
+  b.forEach((o,i)=>{const near=hit[i]||hit[i-1]||hit[i+1];if(full||near){body+=bub(o,hit[i]&&n<b.length&&o.w!==pe.speaker);gap=false}else if(!gap){body+='<div class="mut" style="text-align:center">⋯</div>';gap=true}});
+  return `<div class="story" data-n="${n}" data-tag="${tag?1:0}"><div class="hd"><h3>${esc(s.title||'Senza titolo')}</h3><span class="mut">${esc(when)} ${tag?'':' · '+n+' messaggi'} <button onclick="sel=null;$('q').value='';_one='${s.id}';render()" style="padding:2px 8px">Apri tutta</button> <button onclick="editStory('${s.id}')" style="padding:2px 8px">Modifica</button></span></div>${body}</div>`}
 function storyH(s){
   const when=[s.dateFrom&&(s.dateTo&&s.dateTo!==s.dateFrom?s.dateFrom+' → '+s.dateTo:s.dateFrom),s.told&&'raccontata il '+s.told,s.place,s.country].filter(Boolean).join(' · ');
   const body=parseS(s).map(o=>bub(o)).join('');
@@ -265,7 +268,7 @@ async function showM(btn,path,type){try{btn.textContent='Carico…';const r=awai
 $('q').addEventListener('input',()=>{const q=norm($('q').value);const box=$('sug');
   if(q.length<2){box.classList.add('hide');render();return}
   const ws=q.split(' ').filter(Boolean);const ps=DB.people.filter(p=>{const n=norm(p.name+' '+p.alt+' '+(p.terms||[]).join(' '));return ws.every(w=>n.includes(w))}).sort((a,b)=>(norm(a.name).startsWith(q)?0:1)-(norm(b.name).startsWith(q)?0:1)).slice(0,12);
-  box.innerHTML=ps.map(p=>`<div onclick="pick('${p.id}')">${esc(p.name)} <span class="mut">${esc(p.birth||'')}</span></div>`).join('');box.classList.toggle('hide',!ps.length);sel=null;render()});
+  box.innerHTML=ps.map(p=>`<div onclick="pick('${p.id}')">${esc(p.name)} <span class="mut">${esc(p.birth||'')}</span></div>`).join('');const ex=ps.find(p=>norm(p.name)===q)||(ps.length===1?ps[0]:null)||(ws.length>1&&ps.length?ps[0]:null);sel=ex?ex.id:null;showList=false;box.classList.toggle('hide',!ps.length||(ex&&ps.length===1));render()});
 ['fS','fC','fP','fA','fB'].forEach(i=>$(i).addEventListener('input',render));
 $('q').addEventListener('keydown',e=>{if(e.key==='Enter'){const q=norm($('q').value);const ws=q.split(' ').filter(Boolean);
   const ps=DB.people.filter(p=>{const n=norm(p.name+' '+p.alt+' '+(p.terms||[]).join(' '));return ws.every(w=>n.includes(w))});
