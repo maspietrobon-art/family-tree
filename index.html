@@ -109,9 +109,11 @@ table.ev{width:100%;border-collapse:collapse;font-size:14px}table.ev td{border-t
 
 <script>
 const $=id=>document.getElementById(id), dlg=$;
+window.onerror=(m)=>{const e=$('status');if(e)e.textContent='Errore: '+m};
+const LS={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 let showList=false,DB={version:1,people:[],stories:[]}, KEY=null, SALT=null, SHA=null, sel=null, curP=null, curS=null, dirty=false;
 const enc=new TextEncoder(), dec=new TextDecoder();
-const cfg=()=>JSON.parse(localStorage.getItem('sf_cfg')||'{}');
+const cfg=()=>JSON.parse(LS.get('sf_cfg')||'{}');
 const st=t=>$('status').textContent=t;
 const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -139,9 +141,10 @@ async function ghPut(path,bytes,sha,msg){const c=cfg();const r=await gh(path,{me
 
 /* --- apertura --- */
 async function start(){
+  if(!window.crypto||!crypto.subtle){document.querySelector('main').innerHTML='<div class="card"><h2>Apri la pagina nel browser</h2><p>Questa anteprima non permette la cifratura. Scarica il file e aprilo con Chrome, Firefox o Safari, oppure pubblicalo su GitHub Pages.</p></div>';return}
   let remote=null;
   if(hasGh()){try{st('Leggo da GitHub…');remote=await ghGetRaw('data.enc');if(remote)SHA=await ghSha('data.enc')}catch(e){st('Fuori rete: uso la copia locale')}}
-  const local=localStorage.getItem('sf_data');
+  const local=LS.get('sf_data');
   window._blob=remote||(local?unb64(local).buffer:null);
   $('lockT').textContent=_blob?'Password':'Scegli una password';
   $('lockM').textContent=_blob?'':'Protegge i dati: senza password non si possono leggere né recuperare.';
@@ -158,7 +161,7 @@ async function unlock(){
 async function persist(msg){
   if(!KEY){st('Prima apri con la password');return}
   const bytes=await seal(enc.encode(JSON.stringify(DB)));
-  try{localStorage.setItem('sf_data',b64(bytes))}catch(e){}
+  LS.set('sf_data',b64(bytes));
   if(!hasGh()){st('Salvato su questo dispositivo');return}
   try{st('Salvo…');SHA=await ghPut('data.enc',bytes,SHA,msg||'aggiornamento');dirty=false;st('Salvato in rete '+new Date().toLocaleTimeString())}
   catch(e){dirty=true;st('Non salvato in rete: '+e.message)}
@@ -172,7 +175,7 @@ async function sync(){
     SHA=await ghSha('data.enc');DB=JSON.parse(dec.decode(await open_(r)));dirty=false;st('Sincronizzato');render();
   }catch(e){st('Errore: '+e.message)}
 }
-function saveSet(){localStorage.setItem('sf_cfg',JSON.stringify({o:$('gO').value.trim(),r:$('gR').value.trim(),b:$('gB').value.trim(),t:$('gT').value.trim()}));dlg('set').close();SHA=null;
+function saveSet(){LS.set('sf_cfg',JSON.stringify({o:$('gO').value.trim(),r:$('gR').value.trim(),b:$('gB').value.trim(),t:$('gT').value.trim()}));dlg('set').close();SHA=null;
   ghSha('data.enc').then(s=>{SHA=s;if(s&&DB.people.length&&!confirm('In rete esiste già un archivio. OK = sovrascrivo con i dati di questo dispositivo. Annulla = scarico quelli in rete.')){dirty=false;return sync()}return persist('configurazione')}).catch(e=>st('Errore: '+e.message))}
 function exportJ(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(DB,null,1)],{type:'application/json'}));a.download='storie-di-famiglia.json';a.click()}
 function importJ(inp){const f=inp.files[0];if(!f)return;f.text().then(async t=>{const d=JSON.parse(t);if(!d.people||!d.stories)return alert('File non valido');
@@ -204,8 +207,8 @@ function render(){
     ${sibs(pe).length?`<div><span class="mut">Fratelli e sorelle</span> ${sibs(pe).map(chip).join('')}</div>`:''}
     ${kids(pe.id).length?`<div><span class="mut">Figli</span> ${kids(pe.id).map(chip).join('')}</div>`:''}
     ${(pe.events||[]).length?`<h3 style="font:600 15px Georgia,serif;margin:12px 0 4px">Eventi documentati</h3><table class="ev">${pe.events.map(e=>`<tr><td>${esc(e.date)}</td><td>${esc(e.what)}</td><td>${esc(e.place)}</td><td class="mut">${esc(e.src)}</td></tr>`).join('')}</table>`:''}</div>`}
-  else if(fS||fC||(q&&q.length>1)){const ps=DB.people.filter(p=>(!fS||norm(p.name).includes(fS))&&(!fC||norm(p.country).includes(fC))&&(!q||norm(p.name+' '+p.alt).includes(q))).slice(0,60);
-    if(ps.length)h=`<div class="card"><span class="mut">Persone</span><br>${ps.map(chip).join('')}</div>`}
+  else if(fS||fC||(q&&q.length>1)){const ps=DB.people.filter(p=>(!fS||norm(p.name).includes(fS))&&(!fC||norm(p.country).includes(fC))&&(!q||q.split(' ').filter(Boolean).every(w=>norm(p.name+' '+p.alt+' '+(p.terms||[]).join(' ')).includes(w)))).slice(0,60);
+    if(ps.length)h=`<div class="card"><b>Tocca una persona per vedere tutto su di lei</b><br>${ps.map(chip).join('')}</div>`}
   if(showList&&!pe){
     const so=window._so||'cognome',cnt={};DB.stories.forEach(s=>s.people.forEach(i=>cnt[i]=(cnt[i]||0)+1));
     const sur=p=>{const w=p.name.replace(/\s*\(.*?\)/g,'').trim().split(' ');return norm(w[w.length-1]+' '+w.slice(0,-1).join(' '))};
@@ -261,9 +264,12 @@ async function showM(btn,path,type){try{btn.textContent='Carico…';const r=awai
 /* --- ricerca persona --- */
 $('q').addEventListener('input',()=>{const q=norm($('q').value);const box=$('sug');
   if(q.length<2){box.classList.add('hide');render();return}
-  const ps=DB.people.filter(p=>norm(p.name+' '+p.alt).includes(q)).slice(0,12);
+  const ws=q.split(' ').filter(Boolean);const ps=DB.people.filter(p=>{const n=norm(p.name+' '+p.alt+' '+(p.terms||[]).join(' '));return ws.every(w=>n.includes(w))}).sort((a,b)=>(norm(a.name).startsWith(q)?0:1)-(norm(b.name).startsWith(q)?0:1)).slice(0,12);
   box.innerHTML=ps.map(p=>`<div onclick="pick('${p.id}')">${esc(p.name)} <span class="mut">${esc(p.birth||'')}</span></div>`).join('');box.classList.toggle('hide',!ps.length);sel=null;render()});
 ['fS','fC','fP','fA','fB'].forEach(i=>$(i).addEventListener('input',render));
+$('q').addEventListener('keydown',e=>{if(e.key==='Enter'){const q=norm($('q').value);const ws=q.split(' ').filter(Boolean);
+  const ps=DB.people.filter(p=>{const n=norm(p.name+' '+p.alt+' '+(p.terms||[]).join(' '));return ws.every(w=>n.includes(w))});
+  if(ps.length){ps.sort((a,b)=>(norm(a.name)===q?0:1)-(norm(b.name)===q?0:1));pick(ps[0].id)}}});
 
 /* --- persona --- */
 function editPerson(id){curP=id?P(id):null;const p=curP||{spouses:[]};
