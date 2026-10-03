@@ -44,6 +44,17 @@ h2.sec{font:600 17px system-ui,sans-serif;margin:22px 0 10px;padding-bottom:6px;
 .bubble.hl{border-color:var(--acc);border-width:2px}
 table.ev{width:100%;border-collapse:collapse;font-size:14px}table.ev td{border-top:1px solid var(--line);padding:4px 6px;vertical-align:top}
 .pl{display:flex;justify-content:space-between;gap:8px;padding:5px 4px;border-bottom:1px solid var(--line);cursor:pointer}.pl:hover{background:var(--bg)}
+.tn{border-left:2px solid var(--line);margin-left:10px;padding-left:10px}
+.tb{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:4px 0;background:var(--card);cursor:pointer}
+.tb.has{border-color:var(--acc);border-width:2px}.tb.off{opacity:.55}
+.tb small{display:block;color:var(--mut)}.rl{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+details.tp{border:1px solid var(--line);border-radius:10px;background:var(--card);margin:6px 0}
+details.tp>summary{padding:10px 12px;cursor:pointer;font-weight:600}
+details.tp>summary small{font-weight:400;color:var(--mut);margin-left:6px}
+details.tp[open]>summary{border-bottom:1px solid var(--line);color:var(--acc)}
+details.tp>div{padding:6px 12px 12px}
+h3.grp{font:600 14px system-ui,sans-serif;color:var(--acc);margin:16px 0 4px;text-transform:uppercase;letter-spacing:.04em}
+.day{font:600 14px system-ui,sans-serif;margin:12px 0 2px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
 </style>
 </head>
 <body>
@@ -53,7 +64,7 @@ table.ev{width:100%;border-collapse:collapse;font-size:14px}table.ev td{border-t
     <input id="q" placeholder="Cerca una persona o una parola…" autocomplete="off">
     <button class="p" onclick="editStory()">+ Storia</button>
     <button onclick="editPerson()">+ Persona</button>
-    <button onclick="showList=!showList;sel=null;render()">Persone</button>
+    <button onclick="go('tree')">Albero</button><button onclick="go('topics')">Argomenti</button><button onclick="go('list')">Persone</button>
     <button onclick="sync()">Sincronizza</button>
     <button onclick="dlg('set').showModal()">⚙</button>
     <div id="sug" class="sug hide" style="top:44px;left:0"></div>
@@ -112,7 +123,7 @@ table.ev{width:100%;border-collapse:collapse;font-size:14px}table.ev td{border-t
 const $=id=>document.getElementById(id), dlg=$;
 window.onerror=(m)=>{const e=$('status');if(e)e.textContent='Errore: '+m};
 const LS={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
-let showList=false,DB={version:1,people:[],stories:[]}, KEY=null, SALT=null, SHA=null, sel=null, curP=null, curS=null, dirty=false;
+let view='',showList=false,DB={version:1,people:[],stories:[]}, KEY=null, SALT=null, SHA=null, sel=null, curP=null, curS=null, dirty=false;
 const enc=new TextEncoder(), dec=new TextDecoder();
 const cfg=()=>JSON.parse(LS.get('sf_cfg')||'{}');
 const st=t=>$('status').textContent=t;
@@ -191,7 +202,8 @@ const names=s=>s.split(';').map(x=>x.trim()).filter(Boolean);
 
 /* --- vista --- */
 function clearF(){['q','fS','fC','fP','fA','fB'].forEach(i=>$(i).value='');sel=null;render()}
-function pick(id){showList=false;sel=id;$('q').value='';$('sug').classList.add('hide');render();scrollTo(0,0)}
+function go(v){view=v==='list'?'':(view===v?'':v);showList=v==='list'?!showList:false;sel=null;$('q').value='';render();scrollTo(0,0)}
+function pick(id){view='';showList=false;sel=id;$('q').value='';$('sug').classList.add('hide');render();scrollTo(0,0)}
 const chip=p=>p?`<span class="chip" onclick="pick('${p.id}')">${esc(p.name)}${year(p.birth)?' <span class="mut">'+year(p.birth)+'</span>':''}</span>`:'';
 function render(){
   $('rl').innerHTML=[...new Set(DB.people.map(p=>p.ramo).filter(Boolean))].map(r=>`<option value="${esc(r)}">`).join('');
@@ -199,7 +211,7 @@ function render(){
   const q=norm($('q').value),fS=norm($('fS').value),fC=norm($('fC').value),fP=norm($('fP').value),a=+$('fA').value||null,b=+$('fB').value||null;
   const pe=sel&&P(sel);let h='';
   if(pe){const fa=P(pe.father),mo=P(pe.mother);
-    h=`<div class="card"><div class="row"><h2 style="flex:1">${esc(pe.name)}</h2><button onclick="editPerson('${pe.id}')">Modifica</button><button onclick="sel=null;render()">✕</button></div>
+    h=`<div class="card"><div class="row"><h2 style="flex:1">${esc(pe.name)}</h2><button onclick="_root='${pe.id}';sel=null;view='tree';render()">Il suo albero</button><button onclick="editPerson('${pe.id}')">Modifica</button><button onclick="sel=null;render()">✕</button></div>
     <div class="mut">${[pe.birth&&'n. '+esc(pe.birth)+(pe.birthPlace?', '+esc(pe.birthPlace):''),pe.death&&'m. '+esc(pe.death)+(pe.deathPlace?', '+esc(pe.deathPlace):''),esc(pe.country),pe.alt&&'detto/a '+esc(pe.alt)].filter(Boolean).join(' · ')}</div>
     ${pe.ramo?`<div class="mut">Ramo: ${esc(pe.ramo)}</div>`:''}${pe.notes?`<p>${esc(pe.notes)}</p>`:''}
     ${pe.marriage?`<div class="mut">Matrimonio: ${esc(pe.marriage)}</div>`:''}${pe.fsid?`<div class="mut">FamilySearch: ${esc(pe.fsid)}</div>`:''}${(pe.terms||[]).length?`<div class="mut">Nei testi: ${esc(pe.terms.join(', '))}</div>`:''}
@@ -210,6 +222,8 @@ function render(){
     ${(pe.events||[]).length?`<h3 style="font:600 15px system-ui,sans-serif;margin:12px 0 4px">Eventi documentati</h3><table class="ev">${pe.events.map(e=>`<tr><td>${esc(e.date)}</td><td>${esc(e.what)}</td><td>${esc(e.place)}</td><td class="mut">${esc(e.src)}</td></tr>`).join('')}</table>`:''}</div>`}
   else if(fS||fC||(q&&q.length>1)){const ps=DB.people.filter(p=>(!fS||norm(p.name).includes(fS))&&(!fC||norm(p.country).includes(fC))&&(!q||q.split(' ').filter(Boolean).every(w=>norm(p.name+' '+p.alt+' '+(p.terms||[]).join(' ')).includes(w)))).slice(0,60);
     if(ps.length)h=`<div class="card"><b>Tocca una persona per vedere tutto su di lei</b><br>${ps.map(chip).join('')}</div>`}
+  if(view==='tree'&&!pe){$('person').innerHTML=treeH();$('list').innerHTML='';return}
+  if(view==='topics'&&!pe){$('person').innerHTML=`<div class="card"><div class="row"><h2 style="flex:1">Argomenti (${TOP().length})</h2><button onclick="view='';render()">✕</button></div><p class="mut">Tocca un titolo per leggere i testi. Dentro ogni argomento ci sono le persone collegate.</p>${tfull()}</div>`+(topicsH(TOP(),true)||'<p class="mut">Nessun argomento: importa il file dati-iniziali.json aggiornato.</p>');$('list').innerHTML='';return}
   if(showList&&!pe){
     const so=window._so||'cognome',cnt={};DB.stories.forEach(s=>s.people.forEach(i=>cnt[i]=(cnt[i]||0)+1));
     const sur=p=>{const w=p.name.replace(/\s*\(.*?\)/g,'').trim().split(' ');return norm(w[w.length-1]+' '+w.slice(0,-1).join(' '))};
@@ -228,8 +242,10 @@ function render(){
   if(pe){const re=termsRe(pe);const hs=DB.stories.slice().sort((x,y)=>key(x)<key(y)?-1:1).map(s=>storyP(s,pe,re)).filter(Boolean);
     const A=hs.filter(h=>h.includes('data-tag="1"')),B=hs.filter(h=>h.includes('data-tag="0"'));const lim=window._lim||40;
     $('list').innerHTML=`<div class="card"><label style="margin-right:14px"><input type="checkbox" ${window._full?'checked':''} onchange="_full=this.checked;render()" style="width:auto"> mostra le conversazioni intere</label>${pe.speaker?`<label><input type="checkbox" ${window._mine?'checked':''} onchange="_mine=this.checked;render()" style="width:auto"> includi i messaggi scritti da ${esc(pe.speaker)}</label>`:''}</div>
+    <h2 class="sec">Argomenti su ${esc(pe.name)} (${topOf(pe.id).length})</h2>${topicsH(topOf(pe.id),false)||'<p class="mut">Nessun argomento collegato a questa persona.</p>'}${topOf(pe.id).length?tfull():''}
+    <details class="tp" style="margin-top:22px"${topOf(pe.id).length?'':' open'}><summary>Tutte le conversazioni collegate<small>${A.length} su di lui/lei · ${B.length} in cui è nominato/a</small></summary><div>
     <h2 class="sec">Storie su ${esc(pe.name)} (${A.length})</h2>${A.join('')||'<p class="mut">Nessuna storia collegata. Usa «+ Storia» oppure Modifica su una conversazione per aggiungere questa persona.</p>'}
-    <h2 class="sec">Altre conversazioni in cui è nominato/a (${B.length})</h2>${B.slice(0,lim).join('')||'<p class="mut">Nessuna.</p>'}${B.length>lim?`<p><button onclick="_lim=9999;render()">Mostra tutte (${B.length})</button></p>`:''}`;return}
+    <h2 class="sec">Altre conversazioni in cui è nominato/a (${B.length})</h2>${B.slice(0,lim).join('')||'<p class="mut">Nessuna.</p>'}${B.length>lim?`<p><button onclick="_lim=9999;render()">Mostra tutte (${B.length})</button></p>`:''}</div></details>`;return}
   const ss=DB.stories.filter(s=>{
     if(sel&&!s.people.includes(sel))return false;
     const pn=s.people.map(i=>P(i)).filter(Boolean);
@@ -242,6 +258,40 @@ function render(){
     return true}).sort((x,y)=>key(x)<key(y)?-1:1);
   $('list').innerHTML=`<p class="mut">${ss.length} storie${sel?' su '+esc(pe.name):''} · ${DB.people.length} persone</p>`+ss.slice(0,150).map(storyH).join('')+(ss.length>150?'<p class="mut">Mostrate le prime 150: restringi la ricerca.</p>':'');
 }
+const TOP=()=>DB.topics||[];
+const topOf=id=>TOP().filter(t=>t.people.includes(id));
+const itDate=d=>{const m=/^(\d{4})-(\d\d)-(\d\d)$/.exec(d);return m?(+m[3])+' '+['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'][m[2]-1]+' '+m[1]:d};
+function topicBody(t){
+  const kw=t.kw?new RegExp(t.kw,'i'):null;let h='';
+  const ss=DB.stories.filter(s=>t.dates.includes(s.told)||t.dates.includes(s.dateFrom)).sort((a,b)=>(a.told||a.dateFrom)<(b.told||b.dateFrom)?-1:1);
+  for(const s of ss){const b=parseS(s);let hit=b.map(o=>kw?kw.test(o.x):true);const n=hit.filter(Boolean).length;
+    if(kw&&!n&&ss.length>1)continue;
+    const full=!kw||!n||window._tfull;let body='',gap=false;
+    b.forEach((o,i)=>{const near=hit[i]||hit[i-1]||hit[i+1]||hit[i-2]||hit[i+2];if(full||near){body+=bub(o);gap=false}else if(!gap){body+='<div class="mut" style="text-align:center">⋯</div>';gap=true}});
+    h+=`<div class="day"><span>${esc(itDate(s.told||s.dateFrom))} <span class="mut" style="font-weight:400">${esc(s.title)}</span></span><button onclick="view='';sel=null;_one='${s.id}';render();scrollTo(0,0)" style="padding:2px 8px;font-size:13px">Conversazione intera</button></div>${body}`}
+  const pp=t.people.map(i=>chip(P(i))).join('');
+  return (pp?`<div style="margin-bottom:6px">${pp}</div>`:'')+(h||'<p class="mut">Nessun testo collegato.</p>')}
+function topT(el,id){if(el.open&&!el.dataset.ok){el.dataset.ok=1;el.querySelector('div').innerHTML=topicBody(TOP().find(t=>t.id===id))}}
+const topicD=t=>`<details class="tp" ontoggle="topT(this,'${t.id}')"><summary>${esc(t.title)}<small>${t.dates.length} ${t.dates.length>1?'conversazioni':'conversazione'} · ${esc(itDate(t.dates[0]).slice(-4))}${t.dates[t.dates.length-1].slice(0,4)!==t.dates[0].slice(0,4)?'–'+t.dates[t.dates.length-1].slice(0,4):''}</small></summary><div></div></details>`;
+function topicsH(list,grouped){let g=null;return list.map(t=>{const hd=grouped&&t.group!==g?`<h3 class="grp">${esc(t.group)}</h3>`:'';g=t.group;return hd+topicD(t)}).join('')}
+const tfull=()=>`<label class="mut"><input type="checkbox" ${window._tfull?'checked':''} onchange="_tfull=this.checked;render()" style="width:auto"> mostra sempre le conversazioni intere, non solo i passaggi sull'argomento</label>`;
+function treeH(){
+  const root=P(window._root)||DB.people.find(p=>p.name==='Massimo Pietrobon')||DB.people[0];if(!root)return '';
+  const cnt={};DB.stories.forEach(s=>s.people.forEach(i=>cnt[i]=(cnt[i]||0)+1));
+  const has=p=>topOf(p.id).length||cnt[p.id]||0,memo={};
+  const any=(p,d)=>{if(!p||d>12)return false;if(p.id in memo)return memo[p.id];memo[p.id]=false;return memo[p.id]=!!(has(p)||any(P(p.father),d+1)||any(P(p.mother),d+1))};
+  const all=window._tall;
+  const box=(p,rl)=>{const n=topOf(p.id).length;return `<div class="tb ${n?'has':has(p)?'':'off'}" onclick="pick('${p.id}')">${rl?`<span class="rl">${rl}</span><br>`:''}<b>${esc(p.name)}</b>${(p.terms||[])[0]&&!p.name.includes(p.terms[0])?' <span class="mut">«'+esc(p.terms[0])+'»</span>':''}<small>${[year(p.birth)||'?',year(p.death)||''].join('–')}${n?' · '+n+' argomenti':''}${cnt[p.id]?' · '+cnt[p.id]+' conversazioni':''}</small></div>`};
+  const R=['','Padre','Madre'];
+  const node=(p,d,rl)=>{if(!p||d>12||(!all&&!any(p,0)))return '';
+    const sb=d?sibs(p).filter(has):[];
+    return `<div>${box(p,rl)}${sb.length?`<div class="mut" style="margin:0 0 4px 4px">fratelli e sorelle con storie: ${sb.map(chip).join('')}</div>`:''}<div class="tn">${node(P(p.father),d+1,'Padre')}${node(P(p.mother),d+1,'Madre')}</div></div>`};
+  const sb=sibs(root),kd=kids(root.id);
+  return `<div class="card"><div class="row"><h2 style="flex:1">Albero degli antenati</h2><button onclick="view='';render()">✕</button></div>
+  <p class="mut">Dalla persona di partenza si risale a padre e madre. Bordo colorato = ci sono argomenti con storie. Tocca un nome per aprire la sua scheda.</p>
+  <label class="mut"><input type="checkbox" ${all?'checked':''} onchange="_tall=this.checked;render()" style="width:auto"> mostra anche gli antenati senza storie</label>
+  ${sb.length?`<div style="margin-top:8px"><span class="mut">Fratelli e sorelle</span> ${sb.map(chip).join('')}</div>`:''}${kd.length?`<div><span class="mut">Figli</span> ${kd.map(chip).join('')}</div>`:''}
+  <div style="margin-top:8px">${node(root,0,'')}</div></div>`}
 function parseS(s){const out=[];let cur=null;
   for(const l of s.text.split('\n')){const m=/^(\d\d:\d\d) ([^:]{1,24}): (.*)$/.exec(l)||/^()([A-ZÀ-Ú][^:]{1,22}): (.*)$/.exec(l);
     if(m){cur={t:m[1],w:m[2],x:m[3]};out.push(cur)}else if(cur&&cur.w)cur.x+='\n'+l;else{if(!cur){cur={x:l};out.push(cur)}else cur.x+='\n'+l}}return out}
