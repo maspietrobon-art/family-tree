@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Storie di famiglia</title>
+<style>
+:root{--bg:#f4efe6;--card:#fffdf8;--ink:#2b2620;--mut:#7a7064;--line:#ddd3c3;--acc:#8a4b2a;--me:#e7f0dc;--bub:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1a17;--card:#262320;--ink:#ece6da;--mut:#a39a8c;--line:#3b3631;--acc:#e0a070;--me:#2f3a2a;--bub:#2d2a26}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:10px 16px}
+h1{font:600 18px Georgia,serif;margin:0 0 8px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+input,select,textarea,button{font:inherit;color:inherit;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+button{cursor:pointer;background:var(--card)}
+button.p{background:var(--acc);color:#fff;border-color:var(--acc)}
+#q{flex:1;min-width:180px}
+.filters input,.filters select{width:130px;padding:6px 8px;font-size:14px}
+main{max-width:860px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px}
+.card h2{font:600 20px Georgia,serif;margin:0 0 4px}
+.mut{color:var(--mut);font-size:14px}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 10px;margin:2px 4px 2px 0;font-size:14px;cursor:pointer;background:var(--bg)}
+.chip:hover{border-color:var(--acc)}
+.story{margin-bottom:18px}
+.story .hd{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+.story h3{font:600 16px Georgia,serif;margin:0}
+.bubble{background:var(--bub);border:1px solid var(--line);border-radius:12px;padding:8px 12px;margin:6px 0;max-width:88%;white-space:pre-wrap;overflow-wrap:anywhere}
+.bubble.me{background:var(--me);margin-left:auto}
+.bubble b{color:var(--acc);font-size:13px;display:block}
+.bubble small{color:var(--mut);float:right;margin-left:10px}
+.sug{position:absolute;background:var(--card);border:1px solid var(--line);border-radius:8px;max-height:260px;overflow:auto;z-index:9;min-width:260px}
+.sug div{padding:6px 10px;cursor:pointer}.sug div:hover{background:var(--bg)}
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);width:min(640px,94vw);max-height:92vh;overflow:auto}
+dialog label{display:block;font-size:13px;color:var(--mut);margin-top:8px}
+dialog input,dialog select,dialog textarea{width:100%}
+textarea{min-height:160px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#status{font-size:13px;color:var(--mut)}
+img.m{max-width:100%;border-radius:8px;margin-top:6px}audio{width:100%;margin-top:6px}
+.hide{display:none}
+.pl{display:flex;justify-content:space-between;gap:8px;padding:5px 4px;border-bottom:1px solid var(--line);cursor:pointer}.pl:hover{background:var(--bg)}
+</style>
+</head>
+<body>
+<header>
+  <div class="row"><h1 style="flex:1">Storie di famiglia</h1><span id="status"></span></div>
+  <div class="row" style="position:relative">
+    <input id="q" placeholder="Cerca una persona o una parola…" autocomplete="off">
+    <button class="p" onclick="editStory()">+ Storia</button>
+    <button onclick="editPerson()">+ Persona</button>
+    <button onclick="showList=!showList;sel=null;render()">Persone</button>
+    <button onclick="sync()">Sincronizza</button>
+    <button onclick="dlg('set').showModal()">⚙</button>
+    <div id="sug" class="sug hide" style="top:44px;left:0"></div>
+  </div>
+  <div class="row filters" style="margin-top:8px">
+    <input id="fS" placeholder="Cognome"><input id="fC" placeholder="Paese"><input id="fP" placeholder="Luogo">
+    <input id="fA" placeholder="Dall'anno" inputmode="numeric"><input id="fB" placeholder="All'anno" inputmode="numeric">
+    <button onclick="clearF()">Azzera</button>
+  </div>
+</header>
+<main><div id="person"></div><div id="list"></div></main>
+
+<dialog id="lock"><form method="dialog" onsubmit="return false">
+  <h2 id="lockT">Password</h2><p class="mut" id="lockM"></p>
+  <input id="pw" type="password" placeholder="Password"><p><button class="p" onclick="unlock()">Apri</button></p>
+</form></dialog>
+
+<dialog id="set"><h2>Impostazioni</h2>
+  <p class="mut">Per salvare in rete: un repository GitHub e un token personale con permesso «Contents: read and write» su quel repository. Il token resta solo in questo browser. I dati sono salvati cifrati nel file <code>data.enc</code>.</p>
+  <label>Utente o organizzazione</label><input id="gO">
+  <label>Repository</label><input id="gR">
+  <label>Ramo</label><input id="gB" placeholder="main">
+  <label>Token</label><input id="gT" type="password">
+  <p class="row"><button class="p" onclick="saveSet()">Salva</button><button onclick="dlg('set').close()">Chiudi</button></p>
+  <hr><p class="row"><button onclick="exportJ()">Esporta JSON (in chiaro)</button><label style="margin:0"><input type="file" id="imp" accept=".json" style="display:none" onchange="importJ(this)"><span class="chip" onclick="imp.click()">Importa JSON</span></label></p>
+</dialog>
+
+<dialog id="dp"><h2>Persona</h2>
+  <label>Nome e cognome</label><input id="pN">
+  <div class="two"><div><label>Nascita</label><input id="pB"></div><div><label>Luogo di nascita</label><input id="pBP"></div>
+  <div><label>Morte</label><input id="pD"></div><div><label>Luogo di morte</label><input id="pDP"></div>
+  <div><label>Paese / nazionalità</label><input id="pC"></div><div><label>Ramo</label><input id="pR" list="rl"></div><div><label>Altri nomi, soprannomi</label><input id="pA"></div></div>
+  <label>Padre</label><input id="pF" list="pl"><label>Madre</label><input id="pM" list="pl">
+  <label>Coniugi (separati da ;)</label><input id="pS">
+  <label>Figli da collegare (separati da ;)</label><input id="pK">
+  <label>Fratelli e sorelle da collegare (separati da ;) — condividono gli stessi genitori</label><input id="pG">
+  <label>Note</label><textarea id="pNo" style="min-height:70px"></textarea>
+  <datalist id="pl"></datalist><datalist id="rl"></datalist>
+  <p class="row"><button class="p" onclick="saveP()">Salva</button><button onclick="dlg('dp').close()">Annulla</button><button id="pDel" onclick="delP()">Elimina</button></p>
+</dialog>
+
+<dialog id="ds"><h2>Storia</h2>
+  <label>Titolo</label><input id="sT">
+  <label>Testo (puoi incollare una chat: le righe «12:30 Nome: testo» diventano fumetti)</label><textarea id="sX"></textarea>
+  <label>Persone (separate da ;)</label><input id="sP" list="pl">
+  <div class="two"><div><label>Data dei fatti, da (AAAA o AAAA-MM-GG)</label><input id="sA"></div><div><label>a</label><input id="sB"></div>
+  <div><label>Raccontata il</label><input id="sR"></div><div><label>Fonte</label><input id="sS"></div>
+  <div><label>Luogo</label><input id="sL"></div><div><label>Paese</label><input id="sC"></div></div>
+  <label>Foto o audio (file piccoli, fino a 5 MB)</label><input type="file" id="sF" accept="image/*,audio/*" multiple>
+  <div id="sM" class="mut"></div>
+  <p class="row"><button class="p" onclick="saveS()">Salva</button><button onclick="dlg('ds').close()">Annulla</button><button id="sDel" onclick="delS()">Elimina</button></p>
+</dialog>
+
+<script>
+const $=id=>document.getElementById(id), dlg=$;
+let showList=false,DB={version:1,people:[],stories:[]}, KEY=null, SALT=null, SHA=null, sel=null, curP=null, curS=null, dirty=false;
+const enc=new TextEncoder(), dec=new TextDecoder();
+const cfg=()=>JSON.parse(localStorage.getItem('sf_cfg')||'{}');
+const st=t=>$('status').textContent=t;
+const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const P=id=>DB.people.find(p=>p.id===id);
+const year=s=>{const m=/(\d{4})/.exec(s||'');return m?+m[1]:null};
+const uid=p=>p+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+
+/* --- cifratura --- */
+async function deriveKey(pw,salt){const k=await crypto.subtle.importKey('raw',enc.encode(pw),'PBKDF2',false,['deriveKey']);
+  return crypto.subtle.deriveKey({name:'PBKDF2',salt,iterations:250000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['encrypt','decrypt'])}
+async function seal(bytes){const iv=crypto.getRandomValues(new Uint8Array(12));const c=new Uint8Array(await crypto.subtle.encrypt({name:'AES-GCM',iv},KEY,bytes));
+  const o=new Uint8Array(28+c.length);o.set(SALT);o.set(iv,16);o.set(c,28);return o}
+async function open_(buf){const b=new Uint8Array(buf);return new Uint8Array(await crypto.subtle.decrypt({name:'AES-GCM',iv:b.slice(16,28)},KEY,b.slice(28)))}
+const b64=u=>{let s='';for(let i=0;i<u.length;i+=32768)s+=String.fromCharCode.apply(null,u.subarray(i,i+32768));return btoa(s)};
+const unb64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+
+/* --- GitHub --- */
+function gh(path,opt={}){const c=cfg();return fetch(`https://api.github.com/repos/${c.o}/${c.r}/contents/${path}${opt.method?'':'?ref='+(c.b||'main')+'&t='+Date.now()}`,
+  {...opt,headers:{Authorization:'Bearer '+c.t,Accept:opt.raw?'application/vnd.github.raw':'application/vnd.github+json',...(opt.headers||{})}})}
+const hasGh=()=>{const c=cfg();return c.o&&c.r&&c.t};
+async function ghGetRaw(path){const r=await gh(path,{raw:true});if(r.status===404)return null;if(!r.ok)throw new Error('GitHub '+r.status);return r.arrayBuffer()}
+async function ghSha(path){const r=await gh(path);if(r.status===404)return null;if(!r.ok)throw new Error('GitHub '+r.status);return (await r.json()).sha}
+async function ghPut(path,bytes,sha,msg){const c=cfg();const r=await gh(path,{method:'PUT',body:JSON.stringify({message:msg,content:b64(bytes),branch:c.b||'main',...(sha?{sha}:{})})});
+  if(!r.ok)throw new Error('GitHub '+r.status+(r.status===409?' (conflitto: premi Sincronizza)':''));return (await r.json()).content.sha}
+
+/* --- apertura --- */
+async function start(){
+  let remote=null;
+  if(hasGh()){try{st('Leggo da GitHub…');remote=await ghGetRaw('data.enc');if(remote)SHA=await ghSha('data.enc')}catch(e){st('Fuori rete: uso la copia locale')}}
+  const local=localStorage.getItem('sf_data');
+  window._blob=remote||(local?unb64(local).buffer:null);
+  $('lockT').textContent=_blob?'Password':'Scegli una password';
+  $('lockM').textContent=_blob?'':'Protegge i dati: senza password non si possono leggere né recuperare.';
+  $('lock').showModal();
+}
+async function unlock(){
+  const pw=$('pw').value;if(!pw)return;
+  try{
+    if(_blob){SALT=new Uint8Array(_blob).slice(0,16);KEY=await deriveKey(pw,SALT);DB=JSON.parse(dec.decode(await open_(_blob)))}
+    else{SALT=crypto.getRandomValues(new Uint8Array(16));KEY=await deriveKey(pw,SALT)}
+    $('lock').close();st(hasGh()?'Sincronizzato':'Solo su questo dispositivo');render();
+  }catch(e){$('lockM').textContent='Password sbagliata.'}
+}
+async function persist(msg){
+  if(!KEY){st('Prima apri con la password');return}
+  const bytes=await seal(enc.encode(JSON.stringify(DB)));
+  try{localStorage.setItem('sf_data',b64(bytes))}catch(e){}
+  if(!hasGh()){st('Salvato su questo dispositivo');return}
+  try{st('Salvo…');SHA=await ghPut('data.enc',bytes,SHA,msg||'aggiornamento');dirty=false;st('Salvato in rete '+new Date().toLocaleTimeString())}
+  catch(e){dirty=true;st('Non salvato in rete: '+e.message)}
+}
+async function sync(){
+  if(!hasGh()){dlg('set').showModal();return}
+  try{
+    if(dirty){if(!confirm('Ci sono modifiche locali non salvate in rete. Scaricando la versione in rete si perdono. Continuare?'))return}
+    st('Leggo da GitHub…');const r=await ghGetRaw('data.enc');
+    if(!r){await persist('primo salvataggio');return}
+    SHA=await ghSha('data.enc');DB=JSON.parse(dec.decode(await open_(r)));dirty=false;st('Sincronizzato');render();
+  }catch(e){st('Errore: '+e.message)}
+}
+function saveSet(){localStorage.setItem('sf_cfg',JSON.stringify({o:$('gO').value.trim(),r:$('gR').value.trim(),b:$('gB').value.trim(),t:$('gT').value.trim()}));dlg('set').close();SHA=null;
+  ghSha('data.enc').then(s=>{SHA=s;if(s&&DB.people.length&&!confirm('In rete esiste già un archivio. OK = sovrascrivo con i dati di questo dispositivo. Annulla = scarico quelli in rete.')){dirty=false;return sync()}return persist('configurazione')}).catch(e=>st('Errore: '+e.message))}
+function exportJ(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(DB,null,1)],{type:'application/json'}));a.download='storie-di-famiglia.json';a.click()}
+function importJ(inp){const f=inp.files[0];if(!f)return;f.text().then(async t=>{const d=JSON.parse(t);if(!d.people||!d.stories)return alert('File non valido');
+  if(DB.people.length&&!confirm('Sostituire i dati attuali con quelli del file?'))return;DB=d;await persist('importazione');dlg('set').close();render()})}
+
+/* --- relazioni --- */
+const kids=id=>DB.people.filter(p=>p.father===id||p.mother===id);
+const sibs=p=>DB.people.filter(x=>x.id!==p.id&&((p.father&&x.father===p.father)||(p.mother&&x.mother===p.mother)));
+function findP(name,create){const n=norm(name.replace(/\s*\(.*$/,''));if(!n)return null;let p=DB.people.find(x=>norm(x.name)===n);
+  if(!p&&create){p={id:uid('p'),name:name.trim(),father:'',mother:'',spouses:[],birth:'',birthPlace:'',death:'',deathPlace:'',country:'',branch:'',alt:'',notes:''};DB.people.push(p)}return p}
+const names=s=>s.split(';').map(x=>x.trim()).filter(Boolean);
+
+/* --- vista --- */
+function clearF(){['q','fS','fC','fP','fA','fB'].forEach(i=>$(i).value='');sel=null;render()}
+function pick(id){showList=false;sel=id;$('q').value='';$('sug').classList.add('hide');render();scrollTo(0,0)}
+const chip=p=>p?`<span class="chip" onclick="pick('${p.id}')">${esc(p.name)}${year(p.birth)?' <span class="mut">'+year(p.birth)+'</span>':''}</span>`:'';
+function render(){
+  $('rl').innerHTML=[...new Set(DB.people.map(p=>p.ramo).filter(Boolean))].map(r=>`<option value="${esc(r)}">`).join('');
+  $('pl').innerHTML=DB.people.map(p=>`<option value="${esc(p.name)}">`).join('');
+  const q=norm($('q').value),fS=norm($('fS').value),fC=norm($('fC').value),fP=norm($('fP').value),a=+$('fA').value||null,b=+$('fB').value||null;
+  const pe=sel&&P(sel);let h='';
+  if(pe){const fa=P(pe.father),mo=P(pe.mother);
+    h=`<div class="card"><div class="row"><h2 style="flex:1">${esc(pe.name)}</h2><button onclick="editPerson('${pe.id}')">Modifica</button><button onclick="sel=null;render()">✕</button></div>
+    <div class="mut">${[pe.birth&&'n. '+esc(pe.birth)+(pe.birthPlace?', '+esc(pe.birthPlace):''),pe.death&&'m. '+esc(pe.death)+(pe.deathPlace?', '+esc(pe.deathPlace):''),esc(pe.country),pe.alt&&'detto/a '+esc(pe.alt)].filter(Boolean).join(' · ')}</div>
+    ${pe.ramo?`<div class="mut">Ramo: ${esc(pe.ramo)}</div>`:''}${pe.notes?`<p>${esc(pe.notes)}</p>`:''}
+    ${fa||mo?`<div><span class="mut">Genitori</span> ${chip(fa)}${chip(mo)}</div>`:''}
+    ${pe.spouses.length?`<div><span class="mut">Coniugi</span> ${pe.spouses.map(i=>chip(P(i))).join('')}</div>`:''}
+    ${sibs(pe).length?`<div><span class="mut">Fratelli e sorelle</span> ${sibs(pe).map(chip).join('')}</div>`:''}
+    ${kids(pe.id).length?`<div><span class="mut">Figli</span> ${kids(pe.id).map(chip).join('')}</div>`:''}</div>`}
+  else if(fS||fC||(q&&q.length>1)){const ps=DB.people.filter(p=>(!fS||norm(p.name).includes(fS))&&(!fC||norm(p.country).includes(fC))&&(!q||norm(p.name+' '+p.alt).includes(q))).slice(0,60);
+    if(ps.length)h=`<div class="card"><span class="mut">Persone</span><br>${ps.map(chip).join('')}</div>`}
+  if(showList&&!pe){
+    const so=window._so||'cognome',cnt={};DB.stories.forEach(s=>s.people.forEach(i=>cnt[i]=(cnt[i]||0)+1));
+    const sur=p=>{const w=p.name.replace(/\s*\(.*?\)/g,'').trim().split(' ');return norm(w[w.length-1]+' '+w.slice(0,-1).join(' '))};
+    let ps=DB.people.filter(p=>(!fS||norm(p.name).includes(fS))&&(!fC||norm(p.country).includes(fC))&&(!q||norm(p.name+' '+p.alt).includes(q))&&(!a||(year(p.birth)||0)>=a)&&(!b||(year(p.birth)||9999)<=b));
+    const cmp={nome:(x,y)=>norm(x.name)<norm(y.name)?-1:1,cognome:(x,y)=>sur(x)<sur(y)?-1:1,nascita:(x,y)=>(year(x.birth)||9999)-(year(y.birth)||9999)||(sur(x)<sur(y)?-1:1),ramo:(x,y)=>(x.ramo||'~')<(y.ramo||'~')?-1:(x.ramo||'~')>(y.ramo||'~')?1:(year(x.birth)||9999)-(year(y.birth)||9999)}[so];
+    ps.sort(cmp);let last=null;
+    const grp=p=>so==='ramo'?(p.ramo||'Senza ramo'):so==='nascita'?(year(p.birth)?Math.floor(year(p.birth)/50)*50+'–'+(Math.floor(year(p.birth)/50)*50+49):'Data sconosciuta'):(so==='cognome'?sur(p):norm(p.name))[0].toUpperCase();
+    h=`<div class="card"><div class="row"><h2 style="flex:1">Persone (${ps.length})</h2><select onchange="_so=this.value;render()">${[['cognome','Per cognome'],['nome','Per nome'],['nascita','Per anno di nascita'],['ramo','Per ramo']].map(o=>`<option value="${o[0]}"${so===o[0]?' selected':''}>${o[1]}</option>`).join('')}</select><button onclick="showList=false;render()">✕</button></div>`+
+    ps.map(p=>{const g=grp(p);const hd=g!==last?`<h3 style="margin:12px 0 4px;font:600 15px Georgia,serif;color:var(--acc)">${esc(g)}</h3>`:'';last=g;
+      return hd+`<div class="pl" onclick="pick('${p.id}')"><span>${esc(p.name)}${p.alt?` <span class="mut">(${esc(p.alt.split(';')[0])})</span>`:''}</span><span class="mut">${[year(p.birth)||'?',year(p.death)||''].join('–')}${cnt[p.id]?' · '+cnt[p.id]+' storie':''}</span></div>`}).join('')+'</div>';
+    $('person').innerHTML=h;$('list').innerHTML='';return}
+  if(!DB.people.length)h=`<div class="card"><h2>Archivio vuoto</h2><p>Per cominciare con l'albero e le chat già raccolte, importa il file <b>dati-iniziali.json</b>.</p><button class="p" onclick="imp.click()">Importa dati iniziali</button></div>`;
+  $('person').innerHTML=h;
+  const key=s=>s.dateFrom||s.told||'9999';
+  const ss=DB.stories.filter(s=>{
+    if(sel&&!s.people.includes(sel))return false;
+    const pn=s.people.map(i=>P(i)).filter(Boolean);
+    if(fS&&!pn.some(p=>norm(p.name).includes(fS)))return false;
+    if(fC&&!(norm(s.country).includes(fC)||pn.some(p=>norm(p.country).includes(fC))))return false;
+    if(fP&&!norm(s.place+' '+s.text).includes(fP))return false;
+    const y1=year(key(s)),y2=year(s.dateTo)||y1;
+    if(a&&(!y2||y2<a))return false;if(b&&(!y1||y1>b))return false;
+    if(q&&!sel&&!norm(s.title+' '+s.text+' '+pn.map(p=>p.name+' '+p.alt).join(' ')).includes(q))return false;
+    return true}).sort((x,y)=>key(x)<key(y)?-1:1);
+  $('list').innerHTML=`<p class="mut">${ss.length} storie${sel?' su '+esc(pe.name):''} · ${DB.people.length} persone</p>`+ss.slice(0,150).map(storyH).join('')+(ss.length>150?'<p class="mut">Mostrate le prime 150: restringi la ricerca.</p>':'');
+}
+function storyH(s){
+  const when=[s.dateFrom&&(s.dateTo&&s.dateTo!==s.dateFrom?s.dateFrom+' → '+s.dateTo:s.dateFrom),s.told&&'raccontata il '+s.told,s.place,s.country].filter(Boolean).join(' · ');
+  const lines=s.text.split('\n');let out=[],cur=null;
+  for(const l of lines){const m=/^(\d\d:\d\d) ([^:]{1,24}): (.*)$/.exec(l);
+    if(m){cur={t:m[1],w:m[2],x:m[3]};out.push(cur)}else if(cur&&cur.t)cur.x+='\n'+l;else{if(!cur||cur.t){cur={x:l};out.push(cur)}else cur.x+='\n'+l}}
+  const body=out.map(o=>o.t?`<div class="bubble${o.w==='Massimo'?' me':''}"><b>${esc(o.w)}</b>${esc(o.x)}<small>${o.t}</small></div>`:`<div class="bubble" style="max-width:100%">${esc(o.x)}</div>`).join('');
+  return `<div class="story"><div class="hd"><h3>${esc(s.title||'Senza titolo')}</h3><span class="mut">${esc(when)} <button onclick="editStory('${s.id}')" style="padding:2px 8px">Modifica</button></span></div>
+  <div>${s.people.map(i=>chip(P(i))).join('')}</div>${body}${(s.media||[]).map(m=>`<div><button onclick="showM(this,'${m.path}','${m.type}')">▶ ${esc(m.name)}</button></div>`).join('')}</div>`}
+async function showM(btn,path,type){try{btn.textContent='Carico…';const r=await ghGetRaw(path);const u=URL.createObjectURL(new Blob([await open_(r)],{type}));
+  btn.outerHTML=type.startsWith('audio')?`<audio controls src="${u}"></audio>`:`<img class="m" src="${u}">`}catch(e){btn.textContent='Non disponibile: '+e.message}}
+
+/* --- ricerca persona --- */
+$('q').addEventListener('input',()=>{const q=norm($('q').value);const box=$('sug');
+  if(q.length<2){box.classList.add('hide');render();return}
+  const ps=DB.people.filter(p=>norm(p.name+' '+p.alt).includes(q)).slice(0,12);
+  box.innerHTML=ps.map(p=>`<div onclick="pick('${p.id}')">${esc(p.name)} <span class="mut">${esc(p.birth||'')}</span></div>`).join('');box.classList.toggle('hide',!ps.length);sel=null;render()});
+['fS','fC','fP','fA','fB'].forEach(i=>$(i).addEventListener('input',render));
+
+/* --- persona --- */
+function editPerson(id){curP=id?P(id):null;const p=curP||{spouses:[]};
+  $('pN').value=p.name||'';$('pB').value=p.birth||'';$('pBP').value=p.birthPlace||'';$('pD').value=p.death||'';$('pDP').value=p.deathPlace||'';$('pC').value=p.country||'';$('pR').value=p.ramo||'';$('pA').value=p.alt||'';$('pNo').value=p.notes||'';
+  $('pF').value=P(p.father)?.name||'';$('pM').value=P(p.mother)?.name||'';$('pS').value=p.spouses.map(i=>P(i)?.name).filter(Boolean).join('; ');
+  $('pK').value='';$('pG').value='';$('pDel').classList.toggle('hide',!curP);dlg('dp').showModal()}
+async function saveP(){const n=$('pN').value.trim();if(!n)return alert('Serve almeno il nome');
+  let p=curP;if(!p){p={id:uid('p'),spouses:[],branch:''};DB.people.push(p)}
+  Object.assign(p,{name:n,birth:$('pB').value,birthPlace:$('pBP').value,death:$('pD').value,deathPlace:$('pDP').value,country:$('pC').value,ramo:$('pR').value,alt:$('pA').value,notes:$('pNo').value});
+  p.father=$('pF').value.trim()?findP($('pF').value,true).id:'';p.mother=$('pM').value.trim()?findP($('pM').value,true).id:'';
+  const old=p.spouses;p.spouses=names($('pS').value).map(x=>findP(x,true).id);
+  old.filter(i=>!p.spouses.includes(i)).forEach(i=>{const s=P(i);if(s)s.spouses=s.spouses.filter(x=>x!==p.id)});
+  p.spouses.forEach(i=>{const s=P(i);if(!s.spouses.includes(p.id))s.spouses.push(p.id)});
+  names($('pK').value).forEach(x=>{const k=findP(x,true);const other=p.spouses[0]||'';if(!k.father&&k.mother!==p.id){k.father=p.id;if(!k.mother)k.mother=other}else if(!k.mother&&k.father!==p.id)k.mother=p.id});
+  names($('pG').value).forEach(x=>{const g=findP(x,true);if(!p.father&&!p.mother){p.father=g.father;p.mother=g.mother}else{if(p.father)g.father=p.father;if(p.mother)g.mother=p.mother}});
+  dlg('dp').close();sel=p.id;render();await persist('persona: '+n)}
+async function delP(){if(!curP||!confirm('Eliminare '+curP.name+'? Le storie restano, senza questa persona.'))return;const id=curP.id;
+  DB.people=DB.people.filter(p=>p.id!==id);DB.people.forEach(p=>{if(p.father===id)p.father='';if(p.mother===id)p.mother='';p.spouses=p.spouses.filter(x=>x!==id)});
+  DB.stories.forEach(s=>s.people=s.people.filter(x=>x!==id));dlg('dp').close();sel=null;render();await persist('eliminata persona')}
+
+/* --- storia --- */
+function editStory(id){curS=id?DB.stories.find(s=>s.id===id):null;const s=curS||{people:sel?[sel]:[],media:[]};
+  $('sT').value=s.title||'';$('sX').value=s.text||'';$('sP').value=s.people.map(i=>P(i)?.name).filter(Boolean).join('; ');
+  $('sA').value=s.dateFrom||'';$('sB').value=s.dateTo||'';$('sR').value=s.told||'';$('sS').value=s.source||'';$('sL').value=s.place||'';$('sC').value=s.country||'';
+  $('sF').value='';$('sM').textContent=(s.media||[]).map(m=>m.name).join(', ');$('sDel').classList.toggle('hide',!curS);dlg('ds').showModal()}
+async function saveS(){let s=curS;if(!s){s={id:uid('s'),media:[]};DB.stories.push(s)}
+  const unknown=names($('sP').value).filter(x=>!findP(x));
+  if(unknown.length&&!confirm('Persone non presenti nell\'albero: '+unknown.join(', ')+'. Le creo?'))return;
+  Object.assign(s,{title:$('sT').value.trim(),text:$('sX').value,people:[...new Set(names($('sP').value).map(x=>findP(x,true).id))],dateFrom:$('sA').value.trim(),dateTo:$('sB').value.trim(),told:$('sR').value.trim(),source:$('sS').value.trim(),place:$('sL').value.trim(),country:$('sC').value.trim()});delete s.auto;
+  for(const f of $('sF').files){if(!hasGh()){alert('Foto e audio richiedono il collegamento a GitHub.');break}if(f.size>5e6){alert(f.name+' supera 5 MB: non caricato.');continue}
+    try{st('Carico '+f.name+'…');const path='media/'+uid('m')+'.enc';await ghPut(path,await seal(new Uint8Array(await f.arrayBuffer())),null,'media');s.media.push({name:f.name,type:f.type,path})}catch(e){alert('Errore su '+f.name+': '+e.message)}}
+  dlg('ds').close();render();await persist('storia: '+(s.title||s.id))}
+async function delS(){if(!curS||!confirm('Eliminare questa storia?'))return;DB.stories=DB.stories.filter(s=>s.id!==curS.id);dlg('ds').close();render();await persist('eliminata storia')}
+
+(()=>{const c=cfg();$('gO').value=c.o||'';$('gR').value=c.r||'';$('gB').value=c.b||'';$('gT').value=c.t||''})();
+start();
+</script>
+</body>
+</html>
