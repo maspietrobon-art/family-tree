@@ -84,7 +84,7 @@ svg.tree path{fill:none;stroke:var(--line);stroke-width:1.5}
   <div class="row"><h1 style="flex:1">Storie di famiglia</h1><span id="status"></span></div>
   <div class="row" style="position:relative">
     <input id="q" placeholder="Cerca una persona o una parola…" autocomplete="off">
-    <button id="upBtn" onclick="exportEnc()" title="Scarica data.enc da caricare su GitHub">⬆ GitHub</button><button class="p" onclick="go('tree')">Albero</button><button onclick="go('topics')">Argomenti</button><button onclick="go('docs')">Documenti</button><button onclick="go('list')">Persone</button><button onclick="sel=null;showList=false;$('q').value='';view='all';render();scrollTo(0,0)">Chat</button>
+    <button id="instBtn" style="display:none" onclick="doInstall()" title="Installa l'app sul dispositivo">📲 Installa</button><button id="upBtn" onclick="exportEnc()" title="Scarica data.enc da caricare su GitHub">⬆ GitHub</button><button class="p" onclick="go('tree')">Albero</button><button onclick="go('topics')">Argomenti</button><button onclick="go('docs')">Documenti</button><button onclick="go('list')">Persone</button><button onclick="sel=null;showList=false;$('q').value='';view='all';render();scrollTo(0,0)">Chat</button>
     <button onclick="$('flt').classList.toggle('hide')">Filtri</button><button onclick="$('more').classList.toggle('hide')">⋯</button>
     <span id="more" class="hide row"><button onclick="editStory()">+ Storia</button><button onclick="editPerson()">+ Persona</button><button onclick="dlg('set').showModal()">⚙</button></span>
     <div id="sug" class="sug hide" style="top:44px;left:0"></div>
@@ -471,6 +471,18 @@ if('serviceWorker' in navigator&&location.protocol.startsWith('http')){
   navigator.serviceWorker.register('sw.js').then(r=>{r.update();
     r.addEventListener('updatefound',()=>{const w=r.installing;w&&w.addEventListener('statechange',()=>{if(w.state==='installed'&&navigator.serviceWorker.controller)st('Nuova versione disponibile: si attiva alla prossima apertura')})})}).catch(()=>{});
 }
+</script>
+
+<script>
+let _bip=null;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();_bip=e;const b=document.getElementById('instBtn');if(b)b.style.display=''});
+window.addEventListener('appinstalled',()=>{_bip=null;const b=document.getElementById('instBtn');if(b)b.style.display='none'});
+(function(){const ios=/iphone|ipad|ipod/i.test(navigator.userAgent),standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+ if(ios&&!standalone){const b=document.getElementById('instBtn');if(b)b.style.display=''}})();
+async function doInstall(){
+ if(_bip){_bip.prompt();try{await _bip.userChoice}catch(e){}_bip=null;document.getElementById('instBtn').style.display='none';return}
+ const ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
+ alert(ios?'Su iPhone/iPad: apri questa pagina in Safari, tocca il tasto Condividi (quadrato con la freccia) e scegli «Aggiungi alla schermata Home».':'Apri questa pagina in Chrome (non dentro WhatsApp o altre app) e usa il menu ⋮ → «Installa app» o «Aggiungi a schermata Home».')}
 </script>
 </body>
 </html>
