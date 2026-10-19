@@ -71,6 +71,13 @@ svg.tree{width:100%;max-width:760px;display:block;margin:8px auto}svg.tree g{cur
 svg.tree rect{fill:var(--card);stroke:var(--line)}svg.tree g.has rect{stroke:var(--acc);stroke-width:2}
 svg.tree text{fill:var(--ink);font:600 12px system-ui,sans-serif}svg.tree text.y{fill:var(--mut);font-weight:400;font-size:9.5px}svg.tree text.c{fill:var(--acc);font-weight:600;font-size:9.5px}
 svg.tree path{fill:none;stroke:var(--line);stroke-width:1.5}
+svg.tree path.no{stroke-dasharray:4 3;opacity:.75}svg.tree path.ok{stroke:var(--ink);stroke-width:2.2}
+svg.tree .tb{fill:var(--bg);stroke:var(--acc);stroke-width:1}svg.tree text.tbt{fill:var(--acc);font:700 9px system-ui,sans-serif}svg.tree g.tmenu{cursor:pointer}
+.twrap{overflow:auto;-webkit-overflow-scrolling:touch}.tbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:6px 0}.tbar button{min-width:38px;font-size:18px;padding:4px 10px}.tbar select{flex:1;min-width:160px}
+.leg{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:13px;margin:4px 0}.leg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-1px;opacity:.75}.leg b{color:var(--mut);font-weight:400}
+#pop{position:fixed;z-index:20;background:var(--card);border:1px solid var(--acc);border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.3);max-width:min(340px,92vw);max-height:60vh;overflow:auto;padding:4px 0}
+#pop .ph{font:600 13px system-ui,sans-serif;color:var(--acc);padding:6px 12px;border-bottom:1px solid var(--line)}#pop .pi{display:flex;align-items:center;gap:6px;padding:6px 12px;cursor:pointer}#pop .pi span{flex:1}#pop .pi:hover{background:var(--bg)}#pop .pi.me{font-weight:700}#pop .pi button{padding:2px 6px}
+
 .chip b{color:var(--acc);font-weight:600}
 .more{text-align:center;margin:8px 0}.more button{font-size:13px;padding:5px 12px;border-style:dashed;color:var(--acc)}
 .bubble.ext{border-style:dashed}
@@ -84,7 +91,7 @@ svg.tree path{fill:none;stroke:var(--line);stroke-width:1.5}
   <div class="row"><h1 style="flex:1">Storie di famiglia</h1><span id="status"></span></div>
   <div class="row" style="position:relative">
     <input id="q" placeholder="Cerca una persona o una parola…" autocomplete="off">
-    <button id="instBtn" style="display:none" onclick="doInstall()" title="Installa l'app sul dispositivo">📲 Installa</button><button id="upBtn" onclick="exportEnc()" title="Scarica data.enc da caricare su GitHub">⬆ GitHub</button><button class="p" onclick="go('tree')">Albero</button><button onclick="go('topics')">Argomenti</button><button onclick="go('docs')">Documenti</button><button onclick="go('list')">Persone</button><button onclick="sel=null;showList=false;$('q').value='';view='all';render();scrollTo(0,0)">Chat</button>
+    <button id="instBtn" style="display:none" onclick="doInstall()" title="Installa l'app sul dispositivo">📲 Installa</button><button id="upBtn" onclick="exportEnc()" title="Scarica data.enc da caricare su GitHub">⬆ GitHub</button><button class="p" onclick="go('tree')">Albero</button><button id="nmBtn" onclick="LS.set('sf_off',OFFN()?'0':'1');nmLbl();render()" title="Alterna nomi comuni / nomi anagrafici">Nomi comuni</button><button onclick="go('topics')">Argomenti</button><button onclick="go('docs')">Documenti</button><button onclick="go('list')">Persone</button><button onclick="sel=null;showList=false;$('q').value='';view='all';render();scrollTo(0,0)">Chat</button>
     <button onclick="$('flt').classList.toggle('hide')">Filtri</button><button onclick="$('more').classList.toggle('hide')">⋯</button>
     <span id="more" class="hide row"><button onclick="editStory()">+ Storia</button><button onclick="editPerson()">+ Persona</button><button onclick="dlg('set').showModal()">⚙</button></span>
     <div id="sug" class="sug hide" style="top:44px;left:0"></div>
@@ -118,7 +125,9 @@ svg.tree path{fill:none;stroke:var(--line);stroke-width:1.5}
 </dialog>
 
 <dialog id="dp"><h2>Persona</h2>
-  <label>Nome e cognome</label><input id="pN">
+  <label>Nome e cognome (anagrafe)</label><input id="pN">
+  <label>Nome comune o soprannome personale (es. Coco Rosolin)</label><input id="pCo">
+  <label>Soprannome di famiglia (es. Merlo)</label><input id="pSo">
   <div class="two"><div><label>Nascita</label><input id="pB"></div><div><label>Luogo di nascita</label><input id="pBP"></div>
   <div><label>Morte</label><input id="pD"></div><div><label>Luogo di morte</label><input id="pDP"></div>
   <div><label>Paese / nazionalità</label><input id="pC"></div><div><label>Ramo</label><input id="pR" list="rl"></div><div><label>Matrimonio (data, luogo)</label><input id="pMa"></div><div><label>Nome con cui scrive nelle chat</label><input id="pSp"></div><div><label>Altri nomi, soprannomi</label><input id="pA"></div></div>
@@ -144,6 +153,7 @@ svg.tree path{fill:none;stroke:var(--line);stroke-width:1.5}
   <p class="row"><button class="p" onclick="saveS()">Salva</button><button onclick="dlg('ds').close()">Annulla</button><button id="sDel" onclick="delS()">Elimina</button></p>
 </dialog>
 
+<script>addEventListener('error',e=>{try{let b=document.getElementById('errBox');if(!b){b=document.createElement('div');b.id='errBox';b.style.cssText='position:fixed;left:8px;right:8px;bottom:8px;z-index:99;background:#b00020;color:#fff;padding:8px 10px;border-radius:8px;font:13px system-ui';b.onclick=()=>b.remove();document.body.appendChild(b)}b.textContent='Errore: '+e.message+' (riga '+e.lineno+') — tocca per chiudere'}catch(_){}});</script>
 <script id="seed" type="application/json">{}</script>
 <script>
 const $=id=>document.getElementById(id), dlg=$;
@@ -234,15 +244,16 @@ const names=s=>s.split(';').map(x=>x.trim()).filter(Boolean);
 function clearF(){['q','fS','fC','fP','fA','fB'].forEach(i=>$(i).value='');sel=null;render()}
 function go(v){view=v==='list'?'':(view===v?'':v);showList=v==='list'?!showList:false;sel=null;$('q').value='';render();scrollTo(0,0)}
 function pick(id){view='';showList=false;ptab='';sel=id;$('q').value='';$('sug').classList.add('hide');render();scrollTo(0,0)}
-const chip=p=>p?`<span class="chip" onclick="pick('${p.id}')">${esc(p.name)}${year(p.birth)?' <span class="mut">'+year(p.birth)+'</span>':''}</span>`:'';
-function render(){
+const chip=p=>p?`<span class="chip" onclick="pick('${p.id}')">${esc(dn(p))}${year(p.birth)?' <span class="mut">'+year(p.birth)+'</span>':''}</span>`:'';
+function nmLbl(){const b=$('nmBtn');if(b)b.textContent=OFFN()?'Nomi anagrafici':'Nomi comuni'}
+function render(){nmLbl();
   $('rl').innerHTML=[...new Set(DB.people.map(p=>p.ramo).filter(Boolean))].map(r=>`<option value="${esc(r)}">`).join('');
   $('pl').innerHTML=DB.people.map(p=>`<option value="${esc(p.name)}">`).join('');
   const q=norm($('q').value),fS=norm($('fS').value),fC=norm($('fC').value),fP=norm($('fP').value),a=+$('fA').value||null,b=+$('fB').value||null;
   const pe=sel&&P(sel);let h='';
   if(pe){const fa=P(pe.father),mo=P(pe.mother);
-    h=`<div class="card"><div class="row"><h2 style="flex:1">${esc(pe.name)}</h2><button onclick="_root='${pe.id}';sel=null;view='tree';render()">Il suo albero</button><button onclick="editPerson('${pe.id}')">Modifica</button><button onclick="sel=null;render()">✕</button></div>
-    <div class="mut">${[pe.birth&&'n. '+esc(pe.birth)+(pe.birthPlace?', '+esc(pe.birthPlace):''),pe.death&&'m. '+esc(pe.death)+(pe.deathPlace?', '+esc(pe.deathPlace):''),esc(pe.country),pe.alt&&'detto/a '+esc(pe.alt)].filter(Boolean).join(' · ')}</div>
+    h=`<div class="card"><div class="row"><h2 style="flex:1">${esc(dn(pe))}</h2><button onclick="_root='${pe.id}';sel=null;view='tree';render()">Il suo albero</button><button onclick="editPerson('${pe.id}')">Modifica</button><button onclick="sel=null;render()">✕</button></div>
+    ${nmInfo(pe)}<div class="mut">${[pe.birth&&'n. '+esc(pe.birth)+(pe.birthPlace?', '+esc(pe.birthPlace):''),pe.death&&'m. '+esc(pe.death)+(pe.deathPlace?', '+esc(pe.deathPlace):''),esc(pe.country),pe.alt&&'detto/a '+esc(pe.alt)].filter(Boolean).join(' · ')}</div>
     ${pe.ramo?`<div class="mut">Ramo: ${esc(pe.ramo)}</div>`:''}${pe.notes?`<p>${esc(pe.notes)}</p>`:''}
     ${pe.marriage?`<div class="mut">Matrimonio: ${esc(pe.marriage)}</div>`:''}${pe.fsid?`<div class="mut">FamilySearch: ${esc(pe.fsid)}</div>`:''}${(pe.terms||[]).length?`<div class="mut">Nei testi: ${esc(pe.terms.join(', '))}</div>`:''}
     ${fa||mo?`<div><span class="mut">Genitori</span> ${chip(fa)}${chip(mo)}</div>`:''}
@@ -272,19 +283,19 @@ function render(){
     const grp=p=>so==='ramo'?(p.ramo||'Senza ramo'):so==='nascita'?(year(p.birth)?Math.floor(year(p.birth)/50)*50+'–'+(Math.floor(year(p.birth)/50)*50+49):'Data sconosciuta'):(so==='cognome'?sur(p):norm(p.name))[0].toUpperCase();
     h=`<div class="card"><div class="row"><h2 style="flex:1">Persone (${ps.length})</h2><select onchange="_so=this.value;render()">${[['cognome','Per cognome'],['nome','Per nome'],['nascita','Per anno di nascita'],['ramo','Per ramo']].map(o=>`<option value="${o[0]}"${so===o[0]?' selected':''}>${o[1]}</option>`).join('')}</select><button onclick="showList=false;render()">✕</button></div>`+
     ps.map(p=>{const g=grp(p);const hd=g!==last?`<h3 style="margin:12px 0 4px;font:600 15px system-ui,sans-serif;color:var(--acc)">${esc(g)}</h3>`:'';last=g;
-      return hd+`<div class="pl" onclick="pick('${p.id}')"><span>${esc(p.name)}${p.alt?` <span class="mut">(${esc(p.alt.split(';')[0])})</span>`:''}</span><span class="mut">${[year(p.birth)||'?',year(p.death)||''].join('–')}${cnt[p.id]?' · '+cnt[p.id]+' storie':''}</span></div>`}).join('')+'</div>';
+      return hd+`<div class="pl" onclick="pick('${p.id}')"><span>${esc(dn(p))}${p.alt?` <span class="mut">(${esc(p.alt.split(';')[0])})</span>`:''}</span><span class="mut">${[year(p.birth)||'?',year(p.death)||''].join('–')}${cnt[p.id]?' · '+cnt[p.id]+' storie':''}</span></div>`}).join('')+'</div>';
     $('person').innerHTML=h;$('list').innerHTML='';return}
   if(!DB.people.length)h=`<div class="card"><h2>Archivio vuoto</h2><p>Per cominciare con l'albero e le chat già raccolte, importa il file <b>dati-iniziali.json</b>. Poi premi <b>⬆ GitHub</b> per scaricare il file cifrato da caricare nel repository.</p><button class="p" onclick="imp.click()">Importa dati iniziali</button></div>`;
   if(!pe)$('person').innerHTML=h;
   const key=s=>s.told||s.dateFrom||'9999';
   if(window._one&&!pe){const s=DB.stories.find(x=>x.id===_one);_one=null;if(s){$('list').innerHTML='<p><button onclick="render()">← Tutte le storie</button></p>'+storyH(s);return}}
   if(pe){const ch=chOf(pe.id);if(!ptab)ptab=ch.length?'cap':'chat';const chat=chatH(pe);const lp=lastPos(pe.id);
-    $('person').innerHTML=`<div class="card"><div class="row"><h2 style="flex:1">${esc(pe.name)}${codes()[pe.id]?` <span class="chip" style="font-size:13px;cursor:default">${codes()[pe.id]}</span>`:''}</h2><button onclick="_root='${pe.id}';sel=null;view='';render()">Il suo albero</button><button onclick="sel=null;render()">✕</button></div>
-    <div class="mut">${[pe.birth&&'n. '+esc(pe.birth)+(pe.birthPlace?', '+esc(pe.birthPlace):''),pe.death&&'m. '+esc(pe.death),(pe.terms||[]).length&&'nei testi: '+esc(pe.terms.join(', '))].filter(Boolean).join(' · ')}</div>${!pe.birth&&pe.notes?`<div class="mut">${esc(pe.notes)}</div>`:''}
+    $('person').innerHTML=`<div class="card"><div class="row"><h2 style="flex:1">${esc(dn(pe))}${codes()[pe.id]?` <span class="chip" style="font-size:13px;cursor:default">${codes()[pe.id]}</span>`:''}</h2><button onclick="_root='${pe.id}';sel=null;view='';render()">Il suo albero</button><button onclick="sel=null;render()">✕</button></div>
+    ${nmInfo(pe)}<div class="mut">${[pe.birth&&'n. '+esc(pe.birth)+(pe.birthPlace?', '+esc(pe.birthPlace):''),pe.death&&'m. '+esc(pe.death),(pe.terms||[]).length&&'nei testi: '+esc(pe.terms.join(', '))].filter(Boolean).join(' · ')}</div>${!pe.birth&&pe.notes?`<div class="mut">${esc(pe.notes)}</div>`:''}
     <div class="tabs">${[['cap','Capitoli ('+ch.length+')'],['doc','Documenti ('+docOf(pe.id).length+')'],['chat','Nella chat ('+HN+' citazioni)'],['dati','Scheda e parenti']].map(t=>`<button class="${ptab===t[0]?'on':''}" onclick="ptab='${t[0]}';render()">${t[1]}</button>`).join('')}</div></div>`+(ptab==='dati'?h:'');
     if(ptab==='cap')$('list').innerHTML=ch.length?`<p class="mut">Tocca un titolo: si aprono i passaggi della chat che raccontano quella storia, anche presi da giorni diversi.</p>`+ch.map(chapD).join(''):'<p class="mut">Per questa persona non ci sono ancora capitoli. Guarda «Nella chat».</p>';
     else if(ptab==='doc')$('list').innerHTML=docOf(pe.id).map(docD).join('')||'<p class="mut">Nessun documento trascritto per questa persona.</p>';
-    else if(ptab==='chat'){$('list').innerHTML=`<div class="card"><div>${HN} messaggi citano ${esc(pe.name)}, numerati in ordine di data. Con ▼ e ▲ in alto a destra passi da una citazione all'altra; scrivendo un numero vai direttamente a quella.</div>
+    else if(ptab==='chat'){$('list').innerHTML=`<div class="card"><div>${HN} messaggi citano ${esc(dn(pe))}, numerati in ordine di data. Con ▼ e ▲ in alto a destra passi da una citazione all'altra; scrivendo un numero vai direttamente a quella.</div>
       ${lp?`<p><button class="p" onclick="goHit(${lp})">Riprendi dalla n. ${lp}</button></p>`:''}
       <label class="mut" style="margin-right:14px"><input type="checkbox" ${window._allchat?'checked':''} onchange="_allchat=this.checked;render()" style="width:auto"> mostra tutta la chat, anche i giorni in cui non è citato/a</label>${pe.speaker?`<label class="mut"><input type="checkbox" ${window._mine?'checked':''} onchange="_mine=this.checked;render()" style="width:auto"> conta anche i messaggi scritti da ${esc(pe.speaker)}</label>`:''}</div>`+chat;
       if(HN){$('nav').classList.remove('hide');$('nav').style.top=(hdrB()+8)+'px';$('navT').textContent='/ '+HN;HC=0;$('navN').value=''}}
@@ -300,7 +311,7 @@ function render(){
     if(a&&(!y2||y2<a))return false;if(b&&(!y1||y1>b))return false;
     if(q&&!sel&&!norm(s.title+' '+s.text+' '+pn.map(p=>p.name+' '+p.alt).join(' ')).includes(q))return false;
     return true}).sort((x,y)=>key(x)<key(y)?-1:1);
-  $('list').innerHTML=(view==='all'?`<p><button onclick="view='';render()">← Albero</button></p>`:'')+`<p class="mut">${ss.length} storie${sel?' su '+esc(pe.name):''} · ${DB.people.length} persone</p>`+ss.slice(0,150).map(storyH).join('')+(ss.length>150?'<p class="mut">Mostrate le prime 150: restringi la ricerca.</p>':'');
+  $('list').innerHTML=(view==='all'?`<p><button onclick="view='';render()">← Albero</button></p>`:'')+`<p class="mut">${ss.length} storie${sel?' su '+esc(dn(pe)):''} · ${DB.people.length} persone</p>`+ss.slice(0,150).map(storyH).join('')+(ss.length>150?'<p class="mut">Mostrate le prime 150: restringi la ricerca.</p>':'');
 }
 const TOP=()=>DB.topics||[];
 const topOf=id=>TOP().filter(t=>t.people.includes(id));
@@ -335,17 +346,77 @@ const docD=x=>`<details class="tp"><summary>${esc(x.title)}<small>${esc([x.type,
   ${x.people.some(p=>!p.pid)?`<p class="mut">Altre persone nominate: ${esc(x.people.filter(p=>!p.pid).map(p=>p.written+(p.role?' ('+p.role+')':'')).join('; '))}</p>`:''}
   <p class="mut">Fonte: ${esc(x.source||'—')} · lingua: ${esc(x.language||'—')} · affidabilità della lettura: ${esc(x.confidence||'—')}<br>File: ${esc(x.file)}</p></div></details>`;
 const chOf=id=>(DB.chapters||[]).filter(c=>c.person===id);
-const sh=p=>{let t=(p.terms||[])[0]||'';t=t.replace(/^(bis)?nonn[ao] |^la |^a /i,'');const w=(t||p.name).split(' ')[0];return w.length>2?w:p.name.split(' ')[0]};
+const OFFN=()=>LS.get('sf_off')==='1';
+const nmInfo=pe=>{const c=pe.common&&pe.common!==pe.name;if(!c&&!pe.soprannome)return '';return `<div class="mut" style="margin-bottom:2px">${c?(OFFN()?'nome comune: <b>'+esc(pe.common)+'</b>':'nome anagrafico: <b>'+esc(pe.name)+'</b>'):''}${pe.soprannome?(c?' · ':'')+'soprannome di famiglia: <b>«'+esc(pe.soprannome)+'»</b>':''}</div>`};
+const surD=p=>{const w=dn(p).replace(/\s*\(.*?\)/g,'').trim().split(' ');return w[w.length-1]};
+const dn=p=>!p?'':(!OFFN()&&p.common)||p.name;
+const sh=p=>{if(OFFN())return p.given||p.name.replace(/\s*\(.*?\)/g,'').split(' ')[0];if(p.nick)return p.nick;if(p.given)return p.given;let t=(p.terms||[])[0]||'';t=t.replace(/^(bis)?nonn[ao] |^la |^a /i,'');const w=(t||p.name).split(' ')[0];return w.length>2?w:p.name.split(' ')[0]};
 const sur=p=>{const w=p.name.replace(/\s*\(.*?\)/g,'').trim().split(' ');return w[w.length-1]};
-const chipC=p=>`<span class="chip" onclick="pick('${p.id}')">${esc(p.name)} <b>${chOf(p.id).length}</b></span>`;
-function treeH(){
+const chipC=p=>`<span class="chip" onclick="pick('${p.id}')">${esc(dn(p))} <b>${chOf(p.id).length}</b></span>`;
+/* --- albero: zoom, fratelli, rami documentati, colori --- */
+const NODOC=/^(corrispondenza|scheda genealogica|genealogia|testo storico|registro|foto|altro)$/;
+let _conf=null,_cv2=-1;
+function confMap(){if(_conf&&_cv2===DOCS().length)return _conf;_conf=new Set;_cv2=DOCS().length;
+  for(const x of DOCS()){if(NODOC.test(x.type||''))continue;const ps=x.people.filter(q=>q.pid);
+    for(const c of ps){const pc=P(c.pid);if(!pc)continue;for(const par of [pc.father,pc.mother]){if(!par)continue;const q=ps.find(z=>z.pid===par);
+      if(q&&(/padre|madre|genitor|nonn|avo|ava\b/i.test(q.role||'')||/figli|neonat|battezzat/i.test(c.role||'')))_conf.add(c.pid+'>'+par)}}}
+  return _conf}
+const FRZ={bavaria:'Nervesa',postioma:'Paese',padernello:'Paese',cusignana:'Giavera',rovare:'San Biagio di Callalta',cavrie:'San Biagio di Callalta',spercenigo:'San Biagio di Callalta',fagare:'San Biagio di Callalta',vallio:'Roncade',barbarana:'San Biagio di Callalta',"sant'andrea di barbarana":'San Biagio di Callalta',campolongo:'Zenson di Piave',zenson:'Zenson di Piave','zenson di piave':'Zenson di Piave',monestier:'Monastier','monastier di treviso':'Monastier',"giavera del montello":'Giavera','nervesa della battaglia':'Nervesa','croce di piave':'Musile di Piave','jau':'Jaú','jahu':'Jaú'};
+function comune(s){if(!s)return '';s=s.replace(/\(.*?\)|\[.*?\]/g,'').replace(/casa n\..*$|n\. ?\d+.*$/i,'').split(',')[0].replace(/^(villa|parrocchia|frazione|comune|colmel(lo)?) (di )?/i,'').trim();
+  if(!s||/^(italia|italy|treviso|veneto|brasil|brasile)$/i.test(s))return '';const k=norm(s);return FRZ[k]||s.replace(/\b\w/g,c=>c.toUpperCase())}
+function nazione(s){if(!s)return '';const t=norm(s);
+  if(/brasil|brazil|sao paulo|san paolo|jau\b|jahu|pernambuco|recife|bahia|rio de janeiro|minas/.test(t))return 'Brasile';
+  if(/stati uniti|usa\b|new york|pennsylvania|coaldale|pottsville/.test(t))return 'Stati Uniti';
+  if(/australia|queensland|brisbane|ingham|trebonne/.test(t))return 'Australia';
+  if(/spagna|espanha|espana|barcelona|catalunya|esplugues|rubi/.test(t))return 'Spagna';
+  if(/francia|france/.test(t))return 'Francia';
+  return 'Italia'}
+const PAL=['#4e79a7','#f28e2b','#59a14f','#e15759','#b07aa1','#76b7b2','#edc948','#ff9da7','#9c755f','#8cd17d'];
+const CM={'':'Nessun colore',job:'Professione',nnat:'Nazione di nascita',lnat:'Luogo di nascita',lmor:'Luogo di morte',mov:'Sedentari e «nomadi»',eta:'Età alla morte (decenni)',doc:'Documenti storici',ramo:'Ramo'};
+function colKey(p,m){
+  if(m==='job')return p.jobCat||'';
+  if(m==='nnat')return p.birthPlace?nazione(p.birthPlace):'';
+  if(m==='lnat')return comune(p.birthPlace);
+  if(m==='lmor')return comune(p.deathPlace);
+  if(m==='mov'){const a=comune(p.birthPlace),b=comune(p.deathPlace);if(!a||!b)return '';if(nazione(p.birthPlace)!==nazione(p.deathPlace))return 'Morto in un altro Paese';return a===b?'Stesso comune (sedentario)':'Altro comune, stessa nazione'}
+  if(m==='eta'){const a=year(p.birth),b=year(p.death);if(!a||!b||b<a)return '';const e=b-a;return e<10?'0-9 anni':(Math.floor(e/10)*10)+'-'+(Math.floor(e/10)*10+9)+' anni'}
+  if(m==='doc'){const n=docOf(p.id).filter(x=>!NODOC.test(x.type||'')).length;return n?(n>=3?'3 o più atti':'1-2 atti'):'Nessun atto'}
+  if(m==='ramo')return p.ramo||'';return ''}
+const FIXC={'Agricoltura':'#59a14f','Artigiani':'#f28e2b','Possidenti':'#edc948','Commercio e servizi':'#b07aa1','Impiegati e professioni':'#4e79a7','Casalinghe':'#ff9da7','Operai e manovali':'#9c755f',"Militari e forze dell'ordine":'#e15759',
+ 'Stesso comune (sedentario)':'#59a14f','Altro comune, stessa nazione':'#edc948','Morto in un altro Paese':'#e15759','Nessun atto':'#bab0ac','1-2 atti':'#76b7b2','3 o più atti':'#4e79a7',
+ 'Italia':'#59a14f','Brasile':'#edc948','Stati Uniti':'#4e79a7','Australia':'#f28e2b','Spagna':'#e15759','Francia':'#b07aa1'};
+function palette(keys,m){const map={};let i=0;
+  if(m==='eta'){keys.sort((a,b)=>parseInt(a)-parseInt(b));keys.forEach((k,j)=>{const t=keys.length>1?j/(keys.length-1):0;map[k]=`hsl(${200-t*170},65%,50%)`});return map}
+  keys.forEach(k=>{map[k]=FIXC[k]||PAL[i++%PAL.length]});return map}
+function zoomT(d){window._zoom=d?Math.max(.7,Math.min(2.2,(window._zoom||1)+d)):1;const s=$('treeSvg');if(s){s.style.width=(100*_zoom)+'%';s.style.maxWidth=(760*_zoom)+'px'}}
+function popClose(){const b=$('pop');if(b)b.remove()}
+addEventListener('click',e=>{if(!e.target.closest('#pop')&&!e.target.closest('.tmenu'))popClose()});
+function popOpen(ev,html){ev.stopPropagation();popClose();const d=document.createElement('div');d.id='pop';d.innerHTML=html;document.body.appendChild(d);
+  const r=d.getBoundingClientRect();let x=ev.clientX-20,y=ev.clientY+10;x=Math.max(8,Math.min(innerWidth-r.width-8,x));if(y+r.height>innerHeight-8)y=Math.max(8,ev.clientY-r.height-10);d.style.left=x+'px';d.style.top=y+'px'}
+const byBirth=(a,b)=>(year(a.birth)||9999)-(year(b.birth)||9999)||(a.name<b.name?-1:1);
+function sibM(ev,id){const p=P(id);const ss=sibs(p).concat([p]).sort(byBirth);
+  popOpen(ev,`<div class="ph">Fratelli e sorelle di ${esc(sh(p))}</div>${ss.map(s=>{const half=!((s.father===p.father)&&(s.mother===p.mother));const me=s.id===p.id;
+   return `<div class="pi${me?' me':''}"><span onclick="popClose();pick('${s.id}')">${esc(dn(s))} <span class="mut">${year(s.birth)||'?'}${year(s.death)?'–'+year(s.death):''}${half?' · fratellastro/a':''}</span></span><button title="Albero da qui" onclick="popClose();_root='${s.id}';render()">🌳</button></div>`}).join('')}`)}
+function kidM(ev,id){const ks=kids(id).sort(byBirth);if(ks.length===1){ev.stopPropagation();_root=ks[0].id;render();return}
+  popOpen(ev,`<div class="ph">Scendi a un figlio</div>${ks.map(s=>`<div class="pi"><span onclick="popClose();_root='${s.id}';render()">${esc(dn(s))} <span class="mut">${year(s.birth)||'?'}</span></span></div>`).join('')}`)}
+function upT(ev,id){ev.stopPropagation();_root=id;render()}
+function treeH(){try{return treeH_()}catch(e){return `<div class="card warn"><b>Errore nel disegnare l'albero</b><br>${esc(String(e&&e.message||e))}<br><small>${esc(String(e&&e.stack||'').split('\n').slice(0,3).join(' | '))}</small><p><button onclick="_root=null;_cm='';render()">Torna all'albero di Massimo</button></p></div>`}}
+function treeH_(){
   const root=P(window._root)||DB.people.find(p=>p.name==='Massimo Pietrobon')||DB.people[0];if(!root)return '';
   const G=[[root]];for(let g=1;g<4;g++)G.push(G[g-1].flatMap(p=>p?[P(p.father)||null,P(p.mother)||null]:[null,null]));
-  const W=400,H=416,bw=92,bh=46,X=[2,102,204,306];let svg='',ln='';const pos=new Map;
+  const L=22,W=L+412+16,H=488,bw=92,bh=46,X=[L+2,L+102,L+204,L+306];let svg='',ln='',ui='';const pos=new Map;const conf=confMap();
+  const m=window._cm||'';const shownP=G.flat().filter(Boolean);
+  const keys=[...new Set(shownP.map(p=>colKey(p,m)).filter(Boolean))];const pal=palette(keys.slice(),m);
   G.forEach((row,g)=>row.forEach((p,i)=>{if(!p)return;const y=H*(i+.5)/row.length-bh/2,x=X[g];pos.set(g+'-'+i,[x,y]);const n=chOf(p.id).length;
-    svg+=`<g class="${n?'has':''}" onclick="pick('${p.id}')"><rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="8"/><text x="${x+7}" y="${y+16}">${esc(sh(p))}</text><text class="y" x="${x+7}" y="${y+28}">${esc(sur(p).slice(0,12))} · ${year(p.birth)||'?'}${year(p.death)?'–'+String(year(p.death)).slice(2):''}</text><text class="c" x="${x+7}" y="${y+40}">${n?n+' cap.':''}${docOf(p.id).length?' · '+docOf(p.id).length+' doc.':''}</text><text class="y" x="${x+bw-5}" y="${y+16}" text-anchor="end">${codes()[p.id]||''}</text></g>`;
-    if(g){const c=pos.get((g-1)+'-'+(i>>1));if(c)ln+=`<path d="M${c[0]+bw},${c[1]+bh/2} H${x-5} V${y+bh/2} H${x}"/>`}}));
-  const shown=new Set(G.flat().filter(Boolean).map(p=>p.id));let ex='';const done=new Set(shown);
+    const k=m?colKey(p,m):'',fill=m?(k?pal[k]:''):'';const ns=sibs(p).length;
+    svg+=`<g class="${n?'has':''}" onclick="pick('${p.id}')"><rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="8"${fill?` style="fill:${fill};fill-opacity:.38"`:''}/><text x="${x+7}" y="${y+16}"${sh(p).length>11?` style="font-size:${Math.max(8,132/sh(p).length)}px"`:''}>${esc(sh(p))}</text><text class="y" x="${x+7}" y="${y+28}">${esc(surD(p).slice(0,12))} · ${year(p.birth)||'?'}${year(p.death)?'–'+String(year(p.death)).slice(2):''}</text><text class="c" x="${x+7}" y="${y+40}">${n?n+' cap.':''}${docOf(p.id).length?' · '+docOf(p.id).length+' doc.':''}</text><text class="y" x="${x+bw-5}" y="${y+16}" text-anchor="end">${(codes()[p.id]||'').length<=5?codes()[p.id]||'':''}</text></g>`;
+    if(ns)ui+=`<g class="tmenu sb" onclick="sibM(event,'${p.id}')"><rect class="tb" x="${x+bw-30}" y="${y+bh-3}" width="28" height="13" rx="6"/><text class="tbt" x="${x+bw-16}" y="${y+bh+7}" text-anchor="middle">▾ ${ns}</text></g>`;
+    if(g===3&&(P(p.father)||P(p.mother)))ui+=`<g class="tmenu" onclick="upT(event,'${p.id}')"><rect class="tb" x="${x+bw+2}" y="${y+bh/2-9}" width="13" height="18" rx="5"/><text class="tbt" x="${x+bw+8.5}" y="${y+bh/2+4}" text-anchor="middle">▶</text></g>`;
+    if(g===0&&kids(p.id).length)ui+=`<g class="tmenu" onclick="kidM(event,'${p.id}')"><rect class="tb" x="2" y="${y+bh/2-12}" width="18" height="24" rx="6"/><text class="tbt" x="11" y="${y+bh/2+4}" text-anchor="middle">◀</text></g>`;
+    if(g){const c=pos.get((g-1)+'-'+(i>>1));const ch=G[g-1][i>>1];if(c)ln+=`<path class="${ch&&conf.has(ch.id+'>'+p.id)?'ok':'no'}" d="M${c[0]+bw},${c[1]+bh/2} H${x-5} V${y+bh/2} H${x}"/>`}}));
+  let leg='';if(m){const cnt={};shownP.forEach(p=>{const k=colKey(p,m)||'—';cnt[k]=(cnt[k]||0)+1});
+    leg=`<div class="leg">${keys.sort((a,b)=>m==='eta'?parseInt(a)-parseInt(b):cnt[b]-cnt[a]).map(k=>`<span><i style="background:${pal[k]}"></i>${esc(k)} <b>${cnt[k]}</b></span>`).join('')}${cnt['—']?`<span><i style="background:transparent;border:1px solid var(--line)"></i>dato mancante <b>${cnt['—']}</b></span>`:''}</div>`}
+  const shown=new Set(shownP.map(p=>p.id));let ex='';const done=new Set(shown);
   const grp=(t,ps)=>{ps=ps.filter(p=>!done.has(p.id)&&chOf(p.id).length);ps.forEach(p=>done.add(p.id));if(ps.length)ex+=`<div style="margin-top:6px"><span class="mut">${t}</span><br>${ps.map(chipC).join('')}</div>`};
   grp('Fratelli e sorelle di '+esc(sh(root)),sibs(root));grp('Figli di '+esc(sh(root)),kids(root.id));
   G.slice(1).flat().filter(Boolean).forEach(p=>grp('Fratelli e sorelle di '+esc(sh(p))+' '+esc(sur(p)),sibs(p)));
@@ -353,9 +424,12 @@ function treeH(){
   grp('Antenati più lontani (trisavoli e oltre)',anc);
   const rest=DB.people.filter(p=>!done.has(p.id)&&chOf(p.id).length).sort((a,b)=>sur(a)<sur(b)?-1:sur(a)>sur(b)?1:a.name<b.name?-1:1);
   if(rest.length)ex+=`<details class="tp" style="margin-top:10px"><summary>Altri parenti con capitoli<small>${rest.length} persone: prozii, zii, cugini, coniugi</small></summary><div>${rest.map(chipC).join('')}</div></details>`;
-  return `<div class="card"><div class="row"><h2 style="flex:1">Albero di ${esc(root.name)}</h2>${window._root&&P(_root)?.name!=='Massimo Pietrobon'?`<button onclick="_root=null;render()">Torna a Massimo</button>`:''}</div>
-  <p class="mut">Tocca una persona per aprire l'indice dei suoi capitoli. Bordo colorato = ha capitoli tratti dalle chat.</p>
-  <svg class="tree" viewBox="0 0 ${W} ${H}">${ln}${svg}</svg>${ex}
+  const z=window._zoom||1;
+  return `<div class="card"><div class="row"><h2 style="flex:1">Albero di ${esc(dn(root))}</h2>${window._root&&P(_root)?.name!=='Massimo Pietrobon'?`<button onclick="_root=null;render()">Torna a Massimo</button>`:''}</div>
+  <p class="mut">Tocca una persona per aprire la sua scheda. ▾ = fratelli e sorelle · ▶ = risali oltre · ◀ = scendi ai figli. Linea scura continua = legame confermato da un atto storico; tratteggiata = da FamilySearch o dalle chat.</p>
+  <div class="tbar"><button onclick="zoomT(-.15)" title="Riduci">−</button><button onclick="zoomT(.15)" title="Ingrandisci">+</button><button onclick="zoomT(0)" title="Dimensione normale">⟲</button>
+  <select onchange="_cm=this.value;render()">${Object.entries(CM).map(([k,v])=>`<option value="${k}"${k===m?' selected':''}>${k?'Colora per: '+v:v}</option>`).join('')}</select></div>${leg}
+  <div class="twrap"><svg id="treeSvg" class="tree" viewBox="0 0 ${W} ${H}" style="width:${100*z}%;max-width:${760*z}px">${ln}${svg}${ui}</svg></div>${ex}
   <p style="margin-top:12px"><button onclick="view='all';render()">Tutte le conversazioni in ordine di data</button></p></div>`}
 const PS=new Map;const ps_=s=>{const k=s.id+':'+s.text.length;if(!PS.has(k))PS.set(k,parseS(s));return PS.get(k)};
 const ORD=()=>DB.stories.slice().sort((x,y)=>(x.told||x.dateFrom||'9999')<(y.told||y.dateFrom||'9999')?-1:1);
@@ -414,8 +488,8 @@ async function showM(btn,path,type){try{btn.textContent='Carico…';const r=awai
 /* --- ricerca persona --- */
 $('q').addEventListener('input',()=>{const q=norm($('q').value);const box=$('sug');
   if(q.length<2){box.classList.add('hide');render();return}
-  const ws=q.split(' ').filter(Boolean);const ps=DB.people.filter(p=>{const n=norm(p.name+' '+p.alt+' '+(p.terms||[]).join(' '));return ws.every(w=>n.includes(w))}).sort((a,b)=>(norm(a.name).startsWith(q)?0:1)-(norm(b.name).startsWith(q)?0:1)).slice(0,12);
-  box.innerHTML=ps.map(p=>`<div onclick="pick('${p.id}')">${esc(p.name)} <span class="mut">${esc(p.birth||'')}</span></div>`).join('');const ex=ps.find(p=>norm(p.name)===q)||(ps.length===1?ps[0]:null)||(ws.length>1&&ps.length?ps[0]:null);sel=ex?ex.id:null;showList=false;box.classList.toggle('hide',!ps.length||(ex&&ps.length===1));render()});
+  const ws=q.split(' ').filter(Boolean);const ps=DB.people.filter(p=>{const n=norm(p.name+' '+p.alt+' '+(p.common||'')+' '+(p.nick||'')+' '+(p.soprannome||'')+' '+(p.terms||[]).join(' '));return ws.every(w=>n.includes(w))}).sort((a,b)=>(norm(a.name).startsWith(q)?0:1)-(norm(b.name).startsWith(q)?0:1)).slice(0,12);
+  box.innerHTML=ps.map(p=>`<div onclick="pick('${p.id}')">${esc(dn(p))} <span class="mut">${esc(p.birth||'')}</span></div>`).join('');const ex=ps.find(p=>norm(p.name)===q)||(ps.length===1?ps[0]:null)||(ws.length>1&&ps.length?ps[0]:null);sel=ex?ex.id:null;showList=false;box.classList.toggle('hide',!ps.length||(ex&&ps.length===1));render()});
 ['fS','fC','fP','fA','fB'].forEach(i=>$(i).addEventListener('input',render));
 $('q').addEventListener('keydown',e=>{if(e.key==='Enter'){const q=norm($('q').value);const ws=q.split(' ').filter(Boolean);
   const ps=DB.people.filter(p=>{const n=norm(p.name+' '+p.alt+' '+(p.terms||[]).join(' '));return ws.every(w=>n.includes(w))});
@@ -423,12 +497,12 @@ $('q').addEventListener('keydown',e=>{if(e.key==='Enter'){const q=norm($('q').va
 
 /* --- persona --- */
 function editPerson(id){curP=id?P(id):null;const p=curP||{spouses:[]};
-  $('pN').value=p.name||'';$('pB').value=p.birth||'';$('pBP').value=p.birthPlace||'';$('pD').value=p.death||'';$('pDP').value=p.deathPlace||'';$('pC').value=p.country||'';$('pR').value=p.ramo||'';$('pMa').value=p.marriage||'';$('pSp').value=p.speaker||'';$('pTe').value=(p.terms||[]).join('; ');$('pA').value=p.alt||'';$('pNo').value=p.notes||'';
+  $('pN').value=p.name||'';$('pCo').value=p.common||'';$('pSo').value=p.soprannome||'';$('pB').value=p.birth||'';$('pBP').value=p.birthPlace||'';$('pD').value=p.death||'';$('pDP').value=p.deathPlace||'';$('pC').value=p.country||'';$('pR').value=p.ramo||'';$('pMa').value=p.marriage||'';$('pSp').value=p.speaker||'';$('pTe').value=(p.terms||[]).join('; ');$('pA').value=p.alt||'';$('pNo').value=p.notes||'';
   $('pF').value=P(p.father)?.name||'';$('pM').value=P(p.mother)?.name||'';$('pS').value=p.spouses.map(i=>P(i)?.name).filter(Boolean).join('; ');
   $('pK').value='';$('pG').value='';$('pDel').classList.toggle('hide',!curP);dlg('dp').showModal()}
 async function saveP(){const n=$('pN').value.trim();if(!n)return alert('Serve almeno il nome');
   let p=curP;if(!p){p={id:uid('p'),spouses:[],branch:''};DB.people.push(p)}
-  Object.assign(p,{name:n,birth:$('pB').value,birthPlace:$('pBP').value,death:$('pD').value,deathPlace:$('pDP').value,country:$('pC').value,ramo:$('pR').value,marriage:$('pMa').value,speaker:$('pSp').value.trim(),terms:names($('pTe').value),alt:$('pA').value,notes:$('pNo').value});
+  Object.assign(p,{name:n,birth:$('pB').value,birthPlace:$('pBP').value,death:$('pD').value,deathPlace:$('pDP').value,country:$('pC').value,ramo:$('pR').value,marriage:$('pMa').value,speaker:$('pSp').value.trim(),terms:names($('pTe').value),alt:$('pA').value,notes:$('pNo').value});{const c=$('pCo').value.trim();p.common=c;p.nick=c?c.split(' ')[0]:'';p.soprannome=$('pSo').value.trim()}
   p.father=$('pF').value.trim()?findP($('pF').value,true).id:'';p.mother=$('pM').value.trim()?findP($('pM').value,true).id:'';
   const old=p.spouses;p.spouses=names($('pS').value).map(x=>findP(x,true).id);
   old.filter(i=>!p.spouses.includes(i)).forEach(i=>{const s=P(i);if(s)s.spouses=s.spouses.filter(x=>x!==p.id)});
