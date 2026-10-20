@@ -30,6 +30,14 @@ main{max-width:860px;margin:0 auto;padding:16px}
 .mut{color:var(--mut);font-size:14px}
 .chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 10px;margin:2px 4px 2px 0;font-size:14px;cursor:pointer;background:var(--bg)}
 .chip:hover{border-color:var(--acc)}
+.calg{display:grid;grid-template-columns:22px repeat(12,1fr);gap:2px;font-size:11px;max-width:640px}
+.calh{color:var(--mut);text-align:center;align-self:center}
+.calc{height:20px;border-radius:4px;text-align:center;line-height:20px;cursor:pointer;background:var(--bg);color:var(--mut);border:1px solid transparent}
+.calc.l1{background:color-mix(in srgb,var(--acc) 22%,var(--card));color:var(--ink)}.calc.l2{background:color-mix(in srgb,var(--acc) 45%,var(--card));color:var(--ink)}
+.calc.l3{background:color-mix(in srgb,var(--acc) 70%,var(--card));color:#fff}.calc.l4{background:var(--acc);color:#fff}
+.calc.sel{border-color:var(--ink);font-weight:700}.calc:hover{border-color:var(--acc)}
+.tg{opacity:.5;text-decoration:line-through}.tg.on{opacity:1;text-decoration:none;border-color:var(--acc);background:color-mix(in srgb,var(--acc) 14%,var(--card))}
+.calr{border-top:1px solid var(--line);padding:8px 0}.calb{display:inline-block;width:1.4em;text-align:center}
 .story{margin-bottom:18px}
 .story .hd{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
 .story h3{font:600 16px system-ui,sans-serif;margin:0}
@@ -91,7 +99,7 @@ svg.tree .tb{fill:var(--bg);stroke:var(--acc);stroke-width:1}svg.tree text.tbt{f
   <div class="row"><h1 style="flex:1">Storie di famiglia</h1><span id="status"></span></div>
   <div class="row" style="position:relative">
     <input id="q" placeholder="Cerca una persona o una parola…" autocomplete="off">
-    <button id="instBtn" style="display:none" onclick="doInstall()" title="Installa l'app sul dispositivo">📲 Installa</button><button id="upBtn" onclick="exportEnc()" title="Scarica data.enc da caricare su GitHub">⬆ GitHub</button><button class="p" onclick="go('tree')">Albero</button><button id="nmBtn" onclick="LS.set('sf_off',OFFN()?'0':'1');nmLbl();render()" title="Alterna nomi comuni / nomi anagrafici">Nomi comuni</button><button onclick="go('topics')">Argomenti</button><button onclick="go('docs')">Documenti</button><button onclick="go('list')">Persone</button><button onclick="sel=null;showList=false;$('q').value='';view='all';render();scrollTo(0,0)">Chat</button>
+    <button id="instBtn" style="display:none" onclick="doInstall()" title="Installa l'app sul dispositivo">📲 Installa</button><button id="upBtn" onclick="exportEnc()" title="Scarica data.enc da caricare su GitHub">⬆ GitHub</button><button class="p" onclick="go('tree')">Albero</button><button id="nmBtn" onclick="LS.set('sf_off',OFFN()?'0':'1');nmLbl();render()" title="Alterna nomi comuni / nomi anagrafici">Nomi comuni</button><button onclick="go('topics')">Argomenti</button><button onclick="go('docs')">Documenti</button><button onclick="go('cal')">Calendario</button><button onclick="go('list')">Persone</button><button onclick="sel=null;showList=false;$('q').value='';view='all';render();scrollTo(0,0)">Chat</button>
     <button onclick="$('flt').classList.toggle('hide')">Filtri</button><button onclick="$('more').classList.toggle('hide')">⋯</button>
     <span id="more" class="hide row"><button onclick="editStory()">+ Storia</button><button onclick="editPerson()">+ Persona</button><button onclick="dlg('set').showModal()">⚙</button></span>
     <div id="sug" class="sug hide" style="top:44px;left:0"></div>
@@ -240,6 +248,75 @@ function findP(name,create){const n=norm(name.replace(/\s*\(.*$/,''));if(!n)retu
   if(!p&&create){p={id:uid('p'),name:name.trim(),father:'',mother:'',spouses:[],birth:'',birthPlace:'',death:'',deathPlace:'',country:'',branch:'',alt:'',notes:''};DB.people.push(p)}return p}
 const names=s=>s.split(';').map(x=>x.trim()).filter(Boolean);
 
+/* --- calendario per giorno e mese --- */
+const MESI=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+const MESIc=['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'];
+const DRX=new RegExp('(\\d{1,2})(?:[º°]|\\[\\?\\])?\\s+('+MESI.join('|')+')(?:\\s+(\\d{3,4}))?','i');
+function pDate(v){v=String(v||'');let m=/^(\d{4})-(\d\d)-(\d\d)/.exec(v);if(m)return{y:+m[1],m:+m[2],d:+m[3],unc:false,approx:false};
+  m=DRX.exec(v);if(!m)return null;const d=+m[1],mo=MESI.indexOf(m[2].toLowerCase())+1;if(d<1||d>31)return null;
+  return{y:m[3]?+m[3]:null,m:mo,d,unc:/\[\?\]|\?/.test(v.slice(0,m.index+m[0].length+3)),approx:/circa|tra il|dopo|prima/i.test(v.slice(0,m.index))}}
+let _CE=null,_CEk='';
+function calEvents(){const k=DB.people.length+':'+DOCS().length+':'+(DB.version||'');if(_CE&&_CEk===k)return _CE;const out=[],seen=new Set;
+  const add=(e)=>{const key=[e.pids.slice().sort().join(','),e.m,e.d,e.y,e.cat].join('|');if(seen.has(key))return;seen.add(key);out.push(e)};
+  for(const p of DB.people){
+    for(const [f,cat,lbl,pl] of [['birth','n','Nascita','birthPlace'],['death','m','Morte','deathPlace']]){const x=pDate(p[f]);if(x)add({...x,cat,lbl,pids:[p.id],place:p[pl]||'',raw:p[f]})}
+    if(p.marriage){const x=pDate(p.marriage);if(x){const s=(p.spouses||[]).map(P).filter(Boolean);const sp=s.find(q=>q.marriage===p.marriage)||(s.length===1?s[0]:null);
+      add({...x,cat:'s',lbl:'Matrimonio',pids:sp?[p.id,sp.id]:[p.id],place:'',raw:p.marriage})}}
+    for(const ev of p.events||[]){const x=pDate(ev.date);if(!x)continue;const w=ev.what||'';const cat=/^nascita|battesimo/i.test(w)?'n':/^morte|sepoltura/i.test(w)?'m':/matrimonio|nozze/i.test(w)?'s':'e';
+      add({...x,cat,lbl:w||'Evento',pids:[p.id],place:ev.place||'',raw:ev.date})}}
+  for(const D of DOCS()){const x=pDate(D.date);if(!x)continue;out.push({...x,cat:'d',lbl:D.type||'Documento',doc:D,pids:(D.people||[]).map(r=>r.pid).filter(Boolean),place:D.place||'',raw:D.date})}
+  _CEk=k;return _CE=out}
+let calD=null,calM=null,calW=0,calF={n:1,m:1,s:1,e:1,d:1};try{const x=JSON.parse(localStorage.getItem('sf_calF'));if(x)calF={...calF,...x}}catch(e){}
+const calEvF=()=>calEvents().filter(e=>calF[e.cat]);
+function calTg(c){if(c==='*'){for(const k in calF)calF[k]=1}else{calF[c]=calF[c]?0:1;if(!Object.values(calF).some(Boolean))for(const k in calF)calF[k]=1}try{localStorage.setItem('sf_calF',JSON.stringify(calF))}catch(e){}render()}
+const CATN={n:'Nascita',m:'Morte',s:'Matrimonio',e:'Altro evento',d:'Documento'},CATI={n:'✶',m:'✝',s:'⚭',e:'•',d:'📜'};
+const dOff=(a,b)=>{const A=Date.UTC(2000,a.m-1,a.d),B=Date.UTC(2000,b.m-1,b.d);let x=Math.round((A-B)/864e5);if(x>183)x-=366;if(x<-183)x+=366;return x};
+function calH(){if(calD==null){const t=new Date();calD=t.getDate();calM=t.getMonth()+1}
+  const E=calEvF(),ALL=calEvents(),T={m:calM,d:calD};
+  const cnt={};for(const e of E){const k=e.m+'-'+e.d;cnt[k]=(cnt[k]||0)+1}const mx=Math.max(1,...Object.values(cnt));
+  const hits=E.filter(e=>Math.abs(dOff(e,T))<=calW).sort((a,b)=>Math.abs(dOff(a,T))-Math.abs(dOff(b,T))||dOff(a,T)-dOff(b,T)||(a.y||9999)-(b.y||9999));
+  const opt=(n,v,f)=>Array.from({length:n},(_,i)=>`<option value="${i+1}"${i+1===v?' selected':''}>${f(i)}</option>`).join('');
+  let grid='<div class="calg"><div></div>'+MESIc.map((m,i)=>`<div class="calh">${m}</div>`).join('');
+  for(let d=1;d<=31;d++){grid+=`<div class="calh">${d}</div>`;for(let m=1;m<=12;m++){const ok=d<=[31,29,31,30,31,30,31,31,30,31,30,31][m-1];const c=cnt[m+'-'+d]||0;
+    const lv=c?Math.ceil(4*c/mx):0;grid+=ok?`<div class="calc l${lv}${m===calM&&d===calD?' sel':''}" title="${d} ${MESI[m-1]}: ${c} ${c===1?'evento':'eventi'}" onclick="calD=${d};calM=${m};render()">${c||''}</div>`:'<div></div>'}}
+  grid+='</div>';
+  const row=e=>{const off=dOff(e,T);const who=e.pids.map(i=>chip(P(i))).join('');
+    const head=`<span class="calb">${CATI[e.cat]}</span> <b>${e.d} ${MESI[e.m-1]} ${e.y||'(anno ?)'}</b>${e.approx?' <span class="mut">circa</span>':''}${e.unc?' <span class="mut">[?]</span>':''} · ${esc(e.lbl)}${e.place?' <span class="mut">· '+esc(e.place)+'</span>':''}${off?` <span class="mut">(${off>0?'+':''}${off} g)</span>`:''}`;
+    return e.doc?`<div class="calr">${head}<div>${who}</div>${docD(e.doc)}</div>`:`<div class="calr">${head}<div>${who}</div></div>`};
+  const byCat=Object.keys(CATN).map(c=>[c,hits.filter(e=>e.cat===c).length]).filter(x=>x[1]).map(([c,n])=>`${CATI[c]} ${CATN[c]} ${n}`).join(' · ');
+  return `<div class="card"><div class="row"><h2 style="flex:1">Calendario di famiglia</h2><button onclick="view='';render()">✕</button></div>
+  <p class="mut">Scegli un giorno e un mese: vedi tutti gli eventi di quel giorno in qualsiasi anno (nascite, morti, matrimoni, altri eventi e documenti). Con «vicino a» includi anche i giorni intorno. Date con giorno e mese: ${E.length===ALL.length?ALL.length:E.length+' visibili su '+ALL.length}. Tocca i bottoni qui sotto per mostrare o nascondere un tipo di evento (si combinano liberamente; anche le esportazioni seguono la scelta).</p>
+  <div class="row" style="flex-wrap:wrap;gap:6px"><select onchange="calD=+this.value;render()">${opt(31,calD,i=>i+1)}</select><select onchange="calM=+this.value;render()">${opt(12,calM,i=>MESI[i])}</select>
+  <select onchange="calW=+this.value;render()">${[[0,'solo quel giorno'],[1,'± 1 giorno'],[3,'± 3 giorni'],[7,'± 1 settimana'],[15,'± 15 giorni']].map(([v,l])=>`<option value="${v}"${v===calW?' selected':''}>${l}</option>`).join('')}</select>
+  <button onclick="const t=new Date();calD=t.getDate();calM=t.getMonth()+1;render()">Oggi</button></div>
+  <div class="row" style="flex-wrap:wrap;gap:6px;margin-top:8px" role="group" aria-label="Mostra">${Object.keys(CATN).map(c=>`<button class="tg${calF[c]?' on':''}" aria-pressed="${!!calF[c]}" onclick="calTg('${c}')">${CATI[c]} ${CATN[c]==='Altro evento'?'Altro':CATN[c]==='Documento'?'Documenti':CATN[c]==='Nascita'?'Nascite':CATN[c]==='Morte'?'Morti':'Matrimoni'} <span class="mut">${ALL.filter(e=>e.cat===c).length}</span></button>`).join('')}${Object.values(calF).every(Boolean)?'':'<button onclick="calTg(\'*\')">Mostra tutto</button>'}</div>
+  <details style="margin-top:10px"><summary class="mut">Esporta</summary><div class="row" style="flex-wrap:wrap;gap:6px;margin-top:6px">
+  <button onclick="calICS()" title="File da importare in Google Calendar, Apple Calendario, Outlook: ogni data si ripete ogni anno">📅 Calendario (.ics)</button>
+  <button onclick="calCSV()" title="Tabella apribile con Excel">📊 Tabella Excel (.csv)</button>
+  <button onclick="calPrint()" title="Pagina con i 12 mesi e i nomi in ogni giorno, da stampare o salvare in PDF">🖨 Calendario da stampare</button></div></details></div>
+  <div class="card"><h2>${calD} ${MESI[calM-1]}${calW?' ± '+calW+' g':''}: ${hits.length} ${hits.length===1?'evento':'eventi'}</h2>${byCat?`<div class="mut">${byCat}</div>`:''}
+  ${hits.map(row).join('')||'<p class="mut">Nessun evento registrato in questo giorno.</p>'}</div>
+  <div class="card"><h2>Tutto l'anno</h2><p class="mut">Ogni casella è un giorno; il numero dice quanti eventi cadono in quel giorno (in qualsiasi anno). Più scuro = più eventi. Tocca una casella per vederli.</p>${grid}</div>`}
+function calRows(){return calEvF().slice().sort((a,b)=>a.m-b.m||a.d-b.d||(a.y||9999)-(b.y||9999))}
+const calWho=e=>e.pids.map(i=>P(i)).filter(Boolean).map(p=>p.name).join(', ');
+const calTitle=e=>`${CATI[e.cat]} ${e.doc?e.doc.title:e.lbl+' — '+calWho(e)}${e.y?' ('+e.y+')':''}`;
+function calSave(name,txt,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type}));a.download=name;document.body.appendChild(a);a.click();a.remove()}
+function calICS(){const pad=n=>String(n).padStart(2,'0'),es=s=>String(s).replace(/[\;,]/g,m=>'\\'+m).replace(/\n/g,'\\n');
+  const TE=new TextEncoder(),fold=l=>{const o=[];let cur='',n=0;for(const ch of l){const b=TE.encode(ch).length;if(n+b>73){o.push(cur);cur=' ';n=1}cur+=ch;n+=b}o.push(cur);return o.join('\r\n')};
+  const L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Storie di famiglia//IT','CALSCALE:GREGORIAN','X-WR-CALNAME:Storie di famiglia'];
+  calRows().forEach((e,i)=>{const y=2000,dt=`${y}${pad(e.m)}${pad(e.d)}`,nx=new Date(Date.UTC(y,e.m-1,e.d+1));
+    L.push('BEGIN:VEVENT',`UID:sf-${i}-${dt}@storie`,`DTSTAMP:20260101T000000Z`,`DTSTART;VALUE=DATE:${dt}`,`DTEND;VALUE=DATE:${nx.getUTCFullYear()}${pad(nx.getUTCMonth()+1)}${pad(nx.getUTCDate())}`,
+    e.m===2&&e.d===29?'RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=-1':'RRULE:FREQ=YEARLY',fold('SUMMARY:'+es(calTitle(e))),fold('DESCRIPTION:'+es([e.lbl,calWho(e),e.raw,e.place].filter(Boolean).join(' · '))),'TRANSP:TRANSPARENT','END:VEVENT')});
+  L.push('END:VCALENDAR');calSave('calendario-famiglia.ics',L.join('\r\n'),'text/calendar')}
+function calCSV(){const q=s=>'"'+String(s==null?'':s).replace(/"/g,'""')+'"';const r=[['Giorno','Mese','Anno','Tipo','Evento','Persone','Luogo','Data come scritta','Incerta'].map(q).join(';')];
+  for(const e of calRows())r.push([e.d,MESI[e.m-1],e.y||'',CATN[e.cat],e.doc?e.doc.title:e.lbl,calWho(e),e.place,e.raw,(e.unc||e.approx)?'sì':''].map(q).join(';'));
+  calSave('calendario-famiglia.csv','﻿'+r.join('\r\n'),'text/csv')}
+function calPrint(){const E=calRows(),by={};for(const e of E)(by[e.m+'-'+e.d]=by[e.m+'-'+e.d]||[]).push(e);
+  let h=`<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Calendario di famiglia</title><style>body{font:11px/1.3 system-ui,sans-serif;margin:16px;color:#1f2933}h1{font-size:20px}h2{font-size:16px;margin:18px 0 4px;border-bottom:2px solid #1f6f8b;color:#1f6f8b}.m{break-inside:avoid-page}table{border-collapse:collapse;width:100%}td{border-top:1px solid #d9dee4;padding:3px 6px;vertical-align:top}td.d{width:28px;font-weight:700;text-align:right;color:#1f6f8b}.y{color:#66727f}@media print{.m{break-after:page}}</style></head><body><h1>Calendario di famiglia</h1><p>${E.length} date (giorno e mese) da persone e documenti. ✶ nascita · ✝ morte · ⚭ matrimonio · • altro · 📜 documento</p>`;
+  MESI.forEach((mn,i)=>{h+=`<div class="m"><h2>${mn[0].toUpperCase()+mn.slice(1)}</h2><table>`;for(let d=1;d<=31;d++){const L=by[(i+1)+'-'+d];if(!L)continue;
+    h+=`<tr><td class="d">${d}</td><td>${L.map(e=>`${CATI[e.cat]} ${esc(e.doc?e.doc.title:e.lbl+' — '+calWho(e))} <span class="y">${e.y||''}${e.unc||e.approx?' ?':''}</span>`).join('<br>')}</td></tr>`}h+='</table></div>'});
+  h+='</body></html>';calSave('calendario-famiglia.html',h,'text/html')}
+
 /* --- vista --- */
 function clearF(){['q','fS','fC','fP','fA','fB'].forEach(i=>$(i).value='');sel=null;render()}
 function go(v){view=v==='list'?'':(view===v?'':v);showList=v==='list'?!showList:false;sel=null;$('q').value='';render();scrollTo(0,0)}
@@ -271,7 +348,8 @@ function render(){nmLbl();
       if(cc.length)h+=`<h2 class="sec">Capitoli (${cc.length})</h2>`+cc.map(c=>chapD(c,0).replace(/<span class="mut"[^>]*>1\.<\/span>/,`<span class="mut" style="font-weight:400">${esc(P(c.person)?.name||'')} ·</span>`)).join('');
       if(tc.length||cc.length||dc.length)h+='<h2 class="sec">Conversazioni che contengono il testo cercato</h2>'}}
   $('nav').classList.add('hide');
-  if(!pe&&!showList&&view!=='topics'&&view!=='docs'&&view!=='all'&&!window._one&&!(q&&q.length>1)&&!fS&&!fC&&!fP&&!a&&!b&&DB.people.length){$('person').innerHTML=treeH();$('list').innerHTML='';return}
+  if(!pe&&!showList&&view!=='topics'&&view!=='docs'&&view!=='cal'&&view!=='all'&&!window._one&&!(q&&q.length>1)&&!fS&&!fC&&!fP&&!a&&!b&&DB.people.length){$('person').innerHTML=treeH();$('list').innerHTML='';return}
+  if(view==='cal'&&!pe){$('person').innerHTML=calH();$('list').innerHTML='';return}
   if(view==='docs'&&!pe){$('person').innerHTML=`<div class="card"><div class="row"><h2 style="flex:1">Documenti trascritti (${DOCS().length})</h2><button onclick="view='';render()">✕</button></div><p class="mut">Atti e registri letti dalle foto, in ordine di data. Tocca un titolo per vedere dati, trascrizione e persone collegate.</p></div>`+DOCS().map(docD).join('');$('list').innerHTML='';return}
   if(view==='topics'&&!pe){$('person').innerHTML=`<div class="card"><div class="row"><h2 style="flex:1">Argomenti (${TOP().length})</h2><button onclick="view='';render()">✕</button></div><p class="mut">Tocca un titolo per leggere i testi. Dentro ogni argomento ci sono le persone collegate.</p>${tfull()}</div>`+(topicsH(TOP(),true)||'<p class="mut">Nessun argomento: importa il file dati-iniziali.json aggiornato.</p>');$('list').innerHTML='';return}
   if(showList&&!pe){
