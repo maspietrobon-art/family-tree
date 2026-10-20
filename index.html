@@ -432,7 +432,7 @@ const sh=p=>{if(OFFN())return p.given||p.name.replace(/\s*\(.*?\)/g,'').split(' 
 const sur=p=>{const w=p.name.replace(/\s*\(.*?\)/g,'').trim().split(' ');return w[w.length-1]};
 const chipC=p=>`<span class="chip" onclick="pick('${p.id}')">${esc(dn(p))} <b>${chOf(p.id).length}</b></span>`;
 /* --- albero: zoom, fratelli, rami documentati, colori --- */
-const NODOC=/^(corrispondenza|scheda genealogica|genealogia|testo storico|registro|foto|altro)$/;
+const NODOC=/^(scheda genealogica|genealogia|testo storico|registro|foto|altro)$/;
 let _conf=null,_cv2=-1;
 function confMap(){if(_conf&&_cv2===DOCS().length)return _conf;_conf=new Set;_cv2=DOCS().length;
   for(const x of DOCS()){if(NODOC.test(x.type||''))continue;const ps=x.people.filter(q=>q.pid);
@@ -504,7 +504,7 @@ function treeH_(){
   if(rest.length)ex+=`<details class="tp" style="margin-top:10px"><summary>Altri parenti con capitoli<small>${rest.length} persone: prozii, zii, cugini, coniugi</small></summary><div>${rest.map(chipC).join('')}</div></details>`;
   const z=window._zoom||1;
   return `<div class="card"><div class="row"><h2 style="flex:1">Albero di ${esc(dn(root))}</h2>${window._root&&P(_root)?.name!=='Massimo Pietrobon'?`<button onclick="_root=null;render()">Torna a Massimo</button>`:''}</div>
-  <p class="mut">Tocca una persona per aprire la sua scheda. ▾ = fratelli e sorelle · ▶ = risali oltre · ◀ = scendi ai figli. Linea scura continua = legame confermato da un atto storico; tratteggiata = da FamilySearch o dalle chat.</p>
+  <p class="mut">Tocca una persona per aprire la sua scheda. ▾ = fratelli e sorelle · ▶ = risali oltre · ◀ = scendi ai figli. Linea scura continua = legame confermato da un atto storico o da un archivio (archivista, parrocchia, Archivio di Stato); tratteggiata = da FamilySearch o dalle chat.</p>
   <div class="tbar"><button onclick="zoomT(-.15)" title="Riduci">−</button><button onclick="zoomT(.15)" title="Ingrandisci">+</button><button onclick="zoomT(0)" title="Dimensione normale">⟲</button>
   <select onchange="_cm=this.value;render()">${Object.entries(CM).map(([k,v])=>`<option value="${k}"${k===m?' selected':''}>${k?'Colora per: '+v:v}</option>`).join('')}</select></div>${leg}
   <div class="twrap"><svg id="treeSvg" class="tree" viewBox="0 0 ${W} ${H}" style="width:${100*z}%;max-width:${760*z}px">${ln}${svg}${ui}</svg></div>${ex}
