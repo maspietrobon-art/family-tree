@@ -1,5 +1,5 @@
 {
- "version": 46,
+ "version": 49,
  "people": [
   {
    "id": "p1",
@@ -58,6 +58,12 @@
      "what": "Nascita",
      "place": "Oderzo, Treviso, Veneto, Italia",
      "src": "Dati da schermata FamilySearch"
+    },
+    {
+     "date": "ottobre 1991",
+     "what": "Trasloco della famiglia da via Fornaci 10 a via Fornaci 3 (primi di ottobre)",
+     "place": "via Fornaci",
+     "src": "Chat Family Tree, ottobre 2026"
     }
    ],
    "marriage": "20 maggio 2017"
@@ -122,6 +128,12 @@
      "what": "Nascita",
      "place": "Italia",
      "src": "Dati da schermata FamilySearch"
+    },
+    {
+     "date": "ottobre 1991",
+     "what": "Trasloco della famiglia da via Fornaci 10 a via Fornaci 3 (primi di ottobre)",
+     "place": "via Fornaci",
+     "src": "Chat Family Tree, ottobre 2026"
     }
    ],
    "marriage": "9 agosto 1975 Monastier di Treviso"
@@ -154,6 +166,12 @@
      "what": "Nascita",
      "place": "Italia",
      "src": "Dati da schermata FamilySearch"
+    },
+    {
+     "date": "ottobre 1991",
+     "what": "Trasloco della famiglia da via Fornaci 10 a via Fornaci 3 (primi di ottobre)",
+     "place": "via Fornaci",
+     "src": "Chat Family Tree, ottobre 2026"
     }
    ],
    "marriage": "9 agosto 1975 Monastier di Treviso"
@@ -186,6 +204,12 @@
      "what": "Nascita",
      "place": "Italia",
      "src": "Dati da schermata FamilySearch"
+    },
+    {
+     "date": "ottobre 1991",
+     "what": "Trasloco della famiglia da via Fornaci 10 a via Fornaci 3 (primi di ottobre)",
+     "place": "via Fornaci",
+     "src": "Chat Family Tree, ottobre 2026"
     }
    ],
    "marriage": ""
@@ -203,7 +227,7 @@
    "country": "Italia",
    "branch": "Famiglia moderna (Fabio)",
    "alt": "",
-   "notes": "Figlio di Matteo Pietrobon e Giuliana Rosolin. Fratello di Massimo, Luca e Gloria.",
+   "notes": "Figlio di Matteo Pietrobon e Giuliana Rosolin. Fratello di Massimo, Luca e Gloria. Nato il 31 ottobre 1991, poche settimane dopo il trasloco da via Fornaci 10 a via Fornaci 3 (racconto della mamma, chat Family Tree, ottobre 2026).",
    "fsid": "LY1J-SDB",
    "ramo": "Famiglia di Fabio",
    "terms": [
@@ -22301,14 +22325,14 @@
    "father": "p6",
    "mother": "p751",
    "spouses": [],
-   "birth": "20 febbraio 2004[?], Treviso",
-   "birthPlace": "",
+   "birth": "20 febbraio 2007",
+   "birthPlace": "Treviso",
    "death": "",
    "deathPlace": "",
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Dagli schemi genealogici disegnati da Massimo.",
+   "notes": "Dagli schemi genealogici disegnati da Massimo. Leonardo e Nicolò sono gemelli, nati il 20 febbraio 2007 (conferma di Massimo, 20 ottobre 2026).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -22322,14 +22346,14 @@
    "father": "p6",
    "mother": "p751",
    "spouses": [],
-   "birth": "20 febbraio 2007[?], Treviso",
-   "birthPlace": "",
+   "birth": "20 febbraio 2007",
+   "birthPlace": "Treviso",
    "death": "",
    "deathPlace": "",
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Dagli schemi genealogici disegnati da Massimo.",
+   "notes": "Dagli schemi genealogici disegnati da Massimo. Leonardo e Nicolò sono gemelli, nati il 20 febbraio 2007 (conferma di Massimo, 20 ottobre 2026).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -22343,14 +22367,14 @@
    "father": "p6",
    "mother": "p751",
    "spouses": [],
-   "birth": "15 agosto 2010[?], Treviso",
-   "birthPlace": "",
+   "birth": "16 agosto 2010",
+   "birthPlace": "Treviso",
    "death": "",
    "deathPlace": "",
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Dagli schemi genealogici disegnati da Massimo.",
+   "notes": "Dagli schemi genealogici disegnati da Massimo. Data confermata da Massimo: 16 agosto 2010.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -23595,7 +23619,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "Giorgia Rallo[?]",
-   "notes": "Dagli schemi genealogici disegnati da Massimo.",
+   "notes": "Dagli schemi genealogici disegnati da Massimo. Nome confermato da Massimo (20 ottobre 2026).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -23815,7 +23839,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "Giovanna Dall'Oco[?]",
-   "notes": "Dagli schemi genealogici disegnati da Massimo.",
+   "notes": "Dagli schemi genealogici disegnati da Massimo. Nome confermato da Massimo (20 ottobre 2026).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -26049,7 +26073,7 @@
   },
   {
    "id": "p923",
-   "name": "Mario Conzon[?]",
+   "name": "Mario Conzon",
    "father": "",
    "mother": "",
    "spouses": [
@@ -26062,7 +26086,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Dagli schemi genealogici disegnati da Massimo.",
+   "notes": "Dagli schemi genealogici disegnati da Massimo. Confermato da Massimo (20 ottobre 2026): marito di Vittoria Pietrobon.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -30091,6 +30115,62 @@
    "auto": true,
    "source": "Trascrizione da screenshot (Family Tree)",
    "text": "08:34 Massimo: buongiorno. sto riordinando un po' di informazioni e memorie. ma c'è una cosa che non so se è fantasia mia: ma a me avevano fatto una trasfusione di sangue quando sono nato o no?\n09:11 Mamma: Mi pare si sì, ma non ne sono sicura\nAvevi fatto un ittero parafisiologico\nDopo un mese dalla dimissione dovevi fare un controllo del sangue\nLa bilirubinemia era alta\nAltro ricovero\n\nMa ora non ricordo più se alla fine l'hai fatta\nMi pare di si\n09:14 Mamma: Una volta si ospedalizzava molto\nOra non si sente neanche più parlare di ittero\nMamma: [foto: foglio di dimissione dell'ospedale di Oderzo, datato 28-XI-77 e firmato dal primario. Diagnosi: ittero (parola poco leggibile, forse «enzimopenico») e anemia. Esito: in guarigione. Trattamento: polivitaminici, cortisonici, vit. E, emotrasfusione (2). Esami praticati: emocromo, azotemia, glicemia, calcemia, fosfatasi alcalina, LAP, gamma GT, GOT, GPT, G6PDH, resistenze globulari, bilirubinemia totale e frazionata, protidogramma, esame urine, urinocoltura. Cure consigliate: gocce di vitamina B12 (nome del preparato incerto), 4 gocce 2 volte al dì per 1-2 mesi; Protovit gocce, 6 gocce 2 volte al dì per 2-3 mesi; vit. E gocce, 15 mg (10 gocce) 2 volte al dì per 10 giorni. In fondo: «si consiglia di ripetere un esame emocromo…» e la bilirubinemia. Lettura dalla foto, grafia in parte incerta]\n10:27 Mamma: [foto, tagliata in alto: «si consiglia di ripetere…» la bilirubinemia]\n10:27 Mamma: Pare proprio di sì\n10:31 Mamma: [foto: diploma di maturità scientifica, liceo scientifico «Leonardo da Vinci» di Treviso, anno scolastico 1995-96, sopra una pila di altri documenti] Tutta roba tua Massimo\n10:42 Massimo: Ma daiiii!! Che documenti incredibili!!!! Ormai davvero storici!!!\n10:42 Massimo: Invredibile\n10:42 Massimo: Ma perché mi avevano fatto la trasfusione?? Erano un pochino allarmisti....\n10:43 Massimo: E quando ero nato io, luca aveva la mononucleosi, per quanto tempo è stato ricoverato circa?\n10:44 Massimo: Ricordo che eravamo tornati lo stesso giorno, ma tu eri in ospedale da fine luglio. Luca è stato in ospedale a Treviso per molto tempo?\n11:57 Mamma: Più che altro erano gli albori della medicina moderna\nSi tendeva a ospedalizzazione, bisognava riempire i letti\n11:59 Mamma: Quando vieni qua ti consegno tutto quello che ti riguarda, comprese pagelle e quadretti de comunion😄\n12:01 Mamma: A Luca ci hanno messo un mese per fare una diagnosi\nÈ una storia complessa\nQuel periodo è stato molto complicato\nTe lo racconto per bene quando torni🙂"
+  },
+  {
+   "id": "s141",
+   "title": "Family Tree, ottobre 2026: il trasloco da via Fornaci 10 a via Fornaci 3 e la nascita di Davide",
+   "told": "2026-10",
+   "people": [
+    "p2",
+    "p5",
+    "p7"
+   ],
+   "text": "14:40 Massimo: Domanda: quando esattamente abbiamo fatto il trasloco da via fornaci 10 a via fornaci 3?\n21:06 Mamma: I primi di ottobre 1991\nPoi il 31 è nato Davide\n07:21 Massimo: Tempismo perfetto\n11:27 Mamma: Che, se ricordi,\nanche allora dovevo stare a riposo assoluto per via del pericolo del parto prematuro...oltre a non averlo fatto, ho superato un trasloco e alla fine mi hanno fatto il parto pilotato...\nI disegni divini...",
+   "dateFrom": "",
+   "dateTo": "",
+   "place": "",
+   "country": "",
+   "media": [],
+   "auto": true,
+   "source": "Trascrizione da screenshot (Family Tree)"
+  },
+  {
+   "id": "s142",
+   "title": "Family Tree, ottobre 2026: chi era il Sior Romeo",
+   "told": "2026-10",
+   "people": [
+    "p2",
+    "p5",
+    "p4"
+   ],
+   "text": "07:22 Massimo: Ma... El Sior Romeo. Come era arrivato a diventare così intimo in famiglia e come ha finito per sparire?\n07:48 Mamma: Credo abbia cominciato con il comprare del vino dal nonno\nLui frequentava la trattoria da Bosa, gente ricca da Treviso a cui piaceva la cucina contadina\nPoi passava tante sere e sabato pomeriggio dai nonni a chiacchierare, giocare a carte e mangiare, sempre cose semplici come le uova strapazzate del nonno, co na sberla de butiro fatto in casa😄\nQuando la nostra famiglia è andata a farsi benedire, lui non ha apprezzato il comportamento della nonna e si è allontanato\n07:48 Mamma: Ma sentiamo il papà\n[Massimo aggiunge Papà Matteo al gruppo]\n08:48 Papà: Ok a posto☺️",
+   "dateFrom": "",
+   "dateTo": "",
+   "place": "",
+   "country": "",
+   "media": [],
+   "auto": true,
+   "source": "Trascrizione da screenshot (Family Tree)"
+  },
+  {
+   "id": "s143",
+   "title": "Chat con la mamma (data non nota): «quelle tre estati», 2000–2002",
+   "told": "",
+   "dateFrom": "2000",
+   "dateTo": "2002",
+   "place": "",
+   "country": "",
+   "people": [
+    "p2",
+    "p5",
+    "p7",
+    "p481",
+    "p460"
+   ],
+   "media": [],
+   "auto": true,
+   "source": "Trascrizione da screenshot (chat con la mamma)",
+   "text": "16:52 Massimo: Ciao mamma, una domanda, quando è stato esattamente il momento in cui Davide ha avuto il diabete? domanda bruttina, lo so...\n19:17 Mamma: Il 5 luglio2001\n19:18 Mamma: Intendevi la data o come è avvenuta la diagnosi?\n19:49 Massimo: La data. Il resto mi ricordo bene\n19:49 Massimo: Grazie\n20:02 Mamma: Difficile dimenticare quelle tre estati\nNel 2000 la morte improvvisamente del nonno Coco,\nNel 2001 la diagnosi di Davide e nel 2002 la morte nonno Genio"
   }
  ],
  "topics": [
@@ -46229,6 +46309,66 @@
      "s140",
      12,
      12
+    ]
+   ]
+  },
+  {
+   "id": "c574",
+   "person": "p5",
+   "title": "Il trasloco da via Fornaci 10 a via Fornaci 3, primi di ottobre 1991",
+   "refs": [
+    [
+     "s141",
+     0,
+     2
+    ]
+   ]
+  },
+  {
+   "id": "c575",
+   "person": "p7",
+   "title": "La nascita di Davide (31 ottobre 1991), poche settimane dopo il trasloco",
+   "refs": [
+    [
+     "s141",
+     1,
+     3
+    ]
+   ]
+  },
+  {
+   "id": "c576",
+   "person": "p2",
+   "title": "Il Sior Romeo: dal vino comprato dal nonno alle serate a carte, fino al suo allontanamento",
+   "refs": [
+    [
+     "s142",
+     0,
+     3
+    ]
+   ]
+  },
+  {
+   "id": "c577",
+   "person": "p7",
+   "title": "La diagnosi del 5 luglio 2001",
+   "refs": [
+    [
+     "s143",
+     0,
+     3
+    ]
+   ]
+  },
+  {
+   "id": "c578",
+   "person": "p5",
+   "title": "«Difficile dimenticare quelle tre estati»: 2000, 2001, 2002",
+   "refs": [
+    [
+     "s143",
+     5,
+     5
     ]
    ]
   }
