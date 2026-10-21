@@ -1,5 +1,5 @@
 {
- "version": 80,
+ "version": 88,
  "people": [
   {
    "id": "p1",
@@ -3134,7 +3134,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Figlio di Bortolo Camozzato e Maddalena Turchetto; padre di Maddalena Camozzato. Dati da schermata FamilySearch. La sorella Angela Camozzato (atto di morte, Montebelluna 1890) è figlia di Bortolo e Maddalena Turchetto: conferma la famiglia, ma non nomina Pietro.",
+   "notes": "Figlio di Bortolo Camozzato e Maddalena Turchetto; padre di Maddalena Camozzato. Dati da schermata FamilySearch. La sorella Angela Camozzato (atto di morte, Montebelluna 1890) è figlia di Bortolo e Maddalena Turchetto: conferma la famiglia, ma non nomina Pietro. A Montebelluna nel 1877 un Angelo Camozzato (padre di Virginio, n. circa 1851): forse un fratello di Pietro (documento di ricerca L36-r01).",
    "fsid": "P9HK-RJP",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -3472,7 +3472,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Madre di Giovanni Rossi, Teresa Rossi, Giovanni Rossi, Bortolo Rossi e Bernardina Rossi. Dati da schermata FamilySearch.",
+   "notes": "Madre di Giovanni Rossi, Teresa Rossi, Giovanni Rossi, Bortolo Rossi e Bernardina Rossi. Dati da schermata FamilySearch. Possibili parenti: a Padernello nel Settecento vivevano Andrea Cavalin e Margherita Gajarin, genitori di Lucia (circa 1760-1811) e Michiel (circa 1767) (documento di ricerca L36-r01).",
    "fsid": "P98Y-H5V",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -18872,7 +18872,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "Domenico Brasiolin",
-   "notes": "Padre di Angelo Brasiolin (n. 1778): il battesimo del nipote Domenico (1811) chiama Angelo «Brasiolin di Domenico». Possibili altri figli: a Paese nel 1815 compaiono Antonio Brisolin di Domenico (25 anni, sposato con Maddalena Filippi di Gerolimo, figlio Domenico nato il 4 maggio 1815, Villa n. 147) e Cattarina Brisolin di Domenico (28 anni, moglie in seconde nozze di Giambattista Bottolo, figlia Maddalena nata il 29 aprile 1815). Che il loro padre Domenico sia questo è un'ipotesi.",
+   "notes": "Padre di Angelo Brasiolin (n. 1778): il battesimo del nipote Domenico (1811) chiama Angelo «Brasiolin di Domenico». Possibili altri figli: a Paese nel 1815 compaiono Antonio Brisolin di Domenico (25 anni, sposato con Maddalena Filippi di Gerolimo, figlio Domenico nato il 4 maggio 1815, Villa n. 147) e Cattarina Brisolin di Domenico (28 anni, moglie in seconde nozze di Giambattista Bottolo, figlia Maddalena nata il 29 aprile 1815). Che il loro padre Domenico sia questo è un'ipotesi. Possibile identificazione con Domenico Bresolin del fu Adamo, marito di Maria Crosato (fascicolo matrimoniale del figlio Antonio, 1808): se così, il bisnonno di Angelo (1842) era Adamo, nome dato anche al primo figlio di Angelo (1807). Da confermare con il battesimo di Angelo (circa 1778).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -34003,24 +34003,25 @@
    "spouses": [
     "p1287"
    ],
-   "birth": "",
+   "birth": "circa 1894",
    "birthPlace": "",
    "death": "",
    "deathPlace": "",
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Dal riquadro «Bresolin di Paese» dello schema dei Bresolin: legame con il nostro ramo non indicato.",
+   "notes": "Dal riquadro «Bresolin di Paese» dello schema dei Bresolin: legame con il nostro ramo non indicato. Forse lo stesso Luciano Bresolin (33 anni nel 1927, Padernello) dichiarante alla morte di Antonio Placido, figlio di Gottardo: possibile figlio di Gottardo Giuseppe Bresolin. Da verificare. Nel 1927 (33 anni) denuncia la morte di Ermenegildo e Antonio Placido, figli di Gottardo; nel 1933 (39 anni) la morte della figlia Francesca. Probabilmente figlio di Gottardo Giuseppe Bresolin e Catterina Gallina (fratello di Ermenegildo e Antonio Placido): non dichiarato.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "job": "contadino"
   },
   {
    "id": "p1287",
-   "name": "… Volpato (moglie di Luciano Bresolin)",
+   "name": "Giacomina Volpato",
    "father": "",
    "mother": "",
    "spouses": [
@@ -34033,7 +34034,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Nome di battesimo non leggibile nello schema.",
+   "notes": "Moglie di Luciano Bresolin (atto di morte della figlia Francesca, 1933).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -34083,7 +34084,8 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "job": "oste"
   },
   {
    "id": "p1290",
@@ -34114,14 +34116,14 @@
    "father": "p1289",
    "mother": "p1290",
    "spouses": [],
-   "birth": "1924",
+   "birth": "circa gennaio 1924",
    "birthPlace": "",
-   "death": "1924",
-   "deathPlace": "",
+   "death": "4 giugno 1924",
+   "deathPlace": "Postioma n. 11",
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Bresolin di Paese (schema).",
+   "notes": "Bresolin di Paese (schema). Morto a 5 mesi il 4 giugno 1924 a Postioma (atto n. 38, Paese 1924); il padre Roberto era oste a Postioma.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -34226,12 +34228,12 @@
    "spouses": [],
    "birth": "1895",
    "birthPlace": "",
-   "death": "Deceduto/a",
-   "deathPlace": "",
+   "death": "6 gennaio 1897",
+   "deathPlace": "Padernello n. 55",
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Figlio/a di Domenico Bresolin e Anna Signori. Da FamilySearch.",
+   "notes": "Figlio/a di Domenico Bresolin e Anna Signori. Da FamilySearch. Morto a 20 mesi il 6 gennaio 1897 (atto n. 3, Paese 1897); dichiarante Giovanni Pietrobon (47).",
    "fsid": "GXT3-YFB",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -34401,7 +34403,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Padre di Candida Cavallin (battesimo del figlio di lei Angelo Bresolin, Padernello 1842).",
+   "notes": "Padre di Candida Cavallin (battesimo del figlio di lei Angelo Bresolin, Padernello 1842). Possibili parenti: Andrea Cavalin e Margherita Gajarin di Padernello (figli Lucia circa 1760 e Michiel circa 1767). Probabilmente la stessa persona di «Fioravante Cavallin (1788)», figlio di Angelo Cavallin del fu Santo e Giovanna Munarini, marito di Santina Ventorin (fascicolo Istrana 1808). Se confermato, Santina Ventorin sarebbe la madre di Candida. Le due schede sono tenute separate finché un atto non lo dimostri.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -35165,6 +35167,781 @@
    "events": [],
    "marriage": "",
    "soprannome": "Tonin"
+  },
+  {
+   "id": "p1338",
+   "name": "Adamo Bresolin (padre di Domenico)",
+   "father": "",
+   "mother": "",
+   "spouses": [],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 1789",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Adamo Bresolin",
+   "notes": "Padre di Domenico Bresolin (marito di Maria Crosato); già morto nel 1789 (battesimo del nipote Antonio, San Martino di Paese).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1339",
+   "name": "Domenico Bresolin (di Adamo)",
+   "father": "p1338",
+   "mother": "",
+   "spouses": [
+    "p1340"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Domenico Bresolin",
+   "notes": "Figlio del fu Adamo; marito di Maria Crosato; villico a Paese; vivo nel 1808, firma il consenso alle nozze del figlio Antonio. Probabilmente la stessa persona di «Domenico Brasiolin (padre di Angelo)», padre di Angelo (1778): stesso nome, stesso comune, e Angelo chiama Adamo il suo primo figlio (1807). Non provato. Nel 1813 a Paese (colmello di Villa n. 146) vive con i figli Antonio, Giuseppe (n. circa 1780) e Valentino: è nella sua casa che muore il nipote Battista. Angelo (1778) non compare in questi atti: la sua filiazione da questo Domenico resta un'ipotesi. Atti 1811-1814: nella sua casa (Villa n. 146) muoiono le nipotine Fiore (1811) e Battista (1813); i figli noti sono Antonio (1789), Giuseppe (circa 1779), Valentino (circa 1786) e forse Cattarina (circa 1784, moglie di Angelo Mattarucco).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "villico"
+  },
+  {
+   "id": "p1340",
+   "name": "Maria Crosato",
+   "father": "p1354",
+   "mother": "",
+   "spouses": [
+    "p1339"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlia del fu Giovanni Battista Crosato; moglie di Domenico Bresolin di Adamo.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1341",
+   "name": "Antonio Bresolin (1789)",
+   "father": "p1339",
+   "mother": "p1340",
+   "spouses": [
+    "p1344"
+   ],
+   "birth": "14 giugno 1789",
+   "birthPlace": "Paese (San Martino)",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Antonio Brisolin",
+   "notes": "Figlio di Domenico di Adamo Bresolin e Maria Crosato; nato la notte prima del 14 giugno 1789; padrino Bortolo Maritan. Sposa Maddalena de Filippi nell'estate 1808 (pubblicazioni del 24 e 31 luglio). Nel 1815 ha il figlio Domenico (Villa n. 147, Paese). Probabilmente lo stesso «Antonio Brisolin di Domenico, 25 anni, marito di Maddalena Filippi di Gerolimo» dell'atto di nascita del figlio Domenico, 1815 (documento L21-d03).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "estate 1808 Paese (pubblicazioni 24 e 31 luglio 1808)",
+   "job": "villico"
+  },
+  {
+   "id": "p1342",
+   "name": "Girolamo de Filippi",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1343"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Del fu Giacomo; villico di Paese; padre di Maddalena; firma il consenso nel 1808.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1343",
+   "name": "Angela Maer",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1342"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlia del fu Antonio Maer; moglie di Girolamo de Filippi.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1344",
+   "name": "Maddalena de Filippi",
+   "father": "p1342",
+   "mother": "p1343",
+   "spouses": [
+    "p1341"
+   ],
+   "birth": "25 marzo 1789",
+   "birthPlace": "Paese (San Martino)",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Maddalena Filippi",
+   "notes": "Figlia di Girolamo de Filippi e Angela Maer; nata e battezzata il 25 marzo 1789; padrino Leonisio Zanlorenzo di Santa Cristina. Sposa Antonio Bresolin nel 1808.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "estate 1808 Paese (pubblicazioni 24 e 31 luglio 1808)"
+  },
+  {
+   "id": "p1345",
+   "name": "Valentino Bresolin (di Domenico)",
+   "father": "p1339",
+   "mother": "",
+   "spouses": [
+    "p1351"
+   ],
+   "birth": "circa 1787",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Valentino Brisolin",
+   "notes": "Figlio di Domenico di Adamo Bresolin; zio paterno di Battista (1813). Età incerta: 27 anni nell'atto di nascita, 37 in quello di morte. Nel 1814 ha 27 anni (atto n. 52): nascita verso il 1787.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1346",
+   "name": "Giuseppe Bresolin (di Domenico)",
+   "father": "p1339",
+   "mother": "",
+   "spouses": [],
+   "birth": "circa 1780",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Giuseppe Bresolin",
+   "notes": "Figlio di Domenico di Adamo Bresolin; 33 anni nel 1813, zio paterno di Battista.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1347",
+   "name": "Battista Bresolin (1813)",
+   "father": "p1341",
+   "mother": "p1344",
+   "spouses": [],
+   "birth": "10 aprile 1813",
+   "birthPlace": "Paese, colmello di Villa n. 146",
+   "death": "24 aprile 1813",
+   "deathPlace": "Paese, casa di Domenico di Adamo Bresolin",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Antonio di Domenico Bresolin e Maddalena de Filippi; morto a 15 giorni.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1348",
+   "name": "Benedetto Bresolin (1898)",
+   "father": "p502",
+   "mother": "p1295",
+   "spouses": [],
+   "birth": "circa marzo 1898",
+   "birthPlace": "Padernello",
+   "death": "18 gennaio 1899",
+   "deathPlace": "Padernello n. 55",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Domenico Bresolin e Anna Signori; morto a 10 mesi (atto n. 11, Paese 1899). Dichiarante Giovanni Pietrobon, 50 anni.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1349",
+   "name": "Antonio Placido Bresolin",
+   "father": "p503",
+   "mother": "p647",
+   "spouses": [],
+   "birth": "circa 1909",
+   "birthPlace": "Paese",
+   "death": "16 novembre 1927",
+   "deathPlace": "Padernello n. 20",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Gottardo (Giuseppe) Bresolin e Catterina Gallina; morto a 18 anni, celibe (atto n. 62, Paese 1927). Dichiarante Luciano Bresolin, 33 anni (forse fratello).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "villico"
+  },
+  {
+   "id": "p1350",
+   "name": "Fiore Bresolin (1811)",
+   "father": "p1341",
+   "mother": "p1344",
+   "spouses": [],
+   "birth": "23 aprile 1811",
+   "birthPlace": "Paese, colmello di Villa",
+   "death": "27 agosto 1811",
+   "deathPlace": "Paese, casa di Domenico di Adamo Bresolin",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Fiovetta Bresolin",
+   "notes": "Figlia di Antonio di Domenico Bresolin e Maddalena de Filippi; morta a 3 mesi e mezzo.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1351",
+   "name": "Maria de Filippi (del fu Giuseppe)",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1345"
+   ],
+   "birth": "circa 1793",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Maria De Filippi",
+   "notes": "Figlia del fu Giuseppe de Filippi; moglie di Valentino di Domenico Bresolin; 21 anni nel 1814.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1352",
+   "name": "Giacomo Martino Bresolin (1814)",
+   "father": "p1345",
+   "mother": "p1351",
+   "spouses": [],
+   "birth": "9 ottobre 1814",
+   "birthPlace": "Paese, colmello di Villa n. 144",
+   "death": "25 ottobre 1814",
+   "deathPlace": "Paese, Villa n. 146",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Valentino di Domenico Bresolin e Maria de Filippi del fu Giuseppe; morto a pochi giorni.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1353",
+   "name": "Gioachino Crosato",
+   "father": "p1354",
+   "mother": "",
+   "spouses": [],
+   "birth": "circa 1746-1748",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Gioachin Crosatto",
+   "notes": "Del fu Battista Crosato: probabile fratello di Maria Crosato (moglie di Domenico di Adamo Bresolin). Padre di Antonio (circa 1780) e Zuanne (circa 1779). Testimone agli atti Bresolin del 1811 e 1814. Legame di fratellanza con Maria Crosato dedotto dal patronimico «del fu Battista»: non dichiarato.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1354",
+   "name": "Battista Crosato",
+   "father": "",
+   "mother": "",
+   "spouses": [],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 1789",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Gio. Batta Crosato",
+   "notes": "Padre di Maria Crosato (battesimo del nipote Antonio Bresolin, 1789) e probabilmente di Gioachino Crosato.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1355",
+   "name": "Giacomo Bresolin (1914)",
+   "father": "p503",
+   "mother": "p647",
+   "spouses": [],
+   "birth": "circa febbraio 1914",
+   "birthPlace": "",
+   "death": "23 agosto 1914",
+   "deathPlace": "Padernello n. 82",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Gottardo Bresolin e Catterina Gallina; morto a 6 mesi; testimone il padre (41 anni).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1356",
+   "name": "Ermenegildo Bresolin",
+   "father": "p503",
+   "mother": "p647",
+   "spouses": [],
+   "birth": "circa 1906",
+   "birthPlace": "Padernello",
+   "death": "4 ottobre 1927",
+   "deathPlace": "Padernello n. 20",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Gottardo e Catterina Gallina; morto a 21 anni, celibe; dichiarante Luciano Bresolin (33).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "villico"
+  },
+  {
+   "id": "p1357",
+   "name": "Francesca Bresolin (1933)",
+   "father": "p1286",
+   "mother": "p1287",
+   "spouses": [],
+   "birth": "circa 26 dicembre 1932",
+   "birthPlace": "Paese",
+   "death": "20 gennaio 1933",
+   "deathPlace": "Padernello n. 25",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlia di Luciano Bresolin e Giacomina Volpato; morta a 25 giorni.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1358",
+   "name": "Giocondo Bresolin",
+   "father": "p502",
+   "mother": "p1295",
+   "spouses": [],
+   "birth": "circa 1906",
+   "birthPlace": "Padernello",
+   "death": "7 marzo 1907",
+   "deathPlace": "Padernello n. 72",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Gottardo Bresolin[?]",
+   "notes": "Figlio di Domenico Bresolin e Anna Signori; morto a un anno (atto n. 28, Paese 1907). Nel margine «Giocondo», nel testo forse «Gottardo». Dichiarante il padre Domenico (40 anni).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1359",
+   "name": "Vittoria Bresolin (1904)",
+   "father": "p502",
+   "mother": "p1295",
+   "spouses": [],
+   "birth": "circa 1904",
+   "birthPlace": "Padernello",
+   "death": "19 maggio 1907",
+   "deathPlace": "Padernello n. 72",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Morta a 3 anni (atto n. 56, Paese 1907); dichiarante il padre Domenico.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1360",
+   "name": "Vittorio Bresolin (1921)",
+   "father": "p503",
+   "mother": "p647",
+   "spouses": [],
+   "birth": "circa 1921",
+   "birthPlace": "Padernello",
+   "death": "24 aprile 1922",
+   "deathPlace": "Padernello n. 83",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Gottardo e Catterina Gallina; morto a un anno (atto n. 44, Paese 1922); dichiarante Giuseppe Gallina (44).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1361",
+   "name": "Narciso Bresolin",
+   "father": "p503",
+   "mother": "p647",
+   "spouses": [],
+   "birth": "circa 1904",
+   "birthPlace": "Padernello",
+   "death": "1 novembre 1924",
+   "deathPlace": "Padernello n. 20",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Gottardo e Catterina Gallina; morto a 20 anni, celibe (atto n. 62, Paese 1924).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "villico"
+  },
+  {
+   "id": "p1362",
+   "name": "Angela Crosato",
+   "father": "p1353",
+   "mother": "",
+   "spouses": [
+    "p1363"
+   ],
+   "birth": "circa 1774",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlia di Gioachino Crosato (cugina di Antonio Bresolin 1789, se Gioachino era fratello di Maria Crosato); moglie di Zuanne Bresolin del fu Antonio, negoziante a Paese.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1363",
+   "name": "Zuanne Bresolin (del fu Antonio)",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1362"
+   ],
+   "birth": "circa 1775",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Zuanne Brisolin",
+   "notes": "Del fu Antonio; villico poi negoziante a Paese (Villa n. 84). Altro ramo Bresolin, non collegato.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "negoziante"
+  },
+  {
+   "id": "p1364",
+   "name": "Pasqua Bresolin (1808)",
+   "father": "p1363",
+   "mother": "p1362",
+   "spouses": [],
+   "birth": "6 febbraio 1808",
+   "birthPlace": "Paese, colmello di Villa",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlia di Zuanne Bresolin e Angela Crosato di Gioachino (atti di nascita, Paese 1808 n. 50 e 1815 n. 41).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1365",
+   "name": "Domenica Bresolin (1815)",
+   "father": "p1363",
+   "mother": "p1362",
+   "spouses": [],
+   "birth": "24 maggio 1815",
+   "birthPlace": "Paese, colmello di Villa",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlia di Zuanne Bresolin e Angela Crosato di Gioachino (atti di nascita, Paese 1808 n. 50 e 1815 n. 41).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1366",
+   "name": "Santo Cavallin",
+   "father": "",
+   "mother": "",
+   "spouses": [],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 1788",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Padre di Angelo Cavallin di Santa Cristina (battesimo del nipote Fioravante, 1788).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1367",
+   "name": "Angelo Cavallin (di Santo)",
+   "father": "p1366",
+   "mother": "",
+   "spouses": [
+    "p1368"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Angelo Cavalin",
+   "notes": "Del fu Santo; contadino a Santa Cristina (Quinto); vivo nel 1808, firma «Angelo Cavalin afermo».",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "contadino"
+  },
+  {
+   "id": "p1368",
+   "name": "Giovanna Munarini",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1367"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Del fu Gio. Batta Munarini; moglie di Angelo Cavallin di Santa Cristina.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1369",
+   "name": "Fioravante Cavallin (1788)",
+   "father": "p1367",
+   "mother": "p1368",
+   "spouses": [
+    "p1370"
+   ],
+   "birth": "17 maggio 1788",
+   "birthPlace": "Santa Cristina (Quinto di Treviso)",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Ferrante Cavallin; Fioravante Cavalin",
+   "notes": "Nato la sera del 17 maggio 1788, battezzato «Ferrante» il 18 a Santa Cristina; madrina Maria moglie di Girolamo Righetto della parrocchia di PADERNELLO. Sposa nel maggio 1808 a Istrana Santina Ventorin. IPOTESI FORTE: è il Fioravante Cavallin padre di Candida Cavallin (moglie di Domenico Bresolin, Padernello): nome raro, età compatibile, legami con Padernello. Non ancora provato (manca un atto che dica Candida figlia di Fioravante e Santina).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "maggio 1808 Istrana (pubblicazioni 1° e 8 maggio)",
+   "job": "contadino"
+  },
+  {
+   "id": "p1370",
+   "name": "Santina Ventorin",
+   "father": "p1371",
+   "mother": "p1372",
+   "spouses": [
+    "p1369"
+   ],
+   "birth": "circa 1790",
+   "birthPlace": "Ospedaletto (Istrana)",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlia dei fu Mattio Ventorin e Maria Zanetti; 18 anni nel 1808; domiciliata a Istrana. Sposa Fioravante Cavallin nel 1808. Possibile madre di Candida Cavallin (ipotesi).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "maggio 1808 Istrana (pubblicazioni 1° e 8 maggio)"
+  },
+  {
+   "id": "p1371",
+   "name": "Mattio Ventorin",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1372"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 1808",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1372",
+   "name": "Maria Zanetti",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1371"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 1808",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
   }
  ],
  "stories": [
@@ -55803,7 +56580,7 @@
    "place": "Giavera / Castagnole",
    "source": "Archivio di Stato di Treviso, Stato civile napoleonico",
    "language": "italiano",
-   "transcription": "[Altri atti napoleonici delle stesse ricerche, senza legame dichiarato con l'albero.]\n- Rossi detti Nardo di Porcellengo (comune di Castagnole): 14 ottobre 1806, muore a 9 giorni Giuseppe Rossi detto Nardo, figlio di Domenico Rossi detto Nardo e Santina Carniato; testimoni gli zii Angelo (30) e Antonio (22) Rossi detti Nardo. 11 ottobre [1806?], muore Angelo Rossi detto Nardo, figlio di Domenico e Santina Carniato; testimone Giovanni Rossi detto Nardo (30). Stesso soprannome dei Rossi di Padernello (Giovanni 1765, Giacomo 1789): forse un ramo parente.\n- Mattiazzo di Postioma: muore a Castagnole il 19 ottobre [anno?] Francesco Mattiazzo di Angelo, 47 anni, villico, nato a Postioma, figlio del fu Angelo Mattiazzo detto Paesan e della fu Maria Breda. Forse parente di Bernardina Mattiazzi (Postioma, 1835).\n- Zanata di Giavera e Cusignana: Antonio Zanata (37) e Lucia Beluso (30): Angela nata il 14 novembre 1808, morta il 15 novembre 1808; un altro Angelo morto il 2 aprile 1808 a 18 mesi. Matrimonio di Angelo Zanata (nato il 6 giugno 1785, figlio dei fu Antonio Zanata e Maria Rotin) con Lorenza Bortoleto (nata il 1° ottobre 1788, figlia del fu Mattio e di Catterina Mussato); loro figlio Antonio nato il 3 dicembre 1812. Angela Zanata del fu Antonio e della fu Maria Rotin, moglie di Mattio Visentin, morta a Nervesa il 21 settembre 1810 a 28 anni. Andrea Zanata, 74 anni, figlio dei fu Girolamo Zanata e Angela Marchiori, marito di Maria Taveri[?], morto ad Arcade il 19 maggio 1808 (testimoni il fratello Bortolo, 59, e il genero Mattio Bettiol). Pietro Zanata e Domenica Genovese: Angelo nato il 28 marzo 1809. Matteo Zanata del fu Antonio e Elisabetta Tonietto: Angela nata il 13 marzo 1813. Antonio Zanata del fu Angelo e Maria Lazareti del fu Bortolo: Angelo nato il 16 aprile 1813. Alessandro Zanata, calzolaio, e Valentina Tesera: Anna Maria nata il 23 novembre 1809.\n- Gottardo di Bavaria: Nadal Gottardo (29) e Lucia Favero (25): Anna nata il [aprile] 1809 a Bavaria.\n- Graziosa Pavan (29 luglio 1810, n. 39): già trascritta (L10-q07).\n\n[Secondo gruppo di atti Zanata di Cusignana e Giavera, 1807-1815]\n- Antonio Zanata (26-27 anni) e Paola Marchiori (23-24): Modesto nato il 22 aprile 1807 (testimoni Francesco Zanata, fratello del padre, e Carlo Zanata, zio), morto a 5 giorni; Catterina nata il 5 marzo 1808 (testimoni gli zii paterni Domenico e Carlo Zanata), morta il 17 marzo 1808 a 13 giorni.\n- Modesto Zanata (20) e Paola Pierazzo: Antonio nato il 12 luglio 1807 (testimone lo zio Mattio Zanata, 27), morto il 23 settembre 1807 a due mesi (testimone il nonno Giuseppe Zanata, 52).\n- Girolamo Zanata (37) e Maria Cechel[?] (36): Antonio nato il 27 aprile 1808, morto il 2 ottobre 1808 a cinque mesi (madre scritta Maria Zechel).\n- Mattio Zanata (28) e Paola Martinetto (26): Davide nato il 23 marzo 1809; Giulia nata nel marzo 1808.\n- Angelo Zanata (23) e Paola Gobbo[?]: Antonio nato il 2 aprile 1809 a Giavera.\n- Angelo Zanata (24) e Lorenza Bortoletto: Antonio nato il 7 novembre 1809 a Cusignana.\n- Carlo Zanata (32) e Angela Carer[?] (29): Biasio nato il 22 ottobre 1809; testimoni Angelo Marchiori (32) e ANGELO PIETROBON (26): quasi certamente Angelo Pietrobon detto Merlo, vicino di casa a Cusignana.\n- Pietro Zanata detto Zanatel (35) e Domenica Genovese (21): Antonio Angelo nato il 7 novembre 1807.\n- Francesco Zanata detto Bino (40) e Mattia Favero (40): Catterina nata il 20 maggio 1807.\n- Antonio Zanata (18) di Zuanne e Margarita Rosato sposa Orsola Strival (17), nata a Bavaria il 2 marzo 1791, figlia di Antonio Strival e Francesca Gottardo (ottobre 1808).\n- Morti 1815 (Arcade): Antonio Zanata, 21 anni, figlio di Giuseppe e Maria Meneguzzo (24 marzo); Catterina Zanata del fu Osvaldo e di Lucia Bianchin, 31 anni, moglie di Bortolomio Bortoleto (24 marzo).\n- Morte (Giavera, 2 ottobre 1807) di Gio. Battista Campeoto detto Alessi, 64 anni, figlio dei fu Francesco Campeoto e Domenica Santamaria; morte di Girolamo Santamaria detto Gregnol, figlio di Angelo e di Rosa Zanata.\n- Nota: Francesca Gottardo, madre di Orsola Strival, potrebbe appartenere ai Gottardo di Bavaria del nostro albero (non dichiarato).\n\n[Terzo gruppo di atti Zanata, 1807-1815]\n- Giuseppe Zanata del fu Biasio (circa 1757, Cusignana) e Maria Maccobelli[?] del fu Antonio: figli Francesco (circa 1786 - giugno 1812, marito di Giovanna Calesso; figlia Catterina nata il 29 gennaio 1807), Modesto (circa 1787, sposato con Paola Pierazzo e poi con Paola Zanata del fu Giovanni: Zuanne nato il 29 settembre 1809, Felice nato il 15 aprile 1813), Mattio (circa 1781), Benedetto (circa 1790, sposato con Teresa De Marchi di Marco: Giovanni nato e morto l'8 gennaio 1815). Il nonno Giuseppe presenta i nipoti.\n- Antonio Zanata del fu Giuseppe e Maria Meneguzzo: morto a 21 anni il 24 marzo 1815.\n- Angelo Zanata (24) e Paola Gobbo (23), Giavera: Giuseppe morto a 9 giorni il 15 gennaio 1808.\n- Giuseppe Zanata (30) e Paola Gucella[?] (28), Giavera: Domenico nato il 13 marzo 1809.\n- Francesco Zanata (40) e Domenica Pozzobon (36), Giavera: Francesco nato il 22 novembre 1807, morto il 28 novembre 1807 a 6 giorni.\n- Francesco Zanata e Maria Favero (Cusignana): Zuanne morto a 17 anni il 19 gennaio 1810 (testimone Sebastian Pavan, 52 anni).\n- Antonio Zanata (35) e Catterina Baldasso (28): Zuanne nato il 31 marzo 1809.\n- Antonio Zanata di Agostin (42) e Lucia Belusso del fu Pietro (32), Giavera: Giovanni Maria nato l'8 agosto 1812.\n- Gaetano Zanata del fu Antonio e della fu Lorenza Saccaretto[?], nato a Selva (Volpago), 46 anni, marito di Catterina Gobbo: morto il 28 gennaio 1814.\n- Gioachino Zanata, 24 anni, figlio di Domenico (58) e della fu Maria Messer[?]: morto il 15 marzo 1814 a Giavera (casa di Domenico Zanata del fu Apollonio).\n- Domenica Zanata del fu Pietro e della fu Maddalena Baldasso, 62 anni, vedova di Giuseppe Baldasso: morta a Cusignana il 14 dicembre 1813; testimone il nipote Giacomo Baldasso del fu Antonio.\n- Nota: nessuno di questi atti nomina persone del nostro albero. Il Sebastian Pavan di 52 anni (1810) non è Sebastian Pavan detto Ferro (n. 1766).\n\n[Quarto gruppo, 1807-1815]\n- Carlo Zanata detto Priuli (24) e Angela Code (26), Cusignana: Pietro nato il 5 novembre 1807 (testimone lo zio Domenico Zanata Priuli, 42), morto il 13 novembre 1807 a 9 giorni.\n- Giuseppe Zanata (19) e Angela da Roverè (20), Cusignana: Elisabetta nata il 3 febbraio 1807.\n- Antonio Zanata di Giovanni (23) e Orsola Strival di Antonio (23), Giavera: Maria nata il 4 maggio 1815, morta il 13 maggio 1815.\n- Antonio Zanata (38) e Lucia Belusso (38), Giavera: Orsola nata l'11 marzo 1810.\n- Modesto Zanata di Giuseppe (27) e Paola Zanata del fu Giovanni (28): Martino nato il 27 ottobre 1814.\n- Mattio Zanata del fu Antonio e Elisabetta Tonietto di Giuseppe: Angela morta a 6 giorni il 19 marzo 1813.\n- Alessandro Zanata del fu Steffano (30), calzolaio, e Valentina Messer di Bortolo (28): Maria Teresa nata il 27 maggio 1813, morta l'8 giugno 1813.\n- Giacomo Zanata e Maria Zechel: Marina morta a 8 giorni il 4 aprile 1810.\n- Santo Zanata e Antonia Durigan, Giavera: Pietro morto a 13 giorni il 9 gennaio 1810.\n- Antonio Zanata morto a 10 giorni il 13 dicembre 1812, in casa di Domenico Zanata del fu Lorenzo.\n- Matrimonio (Giavera, 1808): Mattio Vendramel (nato il 7 aprile 1788, figlio del fu Giovanni Battista e di Angela Pasqualin) con Marina Zanata (nata il 12 giugno 1789 ad Arcade, figlia di Andrea Zanata e Domenica Biasuzzo).\n- Testimone Giovanni Barbisan del fu Francesco, 32 anni, Giavera (1814): un altro ramo Barbisan.\n- Catterina Bovanga, figlia di Antonio di Prosdocimo Bovanga e di Domenica Durante del fu Giovanni Maria: morta bambina (1812). Un ramo Durante di Cusignana, forse parente di Monica Durante di Enrico (moglie di Angelo Pietrobon detto Merlo): non dichiarato.\n- Morte di Lorenzo Pavan (14 novembre 1807): già trascritta (L19-d01).\n\n[Quinto e ultimo gruppo Zanata, 1807-1814]\n- Francesco Zanata (25) e Giovanna Calesso (23), Cusignana: Valentin Antonio nato il 14 febbraio 1808 (il padre firma).\n- Matteo Zanata di Giuseppe (33) e Paola Martinetti di Domenico (32): Valentina nata il 5 luglio 1814.\n- Giuseppe Calesso del fu Francesco (35) e Catterina Sartori del fu Paolo (18): Domenica nata il 19 agosto 1814, Cusignana.\n- Giuseppe Zanata (28) e Paola Gusela (26), Giavera: Giuseppe nato il 25 settembre 1807; testimoni gli zii paterni Francesco (39) e Angelo (35) Zanata.\n- Santo Zanata (23) e Antonia Durigan (20): Pietro nato il 26 dicembre 1809. Loro matrimonio: pubblicazioni del 15 e 22 novembre 1807 (Santo, 21 anni, figlio del fu Antonio Zanata e di Antonia Fragnana[?]; Antonia, 19 anni, figlia di Giacomo Durigan e Domenica Zacol[?]).\n- Antonio Zanata (36) e Catterina Baldasso (28), Cusignana: Regina nata il 22 aprile 1810.\n- Francesco Zanata (32) e Orsola Santon (33), Cusignana: Simon nato il 29 novembre 1808, morto il 6 dicembre 1808.\n- Steffano Zanata del fu Domenico e della fu Armelina Catelan, nato a Villorba, 62 anni, marito di Gerolama Caberloto: morto il 21 luglio 1812 a Cusignana; testimoni il figlio Alessandro (31, calzolaio) e il vicino VINCENZO AMADIO del fu Giacomo (49).\n- Domenico Zanata e Caterina Zandonà: Teresa morta a 15 giorni il 15 gennaio 1810 a Cusignana; testimone ANTONIO PIEROBON, 60 anni, villico di Cusignana.\n- Note: Antonio Pierobon (60 anni nel 1810) corrisponde ad Antonio Pietrobon detto Merlo (58 nel 1808). Vincenzo Amadio del fu Giacomo (circa 1763), vicino di casa a Cusignana, forse parente (fratello?) di Maria Amadio, moglie di Antonio Pietrobon: non dichiarato.\n\n[Sesto gruppo, 1811-1813]\n- Paese (frazione del Comune di Treviso), 15 maggio 1813, n. 39: Zuanne di Pietro Pierobon (26), villico, colmello di Paese n. 23, e Maria del fu Pietro Pozzobon (24): Luigi nato il 14 maggio 1813; testimoni gli zii paterni Fermo di Pietro Pierobon (32) e Battista di Pietro Pierobon (24). Una famiglia Pierobon di Paese (Pietro e i figli Zuanne, Fermo, Battista), non collegata.\n- Paese, 27 maggio 1813, n. 41: Zuanne del fu Battista Brisolin (42), gastaldo, e Giovanna di Stefano Matarolo (38): Antonio nato il 25 maggio 1813 (colmello di Villa n. 113); testimone lo zio materno Carlo del fu Valentin Favaro. Bresolin di Paese, non collegati ai nostri di Padernello.\n- Paese, n. 40: Zuanne del fu Pietro Morao e Domenica del fu Marco Franchetto: Maria nata il 26 maggio 1813. NB: famiglia Morao di Paese, stesso cognome dato alla madre di Angela Pietrobon nel 1917.\n- Arcade, 30 luglio 1811, n. 53: morte di Fiovetta Sisto (80), nata a Postioma, moglie in seconde nozze di Bortolo Gazzarin; testimone il genero Pietro Zanatta del fu Angelo.\n- Susegana, 25 luglio 1811: morte di Valentina Merlo (35), nata a Cusignana da Antonio Merlo e Angela Barbon, moglie di Giuseppe Saldan (Collalto). Cognome Merlo, non il soprannome dei Pietrobon.\n\n[Settimo gruppo: altri Pietrobon di Paese, Postioma e Padernello, 1897-1933 (non collegati all'albero)]\n- Paese 1897 n. 22, 28 febbraio: Maria Anna Pietrobon, 12 giorni, morta a Postioma n. 2, figlia di Sante Pietrobon e Rossi Eufemia; dichiarante Costante Pietrobon (39). NB: Postioma n. 2 è la casa dove morirono Domenico Pietrobon (1895) e il figlio Antonio (1899): Sante e Costante (n. circa 1858) potrebbero essere altri figli di Domenico e Bernardina Mattiazzi, ma l'atto non lo dice.\n- Paese 1897 n. 21: Dorotea Bortolato, 61, vedova di Giovanni Pozzebon, Padernello n. 53; dichiarante Giovanni Pietrobon (47), Padernello.\n- Paese 1897 n. 51, 2 luglio: Anna Pietrobon, 20 mesi, figlia di Pietro e Carniel Maria Concetta, Paese n. 76.\n- Paese 1897 n. 9 (trascrizione da Treviso): Angelo Pietrobon, 5 mesi, figlio di Lorenzo[?] e di Berlese Santa, di Postioma, morto all'Ospedale civile di Treviso il 15 luglio 1897.\n- Paese 1899 n. 100, 23 novembre: Angelo Pietrobon, 82 anni, villico, Padernello n. 87, nato a Paese dai fu Angelo e Maria Marazzato[?], marito di Antonia Bellio.\n- Paese 1900 n. 110, 4 dicembre: Antonio Pietrobon, 66, celibe, Paese n. 76, figlio dei fu Battista e Regina De Lazzari.\n- Paese 1911 n. 96, 10 settembre: Angela Pietrobon, 43, Padernello n. 119, figlia di Giacomo e Maddalena De Rossi, moglie di Angelo Zaratin[?]; dichiarante Giuseppe Pietrobon (48).\n- Paese 1912 matrimonio n. 22, 7 maggio: Giovanni Marconato (23, figlio di Girolamo e Anna Tosello) sposa Antonia Pietrobon (21), di Padernello, figlia di Giovanni Pietrobon e Maria Bresolin.\n- Paese 1916 n. 40, 31 marzo: Assunta Pietrobon, 7 giorni, Padernello, figlia di Bortolo (37) e Santa Troncon[?].\n- Paese 1916 n. 79, 3 agosto: Antonia Pierobon, 76, Postioma n. 26, figlia dei fu Angelo e Pierina Bianchin, vedova di Pietro Marchetto.\n- Paese 1922 n. 26, 15 febbraio: Assunta Giovanna Pietrobon, 6 mesi, figlia di Arturo e Rosa Vanin; dichiarante Gio. Battista Pietrobon (58).\n- Paese 1933 n. 63, 30 luglio: Antonio Pietrobon, 8 mesi, figlio di Costantino (di Giovanni, 44, contadino) e Letizia Baratto.\n- Arcade 1811 n. 63 (Anna Maria Pietrobon detta Merlo): già trascritto.\n\n[Ottavo gruppo: altri Pietrobon di Paese, Postioma e Padernello (non collegati)]\n- Paese 1891 pubblicazioni n. 27: Francesco Pietrobon (49, di Fontane, nato a Ponzano Veneto, del fu Antonio e della fu Maria Genovese) con Carola Irene Vettori (30, di Postioma, di Giuseppe e di Regina Pietrobon).\n- Paese 1894 pubblicazioni n. 36: Giuseppe Matteo Pietrobon (23, Postioma, del fu Carlo e di Veronica Vidotto) con Marta Carlotta Favero (20, di Francesco e Luigia Piovesan).\n- Paese 1904 pubblicazioni n. 35 e 55: Gabriele Arcangelo Pietrobon (27-28, agricoltore, Postioma, del fu Carlo e di Veronica Vidotto) con Erminia Billio (21-22, di Vincenzo e Maddalena Tessaro[?], Porcellengo). NB: famiglia di Carlo Pietrobon e Veronica Vidotto, Postioma; uno dei figli si chiama Gabriele.\n- Paese 1808 (copia): battesimo del 29 giugno 1789 a San Martino di Paese di Gio. Batta, figlio di Pietro Pierobon di Zuanne e di Catterina Severin di Giambattista; padrino Gio. Batta de Rossi.\n- Paese 1897 n. 66: Fortunato Pietrobon, 9 anni, figlio di Giuseppe e Maria Volpato, Padernello n. 87; dichiarante Giovanni Pietrobon (49).\n- Paese 1918 n. 35 e n. 180: due bambine Giovanna Pietrobon (17 mesi, aprile; 1 mese, ottobre), figlie di Guglielmo Pietrobon e Colomba Martignago, Padernello n. 109.\n- Paese 1922 n. 72 e 1925 n. 65: Giuseppe Pietrobon (4 mesi) e Giuseppe Pietrobon (10 mesi), figli di Bortolo/Giuseppe Pietrobon e Santa Troncon, Padernello. 1925 n. 66: Lino Pietrobon, 1 mese, figlio di Ernesto e Giacinta Gemin.\n- Paese 1930 n. 39: Giovanni Bruno Pietrobon, 1 anno, figlio di Costantino e Letizia Baratto.\n- Arcade 1814 n. 17 (Giuditta Pietrobon detta Merlo): già trascritto.\n\n[Nono gruppo]\n- Ponzano 1807 n. 20, 8 maggio: DOMENICO PIEROBON DETTO MERLO, 37 anni (n. circa 1770), agricoltore a Ponzano, e Paola Benetton (36): Margherita nata l'8 maggio 1807. Stesso soprannome «Merlo»: forse un figlio di Antonio detto Merlo (n. circa 1749) o un parente, emigrato a Ponzano. Non dichiarato.\n- Paese 1893 n. 92: Luigi Pietrobon, 5 mesi, figlio di Gaetano e Giovanna Colusso, Postioma n. 112 (dichiarante Costante Pietrobon, 38).\n- Paese 1895 n. 61: Luigi Pietrobon, 2 anni, figlio di Antonio e Maria Amadio, Postioma n. 2 (già nell'albero, p582); dichiarante Costante Pietrobon (38).\n- Paese 1897 n. 85: Luigi Pietrobon, 20 giorni, figlio di Pietro e Giovanna Stefani, Postioma n. 2 (già nell'albero).\n- Paese 1910 n. 112: Luigi Pietrobon, 33, celibe, morto nel canale Brentella a Padernello, figlio di Giuseppe e Maria Volpato. 1918 n. 146: Ida Pietrobon, 17, figlia degli stessi.\n- Paese 1922 pubblicazioni n. 24: Luigi Pietrobon (28, di Fiorino e Santa Berlese) con Maria Pietrobon (24, nata in BRASILE, figlia di Giuseppe, oste, e Carlotta Favero). 1923 n. 86: Italia Veronica Pietrobon, 23, nata in AMERICA, figlia di Giuseppe (oste) e Marta Favero, moglie di Santo Billio, Postioma n. 118. NB: Giuseppe Matteo Pietrobon (del fu Carlo e Veronica Vidotto) e Marta Carlotta Favero, pubblicazioni 1894: emigrati in Brasile e tornati a Postioma.\n- Paese 1926 n. 54: Lucia Pietrobon, 1 anno, figlia di Novello e Maria Tessaro, Padernello. 1931 n. 76: Ines Maria Pietrobon, 8 giorni, figlia di Angelo e Elisabetta Bandiera.\n\n[Decimo gruppo]\n- Famiglia di Valentino Pietrobon e Orsola Pavan (Postioma, poi Porcellengo; entrambi morti prima del 1899): Giovanni (n. circa 1870, sposa Teresa Vendrame 1899) e OLIVO CATTERINO (n. circa 1863, agricoltore, sposa a Paese il 9 ottobre 1902 Teresa Maria Badesso, 20 anni, di Postioma, figlia del fu Domenico Badesso e di Margherita Pagnossin). Cognome Badesso come Valentina, moglie di Angelo Pietrobon: possibile parentela tra i rami di Postioma.\n- Paese 1807 n. 7: Fermo Pierobon (26) e Catterina Venturato[?]: Valentino nato il 9 febbraio 1807 (forse lo stesso Valentino, padre di Giovanni e Olivo?).\n- Paese 1893 matrimonio n. 10: Pietro Pietrobon (25, nato a Paese, di Bartolomeo e Moro Maria) con Maria Concetta Carniel (21, nata a Castelcucco[?] d'Asolo, di Angelo e Gazzola Prudenza).\n- Paese 1900 n. 86: Valentina Pietrobon, 72, figlia dei fu Battista e Regina De Lazzari, vedova di Angelo Gobbin.\n- Figli di Giuseppe Pietrobon e Maria Volpato (Padernello): Salute (16 mesi, morta 22 marzo 1896); Oliva Luigia (20, sposa Giovanni Francesco Tosello di Musano, 10 maggio 1901); Maria (24, sposa Fioravante Crosato di Morgano, 30 dicembre 1909); Salute Maria (24, pubblicazioni con Cesare Virginio Rossi, gennaio 1920).\n- Bortolo Pietrobon e Santa Troncon: Maria (11 giorni, aprile 1916), Mario (3 mesi, novembre 1923). Fiorino Pietrobon e Eleonora Pasato: Maria Maddalena (settembre 1917), Mario (maggio 1926). Guglielmo e Colomba Martignago: Olinda (giugno 1926). Abramo e Eugenia Gasparini: Olindo (settembre 1925). Giuseppe (oste) e Marta Carlotta Favero: Seconda Berona (febbraio 1913).\n\n[Undicesimo gruppo: Zatta e Cavallin di Padernello, Pezzan e Sala (Istrana)]\n- Istrana 1919 (trascrizione da Paese, 6 novembre 1919): Gaetano Ippindo (25, muratore, nato a Padova, figlio di ignoti) sposa Antonia Cavallin (28, nata a Istrana, figlia di Edoardo e Marta Volpato, Padernello): sorella di Ettore Salvatore Cavallin, marito di Maria Anna Pietrobon. Aggiunta all'albero.\n- Istrana 1807, pubblicazioni n. 23 e 26 e fascicolo n. 7: Bortolo Foresto (21 anni e 9 mesi, agricoltore, Pezzan, di Francesco e Giuseppa Frassetto) con Cattarina Zatta (21, lavoratrice di campagna, Pezzan, del fu Francesco Zatta del fu Domenico e della fu Pasqua Pozzebon del fu Domenico). Battesimo di Cattarina: Pezzan (S. Vito), 29 settembre[?] 1785, padrino Francesco q. Zuanne Casparin (copia del parroco Furlanetto, 18 aprile 1807). Pubblicazioni del 19 e 26 aprile 1807.\n- Istrana 1807, n. 24: Gioachino Carniel (20, Pezzan, di Angelo e Francesca Rossi) con Angela Marazatto (18, del fu Giovanni e della fu Maria Gonzo). N. 25 e 27: Giovanni Antonio Miotto (24, calzolaio, Padernello, di Lorenzo, campanaro, e Maria Visentin) con Elena Mattarolo (21, di Giacomo, sensale, e della fu Benedetta Schiavon). N. 22 (Ponte di Piave): Domenico Montin, maestro di scuola a Sala, con Margarita de Tavani.\n- Istrana 1809, n. 28-31: Santo Bertuse (di Angelo e Cattarina Frassetto), Francesco Gasparin (di Osvaldo e Angela Vedelago), Francesco ZATTA (nato il 6 maggio 1809, Pezzan, figlio di Giacomo Zatta detto Gagno, 34 anni, birrarolo[?], e Giacoma Carlonetto[?]), Orsola Condotta.\n- Paese 1895 n. 23 (28 marzo): Alfonso Zatta (28, Padernello, del fu Angelo e della fu Caterina Rossi) sposa Caterina Bordignon (30, del fu Domenico e di Maria Mestriner).\n- Istrana 1916 n. 3 (6 aprile): Novello Catterino Zatta (31, nato a Paese, di Pezzan, del fu Ferdinando e della fu Giovanna Gasparini) sposa Anna Paronetto (33, di Tito e Marina Franchetto). Istrana 1920 n. 24 (22 aprile): lo stesso, vedovo, sposa Maria Luigia Favaro (35, di Sala, del fu Luigi e di Angela Gasparini).\n- Istrana 1939 n. 25 (27 dicembre): Marcello Giocondo Pestrin (32, di Catterino e Antonia Foresto) sposa Ginevra Maria Zatta (37, del fu Domenico e di Antonia Bordignon), Pezzan.\n- Istrana 1920 n. 13 (24 marzo): Giovanni Antonio Cavallin (34, Villanova, di Pasquale e Giustina Sartori) sposa Enrichetta Ernesta Cendron (29, di Sante e Andreanna Rizzato).\n- Nota: nessun atto nomina Sebastiano Zatta (marito di Bernardina Rossi, padre di Luigia) né Fioravante Cavallin (padre di Candida). Gli Zatta di Pezzan e Padernello (Francesco del fu Domenico, Giacomo detto Gagno, Angelo, Ferdinando) potrebbero essere parenti di Sebastiano: da verificare con il suo battesimo.\n\n[Dodicesimo gruppo, Monastier 1812]\n- Monastier 1812 n. 6 (25 febbraio): Catterina, figlia di Battista Lovisetto (38, villico) e Lorenza Montagner (38). Battista Lovisetto, nato verso il 1774, potrebbe essere un fratello di Domenico o di Antonio Luisetto: non dichiarato.\n- N. 7 (3 marzo): Giacomo, figlio di Giuseppe Botter (31) e Lucia Steffani (35). N. 8: Gennaro, figlio di Giovanni Placa (21) e Maria Morosinotto (20).",
+   "transcription": "[Altri atti napoleonici delle stesse ricerche, senza legame dichiarato con l'albero.]\n- Rossi detti Nardo di Porcellengo (comune di Castagnole): 14 ottobre 1806, muore a 9 giorni Giuseppe Rossi detto Nardo, figlio di Domenico Rossi detto Nardo e Santina Carniato; testimoni gli zii Angelo (30) e Antonio (22) Rossi detti Nardo. 11 ottobre [1806?], muore Angelo Rossi detto Nardo, figlio di Domenico e Santina Carniato; testimone Giovanni Rossi detto Nardo (30). Stesso soprannome dei Rossi di Padernello (Giovanni 1765, Giacomo 1789): forse un ramo parente.\n- Mattiazzo di Postioma: muore a Castagnole il 19 ottobre [anno?] Francesco Mattiazzo di Angelo, 47 anni, villico, nato a Postioma, figlio del fu Angelo Mattiazzo detto Paesan e della fu Maria Breda. Forse parente di Bernardina Mattiazzi (Postioma, 1835).\n- Zanata di Giavera e Cusignana: Antonio Zanata (37) e Lucia Beluso (30): Angela nata il 14 novembre 1808, morta il 15 novembre 1808; un altro Angelo morto il 2 aprile 1808 a 18 mesi. Matrimonio di Angelo Zanata (nato il 6 giugno 1785, figlio dei fu Antonio Zanata e Maria Rotin) con Lorenza Bortoleto (nata il 1° ottobre 1788, figlia del fu Mattio e di Catterina Mussato); loro figlio Antonio nato il 3 dicembre 1812. Angela Zanata del fu Antonio e della fu Maria Rotin, moglie di Mattio Visentin, morta a Nervesa il 21 settembre 1810 a 28 anni. Andrea Zanata, 74 anni, figlio dei fu Girolamo Zanata e Angela Marchiori, marito di Maria Taveri[?], morto ad Arcade il 19 maggio 1808 (testimoni il fratello Bortolo, 59, e il genero Mattio Bettiol). Pietro Zanata e Domenica Genovese: Angelo nato il 28 marzo 1809. Matteo Zanata del fu Antonio e Elisabetta Tonietto: Angela nata il 13 marzo 1813. Antonio Zanata del fu Angelo e Maria Lazareti del fu Bortolo: Angelo nato il 16 aprile 1813. Alessandro Zanata, calzolaio, e Valentina Tesera: Anna Maria nata il 23 novembre 1809.\n- Gottardo di Bavaria: Nadal Gottardo (29) e Lucia Favero (25): Anna nata il [aprile] 1809 a Bavaria.\n- Graziosa Pavan (29 luglio 1810, n. 39): già trascritta (L10-q07).\n\n[Secondo gruppo di atti Zanata di Cusignana e Giavera, 1807-1815]\n- Antonio Zanata (26-27 anni) e Paola Marchiori (23-24): Modesto nato il 22 aprile 1807 (testimoni Francesco Zanata, fratello del padre, e Carlo Zanata, zio), morto a 5 giorni; Catterina nata il 5 marzo 1808 (testimoni gli zii paterni Domenico e Carlo Zanata), morta il 17 marzo 1808 a 13 giorni.\n- Modesto Zanata (20) e Paola Pierazzo: Antonio nato il 12 luglio 1807 (testimone lo zio Mattio Zanata, 27), morto il 23 settembre 1807 a due mesi (testimone il nonno Giuseppe Zanata, 52).\n- Girolamo Zanata (37) e Maria Cechel[?] (36): Antonio nato il 27 aprile 1808, morto il 2 ottobre 1808 a cinque mesi (madre scritta Maria Zechel).\n- Mattio Zanata (28) e Paola Martinetto (26): Davide nato il 23 marzo 1809; Giulia nata nel marzo 1808.\n- Angelo Zanata (23) e Paola Gobbo[?]: Antonio nato il 2 aprile 1809 a Giavera.\n- Angelo Zanata (24) e Lorenza Bortoletto: Antonio nato il 7 novembre 1809 a Cusignana.\n- Carlo Zanata (32) e Angela Carer[?] (29): Biasio nato il 22 ottobre 1809; testimoni Angelo Marchiori (32) e ANGELO PIETROBON (26): quasi certamente Angelo Pietrobon detto Merlo, vicino di casa a Cusignana.\n- Pietro Zanata detto Zanatel (35) e Domenica Genovese (21): Antonio Angelo nato il 7 novembre 1807.\n- Francesco Zanata detto Bino (40) e Mattia Favero (40): Catterina nata il 20 maggio 1807.\n- Antonio Zanata (18) di Zuanne e Margarita Rosato sposa Orsola Strival (17), nata a Bavaria il 2 marzo 1791, figlia di Antonio Strival e Francesca Gottardo (ottobre 1808).\n- Morti 1815 (Arcade): Antonio Zanata, 21 anni, figlio di Giuseppe e Maria Meneguzzo (24 marzo); Catterina Zanata del fu Osvaldo e di Lucia Bianchin, 31 anni, moglie di Bortolomio Bortoleto (24 marzo).\n- Morte (Giavera, 2 ottobre 1807) di Gio. Battista Campeoto detto Alessi, 64 anni, figlio dei fu Francesco Campeoto e Domenica Santamaria; morte di Girolamo Santamaria detto Gregnol, figlio di Angelo e di Rosa Zanata.\n- Nota: Francesca Gottardo, madre di Orsola Strival, potrebbe appartenere ai Gottardo di Bavaria del nostro albero (non dichiarato).\n\n[Terzo gruppo di atti Zanata, 1807-1815]\n- Giuseppe Zanata del fu Biasio (circa 1757, Cusignana) e Maria Maccobelli[?] del fu Antonio: figli Francesco (circa 1786 - giugno 1812, marito di Giovanna Calesso; figlia Catterina nata il 29 gennaio 1807), Modesto (circa 1787, sposato con Paola Pierazzo e poi con Paola Zanata del fu Giovanni: Zuanne nato il 29 settembre 1809, Felice nato il 15 aprile 1813), Mattio (circa 1781), Benedetto (circa 1790, sposato con Teresa De Marchi di Marco: Giovanni nato e morto l'8 gennaio 1815). Il nonno Giuseppe presenta i nipoti.\n- Antonio Zanata del fu Giuseppe e Maria Meneguzzo: morto a 21 anni il 24 marzo 1815.\n- Angelo Zanata (24) e Paola Gobbo (23), Giavera: Giuseppe morto a 9 giorni il 15 gennaio 1808.\n- Giuseppe Zanata (30) e Paola Gucella[?] (28), Giavera: Domenico nato il 13 marzo 1809.\n- Francesco Zanata (40) e Domenica Pozzobon (36), Giavera: Francesco nato il 22 novembre 1807, morto il 28 novembre 1807 a 6 giorni.\n- Francesco Zanata e Maria Favero (Cusignana): Zuanne morto a 17 anni il 19 gennaio 1810 (testimone Sebastian Pavan, 52 anni).\n- Antonio Zanata (35) e Catterina Baldasso (28): Zuanne nato il 31 marzo 1809.\n- Antonio Zanata di Agostin (42) e Lucia Belusso del fu Pietro (32), Giavera: Giovanni Maria nato l'8 agosto 1812.\n- Gaetano Zanata del fu Antonio e della fu Lorenza Saccaretto[?], nato a Selva (Volpago), 46 anni, marito di Catterina Gobbo: morto il 28 gennaio 1814.\n- Gioachino Zanata, 24 anni, figlio di Domenico (58) e della fu Maria Messer[?]: morto il 15 marzo 1814 a Giavera (casa di Domenico Zanata del fu Apollonio).\n- Domenica Zanata del fu Pietro e della fu Maddalena Baldasso, 62 anni, vedova di Giuseppe Baldasso: morta a Cusignana il 14 dicembre 1813; testimone il nipote Giacomo Baldasso del fu Antonio.\n- Nota: nessuno di questi atti nomina persone del nostro albero. Il Sebastian Pavan di 52 anni (1810) non è Sebastian Pavan detto Ferro (n. 1766).\n\n[Quarto gruppo, 1807-1815]\n- Carlo Zanata detto Priuli (24) e Angela Code (26), Cusignana: Pietro nato il 5 novembre 1807 (testimone lo zio Domenico Zanata Priuli, 42), morto il 13 novembre 1807 a 9 giorni.\n- Giuseppe Zanata (19) e Angela da Roverè (20), Cusignana: Elisabetta nata il 3 febbraio 1807.\n- Antonio Zanata di Giovanni (23) e Orsola Strival di Antonio (23), Giavera: Maria nata il 4 maggio 1815, morta il 13 maggio 1815.\n- Antonio Zanata (38) e Lucia Belusso (38), Giavera: Orsola nata l'11 marzo 1810.\n- Modesto Zanata di Giuseppe (27) e Paola Zanata del fu Giovanni (28): Martino nato il 27 ottobre 1814.\n- Mattio Zanata del fu Antonio e Elisabetta Tonietto di Giuseppe: Angela morta a 6 giorni il 19 marzo 1813.\n- Alessandro Zanata del fu Steffano (30), calzolaio, e Valentina Messer di Bortolo (28): Maria Teresa nata il 27 maggio 1813, morta l'8 giugno 1813.\n- Giacomo Zanata e Maria Zechel: Marina morta a 8 giorni il 4 aprile 1810.\n- Santo Zanata e Antonia Durigan, Giavera: Pietro morto a 13 giorni il 9 gennaio 1810.\n- Antonio Zanata morto a 10 giorni il 13 dicembre 1812, in casa di Domenico Zanata del fu Lorenzo.\n- Matrimonio (Giavera, 1808): Mattio Vendramel (nato il 7 aprile 1788, figlio del fu Giovanni Battista e di Angela Pasqualin) con Marina Zanata (nata il 12 giugno 1789 ad Arcade, figlia di Andrea Zanata e Domenica Biasuzzo).\n- Testimone Giovanni Barbisan del fu Francesco, 32 anni, Giavera (1814): un altro ramo Barbisan.\n- Catterina Bovanga, figlia di Antonio di Prosdocimo Bovanga e di Domenica Durante del fu Giovanni Maria: morta bambina (1812). Un ramo Durante di Cusignana, forse parente di Monica Durante di Enrico (moglie di Angelo Pietrobon detto Merlo): non dichiarato.\n- Morte di Lorenzo Pavan (14 novembre 1807): già trascritta (L19-d01).\n\n[Quinto e ultimo gruppo Zanata, 1807-1814]\n- Francesco Zanata (25) e Giovanna Calesso (23), Cusignana: Valentin Antonio nato il 14 febbraio 1808 (il padre firma).\n- Matteo Zanata di Giuseppe (33) e Paola Martinetti di Domenico (32): Valentina nata il 5 luglio 1814.\n- Giuseppe Calesso del fu Francesco (35) e Catterina Sartori del fu Paolo (18): Domenica nata il 19 agosto 1814, Cusignana.\n- Giuseppe Zanata (28) e Paola Gusela (26), Giavera: Giuseppe nato il 25 settembre 1807; testimoni gli zii paterni Francesco (39) e Angelo (35) Zanata.\n- Santo Zanata (23) e Antonia Durigan (20): Pietro nato il 26 dicembre 1809. Loro matrimonio: pubblicazioni del 15 e 22 novembre 1807 (Santo, 21 anni, figlio del fu Antonio Zanata e di Antonia Fragnana[?]; Antonia, 19 anni, figlia di Giacomo Durigan e Domenica Zacol[?]).\n- Antonio Zanata (36) e Catterina Baldasso (28), Cusignana: Regina nata il 22 aprile 1810.\n- Francesco Zanata (32) e Orsola Santon (33), Cusignana: Simon nato il 29 novembre 1808, morto il 6 dicembre 1808.\n- Steffano Zanata del fu Domenico e della fu Armelina Catelan, nato a Villorba, 62 anni, marito di Gerolama Caberloto: morto il 21 luglio 1812 a Cusignana; testimoni il figlio Alessandro (31, calzolaio) e il vicino VINCENZO AMADIO del fu Giacomo (49).\n- Domenico Zanata e Caterina Zandonà: Teresa morta a 15 giorni il 15 gennaio 1810 a Cusignana; testimone ANTONIO PIEROBON, 60 anni, villico di Cusignana.\n- Note: Antonio Pierobon (60 anni nel 1810) corrisponde ad Antonio Pietrobon detto Merlo (58 nel 1808). Vincenzo Amadio del fu Giacomo (circa 1763), vicino di casa a Cusignana, forse parente (fratello?) di Maria Amadio, moglie di Antonio Pietrobon: non dichiarato.\n\n[Sesto gruppo, 1811-1813]\n- Paese (frazione del Comune di Treviso), 15 maggio 1813, n. 39: Zuanne di Pietro Pierobon (26), villico, colmello di Paese n. 23, e Maria del fu Pietro Pozzobon (24): Luigi nato il 14 maggio 1813; testimoni gli zii paterni Fermo di Pietro Pierobon (32) e Battista di Pietro Pierobon (24). Una famiglia Pierobon di Paese (Pietro e i figli Zuanne, Fermo, Battista), non collegata.\n- Paese, 27 maggio 1813, n. 41: Zuanne del fu Battista Brisolin (42), gastaldo, e Giovanna di Stefano Matarolo (38): Antonio nato il 25 maggio 1813 (colmello di Villa n. 113); testimone lo zio materno Carlo del fu Valentin Favaro. Bresolin di Paese, non collegati ai nostri di Padernello.\n- Paese, n. 40: Zuanne del fu Pietro Morao e Domenica del fu Marco Franchetto: Maria nata il 26 maggio 1813. NB: famiglia Morao di Paese, stesso cognome dato alla madre di Angela Pietrobon nel 1917.\n- Arcade, 30 luglio 1811, n. 53: morte di Fiovetta Sisto (80), nata a Postioma, moglie in seconde nozze di Bortolo Gazzarin; testimone il genero Pietro Zanatta del fu Angelo.\n- Susegana, 25 luglio 1811: morte di Valentina Merlo (35), nata a Cusignana da Antonio Merlo e Angela Barbon, moglie di Giuseppe Saldan (Collalto). Cognome Merlo, non il soprannome dei Pietrobon.\n\n[Settimo gruppo: altri Pietrobon di Paese, Postioma e Padernello, 1897-1933 (non collegati all'albero)]\n- Paese 1897 n. 22, 28 febbraio: Maria Anna Pietrobon, 12 giorni, morta a Postioma n. 2, figlia di Sante Pietrobon e Rossi Eufemia; dichiarante Costante Pietrobon (39). NB: Postioma n. 2 è la casa dove morirono Domenico Pietrobon (1895) e il figlio Antonio (1899): Sante e Costante (n. circa 1858) potrebbero essere altri figli di Domenico e Bernardina Mattiazzi, ma l'atto non lo dice.\n- Paese 1897 n. 21: Dorotea Bortolato, 61, vedova di Giovanni Pozzebon, Padernello n. 53; dichiarante Giovanni Pietrobon (47), Padernello.\n- Paese 1897 n. 51, 2 luglio: Anna Pietrobon, 20 mesi, figlia di Pietro e Carniel Maria Concetta, Paese n. 76.\n- Paese 1897 n. 9 (trascrizione da Treviso): Angelo Pietrobon, 5 mesi, figlio di Lorenzo[?] e di Berlese Santa, di Postioma, morto all'Ospedale civile di Treviso il 15 luglio 1897.\n- Paese 1899 n. 100, 23 novembre: Angelo Pietrobon, 82 anni, villico, Padernello n. 87, nato a Paese dai fu Angelo e Maria Marazzato[?], marito di Antonia Bellio.\n- Paese 1900 n. 110, 4 dicembre: Antonio Pietrobon, 66, celibe, Paese n. 76, figlio dei fu Battista e Regina De Lazzari.\n- Paese 1911 n. 96, 10 settembre: Angela Pietrobon, 43, Padernello n. 119, figlia di Giacomo e Maddalena De Rossi, moglie di Angelo Zaratin[?]; dichiarante Giuseppe Pietrobon (48).\n- Paese 1912 matrimonio n. 22, 7 maggio: Giovanni Marconato (23, figlio di Girolamo e Anna Tosello) sposa Antonia Pietrobon (21), di Padernello, figlia di Giovanni Pietrobon e Maria Bresolin.\n- Paese 1916 n. 40, 31 marzo: Assunta Pietrobon, 7 giorni, Padernello, figlia di Bortolo (37) e Santa Troncon[?].\n- Paese 1916 n. 79, 3 agosto: Antonia Pierobon, 76, Postioma n. 26, figlia dei fu Angelo e Pierina Bianchin, vedova di Pietro Marchetto.\n- Paese 1922 n. 26, 15 febbraio: Assunta Giovanna Pietrobon, 6 mesi, figlia di Arturo e Rosa Vanin; dichiarante Gio. Battista Pietrobon (58).\n- Paese 1933 n. 63, 30 luglio: Antonio Pietrobon, 8 mesi, figlio di Costantino (di Giovanni, 44, contadino) e Letizia Baratto.\n- Arcade 1811 n. 63 (Anna Maria Pietrobon detta Merlo): già trascritto.\n\n[Ottavo gruppo: altri Pietrobon di Paese, Postioma e Padernello (non collegati)]\n- Paese 1891 pubblicazioni n. 27: Francesco Pietrobon (49, di Fontane, nato a Ponzano Veneto, del fu Antonio e della fu Maria Genovese) con Carola Irene Vettori (30, di Postioma, di Giuseppe e di Regina Pietrobon).\n- Paese 1894 pubblicazioni n. 36: Giuseppe Matteo Pietrobon (23, Postioma, del fu Carlo e di Veronica Vidotto) con Marta Carlotta Favero (20, di Francesco e Luigia Piovesan).\n- Paese 1904 pubblicazioni n. 35 e 55: Gabriele Arcangelo Pietrobon (27-28, agricoltore, Postioma, del fu Carlo e di Veronica Vidotto) con Erminia Billio (21-22, di Vincenzo e Maddalena Tessaro[?], Porcellengo). NB: famiglia di Carlo Pietrobon e Veronica Vidotto, Postioma; uno dei figli si chiama Gabriele.\n- Paese 1808 (copia): battesimo del 29 giugno 1789 a San Martino di Paese di Gio. Batta, figlio di Pietro Pierobon di Zuanne e di Catterina Severin di Giambattista; padrino Gio. Batta de Rossi.\n- Paese 1897 n. 66: Fortunato Pietrobon, 9 anni, figlio di Giuseppe e Maria Volpato, Padernello n. 87; dichiarante Giovanni Pietrobon (49).\n- Paese 1918 n. 35 e n. 180: due bambine Giovanna Pietrobon (17 mesi, aprile; 1 mese, ottobre), figlie di Guglielmo Pietrobon e Colomba Martignago, Padernello n. 109.\n- Paese 1922 n. 72 e 1925 n. 65: Giuseppe Pietrobon (4 mesi) e Giuseppe Pietrobon (10 mesi), figli di Bortolo/Giuseppe Pietrobon e Santa Troncon, Padernello. 1925 n. 66: Lino Pietrobon, 1 mese, figlio di Ernesto e Giacinta Gemin.\n- Paese 1930 n. 39: Giovanni Bruno Pietrobon, 1 anno, figlio di Costantino e Letizia Baratto.\n- Arcade 1814 n. 17 (Giuditta Pietrobon detta Merlo): già trascritto.\n\n[Nono gruppo]\n- Ponzano 1807 n. 20, 8 maggio: DOMENICO PIEROBON DETTO MERLO, 37 anni (n. circa 1770), agricoltore a Ponzano, e Paola Benetton (36): Margherita nata l'8 maggio 1807. Stesso soprannome «Merlo»: forse un figlio di Antonio detto Merlo (n. circa 1749) o un parente, emigrato a Ponzano. Non dichiarato.\n- Paese 1893 n. 92: Luigi Pietrobon, 5 mesi, figlio di Gaetano e Giovanna Colusso, Postioma n. 112 (dichiarante Costante Pietrobon, 38).\n- Paese 1895 n. 61: Luigi Pietrobon, 2 anni, figlio di Antonio e Maria Amadio, Postioma n. 2 (già nell'albero, p582); dichiarante Costante Pietrobon (38).\n- Paese 1897 n. 85: Luigi Pietrobon, 20 giorni, figlio di Pietro e Giovanna Stefani, Postioma n. 2 (già nell'albero).\n- Paese 1910 n. 112: Luigi Pietrobon, 33, celibe, morto nel canale Brentella a Padernello, figlio di Giuseppe e Maria Volpato. 1918 n. 146: Ida Pietrobon, 17, figlia degli stessi.\n- Paese 1922 pubblicazioni n. 24: Luigi Pietrobon (28, di Fiorino e Santa Berlese) con Maria Pietrobon (24, nata in BRASILE, figlia di Giuseppe, oste, e Carlotta Favero). 1923 n. 86: Italia Veronica Pietrobon, 23, nata in AMERICA, figlia di Giuseppe (oste) e Marta Favero, moglie di Santo Billio, Postioma n. 118. NB: Giuseppe Matteo Pietrobon (del fu Carlo e Veronica Vidotto) e Marta Carlotta Favero, pubblicazioni 1894: emigrati in Brasile e tornati a Postioma.\n- Paese 1926 n. 54: Lucia Pietrobon, 1 anno, figlia di Novello e Maria Tessaro, Padernello. 1931 n. 76: Ines Maria Pietrobon, 8 giorni, figlia di Angelo e Elisabetta Bandiera.\n\n[Decimo gruppo]\n- Famiglia di Valentino Pietrobon e Orsola Pavan (Postioma, poi Porcellengo; entrambi morti prima del 1899): Giovanni (n. circa 1870, sposa Teresa Vendrame 1899) e OLIVO CATTERINO (n. circa 1863, agricoltore, sposa a Paese il 9 ottobre 1902 Teresa Maria Badesso, 20 anni, di Postioma, figlia del fu Domenico Badesso e di Margherita Pagnossin). Cognome Badesso come Valentina, moglie di Angelo Pietrobon: possibile parentela tra i rami di Postioma.\n- Paese 1807 n. 7: Fermo Pierobon (26) e Catterina Venturato[?]: Valentino nato il 9 febbraio 1807 (forse lo stesso Valentino, padre di Giovanni e Olivo?).\n- Paese 1893 matrimonio n. 10: Pietro Pietrobon (25, nato a Paese, di Bartolomeo e Moro Maria) con Maria Concetta Carniel (21, nata a Castelcucco[?] d'Asolo, di Angelo e Gazzola Prudenza).\n- Paese 1900 n. 86: Valentina Pietrobon, 72, figlia dei fu Battista e Regina De Lazzari, vedova di Angelo Gobbin.\n- Figli di Giuseppe Pietrobon e Maria Volpato (Padernello): Salute (16 mesi, morta 22 marzo 1896); Oliva Luigia (20, sposa Giovanni Francesco Tosello di Musano, 10 maggio 1901); Maria (24, sposa Fioravante Crosato di Morgano, 30 dicembre 1909); Salute Maria (24, pubblicazioni con Cesare Virginio Rossi, gennaio 1920).\n- Bortolo Pietrobon e Santa Troncon: Maria (11 giorni, aprile 1916), Mario (3 mesi, novembre 1923). Fiorino Pietrobon e Eleonora Pasato: Maria Maddalena (settembre 1917), Mario (maggio 1926). Guglielmo e Colomba Martignago: Olinda (giugno 1926). Abramo e Eugenia Gasparini: Olindo (settembre 1925). Giuseppe (oste) e Marta Carlotta Favero: Seconda Berona (febbraio 1913).\n\n[Undicesimo gruppo: Zatta e Cavallin di Padernello, Pezzan e Sala (Istrana)]\n- Istrana 1919 (trascrizione da Paese, 6 novembre 1919): Gaetano Ippindo (25, muratore, nato a Padova, figlio di ignoti) sposa Antonia Cavallin (28, nata a Istrana, figlia di Edoardo e Marta Volpato, Padernello): sorella di Ettore Salvatore Cavallin, marito di Maria Anna Pietrobon. Aggiunta all'albero.\n- Istrana 1807, pubblicazioni n. 23 e 26 e fascicolo n. 7: Bortolo Foresto (21 anni e 9 mesi, agricoltore, Pezzan, di Francesco e Giuseppa Frassetto) con Cattarina Zatta (21, lavoratrice di campagna, Pezzan, del fu Francesco Zatta del fu Domenico e della fu Pasqua Pozzebon del fu Domenico). Battesimo di Cattarina: Pezzan (S. Vito), 29 settembre[?] 1785, padrino Francesco q. Zuanne Casparin (copia del parroco Furlanetto, 18 aprile 1807). Pubblicazioni del 19 e 26 aprile 1807.\n- Istrana 1807, n. 24: Gioachino Carniel (20, Pezzan, di Angelo e Francesca Rossi) con Angela Marazatto (18, del fu Giovanni e della fu Maria Gonzo). N. 25 e 27: Giovanni Antonio Miotto (24, calzolaio, Padernello, di Lorenzo, campanaro, e Maria Visentin) con Elena Mattarolo (21, di Giacomo, sensale, e della fu Benedetta Schiavon). N. 22 (Ponte di Piave): Domenico Montin, maestro di scuola a Sala, con Margarita de Tavani.\n- Istrana 1809, n. 28-31: Santo Bertuse (di Angelo e Cattarina Frassetto), Francesco Gasparin (di Osvaldo e Angela Vedelago), Francesco ZATTA (nato il 6 maggio 1809, Pezzan, figlio di Giacomo Zatta detto Gagno, 34 anni, birrarolo[?], e Giacoma Carlonetto[?]), Orsola Condotta.\n- Paese 1895 n. 23 (28 marzo): Alfonso Zatta (28, Padernello, del fu Angelo e della fu Caterina Rossi) sposa Caterina Bordignon (30, del fu Domenico e di Maria Mestriner).\n- Istrana 1916 n. 3 (6 aprile): Novello Catterino Zatta (31, nato a Paese, di Pezzan, del fu Ferdinando e della fu Giovanna Gasparini) sposa Anna Paronetto (33, di Tito e Marina Franchetto). Istrana 1920 n. 24 (22 aprile): lo stesso, vedovo, sposa Maria Luigia Favaro (35, di Sala, del fu Luigi e di Angela Gasparini).\n- Istrana 1939 n. 25 (27 dicembre): Marcello Giocondo Pestrin (32, di Catterino e Antonia Foresto) sposa Ginevra Maria Zatta (37, del fu Domenico e di Antonia Bordignon), Pezzan.\n- Istrana 1920 n. 13 (24 marzo): Giovanni Antonio Cavallin (34, Villanova, di Pasquale e Giustina Sartori) sposa Enrichetta Ernesta Cendron (29, di Sante e Andreanna Rizzato).\n- Nota: nessun atto nomina Sebastiano Zatta (marito di Bernardina Rossi, padre di Luigia) né Fioravante Cavallin (padre di Candida). Gli Zatta di Pezzan e Padernello (Francesco del fu Domenico, Giacomo detto Gagno, Angelo, Ferdinando) potrebbero essere parenti di Sebastiano: da verificare con il suo battesimo.\n\n[Dodicesimo gruppo, Monastier 1812]\n- Monastier 1812 n. 6 (25 febbraio): Catterina, figlia di Battista Lovisetto (38, villico) e Lorenza Montagner (38). Battista Lovisetto, nato verso il 1774, potrebbe essere un fratello di Domenico o di Antonio Luisetto: non dichiarato.\n- N. 7 (3 marzo): Giacomo, figlio di Giuseppe Botter (31) e Lucia Steffani (35). N. 8: Gennaro, figlio di Giovanni Placa (21) e Maria Morosinotto (20).\n\n[Tredicesimo gruppo: Bresolin di Paese, Padernello e Castagnole (non collegati)]\n- Paese 1807 n. 137 (23 giugno): Anna Martina, figlia di Anzolo Bresolin (32 anni, contadino) e Orsola[?] Francegiara. N. 135-136: testimoni Gio Batta Bresolin (22, tessitore, colmello di Villa) e Anzolo Bresolin (32); n. 135 figlia di Angelo Mazarino (tessitore) e Cattarina Bresolin.\n- Paese 1811 n. 14 (21 febbraio): morte di Angela del fu Zuanne Bresolin e di Maria Conti, circa 70 anni, moglie di Valentin Gallin del fu Paolo; testimoni i nipoti Zuanne e Giacomo del fu Osvaldo Lorenzetto.\n- Paese 1898 pubblicazioni n. 43: Antonio Luigi Bresolin (25, Padernello, di Francesco e Mattarucco Angela) con Faustina Regina Cavallin (20, di Giuseppe e Fighera Maria).\n- Paese 1914 n. 22: morte a Castagnole di Angelo Bresolin, 91 anni, del fu Antonio e della fu Angela De Lazzeri[?], marito di Anna Bertolanza.\n- Paese 1915 matrimonio n. 46 (22 aprile): Adamo Bresolin (24, di Francesco e Mattarucco Marianna) con Aurelia Pozzebon (21, di Lorenzo e Carlotta Cavallin).\n- Paese 1919 n. 17: Angela Maria Bresolin, 9 anni, figlia di Arturo e Maria Brunetta, Padernello n. 72.\n- Paese 1927 n. 5: Angelo Bresolin, 74 anni, del fu Catterino e di Margherita Sussurro[?], vedovo di Santa Porato.\n- Paese 1930 n. 20 (trascrizione da Treviso): Agata Bresolin, 30, figlia del fu Giovanni Antonio e di Maria Liziero, morta all'ospedale il 1° luglio 1930.\n- Istrana 1939 n. 5: Enrico Ersom (32, di Pasquale e Angela Dal Bello, residenti a Miramont-Landes, Francia) sposa Amabile Antonia Bresolin (32, nata a Santa Cristina di Quinto, del fu Angelo e di Luigia Basso).\n\n[Quattordicesimo gruppo: altri Bresolin di Paese]\n- 1807 n. 124: Domenica Martina di Bastian Bresolin (35) e Anna Berlese; testimone Antonio Bresolin, 23, colmello di Villa.\n- 1893 n. 43: Candido Bresolin (69, del fu Battista e della fu Santa Pellio) sposa Caterina Barbisan (60, del fu Angelo e della fu Giovanna Miglioranza): un'altra famiglia Barbisan di Paese.\n- 1896 n. 28: Luigi Francescato di Porcellengo sposa Benedetta Bresolin (20, di Francesco e Mariana Angela Mattarucco).\n- 1907 n. 25 e 1925 n. 74: due Costanza Bresolin (85 anni, di Giuseppe e Maria Santon, vedova di Cesare Ferrari; 66 anni, di Candido e Giovanna Nasato, vedova di Antonio De Marchi).\n- 1912 n. 28: Excelso Bresolin (di Angelo e Santa Porato) sposa Stella Emilia Vendramin. 1912 n. 37: Domenico Bresolin (di Luigi e Maria Deoni) sposa Maria Luigia D'Alessi.\n- 1913 n. 99: Caterina Bresolin, 72, del fu Catterino e di Margherita Sussurro, moglie di Antonio Polin.\n- 1917 n. 114 e 1930 n. 6: Camillo Lino (1 anno) e Clemente (1 anno, 1922), figli di Casimiro Bresolin, negoziante a Postioma, e di Angela Signori (forse parente di Anna Signori, moglie di Domenico Bresolin).\n- 1808 n. 49: Antonio, figlio di Zuane Bresolin (37) e Giovanna Matarolo.\n\n[Quindicesimo gruppo]\n- Angelo del fu Paolo Bresolin (40) e Aurelia del fu Domenico Francescato: Francesco nato il 5 luglio 1814 (Villa n. 137), morto il 11 luglio 1814 (testimoni Sebastiano Priamo, zio materno, e Giacomo de Marchi, cognato).\n- Luigi Bresolin e Maria Deoni: Elvira (morta a 6 anni, 2 maggio 1894), Elvira (morta a 5 anni, 13 maggio 1901), Ernesta Angela (20, sposa Giovanni D'Alessi di Castagnole il 4 luglio 1912).\n- Angelo Bresolin e Anna Bortolanza (Castagnole): Federico Secondo (28) sposa Corona Gasparetto (26, nata a Cormons[?], di Giuseppe e fu Teresa Polani) il 23 maggio 1904.\n- Adamo Bresolin e Aurelia Pozzebon: Francesco morto a 1 anno e 8 mesi il 16 febbraio 1922 (dichiarante Antonio Bresolin, 48).\n- Paese 1933 n. 5: Antonio Vettore Gottardo, 79, nato a Nervesa dai fu Francesco e Adriana Visentin, vedovo di Carlotta Bertazzon: un Gottardo di Nervesa, forse parente dei nostri Gottardo di Bavaria (non dichiarato).\n- 1808 (pubblicazioni Antonio Bresolin – Maddalena de Filippi): già trascritte (L47-d01).\n\n[Sedicesimo gruppo: altri Bresolin, non collegati]\n- POSTIOMA 1814 n. 27 e 31: muoiono Antonia Zanatta (72 anni, nata dai fu Giambattista Zanatta e Giacoma Marin, 13 settembre 1814) e il marito Giuseppe Bresolin (70 anni, figlio dei fu Lorenzo Bresolin e Maria Martini, 8 ottobre 1814), casa n. 29. NB: NON è la nostra Antonia Zanatta (n. 1783, figlia di Giovanni, moglie di Angelo Brasiolin).\n- Fossalunga 1811 n. 50: Giovanni Bresolin, 68, celibe, nato a Falzè di Trevignano dai fu Giacomo Bresolin e Angela Vicentin, morto a Sant'Andrea di Cavasagra in casa del nipote Giuseppe Bresolin del fu Santo (37).\n- Paese, famiglia del fu Paolo Bresolin: figli Angelo (n. circa 1774, sposato con Aurelia Francescato/Francegiara del fu Domenico: Giovanna morta 1807 a 3 mesi, Giovanni n. 25 settembre 1808, Giuseppe n. ottobre 1811 morto a 8 giorni, Giovanna morta marzo 1813 a 4 giorni, Francesco 1814), Zuanne (n. circa 1754, avo materno di Giovanna Vendramin 1813, figlia di Vendramino Vendramin e Maria di Zuanne Bresolin), Sebastiano (n. circa 1772, sposato con Anna Berlese: Cattarino Giuseppe n. 10 aprile 1812).\n- Paese, Zuanne del fu Battista Bresolin, gastaldo/agente (n. circa 1772) e Giovanna Mattarolo: Giuseppe Martino n. 21 luglio 1807, Stefano n. aprile 1812.\n- Paese 1811 n. 84: Giuseppe, figlio di Costanzo Contò (falegname) e Colomba di Zuanne Bresolin.\n- Paese 1899 n. 72: Giuseppa Bresolin, 43, nubile, dei fu Candido e Giovanna Nasato.\n- Paese 1918 n. 18: Luigi Bresolin, 74, possidente, del fu Catterino e Margherita Sussurro, marito di Maria Deoni. N. 58: Luigi Bresolin, 76, celibe, Castagnole, dei fu Angelo e Anna Bortolanza.\n- Paese 1925 n. 28: Gino Bresolin, 8 giorni, figlio di Adamo e Aurelia Pozzebon.\n- Arcade 1812 n. 8: Giovanni di Santo Bresolin di Giovanni e Eleonora Dal Bello (già trascritto).\n\n[Diciassettesimo gruppo]\n- Paese 1808 n. 50 e 1815 n. 41: Zuanne Bresolin del fu Antonio (34-39, villico poi negoziante) e Angela Crosato di Gioachino: Pasqua (6 febbraio 1808), Domenica (24 maggio 1815, Villa n. 84; testimone Zuanne Brisolin del fu Gio. Battista, 42, mercante). Aggiunti all'albero come ramo collaterale (Angela è figlia di Gioachino Crosato, probabile zio di Antonio Bresolin 1789).\n- Paese 1808 n. 4: Angela Conti, 8 giorni, figlia di Angelo Conti e Paulina Bresolin; testimoni gli zii Bastian Bresolin (40) e Angelo Bresolin (35): forse i figli del fu Paolo.\n- Paese 1815 n. 40, 41, 44: Antonio Brisolin di Bortolo (33) e Cattarina Dal Savio del fu Pietro (di Quinto): Pietro Martino nato il 16 e morto il 26 maggio 1815; la madre muore il 10 giugno 1815 (testimoni il suocero Bortolo Brisolin del fu Pietro, 56, e Zuanne Brisolin del fu Antonio, cugino).\n- Altri: pubblicazioni Breda Giuseppe – Bresolin Santa Maria (di Candido e Giovanna Nasato, 1891); Marcon Agostino – Bresolin Teresa (di Felice e Agata Basso, Istrana 1902); Pavan Pasquale – Bresolin Luigia (di Francesco e Marianna Mattarucco, 1907); Barina Camillo – Bresolin Margherita (di Luigi e Maria Deoni, 1908); Vendramin Giovanni Bortolo – Bresolin Virginia (di Angelo e Santa Poratto, 1910); morti di Rita Pierina e Maria Rita, figlie di Evaristo Bresolin (oste a Postioma) e Emma Gambirasi (1914, 1916).\n\n[Diciottesimo gruppo: Cavallin di Villanova e Padernello, Camozzato di Montebelluna]\n- Montebelluna 1811 n. 32 (copia a Trevignano): muore a Visnà il 29 maggio 1811 (morte violenta) LUCIA CAVALIN, 51 anni (n. circa 1760 a Trevignano), vedova di Giovanni Torresan, figlia dei fu ANDREA CAVALIN e MARGHERITA GAJARIN, «domiciliati in parrocchia di PADERNELLO»; testimoni il figlio Domenico Torresan (26, carrer) e il fratello Michiel Cavalin (44). Una famiglia Cavallin di Padernello del Settecento: possibili parenti di Maria Cavallin (moglie di Giacomo Rossi «Nardo») o di Fioravante Cavallin (padre di Candida). Non dichiarato.\n- Villanova di Istrana, Cavallin detti «Biondo»: Bernardo di Giovanni Cavallin e Rosa Boldrin (Anna n. 23 settembre 1793; Bernardo muore l'11 aprile 1810 di cachessia); Anna sposa Francesco Venturin di Ospedaletto (pubblicazioni 8 e 15 settembre 1811). Angela di Angelo Cavallin detto Biondo e Giustina Cavallin di Gasparin (n. 13 dicembre 1790), vedova di Gio. Maria de Marchi (morto il 17 febbraio 1811), si risposa nel 1812 con Bernardo Cavallin di Giovanni e Giovanna Coletto[?] (22 anni). Parroco D. Giacomo Granzotto.\n- Arcade 1814 n. 11: Anna Cavallin, 75, nata a Villanova dai fu Antonio Cavallin e Chiara, moglie di Lorenzo Trevisin.\n- Sant'Andrea di Cavasagra 1807 n. 113: Giovanni Maria Gajo di Lamon con Antonia Cavallina (16, figlia del fu Pasquale Cavalin e Angela Busata).\n- Istrana 1902-1904: Angelo Florian (di Angelo e Caterina Basso) – Angela Francesca Cavallin (di Antonio e Rosa Brunello); Angelo Cavallin (di Giovanni e Maria Favaro) – Adelaide Rosin; Ruggero Antiga – Angela Costantina Cavallin (del fu Angelo e Anna Vedelago).\n- Trevignano 1811 n. 31 e 52: Teresa (2 anni) e Maria (2 giorni), figlie di Felice Commazzetto e Catterina Mazzocato.\n- Montebelluna 1877 n. 13 (8 marzo): VIRGINIO CAMMOZZATO, 26 anni, contadino, figlio di ANGELO e della fu Celeste Gobbato, sposa Giuditta Garbujo (27, di Luigi e Angela Cazzolato). Angelo Camozzato di Montebelluna potrebbe essere un fratello di Pietro (figlio di Bortolo e Maddalena Turchetto): non dichiarato.\n\n[Diciannovesimo gruppo: Cavallin di Villanova, Istrana, Santa Cristina, Padernello e Cusignana]\n- Istrana 1811 (pubblicazioni 19 e 26 maggio; consensi notarili a Morgano, 13 maggio): Domenico Rossi (18, del fu Angelo e di Catterina Biondina) sposa CHIARA CAVALLIN (21, di Andrea del fu Casimiro Cavallin e di Mattea Bandiera), Villanova. Firma il padre Andrea Cavallin.\n- Istrana 1808 (pubblicazioni 15 e 22 maggio): Bernardo Cavallin (18, nato il 19 agosto 1789, di Giovanni del fu Vincenzo, «biavarolo», e di Pierina Colesso del fu Pasquale) sposa Maria Maddalena Sartor (20, del fu Giovanni e di Catterina Bordignon, nata a Padernello). Maria Maddalena muore il 15 agosto 1810 a 23 anni («tisi e febbre perniciosa»). Bernardo si risposa nel gennaio 1812 con Angela Cavallin di Angelo detto Biondo e Giustina Cavallin.\n- Istrana 1814 (pubblicazioni 6 e 13 novembre): Giuseppe Cavallin (26, calzolaio a Morgano, nato a Santa Cristina il 15 settembre 1788, di Gio. Antonio Cavallin di Valentino e della fu Lucia Favaro; vedovo di Laura Moretti) sposa Catterina Volpato (21, del fu Angelo e di Maddalena Cavrio[?], Villanova). Lucia moglie di Gio. Antonio Cavallin muore il 1° agosto 1791 a 24 anni (Santa Cristina).\n- Paese 1893 n. 16 (16 aprile): Lorenzo Pozzobon detto Paolin (23, Padernello, del fu Giovanni e di Dorotea Bortolato) sposa CARLOTTA ANGELA CAVALLIN (20, Padernello, di Giuseppe e Maria Fighera). NB: sono i genitori di Aurelia Pozzebon, moglie di Adamo Bresolin (1915); Carlotta è sorella di Faustina Regina Cavallin (moglie di Antonio Luigi Bresolin, 1898).\n- Arcade 1879 n. 64-65: Angela Maddalena Bettiol (di Luigi e Augusta Donazzon, Cusignana n. 80); Carlotta Elisa Cavallin (di Catterino e Giuseppina Zanatta, Cusignana n. 12).\n- Istrana 1903 n. 10: Antonio Cavallin (di Luigi e Rachele De Marchi) – Santina Gemin. Istrana 1920 n. 9: Liberale Bordignon – Antonia Maria Cavallin (di Filippo e Filomena Tosello), Pezzan.\n- Nessuno di questi atti nomina Fioravante Cavallin, padre di Candida, né Maria Cavallin moglie di Giacomo Rossi.\n\n[Ventesimo gruppo: Cavallin di Istrana, Villanova, Padernello]\n- Istrana 1810: Gasparina Cavallin (nata a Villanova il 19-20 dicembre 1779, di Osvaldo di Gasparo Cavallin e Catterina di Francesco Cibin), vedova di Gio. Batta Gasparin del fu Antonio (morto il 18 gennaio 1808 a 45 anni, dissenteria), sposa Domenico Rossi del fu Angelo e di Maria De Marchi (consenso a Morgano, novembre 1810).\n- Paese 1899 n. 38: Domenico Cavallin, 71, Padernello n. 62, del fu Giuseppe e della fu Agata Franco[?], vedovo di Maria Rosti[?] (dichiarante Giovanni Pietrobon, 50).\n- Istrana 1808 n. 5 e 1809 n. 20: Domenico Cavallin, biavarolo (22-24), e Maddalena Bordignon: Eugenia (3 febbraio 1808), Elisabetta (21 marzo 1809). 1810 n. 48: Dionisio, figlio di Giovanni Cavallin (34[?], falegname) e Pasqua Colusso.\n- Arcade 1879 n. 64-65 e Istrana 1903/1919/1920/1940: Bettiol, Cavallin Catterino–Zanatta, Cavallin Ernesto–Fantin, Francesco Cavallin–Lorenzetto, Evellino Cavallin–Cimitro (già annotati o senza legame).",
    "translation": "",
    "summary": "Atti di famiglie vicine al nostro albero (Zanata, Rossi detti Nardo di Porcellengo, Mattiazzo di Postioma, Gottardo di Bavaria) senza un legame dichiarato: tenuti come materiale di ricerca.",
    "data": [],
@@ -57956,6 +58733,89 @@
    "confidence": "alta"
   },
   {
+   "id": "L52-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "fascicolo matrimoniale",
+   "title": "Carte del matrimonio di Fioravante (Ferrante) Cavallin, figlio di Angelo del fu Santo e Giovanna Munarini, e Santina Ventorin (Istrana, maggio 1808)",
+   "date": "1808-05-01",
+   "actDate": "",
+   "place": "Istrana / Santa Cristina",
+   "source": "Comune di Istrana, allegati ai matrimoni 1808",
+   "language": "italiano",
+   "transcription": "[1. Battesimo dello sposo] Addì 18 maggio 1788. Ferrante figlio di Angelo q.m Santo Cavallin e di Giovanna q.m Gio. Batta Munarini jugali nacque jeri sera alle ore 23 c.a, ed oggi fu battezzato da me Giuseppe Novello parroco; madrina al Catechismo e S. Fonte la sig.ra Maria moglie di Girolamo Righetto della Parrocchia di Padernello. Santa Cristina 3 maggio 1808. Ita est et concordat cum originali. Giuseppe Novello parroco.\n[2. Certificato di domicilio] Addì 3 maggio 1808, S. Cristina: Ferrante figlio di Angelo Cavallin q.m Santo fu sempre ed è presentemente abitante sotto questa mia cura. Giuseppe Novello parroco.\n[3. Consenso] Regno d'Italia … 10 maggio 1808, in Treviso, in bottega di Paolo Scarpon caffettier: desiderando Fioravante Cavalin figlio di Angelo e di Giovanna Munarini, nativo e domiciliato in S. Cristina, d'anni 19 compiuti, di maritarsi con Santina Ventorin figlia del fu Mattio e della fu Maria Zanetti, nativa dell'Ospedaletto, … i genitori prestano il loro pieno assenso. Angelo Cavalin afermo, Fioravante Cavalin; testimoni Pietro Magro e Antonio Mastelli; notaio Antonio Bazzo.\n[4. Pubblicazioni] Istrana, domenica 1° maggio 1808, ore nove: promessa di matrimonio di Fioravante Cavalin, 19 anni compiuti, contadino, domiciliato in villa di Santa Cristina, figlio di Angelo Cavalin, contadino, e di Giovanna Munarini, con Santina Ventorin, 18 anni compiuti, contadina, domiciliata in Istrana, figlia del quondam Matio Ventorin, contadino, domiciliato in Ospedaletto, e della quondam Maria Zanetti. Seconda pubblicazione l'8 maggio 1808. L'Ufficiale Francesco Severin.",
+   "translation": "",
+   "summary": "Fascicolo del matrimonio di Fioravante («Ferrante») Cavallin, nato il 17 maggio 1788 a Santa Cristina da Angelo Cavallin del fu Santo e Giovanna Munarini, con Santina Ventorin di Ospedaletto (maggio 1808). Quasi certamente è il padre di Candida Cavallin, nonna di Angelo Bresolin: il nome è raro, l'età torna e la madrina viene da Padernello. Se confermato, la linea sale a Angelo e Santo Cavallin.",
+   "data": [
+    {
+     "label": "Sposo",
+     "value": "Fioravante (Ferrante) Cavallin, nato il 17 maggio 1788, 19 anni, contadino, Santa Cristina"
+    },
+    {
+     "label": "Genitori dello sposo",
+     "value": "Angelo Cavallin del fu Santo e Giovanna Munarini del fu Gio. Batta"
+    },
+    {
+     "label": "Sposa",
+     "value": "Santina Ventorin, 18 anni, Istrana, nata a Ospedaletto"
+    },
+    {
+     "label": "Genitori della sposa",
+     "value": "fu Mattio Ventorin e fu Maria Zanetti"
+    },
+    {
+     "label": "Consenso",
+     "value": "10 maggio 1808, Treviso, notaio Antonio Bazzo"
+    },
+    {
+     "label": "Pubblicazioni",
+     "value": "1° e 8 maggio 1808, Istrana"
+    }
+   ],
+   "people": [
+    {
+     "written": "Ferrante / Fioravante Cavalin",
+     "role": "sposo",
+     "pid": "p1369"
+    },
+    {
+     "written": "Angelo q.m Santo Cavallin",
+     "role": "padre dello sposo",
+     "pid": "p1367"
+    },
+    {
+     "written": "Santo",
+     "role": "nonno paterno (defunto)",
+     "pid": "p1366"
+    },
+    {
+     "written": "Giovanna Munarini",
+     "role": "madre dello sposo",
+     "pid": "p1368"
+    },
+    {
+     "written": "Santina Ventorin",
+     "role": "sposa",
+     "pid": "p1370"
+    },
+    {
+     "written": "fu Mattio Ventorin",
+     "role": "padre della sposa",
+     "pid": "p1371"
+    },
+    {
+     "written": "fu Maria Zanetti",
+     "role": "madre della sposa",
+     "pid": "p1372"
+    }
+   ],
+   "discrepancies": [
+    "Identità con il Fioravante padre di Candida Cavallin: probabile, non dichiarata."
+   ],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
    "id": "L10-q04",
    "code": "",
    "file": "(immagine incollata in chat il 13 ottobre 2026)",
@@ -58076,6 +58936,89 @@
    "uncertain": [
     "Identificazione di Antonio con Antonio detto Merlo: probabile, non dichiarata."
    ],
+   "confidence": "alta"
+  },
+  {
+   "id": "L47-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "fascicolo matrimoniale",
+   "title": "Carte del matrimonio di Antonio Bresolin, figlio di Domenico di Adamo e Maria Crosato, e Maddalena de Filippi (Paese, luglio 1808)",
+   "date": "1808-07-23",
+   "actDate": "",
+   "place": "Paese (San Martino)",
+   "source": "Comune di Paese, allegati ai matrimoni 1808, fascicolo n. 11",
+   "language": "italiano",
+   "transcription": "[Copertina] N. 11. Carte relative al matrimonio di Antonio Bresolin con Madalena de Felipi, entrambi domiciliati in Paese.\n\n[1. Battesimo dello sposo] Faccio fede io sottoscritto Parroco della Chiesa Parrocchiale di San Martino di Paese, qualmente nel libro dei battezzati si trova l'infrascritta copia, cioè: 14 giugno 1789 ottantanove. Ant.o fig.o di Dom.co di Adamo Bresolin e di Maria fig.a del q.m Batta Crosato jugali di q.ta par.a, nato la notte passata circa l'ore quattro, tenuto al sacro fonte da Bortolo q.m Dom.co Maritan, fu batt.o da me D. Gianleonardo Cimarosti. Data dalla canonica il dì ventitre luglio milleottocentotto. Io Don Pietro Checchin arciprete.\n\n[2. Certificato di domicilio dello sposo] Antonio figlio di Domenico quondam Adamo Bresolin non solo è nato, ma eziandio fino al presente ha sempre dimorato in questa mia cura. 23 luglio 1808, D. Pietro Checchin arciprete.\n\n[3. Consenso dei genitori dello sposo] Napoleone I … L'anno 1808, Ind. XI, giorno di sabbato 23 del mese di luglio, ore dieci antimeridiane, in Treviso, nell'atrio dell'Officio dello Stato Civile. Comparso … Antonio di Domenico Bresolin e di Maria Crosatto, di professione villico della Comune di Paese, d'anni diecinove compiti, quale fece comunicazione alli detti di lui genitori qui presenti della sua intenzione e desiderio di incontrare matrimonio con la giovane Madalena di Girolamo de Filippi e di Anzola Maer … Li medesimi genitori … risposero di nulla aver in contrario … ed anzi di prestare il pienissimo suo assenso. … Non si può ritrarre la sottoscrizione dello sposo per non saper esso scrivere. Domenico Bresolin padre affermo. Io Giuseppe Colombo del fu Pietro testimonio. Vincenzo Marchi del fu Marco testimonio. Fran.co Viviani nod. pub.co di Treviso.\n\n[4. Battesimo della sposa] 25 marzo 1789. Maddalena fig.a di Girol.o q.m Giac.o de Filippi e di Ang.a fig.a del q.m Ant.o Maer jugali di q.ta par.a, nata questa mattina all'ore una di sole, tenuta al sacro fonte da Leonisio fig.o del q.m Ang.o Zanlorenzo di S.ta Cristina, fu batt.a da me D. Gianleonardo Cimarosti curato. 23 luglio 1808, D. Pietro Checchin.\n\n[5. Certificato di domicilio della sposa] Maddalena figlia di Girolamo quondam Giacomo De Filippi è nata e sempre dimorata in questa cura. 23 luglio 1808.\n\n[6. Consenso dei genitori della sposa] 23 luglio 1808, Treviso: Maddalena di Girolamo de Filippi e de Angela Maer, villica, d'anni diecinove compiti, … con Antonio Bresolin di Domenico e di Maria Crosato … Girolamo de Filippi padre affermo. Testimoni Giuseppe Colombo e Vincenzo Marchi; notaio Francesco Viviani.\n\n[7. Pubblicazioni] Comune di Paese, domenica 24 luglio 1808, ore undici: promessa di matrimonio di Antonio Bresolin, 19 anni compiuti, villico, figlio di Domenico Bresolin, villico, e di Maria Crosato, con Madalena Felipi, 19 anni, villica, figlia di Girolamo Felipi e di Angela Maer. Seconda e ultima pubblicazione il 31 luglio 1808. L'Ufficiale dello Stato Civile Lazari[?].",
+   "translation": "",
+   "summary": "Fascicolo completo del matrimonio di Antonio Bresolin e Maddalena de Filippi (Paese, estate 1808). Il battesimo di Antonio (14 giugno 1789) lo dice figlio di «Domenico di Adamo Bresolin» e di Maria Crosato. Antonio era già noto come «Antonio Brisolin di Domenico» (1815) e ipotizzato fratello di Angelo Bresolin (1778), trisavolo di Candida: se il Domenico è lo stesso, la linea Bresolin sale fino ad ADAMO.",
+   "data": [
+    {
+     "label": "Sposo",
+     "value": "Antonio Bresolin, nato il 14 giugno 1789 a Paese, 19 anni, villico"
+    },
+    {
+     "label": "Genitori dello sposo",
+     "value": "Domenico Bresolin del fu Adamo e Maria Crosato del fu Battista"
+    },
+    {
+     "label": "Sposa",
+     "value": "Maddalena de Filippi, nata il 25 marzo 1789 a Paese, 19 anni"
+    },
+    {
+     "label": "Genitori della sposa",
+     "value": "Girolamo de Filippi del fu Giacomo e Angela Maer del fu Antonio"
+    },
+    {
+     "label": "Consensi",
+     "value": "23 luglio 1808, notaio Francesco Viviani, Treviso"
+    },
+    {
+     "label": "Pubblicazioni",
+     "value": "24 e 31 luglio 1808, Paese"
+    }
+   ],
+   "people": [
+    {
+     "written": "Antonio di Domenico Bresolin",
+     "role": "sposo",
+     "pid": "p1341"
+    },
+    {
+     "written": "Domenico Bresolin del q.m Adamo",
+     "role": "padre dello sposo",
+     "pid": "p1339"
+    },
+    {
+     "written": "Adamo",
+     "role": "nonno paterno (defunto)",
+     "pid": "p1338"
+    },
+    {
+     "written": "Maria Crosato del q.m Batta",
+     "role": "madre dello sposo",
+     "pid": "p1340"
+    },
+    {
+     "written": "Maddalena di Girolamo de Filippi",
+     "role": "sposa",
+     "pid": "p1344"
+    },
+    {
+     "written": "Girolamo de Filippi del q.m Giacomo",
+     "role": "padre della sposa",
+     "pid": "p1342"
+    },
+    {
+     "written": "Angela Maer del q.m Antonio",
+     "role": "madre della sposa",
+     "pid": "p1343"
+    }
+   ],
+   "discrepancies": [
+    "Legame tra questo Domenico (di Adamo) e il padre di Angelo Brasiolin (1778): ipotesi forte, non dichiarata."
+   ],
+   "uncertain": [],
    "confidence": "alta"
   },
   {
@@ -59310,6 +60253,55 @@
    "confidence": "alta"
   },
   {
+   "id": "L49-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "atto di nascita",
+   "title": "Atto di nascita di Fiore Bresolin, figlia di Antonio di Domenico e Maddalena de Filippi (Paese, 23 aprile 1811)",
+   "date": "1811-04-23",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Treviso, sezione di Paese, nascite 1811, n. 41",
+   "language": "italiano",
+   "transcription": "N. 41. … Sezione di Paese, giorno di martedì ventitre di aprile 1811, all'ore quattro pomeridiane. Si è presentato … Antonio di Domenico Bresolin, d'anni ventidue circa, villico, … portando seco un infante di sesso femminile nata la scorsa notte all'ore due antimeridiane, nel luogo di sua abitazione, colmello di Villa, alla quale fu posto il nome di Fiore. … e di Maddalena di Girolamo de Filippi, d'anni ventidue, giugali … Testimonj … Antonio di Gioachin Crosatto, d'anni trenta circa, zio materno della neonata [sic], e Angelo del fu Battista Battocchio[?], d'anni trentacinque …\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 39] Domenico Pietro Antonio Martino di Domenico Maritan e Pasqua Miotto. [n. 40] Domenico Martino di Mattio Breda e Cattarina Fighera.",
+   "translation": "",
+   "summary": "Fiore, prima figlia nota di Antonio Bresolin e Maddalena de Filippi, nasce il 23 aprile 1811. Testimone Antonio Crosato di Gioachino, cugino del padre (detto «zio»).",
+   "data": [
+    {
+     "label": "Nata",
+     "value": "Fiore, 23 aprile 1811, ore 2"
+    },
+    {
+     "label": "Genitori",
+     "value": "Antonio di Domenico Bresolin (22) e Maddalena de Filippi (22)"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 39] Domenico Pietro Antonio Martino di Domenico Maritan e Pasqua Miotto. [n. 40] Domenico Martino di Mattio Breda e Cattarina Fighera."
+    }
+   ],
+   "people": [
+    {
+     "written": "Fiore",
+     "role": "neonata",
+     "pid": "p1350"
+    },
+    {
+     "written": "Antonio di Domenico Bresolin",
+     "role": "padre",
+     "pid": "p1341"
+    },
+    {
+     "written": "Maddalena di Girolamo de Filippi",
+     "role": "madre",
+     "pid": "p1344"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
    "id": "L13-v09",
    "code": "",
    "file": "(immagine incollata in chat il 13 ottobre 2026)",
@@ -59803,6 +60795,79 @@
    "uncertain": [
     "Cognomi del padrino della sposa e dei testimoni."
    ],
+   "confidence": "alta"
+  },
+  {
+   "id": "L49-d02",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Fiore Bresolin, 3 mesi e mezzo, nella casa del nonno Domenico del fu Adamo Bresolin (Paese, 27 agosto 1811)",
+   "date": "1811-08-27",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Treviso, sezione di Paese, morti 1811, n. 45",
+   "language": "italiano",
+   "transcription": "N. 45. … giorno di martedì ventisette di agosto 1811, all'ore cinque pomeridiane. Il sottoscritto dietro l'avviso … si è trasferito nella casa abitata da Domenico del fu Adamo Bresolin, dove ha riconosciuto il cadavere di Fiovetta di Antonio Bresolin, morta questa mattina all'ore otto antimeridiane, in età di mesi tre e mezzo … colmello di Villa. Presenti … Giuseppe di Domenico Bresolin, d'anni trentadue, e Valentino di Domenico Bresolin, d'anni venticinque terminati, ambedue zii paterni della defonta … nata da Antonio di Domenico Bresolin e da Maddalena di Girolamo de Filippi …\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 43] Valentin di Zuanne Lorenzetto, 5 mesi. [n. 44] Valentina di Angelo Contò, 3 mesi. [n. 46] Fiovetta Marina di Liberal Severin, 10 giorni.",
+   "translation": "",
+   "summary": "Fiore muore il 27 agosto 1811 nella casa di «Domenico del fu Adamo Bresolin»; testimoni gli zii Giuseppe e Valentino.",
+   "data": [
+    {
+     "label": "Defunta",
+     "value": "Fiore (Fiovetta) Bresolin, 3 mesi e mezzo"
+    },
+    {
+     "label": "Casa",
+     "value": "Domenico del fu Adamo Bresolin"
+    },
+    {
+     "label": "Testimoni",
+     "value": "Giuseppe (32) e Valentino (25) di Domenico, zii paterni"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 43] Valentin di Zuanne Lorenzetto, 5 mesi. [n. 44] Valentina di Angelo Contò, 3 mesi. [n. 46] Fiovetta Marina di Liberal Severin, 10 giorni."
+    }
+   ],
+   "people": [
+    {
+     "written": "Fiovetta di Antonio Bresolin",
+     "role": "defunta",
+     "pid": "p1350"
+    },
+    {
+     "written": "Antonio di Domenico Bresolin",
+     "role": "padre",
+     "pid": "p1341"
+    },
+    {
+     "written": "Maddalena di Girolamo de Filippi",
+     "role": "madre",
+     "pid": "p1344"
+    },
+    {
+     "written": "Domenico del fu Adamo Bresolin",
+     "role": "nonno paterno",
+     "pid": "p1339"
+    },
+    {
+     "written": "Adamo",
+     "role": "bisnonno (defunto)",
+     "pid": ""
+    },
+    {
+     "written": "Giuseppe di Domenico",
+     "role": "zio paterno",
+     "pid": "p1346"
+    },
+    {
+     "written": "Valentino di Domenico",
+     "role": "zio paterno",
+     "pid": "p1345"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
    "confidence": "alta"
   },
   {
@@ -61398,6 +62463,136 @@
    "confidence": "alta"
   },
   {
+   "id": "L48-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "atto di nascita",
+   "title": "Atto di nascita di Battista Bresolin, figlio di Antonio di Domenico e Maddalena de Filippi (Paese, 10 aprile 1813)",
+   "date": "1813-04-10",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Treviso, frazione di Paese, registro delle nascite 1813, n. 25",
+   "language": "italiano",
+   "transcription": "N. 25. … frazione di Paese, giorno di sabbato dieci d'aprile 1813, all'ore cinque pomeridiane. Si è presentato a me sottoscritto Antonio di Domenico Brisolin, d'anni ventitre, villico, domiciliato in questa villa di Paese, portando seco un infante di sesso mascolino nato la scorsa notte all'ore cinque antimeridiane nel luogo di sua abitazione, colmello di Villa, al numero cento e quarantasei, al quale fu posto il nome di Battista. Il suddetto Antonio di Domenico Bresolin ha pure dichiarato esser figlio il neonato di esso notificante e di Maddalena di Gerolamo De-Filippi, d'anni ventitre, giugali … Testimonj … Valentino di Domenico Brisolin, d'anni ventisette, zio paterno del neonato, e Sebastiano del fu Lorenzo Priamo, d'anni trentasei … Checchin Pietro del fu Antonio.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 23] Cattarina Martina di Zuanne Lorenzetto e Domenica d'Ambrosi. [n. 24] Giuseppe di Angelo Nicoletto e Lucia Zanetta. [n. 26] Giovanni di Valentino Severin ed Elisabetta Miglioranza.",
+   "translation": "",
+   "summary": "Battista nasce il 10 aprile 1813 da Antonio Bresolin di Domenico e Maddalena de Filippi; testimone lo zio paterno Valentino di Domenico.",
+   "data": [
+    {
+     "label": "Nato",
+     "value": "Battista, 10 aprile 1813"
+    },
+    {
+     "label": "Genitori",
+     "value": "Antonio di Domenico Bresolin (23) e Maddalena de Filippi (23)"
+    },
+    {
+     "label": "Testimone",
+     "value": "Valentino di Domenico Brisolin, zio paterno"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 23] Cattarina Martina di Zuanne Lorenzetto e Domenica d'Ambrosi. [n. 24] Giuseppe di Angelo Nicoletto e Lucia Zanetta. [n. 26] Giovanni di Valentino Severin ed Elisabetta Miglioranza."
+    }
+   ],
+   "people": [
+    {
+     "written": "Battista",
+     "role": "neonato",
+     "pid": "p1347"
+    },
+    {
+     "written": "Antonio di Domenico Bresolin",
+     "role": "padre",
+     "pid": "p1341"
+    },
+    {
+     "written": "Maddalena di Gerolamo de Filippi",
+     "role": "madre",
+     "pid": "p1344"
+    },
+    {
+     "written": "Valentino di Domenico Brisolin",
+     "role": "zio paterno",
+     "pid": "p1345"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
+   "id": "L48-d02",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Battista Bresolin, 15 giorni, nella casa del nonno Domenico di Adamo Bresolin (Paese, 24 aprile 1813)",
+   "date": "1813-04-24",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Treviso, frazione di Paese, registro dei morti 1813, n. 25",
+   "language": "italiano",
+   "transcription": "N. 25. … frazione di Paese, giorno di sabbato ventiquattro d'aprile 1813, all'ore undici antimeridiane. Il sottoscritto dietro l'avviso pervenutogli si è trasferito nella casa abitata da Domenico di Adamo Bresolin, dove ha riconosciuto il cadavere di Battista di Antonio Bresolin, morto la passata notte all'ore tre antemeridiane, in età di giorni quindeci, domiciliato in questa villa di Paese, colmello Villa, al numero centoquarantasei. Presenti … Giuseppe di Domenico Bresolin, d'anni trentatre, e Valentino di Domenico Bresolin, d'anni trentasette, ambi zii paterni del defonto … nato in questa villa da Antonio di Domenico Bresolin e da Maddalena di Girolamo de Filippi, giugali …\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 23] Giuseppe di Angelo Nicoletto, 8 giorni. [n. 24] Paola di Zuanne Possebon, 9 giorni. [n. 26] Cattarina Visintin, 65 anni, vedova di Valentino Zuccaro, moglie di Sebastiano de Marchi. [n. 27] Zuanne Valente del fu Battista, 16 anni.",
+   "translation": "",
+   "summary": "Il piccolo Battista muore il 24 aprile 1813 nella casa del nonno Domenico di Adamo Bresolin. Testimoni gli zii Giuseppe (33) e Valentino (37): la famiglia di Domenico di Adamo conta almeno tre figli maschi, Antonio, Giuseppe e Valentino.",
+   "data": [
+    {
+     "label": "Defunto",
+     "value": "Battista Bresolin, 15 giorni"
+    },
+    {
+     "label": "Casa",
+     "value": "Domenico di Adamo Bresolin, colmello di Villa n. 146"
+    },
+    {
+     "label": "Genitori",
+     "value": "Antonio di Domenico Bresolin e Maddalena de Filippi"
+    },
+    {
+     "label": "Testimoni",
+     "value": "Giuseppe (33) e Valentino (37) di Domenico Bresolin, zii paterni"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 23] Giuseppe di Angelo Nicoletto, 8 giorni. [n. 24] Paola di Zuanne Possebon, 9 giorni. [n. 26] Cattarina Visintin, 65 anni, vedova di Valentino Zuccaro, moglie di Sebastiano de Marchi. [n. 27] Zuanne Valente del fu Battista, 16 anni."
+    }
+   ],
+   "people": [
+    {
+     "written": "Battista di Antonio Bresolin",
+     "role": "defunto",
+     "pid": "p1347"
+    },
+    {
+     "written": "Antonio di Domenico Bresolin",
+     "role": "padre",
+     "pid": "p1341"
+    },
+    {
+     "written": "Maddalena di Gerolamo de Filippi",
+     "role": "madre",
+     "pid": "p1344"
+    },
+    {
+     "written": "Domenico di Adamo Bresolin",
+     "role": "nonno paterno",
+     "pid": "p1339"
+    },
+    {
+     "written": "Giuseppe di Domenico Bresolin",
+     "role": "zio paterno",
+     "pid": "p1346"
+    },
+    {
+     "written": "Valentino di Domenico Bresolin",
+     "role": "zio paterno",
+     "pid": "p1345"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
    "id": "L33-d04",
    "code": "",
    "file": "Immagini incollate in chat il 20 ottobre 2026 (terzo invio)",
@@ -62310,6 +63505,125 @@
    ],
    "uncertain": [
     "Cognome della madre (Guerra?) e del secondo testimone."
+   ],
+   "confidence": "media"
+  },
+  {
+   "id": "L49-d03",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "atto di nascita",
+   "title": "Atto di nascita di Giacomo Martino Bresolin, figlio di Valentino di Domenico e Maria de Filippi (Paese, 9 ottobre 1814)",
+   "date": "1814-10-09",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Treviso, frazione di Paese, nascite 1814, n. 52",
+   "language": "italiano",
+   "transcription": "N. 52. … lunedì dieci d'ottobre 1814, all'ore cinque pomeridiane. Si è presentato … Valentino di Domenico Brisolin, d'anni ventisette, villico, … portando seco un infante di sesso mascolino, nato jeri all'ore dodici antimeridiane, … colmello di Villa, al numero centoquarantaquattro, al quale fu posto il nome di Giacomo Martino. … e di Maria De-Filippi del fu Giuseppe, d'anni ventuno, giugali … Testimonj … Giuseppe Brisolin di Domenico, d'anni trentacinque, zio paterno del neonato, e Gerolimo De-Filippi del fu Giacomo, d'anni cinquantatre, zio materno del neonato …\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 50] Domenica di Antonio di Gioachin Crosatto e Anna Silvello. [n. 51] Maria Marina di Zuanne Tonetto e Fiore Usato. [n. 53] Giovanni Battista di Angelo di Giacomo Mattarucco e CATTARINA DI DOMENICO BRESOLIN (30): forse sorella di Antonio, Giuseppe e Valentino.",
+   "translation": "",
+   "summary": "Valentino Bresolin, figlio di Domenico, e Maria de Filippi del fu Giuseppe hanno Giacomo Martino il 9 ottobre 1814. Gerolamo de Filippi (suocero di Antonio) è detto zio materno: le due spose de Filippi erano cugine.",
+   "data": [
+    {
+     "label": "Nato",
+     "value": "Giacomo Martino, 9 ottobre 1814"
+    },
+    {
+     "label": "Genitori",
+     "value": "Valentino di Domenico Brisolin (27) e Maria De Filippi del fu Giuseppe (21)"
+    },
+    {
+     "label": "Testimoni",
+     "value": "Giuseppe di Domenico (35), zio paterno; Gerolimo De Filippi (53), zio materno"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 50] Domenica di Antonio di Gioachin Crosatto e Anna Silvello. [n. 51] Maria Marina di Zuanne Tonetto e Fiore Usato. [n. 53] Giovanni Battista di Angelo di Giacomo Mattarucco e CATTARINA DI DOMENICO BRESOLIN (30): forse sorella di Antonio, Giuseppe e Valentino."
+    }
+   ],
+   "people": [
+    {
+     "written": "Giacomo Martino",
+     "role": "neonato",
+     "pid": "p1352"
+    },
+    {
+     "written": "Valentino di Domenico Brisolin",
+     "role": "padre",
+     "pid": "p1345"
+    },
+    {
+     "written": "Maria De Filippi del fu Giuseppe",
+     "role": "madre",
+     "pid": "p1351"
+    },
+    {
+     "written": "Giuseppe Brisolin di Domenico",
+     "role": "zio paterno",
+     "pid": "p1346"
+    },
+    {
+     "written": "Gerolimo De-Filippi",
+     "role": "zio materno",
+     "pid": "p1342"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
+   "id": "L49-d04",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Giacomo Bresolin, figlio di Valentino di Domenico (Paese, 25 ottobre 1814)",
+   "date": "1814-10-25",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Treviso, frazione di Paese, morti 1814, n. 67",
+   "language": "italiano",
+   "transcription": "N. 67. … giovedì ventisette d'ottobre 1814 … nella casa abitata da Valentino di Domenico Brisolin, dove ha riconosciuto il cadavere di Giacomo di Valentino Brisolin, morto jeri all'ore undici antimeridiane, in età di giorni quindici[?] … colmello di Villa, al numero centoquarantasei. Presenti … Gioachino del fu Battista Crosatto, d'anni sessantasei, e Zuanne di Gioachino Crosatto, d'anni trentacinque, ambi zii materni[?] del defonto … nato da Valentino di Domenico Brisolin e da Maria del fu Giuseppe Filippi …",
+   "translation": "",
+   "summary": "Il piccolo Giacomo muore a metà ottobre 1814. Testimoni Gioachino Crosato del fu Battista (66) e il figlio Zuanne: Gioachino è quasi certamente il fratello di Maria Crosato, nonna del bambino.",
+   "data": [
+    {
+     "label": "Defunto",
+     "value": "Giacomo Bresolin, pochi giorni"
+    },
+    {
+     "label": "Genitori",
+     "value": "Valentino di Domenico e Maria de Filippi"
+    },
+    {
+     "label": "Testimoni",
+     "value": "Gioachino Crosatto del fu Battista (66), Zuanne di Gioachino Crosatto (35)"
+    }
+   ],
+   "people": [
+    {
+     "written": "Giacomo di Valentino Brisolin",
+     "role": "defunto",
+     "pid": "p1352"
+    },
+    {
+     "written": "Valentino di Domenico Brisolin",
+     "role": "padre",
+     "pid": "p1345"
+    },
+    {
+     "written": "Maria De Filippi del fu Giuseppe",
+     "role": "madre",
+     "pid": "p1351"
+    },
+    {
+     "written": "Gioachino del fu Battista Crosatto",
+     "role": "parente (prozio?)",
+     "pid": "p1353"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [
+    "Giorno di morte (26 ottobre?) ed età (15 giorni?)."
    ],
    "confidence": "media"
   },
@@ -67709,6 +69023,42 @@
    "confidence": "bassa"
   },
   {
+   "id": "L51-1897-01-06",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Samuele Bresolin, figlio di Domenico e Anna Signori (Padernello, 6 gennaio 1897)",
+   "date": "1897-01-06",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Paese, registro dei morti",
+   "language": "italiano",
+   "transcription": "[Atto di morte; dati principali nel riassunto.]",
+   "translation": "",
+   "summary": "Samuele, figlio di Domenico Bresolin e Anna Signori, muore a 20 mesi a Padernello n. 55.",
+   "data": [],
+   "people": [
+    {
+     "written": "Bresolin Samuele",
+     "role": "defunto",
+     "pid": "p1296"
+    },
+    {
+     "written": "Domenico",
+     "role": "padre",
+     "pid": "p502"
+    },
+    {
+     "written": "Signori Anna",
+     "role": "madre",
+     "pid": "p1295"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
    "id": "L1-d02",
    "code": "3PPX",
    "file": "3PPX - 1898 - Joao Pietrobon - battesimo - padrini.jpg",
@@ -68285,6 +69635,55 @@
     "Cognome del secondo testimone: «Fattina» [?]",
     "Numero civico lasciato in bianco"
    ],
+   "confidence": "alta"
+  },
+  {
+   "id": "L48-d03",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Benedetto Bresolin, figlio di Domenico e Anna Signori (Padernello, 18 gennaio 1899)",
+   "date": "1899-01-18",
+   "actDate": "",
+   "place": "Padernello",
+   "source": "Comune di Paese, registro dei morti 1899, n. 11",
+   "language": "italiano",
+   "transcription": "N. 11. L'anno milleottocentonovantanove addì diciotto di gennaio a ore pomeridiane due e minuti trenta nella Casa comunale. Avanti di me Giovanni Piazza … sono comparsi Pietrobon Giovanni di anni cinquanta, villico, domiciliato in Padernello, e Sartor Gio. Battista … i quali mi hanno dichiarato che a ore meridiane dodici di oggi, nella casa posta in Padernello al numero cinquantacinque, è morto Bresolin Benedetto di mesi dieci, residente in Padernello, nato in Padernello da Domenico, villico, e da Signori Anna, villica … celibe. Testimoni Battista Perotto (52), possidente, e Augusto Lepes (74), cursore.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 12] Angela Michielin, 32 anni, di Postioma, moglie di Giuseppe De Lazzari.",
+   "translation": "",
+   "summary": "Benedetto, figlio di Domenico Bresolin (fratello di Candida) e di Anna Signori, muore a 10 mesi il 18 gennaio 1899 a Padernello.",
+   "data": [
+    {
+     "label": "Defunto",
+     "value": "Benedetto Bresolin, 10 mesi"
+    },
+    {
+     "label": "Genitori",
+     "value": "Domenico Bresolin e Anna Signori"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 12] Angela Michielin, 32 anni, di Postioma, moglie di Giuseppe De Lazzari."
+    }
+   ],
+   "people": [
+    {
+     "written": "Bresolin Benedetto",
+     "role": "defunto",
+     "pid": "p1348"
+    },
+    {
+     "written": "Domenico",
+     "role": "padre",
+     "pid": "p502"
+    },
+    {
+     "written": "Signori Anna",
+     "role": "madre",
+     "pid": "p1295"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
    "confidence": "alta"
   },
   {
@@ -70167,6 +71566,97 @@
    "confidence": "alta"
   },
   {
+   "id": "L50-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Giocondo Bresolin, figlio di Domenico e Anna Signori (Padernello, 7 marzo 1907)",
+   "date": "1907-03-07",
+   "actDate": "",
+   "place": "Padernello",
+   "source": "Comune di Paese, registro dei morti 1907, n. 28",
+   "language": "italiano",
+   "transcription": "N. 28. Bresolin Giocondo. L'anno millenovecentosette addì sette di marzo a ore antimeridiane nove nella Casa comunale. Avanti di me Battistella Guglielmo Segretario delegato … sono comparsi Bresolin Domenico, di anni quaranta, villico, domiciliato in Padernello, e Zavaro[?] Beniamino, di anni trentatré, pizzicagnolo, domiciliato in Paese, i quali mi hanno dichiarato che a ore antimeridiane quattro di oggi, nella casa posta in Padernello al numero settantadue, è morto Bresolin Gottardo[?], di anni uno, residente in Padernello, nato in Padernello, da Domenico, villico, … e da Signori Anna, villica …; celibe. Testimoni Gio. Battista Perotto (60), possidente, e Milanese Giovanni (34), cursore.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 27, 26 febbraio 1907] Maddalena Merlo, 87 anni, nata a Venegazzù dai fu Domenico e Carolina, vedova di Giovanni Furlan, Padernello n. 67.",
+   "translation": "",
+   "summary": "Muore a un anno il figlio di Domenico Bresolin (fratello di Candida) e Anna Signori, nella casa di Padernello n. 72 (la stessa dove muoiono Lilia nel 1916 e Luigia Zatta nel 1922).",
+   "data": [
+    {
+     "label": "Defunto",
+     "value": "Giocondo (Gottardo?) Bresolin, 1 anno"
+    },
+    {
+     "label": "Genitori",
+     "value": "Domenico Bresolin (40) e Anna Signori"
+    },
+    {
+     "label": "Casa",
+     "value": "Padernello n. 72"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 27, 26 febbraio 1907] Maddalena Merlo, 87 anni, nata a Venegazzù dai fu Domenico e Carolina, vedova di Giovanni Furlan, Padernello n. 67."
+    }
+   ],
+   "people": [
+    {
+     "written": "Bresolin Giocondo",
+     "role": "defunto",
+     "pid": "p1358"
+    },
+    {
+     "written": "Bresolin Domenico",
+     "role": "padre, dichiarante",
+     "pid": "p502"
+    },
+    {
+     "written": "Signori Anna",
+     "role": "madre",
+     "pid": "p1295"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [
+    "Nome: «Giocondo» nel margine, «Gottardo» nel testo."
+   ],
+   "confidence": "alta"
+  },
+  {
+   "id": "L51-1907-05-19",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Vittoria Bresolin, figlia di Domenico e Anna Signori (Padernello, 19 maggio 1907)",
+   "date": "1907-05-19",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Paese, registro dei morti",
+   "language": "italiano",
+   "transcription": "[Atto di morte; dati principali nel riassunto.]",
+   "translation": "",
+   "summary": "Vittoria muore a 3 anni a Padernello n. 72, due mesi dopo il fratellino Giocondo.",
+   "data": [],
+   "people": [
+    {
+     "written": "Bresolin Vittoria",
+     "role": "defunta",
+     "pid": "p1359"
+    },
+    {
+     "written": "Bresolin Domenico",
+     "role": "padre, dichiarante",
+     "pid": "p502"
+    },
+    {
+     "written": "Signori Anna",
+     "role": "madre",
+     "pid": "p1295"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
    "id": "L34-d04",
    "code": "",
    "file": "Immagini e PDF FamilySearch incollati in chat il 20 ottobre 2026",
@@ -70990,6 +72480,42 @@
    "confidence": "alta"
   },
   {
+   "id": "L49-e01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Giacomo Bresolin, figlio di Gottardo e Catterina Gallina (Padernello, 23 agosto 1914)",
+   "date": "1914-08-23",
+   "actDate": "",
+   "place": "Padernello",
+   "source": "Comune di Paese, registro dei morti",
+   "language": "italiano",
+   "transcription": "N. 69. 23 agosto 1914 … casa in Padernello n. 82, è morto Bresolin Giacomo di mesi sei, infante, nato in detto luogo da Gottardo, villico, e da Gallina Catterina, villica … testimoni Pozzebon Giuseppe (65) e Bresolin Gottardo (41).",
+   "translation": "",
+   "summary": "Muore a 6 mesi Giacomo, figlio di Gottardo Giuseppe Bresolin (fratello di Candida).",
+   "data": [],
+   "people": [
+    {
+     "written": "Bresolin Giacomo",
+     "role": "defunto",
+     "pid": "p1355"
+    },
+    {
+     "written": "Gottardo",
+     "role": "padre, testimone",
+     "pid": "p503"
+    },
+    {
+     "written": "Gallina Catterina",
+     "role": "madre",
+     "pid": "p647"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
    "id": "L32-d01",
    "code": "",
    "file": "Immagini incollate in chat il 20 ottobre 2026 (secondo invio)",
@@ -71743,6 +73269,42 @@
    "confidence": "alta"
   },
   {
+   "id": "L51-1922-04-24",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Vittorio Bresolin, figlio di Gottardo e Catterina Gallina (Padernello, 24 aprile 1922)",
+   "date": "1922-04-24",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Paese, registro dei morti",
+   "language": "italiano",
+   "transcription": "[Atto di morte; dati principali nel riassunto.]",
+   "translation": "",
+   "summary": "Vittorio, figlio di Gottardo Bresolin, muore a un anno a Padernello n. 83.",
+   "data": [],
+   "people": [
+    {
+     "written": "Bresolin Vittorio",
+     "role": "defunto",
+     "pid": "p1360"
+    },
+    {
+     "written": "Gottardo",
+     "role": "padre",
+     "pid": "p503"
+    },
+    {
+     "written": "Gallina Catterina",
+     "role": "madre",
+     "pid": "p647"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
    "id": "L15-y13",
    "code": "",
    "file": "(PDF «pdf di documenti insieme», 13 ottobre 2026)",
@@ -71837,6 +73399,78 @@
     "La data di morte coincide con l'albero (4 marzo 1924).",
     "81 anni nel marzo 1924: nascita nel 1842-43, coerente con l'albero (17 aprile 1842)."
    ],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
+   "id": "L51-1924-06-04",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Sergio Renato Bresolin, figlio di Roberto e Virginia Portello (Postioma, 4 giugno 1924)",
+   "date": "1924-06-04",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Paese, registro dei morti",
+   "language": "italiano",
+   "transcription": "[Atto di morte; dati principali nel riassunto.]",
+   "translation": "",
+   "summary": "Sergio Renato muore a 5 mesi a Postioma n. 11: conferma il riquadro «Bresolin di Paese» dello schema.",
+   "data": [],
+   "people": [
+    {
+     "written": "Bresolin Sergio Renato",
+     "role": "defunto",
+     "pid": "p1291"
+    },
+    {
+     "written": "Roberto",
+     "role": "padre",
+     "pid": "p1289"
+    },
+    {
+     "written": "Portello Virginia",
+     "role": "madre",
+     "pid": "p1290"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
+   "id": "L51-1924-11-01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Narciso Bresolin, figlio di Gottardo e Catterina Gallina (Padernello, 1° novembre 1924)",
+   "date": "1924-11-01",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Paese, registro dei morti",
+   "language": "italiano",
+   "transcription": "[Atto di morte; dati principali nel riassunto.]",
+   "translation": "",
+   "summary": "Narciso, figlio di Gottardo Bresolin, muore a 20 anni, celibe, a Padernello n. 20.",
+   "data": [],
+   "people": [
+    {
+     "written": "Bresolin Narciso",
+     "role": "defunto",
+     "pid": "p1361"
+    },
+    {
+     "written": "Gottardo",
+     "role": "padre",
+     "pid": "p503"
+    },
+    {
+     "written": "Gallina Catterina",
+     "role": "madre",
+     "pid": "p647"
+    }
+   ],
+   "discrepancies": [],
    "uncertain": [],
    "confidence": "alta"
   },
@@ -71989,6 +73623,100 @@
    "uncertain": [
     "Cognome «Pietron» abbreviato o storpiato."
    ],
+   "confidence": "alta"
+  },
+  {
+   "id": "L49-e02",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Ermenegildo Bresolin, figlio di Gottardo e Catterina Gallina (Padernello, 4 ottobre 1927)",
+   "date": "1927-10-04",
+   "actDate": "",
+   "place": "Padernello",
+   "source": "Comune di Paese, registro dei morti",
+   "language": "italiano",
+   "transcription": "N. 51. 4 ottobre 1927 … comparsi Bresolin Luciano (33), villico, Padernello, e Sartor Antonio (45) … alle ore tre e trenta di oggi, nella casa in Padernello n. 20, è morto Bresolin Ermenegildo di anni ventuno, villico, nato in Padernello da Gottardo e da Gallina Catterina; celibe.",
+   "translation": "",
+   "summary": "Ermenegildo, figlio di Gottardo, muore a 21 anni; dichiarante Luciano Bresolin. Un mese e mezzo dopo morirà il fratello Antonio Placido.",
+   "data": [],
+   "people": [
+    {
+     "written": "Bresolin Ermenegildo",
+     "role": "defunto",
+     "pid": "p1356"
+    },
+    {
+     "written": "Gottardo",
+     "role": "padre",
+     "pid": "p503"
+    },
+    {
+     "written": "Gallina Catterina",
+     "role": "madre",
+     "pid": "p647"
+    },
+    {
+     "written": "Bresolin Luciano",
+     "role": "dichiarante",
+     "pid": "p1286"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
+   "id": "L48-d04",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Antonio Placido Bresolin, figlio di Gottardo e Catterina Gallina (Padernello, 16 novembre 1927)",
+   "date": "1927-11-16",
+   "actDate": "",
+   "place": "Padernello",
+   "source": "Comune di Paese, registro dei morti 1927, n. 62",
+   "language": "italiano",
+   "transcription": "N. 62. L'anno millenovecentoventisette addì diciassette di novembre a ore antimeridiane nove e minuti quaranta … sono comparsi Bresolin Luciano di anni trentatré, villico, domiciliato in Padernello, e Severin Angelo di anni quarantuno … i quali mi hanno dichiarato che a ore ventitré di ieri, nella casa posta in Padernello al numero venti, è morto Bresolin Antonio Placido di anni diciotto, villico, residente in Padernello, nato in Paese da Gottardo, villico, e da Gallina Catterina, villica, domiciliati in Padernello; celibe.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 61] Giovanni Miglioranza, 76 anni, di Castagnole, del fu Giuseppe e Catterina Berlese, vedovo di Elena Crosato.",
+   "translation": "",
+   "summary": "Antonio Placido, figlio di Gottardo Giuseppe Bresolin (fratello di Candida) e Catterina Gallina, muore a 18 anni il 16 novembre 1927 a Padernello. Il dichiarante Luciano Bresolin (33) è probabilmente un fratello.",
+   "data": [
+    {
+     "label": "Defunto",
+     "value": "Antonio Placido Bresolin, 18 anni"
+    },
+    {
+     "label": "Genitori",
+     "value": "Gottardo Bresolin e Catterina Gallina"
+    },
+    {
+     "label": "Dichiarante",
+     "value": "Luciano Bresolin, 33 anni"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 61] Giovanni Miglioranza, 76 anni, di Castagnole, del fu Giuseppe e Catterina Berlese, vedovo di Elena Crosato."
+    }
+   ],
+   "people": [
+    {
+     "written": "Bresolin Antonio Placido",
+     "role": "defunto",
+     "pid": "p1349"
+    },
+    {
+     "written": "Gottardo",
+     "role": "padre",
+     "pid": "p503"
+    },
+    {
+     "written": "Gallina Catterina",
+     "role": "madre",
+     "pid": "p647"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
    "confidence": "alta"
   },
   {
@@ -72326,6 +74054,42 @@
    ],
    "uncertain": [],
    "confidence": "media"
+  },
+  {
+   "id": "L49-e03",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Francesca Bresolin, figlia di Luciano e Giacomina Volpato (Padernello, 20 gennaio 1933)",
+   "date": "1933-01-20",
+   "actDate": "",
+   "place": "Padernello",
+   "source": "Comune di Paese, registro dei morti",
+   "language": "italiano",
+   "transcription": "N. 6. 20 gennaio 1933 … comparsi Bresolin Luciano (39), contadino, Padernello, e Cazzaro[?] Vittorio (39) … alle ore undici di oggi, nella casa in Padernello n. 25, è morta Bresolin Francesca di giorni venticinque, infante, nata in Paese da Luciano, contadino, e da Volpato Giacomina, contadina.",
+   "translation": "",
+   "summary": "Francesca, figlia di Luciano Bresolin e Giacomina Volpato, muore a 25 giorni.",
+   "data": [],
+   "people": [
+    {
+     "written": "Bresolin Francesca",
+     "role": "defunta",
+     "pid": "p1357"
+    },
+    {
+     "written": "Luciano",
+     "role": "padre, dichiarante",
+     "pid": "p1286"
+    },
+    {
+     "written": "Volpato Giacomina",
+     "role": "madre",
+     "pid": "p1287"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
   },
   {
    "id": "L20-d10",
