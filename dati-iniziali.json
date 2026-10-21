@@ -1,5 +1,5 @@
 {
- "version": 75,
+ "version": 77,
  "people": [
   {
    "id": "p1",
@@ -3134,7 +3134,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Figlio di Bortolo Camozzato e Maddalena Turchetto; padre di Maddalena Camozzato. Dati da schermata FamilySearch.",
+   "notes": "Figlio di Bortolo Camozzato e Maddalena Turchetto; padre di Maddalena Camozzato. Dati da schermata FamilySearch. La sorella Angela Camozzato (atto di morte, Montebelluna 1890) è figlia di Bortolo e Maddalena Turchetto: conferma la famiglia, ma non nomina Pietro.",
    "fsid": "P9HK-RJP",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -26733,11 +26733,13 @@
    "name": "Angela Camozzato",
    "father": "p99",
    "mother": "p100",
-   "spouses": [],
+   "spouses": [
+    "p1335"
+   ],
    "birth": "1815",
    "birthPlace": "Montebelluna",
-   "death": "1890",
-   "deathPlace": "",
+   "death": "25 luglio 1890",
+   "deathPlace": "Montebelluna (Posmon[?] n. 135)",
    "country": "Italia",
    "branch": "",
    "alt": "",
@@ -26747,7 +26749,8 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "job": "contadina"
   },
   {
    "id": "p953",
@@ -35128,6 +35131,29 @@
    "notes": "Del fu Vicenzo; moglie di Giuseppe Bassetto di Losson; viva nel 1811.",
    "fsid": "",
    "ramo": "Rosolin (nonno Coco)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1335",
+   "name": "Angelo Zampagno",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p952"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 1890",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Marito di Angela Camozzato; già morto nel 1890.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
    "speaker": "",
    "events": [],
@@ -65321,6 +65347,76 @@
    "confidence": "alta"
   },
   {
+   "id": "L45-d01",
+   "code": "",
+   "file": "PDF FamilySearch, chat del 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Angela Camozzato, figlia di Bortolo e Maddalena Turchetto, vedova di Angelo Zampagno (Montebelluna, 25 luglio 1890)",
+   "date": "1890-07-25",
+   "actDate": "",
+   "place": "Montebelluna",
+   "source": "Comune di Montebelluna, registro dei morti 1890, n. 103 · FamilySearch: https://www.familysearch.org/ark:/61903/3:1:33SQ-G1XQ-ZHG (immagine 57 di 453, gruppo 005260183)",
+   "language": "italiano",
+   "transcription": "N. 103. Camozzato Angela. L'anno milleottocentonovanta addì ventisei di luglio a ore antimeridiane nove e minuti quindici nella Casa Comunale. Avanti di me Sauol[?] Lodovico assessore effettivo, in assenza del Sindaco, Ufficiale dello Stato Civile del Comune di Montebelluna, sono comparsi Santin Domenico, di anni cinquantuno, contadino, domiciliato in questo Comune, e Zampagno Antonio, di anni trentadue, contadino, domiciliato in questo Comune, i quali mi hanno dichiarato che a ore pomeridiane tre e minuti trenta di jeri, nella casa posta in Posmon[?] al numero 135, è morta Camozzato Angela, di anni settantacinque e mesi quindici[?], contadina, residente in questo Comune, nata in questo Comune, da fu Bortolo, contadino, domiciliato in vita qui, e da fu Turchetto Maddalena, contadina, domiciliata in vita qui, vedova di Zampagno Angelo. A quest'atto sono stati presenti quali testimoni Pellizzari Tommaso, di anni quarantasei, impiegato, e Conte Cristoforo, di anni quarantotto, cursore … ad eccezione dei dichiaranti analfabeti.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 104, 26 luglio 1890] Angela Martinazzo, 1 anno e 2 mesi, figlia di Ambrogio (calzolaio) e di Lorenza Millani[?] (cappellaia), morta a Pieve n. 212.",
+   "translation": "",
+   "summary": "Angela Camozzato, sorella di Pietro Camozzato (trisavolo di nonno Genio), muore a Montebelluna il 25 luglio 1890 a circa 75 anni, vedova di Angelo Zampagno. L'atto conferma i nomi di Bortolo Camozzato e Maddalena Turchetto come genitori di Angela.",
+   "data": [
+    {
+     "label": "Defunta",
+     "value": "Angela Camozzato, circa 75 anni, contadina, nata a Montebelluna"
+    },
+    {
+     "label": "Morte",
+     "value": "25 luglio 1890, ore 15.30, casa n. 135"
+    },
+    {
+     "label": "Genitori",
+     "value": "fu Bortolo Camozzato e fu Maddalena Turchetto"
+    },
+    {
+     "label": "Marito",
+     "value": "fu Angelo Zampagno"
+    },
+    {
+     "label": "Dichiaranti",
+     "value": "Domenico Santin (51), Antonio Zampagno (32)"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 104, 26 luglio 1890] Angela Martinazzo, 1 anno e 2 mesi, figlia di Ambrogio (calzolaio) e di Lorenza Millani[?] (cappellaia), morta a Pieve n. 212."
+    }
+   ],
+   "people": [
+    {
+     "written": "Camozzato Angela",
+     "role": "defunta",
+     "pid": "p952"
+    },
+    {
+     "written": "fu Bortolo",
+     "role": "padre (defunto)",
+     "pid": "p99"
+    },
+    {
+     "written": "fu Turchetto Maddalena",
+     "role": "madre (defunta)",
+     "pid": "p100"
+    },
+    {
+     "written": "Zampagno Angelo",
+     "role": "marito (defunto)",
+     "pid": "p1335"
+    }
+   ],
+   "discrepancies": [
+    "Conferma morte nel 1890 e nascita verso il 1815 (schema di Massimo)."
+   ],
+   "uncertain": [
+    "Nome della località (Posmon?) e mesi di età."
+   ],
+   "confidence": "alta"
+  },
+  {
    "id": "L8-n04",
    "code": "",
    "file": "(immagine incollata in chat il 13 ottobre 2026)",
@@ -66528,7 +66624,7 @@
    "date": "1895-03-28",
    "actDate": "",
    "place": "Paese (Treviso), Casa comunale",
-   "source": "Comune di Paese, Stato Civile, registro Atti di matrimonio 1895, atto n. 22",
+   "source": "Comune di Paese, Stato Civile, registro Atti di matrimonio 1895, atto n. 22 · FamilySearch: https://www.familysearch.org/ark:/61903/3:1:3QSQ-G996-R7Y8 (immagine 31 di 547, gruppo 005491474)",
    "language": "italiano",
    "transcription": "ATTI DI MATRIMONIO\n[a matita in alto: 12 [illeggibile]]\n[margine destro] Numero 22\nVendrame Abramo\nPietrobon Gaetana Maria\n\nL'anno milleottocentonovantacinque, addì ventiotto di Marzo a ore antimeridiane dieci e minuti venti, nella Casa Comunale di Paese aperta al pubblico.\nAvanti di me Balzero[?] Annibale Assessore anziano in assenza del Sindaco ed Uffiziale dello Stato Civile, vestito in forma ufficiale, sono personalmente comparsi:\n1° Vendrame Abramo di anni ventiquattro villico nato in Padernello residente in Padernello, figlio di Luigi residente in Padernello e della fu Bettello Giulia residente in —; 2° Pietrobon Gaetana Maria di anni venti, villica nata in Postioma, residente in Padernello, figlia di Giovanni, residente in Padernello e di Camuzzato Maddalena, residente in Padernello, i quali mi hanno richiesto di unirli in matrimonio; a questo effetto mi hanno presentato il documento sotto descritto; e dall'esame di questo, non che di quelli già prodotti all'atto della richiesta delle pubblicazioni, i quali tutti, muniti del mio visto, inserisco nel volume degli allegati a questo registro, risultandomi nulla ostare alla celebrazione del loro matrimonio, ho letto agli Sposi gli articoli centotrenta, centotrentuno e centotrentadue del Codice Civile, e quindi ho domandato allo sposo se intende prendere in moglie la qui presente Pietrobon Gaetana Maria e a questa se intende prendere in marito il qui presente Vendrame Abramo; ed avendomi ciascuno risposto affermativamente a piena intelligenza anche dei testimoni sotto indicati, ho pronunciato in nome della legge che i medesimi sono uniti in matrimonio. A quest'atto sono stati presenti: Piazza[?] Giovanni di anni cinquantasei, segretario, e Perotto[?] Battista di anni quarantaotto, possidente entrambi residenti in questo Comune. Il documento presentato è il certificato delle pubblicazioni da me eseguite la prima il diciotto e la seconda il venticinque Novembre ultimo scorso. Al suddetto matrimonio hanno prestato il loro assenso il padre dello sposo morta essendo la madre e dei[sic] genitori della sposa come risulta dall'atto di richiesta delle pubblicazioni. Letto il presente atto agli intervenuti si sono essi meco sottoscritti.\n[firme] Vendrame Abramo — Pietrobon Gaetana Maria — Giovanni Piazza[?] — Battista Perotto[?] — Balzero[?] Annibale Ufficiale",
    "translation": "",
@@ -67260,7 +67356,7 @@
    "date": "1896-05-25",
    "actDate": "",
    "place": "Padernello, casa n. 11",
-   "source": "Comune di Paese (Treviso), registro degli atti di morte 1896, atto n. 71",
+   "source": "Comune di Paese (Treviso), registro degli atti di morte 1896, atto n. 71 · FamilySearch: https://www.familysearch.org/ark:/61903/3:1:3QSQ-G9MN-2NHF (immagine 347 di 610, gruppo 005422467)",
    "language": "italiano",
    "transcription": "L'anno milleottocentonovantasei, addì ventisei di Maggio, a ore antimeridiane otto e minuti trenta, nella Casa comunale. Avanti di me Giovanni Piazza Segretario delegato dal Sindaco con atto ventisei Settembre milleottocentonovantadue debitamente approvato, Ufficiale dello Stato Civile del Comune di Paese, sono comparsi Pozzebon Battista, di anni venticinque, villico, domiciliato in Padernello, e Paccagnan Giovanni, di anni trentadue, villico, domiciliato in Padernello, i quali mi hanno dichiarato che a ore pomeridiane sei di jeri, nella casa posta in Padernello al numero undici, è morto Pietrobon Giovanni di anni sessantatre, villico, residente in Padernello, nato in Cusignana, dal fu Gabriele e dalla fu Barbisan Maria, marito di Camuzzato Maddalena. A quest'atto sono stati presenti quali testimoni Battista Perotto, di anni quarantanove, possidente, e Augusto Lepes, di anni settantatre, cursore. […] ad eccezione dei dichiaranti perché illetterati. Battista Perotto, Augusto Lepes, Giovanni Piazza Ufficiale.\n[Nella stessa pagina, atto n. 72: Comin Giuseppe, 98 anni, di Postioma, morto il 25 maggio 1896. Visto del 29 maggio 1896.]",
    "translation": "",
@@ -67338,7 +67434,7 @@
    "date": "1896-06-18",
    "actDate": "",
    "place": "Paese (Treviso), Casa comunale",
-   "source": "Comune di Paese, registro degli Atti di matrimonio 1896, atto n. 6[?] («sei»)",
+   "source": "Comune di Paese, registro degli Atti di matrimonio 1896, atto n. 6[?] («sei») · FamilySearch: https://www.familysearch.org/ark:/61903/3:1:3QS7-L996-RW7J (immagine 445 di 547, gruppo 005491474)",
    "language": "italiano",
    "transcription": "ATTI DI MATRIMONIO\n[margine] Numero sei[?] / Pietrobon Matteo Candido / Bresolin Candida\n\nL'anno milleottocentonovantasei, addì dieciotto di Giugno a ore pomeridiane cinque e minuti —, nella Casa Comunale di Paese aperta al pubblico.\nAvanti di me Balzero Annibale Assessore anziano in assenza del Sindaco Uffiziale dello Stato Civile, vestito in forma ufficiale, sono personalmente comparsi:\n1° Pietrobon Matteo Candido di anni ventiquattro, villico nato in Postioma residente in Padernello, figlio di Giovanni residente in Padernello e di Camozzato Maddalena residente in Padernello; 2° Bresolin Candida di anni venti; villica nata in Padernello, residente in Padernello, figlia di Angelo, residente in Padernello e di Zatta Luigia, residente in Padernello, i quali mi hanno richiesto di unirli in matrimonio; a questo effetto mi hanno presentato il documento sotto descritto, e dall'esame di questo, non che di quelli già prodotti all'atto della richiesta delle pubblicazioni, i quali tutti, muniti del mio visto, inserisco nel volume degli allegati a questo registro, risultandomi nulla ostare alla celebrazione del loro matrimonio, ho letto agli Sposi gli articoli centotrenta, centotrentuno e centotrentadue del Codice Civile, e quindi ho domandato allo sposo se intende prendere in moglie la qui presente Bresolin Candida e a questa se intende prendere in marito il qui presente Pietrobon Matteo Candido; ed avendomi ciascuno risposto affermativamente a piena intelligenza anche dei testimoni sotto indicati, ho pronunciato in nome della legge che i medesimi sono uniti in matrimonio. A quest'atto sono stati presenti: Perotto[?] Gio. Battista di anni quarantanove; possidente, e Lopez[?] Augusto di anni settantatre[?]; cursore[?] entrambi residenti in questo Comune. Il documento presentato è il certificato delle pubblicazioni da me eseguite la prima il due e la seconda il nove febbraio ultimo scorso. Al suddetto matrimonio hanno prestato il loro assenso i genitori degli sposi come risulta dall'atto di richiesta delle pubblicazioni. Letto il presente atto agli intervenuti si sono meco sottoscritti ad eccezione della sposa che dichiara di essere illetterata.\n[firme] Pietrobon Matteo - Battista Perotto[?] - Augusto Lopez[?] - Balzero Annibale Ufficiale",
    "translation": "",
