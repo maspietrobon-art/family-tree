@@ -1,5 +1,5 @@
 {
- "version": 67,
+ "version": 73,
  "people": [
   {
    "id": "p1",
@@ -2509,7 +2509,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Figlio di Giovanni Pietrobon e Maddalena Camozzato. Secondo il libro di Remo Pietrobon è il fratello maggiore di Candido, «Virginio».",
+   "notes": "Figlio di Giovanni Pietrobon e Maddalena Camozzato. Secondo il libro di Remo Pietrobon è il fratello maggiore di Candido, «Virginio». Nel 1908 risiede a Padernello e viene chiamato «Giorgio Virginio» (matrimonio della figlia Maria Anna).",
    "fsid": "LTTQ-1XR",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -5246,14 +5246,14 @@
    "spouses": [
     "p997"
    ],
-   "birth": "26 gennaio 1813",
-   "birthPlace": "",
+   "birth": "24 gennaio 1813",
+   "birthPlace": "Monastier",
    "death": "1865",
    "deathPlace": "",
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Figlia di Antonio Luisetto e Maria Fregonese; sorella di Antonio Giuseppe Lovisetto. Dati da schermata FamilySearch. Nello schema morta il 9 marzo 1855 (l'albero: 1865).",
+   "notes": "Figlia di Antonio Luisetto e Maria Fregonese; sorella di Antonio Giuseppe Lovisetto. Dati da schermata FamilySearch. Nello schema morta il 9 marzo 1855 (l'albero: 1865). Data di nascita dall'atto civile; prima nell'albero 26 gennaio 1813 (schema), che è il giorno della denuncia.",
    "fsid": "GH47-CP8",
    "ramo": "Rosolin (nonno Coco)",
    "terms": [],
@@ -5280,14 +5280,14 @@
    "father": "p161",
    "mother": "p162",
    "spouses": [],
-   "birth": "18 dicembre 1815",
-   "birthPlace": "",
+   "birth": "17 dicembre 1815",
+   "birthPlace": "Monastier",
    "death": "",
    "deathPlace": "",
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Figlia di Antonio Luisetto e Maria Fregonese; sorella di Antonio Giuseppe Lovisetto. Dati da schermata FamilySearch.",
+   "notes": "Figlia di Antonio Luisetto e Maria Fregonese; sorella di Antonio Giuseppe Lovisetto. Dati da schermata FamilySearch. Data di nascita dall'atto civile; prima nell'albero 18 dicembre 1815 (schema), che è il giorno della denuncia.",
    "fsid": "LTW6-PL1",
    "ramo": "Rosolin (nonno Coco)",
    "terms": [],
@@ -5918,7 +5918,7 @@
   {
    "id": "p188",
    "name": "Domenico Luisetto",
-   "father": "",
+   "father": "p1329",
    "mother": "",
    "spouses": [
     "p189"
@@ -5930,7 +5930,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Padre di Antonio Luisetto (KHTV-143). Sposato con Domenica Battistin circa 1781. Dati da schermata FamilySearch.",
+   "notes": "Padre di Antonio Luisetto (KHTV-143). Sposato con Domenica Battistin circa 1781. Dati da schermata FamilySearch. Vivente nel luglio 1811 (consenso notarile a Oderzo per le nozze della figlia Angela).",
    "fsid": "LVXK-3XP",
    "ramo": "Rosolin (nonno Coco)",
    "terms": [],
@@ -5948,7 +5948,7 @@
   {
    "id": "p189",
    "name": "Domenica Battistin",
-   "father": "",
+   "father": "p1330",
    "mother": "",
    "spouses": [
     "p188"
@@ -5960,7 +5960,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Madre di Antonio Luisetto (KHTV-143). Sposata con Domenico Luisetto circa 1781. Dati da schermata FamilySearch.",
+   "notes": "Madre di Antonio Luisetto (KHTV-143). Sposata con Domenico Luisetto circa 1781. Dati da schermata FamilySearch. Vivente nel luglio 1811 (consenso notarile a Oderzo per le nozze della figlia Angela).",
    "fsid": "LVXK-3XQ",
    "ramo": "Rosolin (nonno Coco)",
    "terms": [],
@@ -7129,7 +7129,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Menego Merletto",
-   "notes": "Padre di Pietro Michele Pietrobon e altri. Sposato con Bernardina Mattiazzi. Nascita a Cusignana; morte 27 dicembre 1895 a Paese. Alias Menego Merletto. Figlio di Girolamo Pietrobon e Graziosa Pavan. Dati da schermata FamilySearch. Prima dell'aggiornamento del 13 ottobre 2026 l'albero dava per morte: «27 dicembre 1895». Prima dell'aggiornamento del 13 ottobre 2026 l'albero dava per luogo di morte: «Paese, Treviso, Veneto, Italia».",
+   "notes": "Padre di Pietro Michele Pietrobon e altri. Sposato con Bernardina Mattiazzi. Nascita a Cusignana; morte 27 dicembre 1895 a Paese. Alias Menego Merletto. Figlio di Girolamo Pietrobon e Graziosa Pavan. Dati da schermata FamilySearch. Prima dell'aggiornamento del 13 ottobre 2026 l'albero dava per morte: «27 dicembre 1895». Prima dell'aggiornamento del 13 ottobre 2026 l'albero dava per luogo di morte: «Paese, Treviso, Veneto, Italia». Possibile traccia: a Postioma n. 2 (la sua casa) nel 1897 vivono Sante Pietrobon (con Eufemia Rossi) e Costante Pietrobon (39 anni, nato verso il 1858): forse figli suoi, non dichiarato (documento di ricerca L36-r01).",
    "fsid": "GWVC-T8V",
    "ramo": "Pietrobon-Florian (nonna Gemma)",
    "terms": [],
@@ -18426,7 +18426,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Moglie di Angelo Pietrobon (1821-1893), dall'atto di morte del marito (Paese 1893); già morta nel 1895. Nell'atto di morte della figlia Angela (Paese 1917) il cognome è scritto «Morao»: da chiarire rispetto a «Badesso» dell'atto del 1893.",
+   "notes": "Moglie di Angelo Pietrobon (1821-1893), dall'atto di morte del marito (Paese 1893); già morta nel 1895. Nell'atto di morte della figlia Angela (Paese 1917) il cognome è scritto «Morao»: da chiarire rispetto a «Badesso» dell'atto del 1893. Il cognome Badesso è confermato anche dall'atto di morte della figlia Teresa (1895).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -18445,7 +18445,7 @@
    "birth": "circa 1855",
    "birthPlace": "Postioma, Paese",
    "death": "21 febbraio 1895",
-   "deathPlace": "Postioma, casa n. 72",
+   "deathPlace": "Postioma, casa n. 82",
    "country": "Italia",
    "branch": "",
    "alt": "",
@@ -20022,7 +20022,8 @@
    "father": "p1307",
    "mother": "",
    "spouses": [
-    "p1302"
+    "p1302",
+    "p1318"
    ],
    "birth": "circa 1749",
    "birthPlace": "Cusignana",
@@ -20031,7 +20032,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "Antonio Pietro Bon detto Merlo",
-   "notes": "«Antonio Pietro Bon detto Merlo del deceso Angelo», villico di 62 anni nel luglio 1811, nonno paterno di Anna Maria (atto di nascita n. 63, Arcade 1811); vive nella casa del figlio Angelo a Cusignana. Ipotesi da verificare: per età e soprannome potrebbe essere il padre (o un parente stretto) di Santa (n. 1782 circa), di Gabriele e di Girolamo Pietrobon detti Merlo/Merletto (n. 1800 circa), antenati della famiglia. Nessun atto lo dice ancora. Nel 1808 (nascita del figlio Mattio) ha 58 anni e la moglie è Maria Amadio (43): identificazione con Antonio detto Merlo probabile per età e luogo. Il 16 gennaio 1810 è testimone (60 anni, villico di Cusignana) alla morte di Teresa Zanata, figlia di Domenico e Caterina Zandonà: età coerente con i 58 anni del 1808. Figlio del fu Angelo Pierobon; sposato con Maria Amadio di Mattio a Villorba, prima del 1796 (battesimo della figlia Angela, 22 giugno 1796). Nel 1812 dà il consenso alle nozze di Angela con Appolonio Zanatta.",
+   "notes": "«Antonio Pietro Bon detto Merlo del deceso Angelo», villico di 62 anni nel luglio 1811, nonno paterno di Anna Maria (atto di nascita n. 63, Arcade 1811); vive nella casa del figlio Angelo a Cusignana. Ipotesi da verificare: per età e soprannome potrebbe essere il padre (o un parente stretto) di Santa (n. 1782 circa), di Gabriele e di Girolamo Pietrobon detti Merlo/Merletto (n. 1800 circa), antenati della famiglia. Nessun atto lo dice ancora. Nel 1808 (nascita del figlio Mattio) ha 58 anni e la moglie è Maria Amadio (43): identificazione con Antonio detto Merlo probabile per età e luogo. Il 16 gennaio 1810 è testimone (60 anni, villico di Cusignana) alla morte di Teresa Zanata, figlia di Domenico e Caterina Zandonà: età coerente con i 58 anni del 1808. Figlio del fu Angelo Pierobon; sposato con Maria Amadio di Mattio a Villorba, prima del 1796 (battesimo della figlia Angela, 22 giugno 1796). Nel 1812 dà il consenso alle nozze di Angela con Appolonio Zanatta. Probabile prima moglie: Angela Martini (morta prima del 1809), madre di Maria Pierobon (circa 1777-1809, moglie di Pietro Bettiol). Se così, anche Santa (1782) e Angelo (1785) potrebbero essere figli di Angela e non di Maria Amadio.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -21037,7 +21038,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Contadino di Padernello, padre di Abramo e Giovanni; vivo nel 1898.",
+   "notes": "Contadino di Padernello, padre di Abramo e Giovanni; vivo nel 1898. Il 25 agosto 1899 ha 60 anni (pubblicazioni della figlia Teresa); la moglie Giulia Bettelli è già morta.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -34400,7 +34401,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "Mattio Pietrobon",
-   "notes": "Figlio di Antonio Pietrobon (58 anni, agricoltore) e Maria Amadio (43): probabilmente Antonio detto Merlo, padre di Angelo (1785).",
+   "notes": "Figlio di Antonio Pietrobon (58 anni, agricoltore) e Maria Amadio (43): probabilmente Antonio detto Merlo, padre di Angelo (1785). Possibile figlio: Giacomo Pietrobon, nato a Cusignana verso il 1834 da un Matteo Pietrobon e da Caterina Guzzo[?], morto a Postioma nel 1900 (atto n. 98, Paese). Da verificare.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -34653,6 +34654,466 @@
    "notes": "Marito di Angela Pietrobon (circa 1847-1917).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1315",
+   "name": "Bambino senza vita (figlio di Angelo Pietrobon detto Merlo, 1810)",
+   "father": "p652",
+   "mother": "p653",
+   "spouses": [],
+   "birth": "23 maggio 1810",
+   "birthPlace": "Cusignana",
+   "death": "23 maggio 1810",
+   "deathPlace": "Cusignana",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Maschio nato senza vita (atto n. 41, Giavera 1810).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1316",
+   "name": "Giacomo Pietrobon (circa 1834)",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1317"
+   ],
+   "birth": "circa 1834",
+   "birthPlace": "Cusignana",
+   "death": "22 ottobre 1900",
+   "deathPlace": "Postioma n. 112",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Giacomo Pietrobon",
+   "notes": "Nato a Cusignana, figlio dei fu Matteo Pietrobon e Caterina Guzzo[?]; marito di Anna Pavan; morto a Postioma a 66 anni (atto n. 98, Paese 1900). Ipotesi: figlio di Mattio Pietrobon (1808), figlio di Antonio detto Merlo (unico Matteo Pietrobon noto a Cusignana in quegli anni), non provato.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "villico"
+  },
+  {
+   "id": "p1317",
+   "name": "Anna Pavan (moglie di Giacomo Pietrobon)",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1316"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Anna Pavan",
+   "notes": "Moglie di Giacomo Pietrobon (circa 1834-1900), vivente nel 1900.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1318",
+   "name": "Angela Martini",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p651"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 10 aprile 1809",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Moglie di Antonio Pierobon di Cusignana, madre di Maria (circa 1777-1809); già morta nel 1809. Probabilmente prima moglie di Antonio detto Merlo (che nel 1796 è già sposato con Maria Amadio): non dichiarato.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1319",
+   "name": "Maria Pietrobon (circa 1777)",
+   "father": "p651",
+   "mother": "p1318",
+   "spouses": [
+    "p1320"
+   ],
+   "birth": "circa 1777",
+   "birthPlace": "Cusignana",
+   "death": "10 aprile 1809",
+   "deathPlace": "Cusignana",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Maria Pierobon",
+   "notes": "Figlia del vivente Antonio Pierobon e della fu Angela Martini; moglie di Pietro Bettiol; morta a 32 anni (atto n. 17, Giavera 1809). Identificazione del padre con Antonio detto Merlo probabile (stesso luogo, vivo nel 1809), non dichiarata.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1320",
+   "name": "Pietro Bettiol (marito di Maria Pierobon)",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1319"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Pietro Bettiol",
+   "notes": "Villico di Cusignana; vedovo di Maria Pierobon nel 1809.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "villico"
+  },
+  {
+   "id": "p1321",
+   "name": "Teresa Vendrame",
+   "father": "p693",
+   "mother": "p694",
+   "spouses": [
+    "p1322"
+   ],
+   "birth": "circa 1876",
+   "birthPlace": "Padernello",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlia di Luigi Vendrame (60 anni nel 1899) e della fu Giulia Bettelli; sorella di Abramo e Giovanni Vendrame (mariti delle gemelle Pietrobon). Pubblicazioni con Giovanni Pietrobon, agosto 1899.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "1899 Paese (pubblicazioni 27 agosto e 3 settembre)"
+  },
+  {
+   "id": "p1322",
+   "name": "Giovanni Pietrobon (di Valentino)",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1321"
+   ],
+   "birth": "circa 1870",
+   "birthPlace": "Postioma",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Giovanni Pietrobon",
+   "notes": "Figlio dei fu Valentino Pietrobon e Orsola Pavan, residente a Porcellengo (poi in Argentina, a Pergamino?); fratello di Olivo Catterino. Legame con il nostro ramo non dichiarato.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "1899 Paese (pubblicazioni 27 agosto e 3 settembre)",
+   "job": "villico"
+  },
+  {
+   "id": "p1323",
+   "name": "Maria Anna Pietrobon (1886)",
+   "father": "p83",
+   "mother": "p1281",
+   "spouses": [
+    "p1324"
+   ],
+   "birth": "circa 1886",
+   "birthPlace": "Postioma",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Maria Anna Pietrobon",
+   "notes": "Figlia di Gregorio (Giorgio) Virginio Pietrobon e Luigia Schiavon; sposa Ettore Salvatore Cavallin a Paese il 16 aprile 1908.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "16 aprile 1908 Paese"
+  },
+  {
+   "id": "p1324",
+   "name": "Ettore Salvatore Cavallin",
+   "father": "p1325",
+   "mother": "p1326",
+   "spouses": [
+    "p1323"
+   ],
+   "birth": "circa 1884",
+   "birthPlace": "Istrana",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Edoardo Cavallin e Marta Volpato, di Padernello.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "16 aprile 1908 Paese",
+   "job": "villico"
+  },
+  {
+   "id": "p1325",
+   "name": "Edoardo Cavallin",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1326"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Padre di Ettore Salvatore e Antonia Cavallin; residente a Padernello (1908, 1919).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1326",
+   "name": "Marta Volpato",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1325"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Moglie di Edoardo Cavallin, madre di Ettore Salvatore e Antonia.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1327",
+   "name": "Antonia Cavallin",
+   "father": "p1325",
+   "mother": "p1326",
+   "spouses": [
+    "p1328"
+   ],
+   "birth": "circa 1891",
+   "birthPlace": "Istrana",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Sorella di Ettore Salvatore Cavallin (cognato di Maria Anna Pietrobon). Sposa Gaetano Ippindo, muratore nato a Padova di genitori ignoti, a Paese il 6 novembre 1919 (trascrizione Istrana, Parte II serie A n. 1).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "6 novembre 1919 Paese",
+   "job": "villica"
+  },
+  {
+   "id": "p1328",
+   "name": "Gaetano Ippindo",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1327"
+   ],
+   "birth": "circa 1894",
+   "birthPlace": "Padova",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di ignoti; residente a Istrana.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "6 novembre 1919 Paese",
+   "job": "muratore"
+  },
+  {
+   "id": "p1329",
+   "name": "Florian Luisetto",
+   "father": "",
+   "mother": "",
+   "spouses": [],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 1793",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Florian Lovisetto",
+   "notes": "Padre di Domenico Luisetto («Domenico q.m Florian Lovisetto», battesimo della nipote Angela, Monastier 1793).",
+   "fsid": "",
+   "ramo": "Rosolin (nonno Coco)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1330",
+   "name": "Giacomo Battistin",
+   "father": "",
+   "mother": "",
+   "spouses": [],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 1811",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Padre di Domenica Battistin, moglie di Domenico Luisetto (battesimo di Angela 1793; consenso notarile 1811).",
+   "fsid": "",
+   "ramo": "Rosolin (nonno Coco)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1331",
+   "name": "Angela Luisetto (1793)",
+   "father": "p188",
+   "mother": "p189",
+   "spouses": [
+    "p1332"
+   ],
+   "birth": "24 novembre 1793",
+   "birthPlace": "Monastier",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Angela Lovisetto",
+   "notes": "Figlia di Domenico Luisetto del fu Florian e di Domenica Battistin di Giacomo; sorella di Antonio (1786). Nata «l'altro ieri» rispetto al battesimo del 26 novembre 1793, battezzata dal parroco di Losson. Sposa nell'agosto 1811 Giovanni Battista Bassetto di Losson (Fossalta di Piave).",
+   "fsid": "",
+   "ramo": "Rosolin (nonno Coco)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "agosto 1811 (pubblicazioni a Fossalta il 21 e 28 luglio 1811)"
+  },
+  {
+   "id": "p1332",
+   "name": "Giovanni Battista Bassetto",
+   "father": "p1333",
+   "mother": "p1334",
+   "spouses": [
+    "p1331"
+   ],
+   "birth": "16 dicembre 1791",
+   "birthPlace": "Losson (Fossalta di Piave)",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlio di Giuseppe Bassetto del fu Domenico e di Margherita Biondo del fu Vicenzo, villici di Losson. Sposa Angela Luisetto nel 1811. Possibile parentela con i Bassetto del nostro albero (Vincenzo Bassetto di Meolo, n. circa 1752): non dichiarata.",
+   "fsid": "",
+   "ramo": "Rosolin (nonno Coco)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "agosto 1811 (pubblicazioni a Fossalta il 21 e 28 luglio 1811)"
+  },
+  {
+   "id": "p1333",
+   "name": "Giuseppe Bassetto (di Losson)",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1334"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Giuseppe Bassetto",
+   "notes": "Del fu Domenico; villico a Losson (Fossalta di Piave); vivo nel 1811.",
+   "fsid": "",
+   "ramo": "Rosolin (nonno Coco)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1334",
+   "name": "Margherita Biondo",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p1333"
+   ],
+   "birth": "",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Del fu Vicenzo; moglie di Giuseppe Bassetto di Losson; viva nel 1811.",
+   "fsid": "",
+   "ramo": "Rosolin (nonno Coco)",
    "terms": [],
    "speaker": "",
    "events": [],
@@ -55295,7 +55756,7 @@
    "place": "Giavera / Castagnole",
    "source": "Archivio di Stato di Treviso, Stato civile napoleonico",
    "language": "italiano",
-   "transcription": "[Altri atti napoleonici delle stesse ricerche, senza legame dichiarato con l'albero.]\n- Rossi detti Nardo di Porcellengo (comune di Castagnole): 14 ottobre 1806, muore a 9 giorni Giuseppe Rossi detto Nardo, figlio di Domenico Rossi detto Nardo e Santina Carniato; testimoni gli zii Angelo (30) e Antonio (22) Rossi detti Nardo. 11 ottobre [1806?], muore Angelo Rossi detto Nardo, figlio di Domenico e Santina Carniato; testimone Giovanni Rossi detto Nardo (30). Stesso soprannome dei Rossi di Padernello (Giovanni 1765, Giacomo 1789): forse un ramo parente.\n- Mattiazzo di Postioma: muore a Castagnole il 19 ottobre [anno?] Francesco Mattiazzo di Angelo, 47 anni, villico, nato a Postioma, figlio del fu Angelo Mattiazzo detto Paesan e della fu Maria Breda. Forse parente di Bernardina Mattiazzi (Postioma, 1835).\n- Zanata di Giavera e Cusignana: Antonio Zanata (37) e Lucia Beluso (30): Angela nata il 14 novembre 1808, morta il 15 novembre 1808; un altro Angelo morto il 2 aprile 1808 a 18 mesi. Matrimonio di Angelo Zanata (nato il 6 giugno 1785, figlio dei fu Antonio Zanata e Maria Rotin) con Lorenza Bortoleto (nata il 1° ottobre 1788, figlia del fu Mattio e di Catterina Mussato); loro figlio Antonio nato il 3 dicembre 1812. Angela Zanata del fu Antonio e della fu Maria Rotin, moglie di Mattio Visentin, morta a Nervesa il 21 settembre 1810 a 28 anni. Andrea Zanata, 74 anni, figlio dei fu Girolamo Zanata e Angela Marchiori, marito di Maria Taveri[?], morto ad Arcade il 19 maggio 1808 (testimoni il fratello Bortolo, 59, e il genero Mattio Bettiol). Pietro Zanata e Domenica Genovese: Angelo nato il 28 marzo 1809. Matteo Zanata del fu Antonio e Elisabetta Tonietto: Angela nata il 13 marzo 1813. Antonio Zanata del fu Angelo e Maria Lazareti del fu Bortolo: Angelo nato il 16 aprile 1813. Alessandro Zanata, calzolaio, e Valentina Tesera: Anna Maria nata il 23 novembre 1809.\n- Gottardo di Bavaria: Nadal Gottardo (29) e Lucia Favero (25): Anna nata il [aprile] 1809 a Bavaria.\n- Graziosa Pavan (29 luglio 1810, n. 39): già trascritta (L10-q07).\n\n[Secondo gruppo di atti Zanata di Cusignana e Giavera, 1807-1815]\n- Antonio Zanata (26-27 anni) e Paola Marchiori (23-24): Modesto nato il 22 aprile 1807 (testimoni Francesco Zanata, fratello del padre, e Carlo Zanata, zio), morto a 5 giorni; Catterina nata il 5 marzo 1808 (testimoni gli zii paterni Domenico e Carlo Zanata), morta il 17 marzo 1808 a 13 giorni.\n- Modesto Zanata (20) e Paola Pierazzo: Antonio nato il 12 luglio 1807 (testimone lo zio Mattio Zanata, 27), morto il 23 settembre 1807 a due mesi (testimone il nonno Giuseppe Zanata, 52).\n- Girolamo Zanata (37) e Maria Cechel[?] (36): Antonio nato il 27 aprile 1808, morto il 2 ottobre 1808 a cinque mesi (madre scritta Maria Zechel).\n- Mattio Zanata (28) e Paola Martinetto (26): Davide nato il 23 marzo 1809; Giulia nata nel marzo 1808.\n- Angelo Zanata (23) e Paola Gobbo[?]: Antonio nato il 2 aprile 1809 a Giavera.\n- Angelo Zanata (24) e Lorenza Bortoletto: Antonio nato il 7 novembre 1809 a Cusignana.\n- Carlo Zanata (32) e Angela Carer[?] (29): Biasio nato il 22 ottobre 1809; testimoni Angelo Marchiori (32) e ANGELO PIETROBON (26): quasi certamente Angelo Pietrobon detto Merlo, vicino di casa a Cusignana.\n- Pietro Zanata detto Zanatel (35) e Domenica Genovese (21): Antonio Angelo nato il 7 novembre 1807.\n- Francesco Zanata detto Bino (40) e Mattia Favero (40): Catterina nata il 20 maggio 1807.\n- Antonio Zanata (18) di Zuanne e Margarita Rosato sposa Orsola Strival (17), nata a Bavaria il 2 marzo 1791, figlia di Antonio Strival e Francesca Gottardo (ottobre 1808).\n- Morti 1815 (Arcade): Antonio Zanata, 21 anni, figlio di Giuseppe e Maria Meneguzzo (24 marzo); Catterina Zanata del fu Osvaldo e di Lucia Bianchin, 31 anni, moglie di Bortolomio Bortoleto (24 marzo).\n- Morte (Giavera, 2 ottobre 1807) di Gio. Battista Campeoto detto Alessi, 64 anni, figlio dei fu Francesco Campeoto e Domenica Santamaria; morte di Girolamo Santamaria detto Gregnol, figlio di Angelo e di Rosa Zanata.\n- Nota: Francesca Gottardo, madre di Orsola Strival, potrebbe appartenere ai Gottardo di Bavaria del nostro albero (non dichiarato).\n\n[Terzo gruppo di atti Zanata, 1807-1815]\n- Giuseppe Zanata del fu Biasio (circa 1757, Cusignana) e Maria Maccobelli[?] del fu Antonio: figli Francesco (circa 1786 - giugno 1812, marito di Giovanna Calesso; figlia Catterina nata il 29 gennaio 1807), Modesto (circa 1787, sposato con Paola Pierazzo e poi con Paola Zanata del fu Giovanni: Zuanne nato il 29 settembre 1809, Felice nato il 15 aprile 1813), Mattio (circa 1781), Benedetto (circa 1790, sposato con Teresa De Marchi di Marco: Giovanni nato e morto l'8 gennaio 1815). Il nonno Giuseppe presenta i nipoti.\n- Antonio Zanata del fu Giuseppe e Maria Meneguzzo: morto a 21 anni il 24 marzo 1815.\n- Angelo Zanata (24) e Paola Gobbo (23), Giavera: Giuseppe morto a 9 giorni il 15 gennaio 1808.\n- Giuseppe Zanata (30) e Paola Gucella[?] (28), Giavera: Domenico nato il 13 marzo 1809.\n- Francesco Zanata (40) e Domenica Pozzobon (36), Giavera: Francesco nato il 22 novembre 1807, morto il 28 novembre 1807 a 6 giorni.\n- Francesco Zanata e Maria Favero (Cusignana): Zuanne morto a 17 anni il 19 gennaio 1810 (testimone Sebastian Pavan, 52 anni).\n- Antonio Zanata (35) e Catterina Baldasso (28): Zuanne nato il 31 marzo 1809.\n- Antonio Zanata di Agostin (42) e Lucia Belusso del fu Pietro (32), Giavera: Giovanni Maria nato l'8 agosto 1812.\n- Gaetano Zanata del fu Antonio e della fu Lorenza Saccaretto[?], nato a Selva (Volpago), 46 anni, marito di Catterina Gobbo: morto il 28 gennaio 1814.\n- Gioachino Zanata, 24 anni, figlio di Domenico (58) e della fu Maria Messer[?]: morto il 15 marzo 1814 a Giavera (casa di Domenico Zanata del fu Apollonio).\n- Domenica Zanata del fu Pietro e della fu Maddalena Baldasso, 62 anni, vedova di Giuseppe Baldasso: morta a Cusignana il 14 dicembre 1813; testimone il nipote Giacomo Baldasso del fu Antonio.\n- Nota: nessuno di questi atti nomina persone del nostro albero. Il Sebastian Pavan di 52 anni (1810) non è Sebastian Pavan detto Ferro (n. 1766).\n\n[Quarto gruppo, 1807-1815]\n- Carlo Zanata detto Priuli (24) e Angela Code (26), Cusignana: Pietro nato il 5 novembre 1807 (testimone lo zio Domenico Zanata Priuli, 42), morto il 13 novembre 1807 a 9 giorni.\n- Giuseppe Zanata (19) e Angela da Roverè (20), Cusignana: Elisabetta nata il 3 febbraio 1807.\n- Antonio Zanata di Giovanni (23) e Orsola Strival di Antonio (23), Giavera: Maria nata il 4 maggio 1815, morta il 13 maggio 1815.\n- Antonio Zanata (38) e Lucia Belusso (38), Giavera: Orsola nata l'11 marzo 1810.\n- Modesto Zanata di Giuseppe (27) e Paola Zanata del fu Giovanni (28): Martino nato il 27 ottobre 1814.\n- Mattio Zanata del fu Antonio e Elisabetta Tonietto di Giuseppe: Angela morta a 6 giorni il 19 marzo 1813.\n- Alessandro Zanata del fu Steffano (30), calzolaio, e Valentina Messer di Bortolo (28): Maria Teresa nata il 27 maggio 1813, morta l'8 giugno 1813.\n- Giacomo Zanata e Maria Zechel: Marina morta a 8 giorni il 4 aprile 1810.\n- Santo Zanata e Antonia Durigan, Giavera: Pietro morto a 13 giorni il 9 gennaio 1810.\n- Antonio Zanata morto a 10 giorni il 13 dicembre 1812, in casa di Domenico Zanata del fu Lorenzo.\n- Matrimonio (Giavera, 1808): Mattio Vendramel (nato il 7 aprile 1788, figlio del fu Giovanni Battista e di Angela Pasqualin) con Marina Zanata (nata il 12 giugno 1789 ad Arcade, figlia di Andrea Zanata e Domenica Biasuzzo).\n- Testimone Giovanni Barbisan del fu Francesco, 32 anni, Giavera (1814): un altro ramo Barbisan.\n- Catterina Bovanga, figlia di Antonio di Prosdocimo Bovanga e di Domenica Durante del fu Giovanni Maria: morta bambina (1812). Un ramo Durante di Cusignana, forse parente di Monica Durante di Enrico (moglie di Angelo Pietrobon detto Merlo): non dichiarato.\n- Morte di Lorenzo Pavan (14 novembre 1807): già trascritta (L19-d01).\n\n[Quinto e ultimo gruppo Zanata, 1807-1814]\n- Francesco Zanata (25) e Giovanna Calesso (23), Cusignana: Valentin Antonio nato il 14 febbraio 1808 (il padre firma).\n- Matteo Zanata di Giuseppe (33) e Paola Martinetti di Domenico (32): Valentina nata il 5 luglio 1814.\n- Giuseppe Calesso del fu Francesco (35) e Catterina Sartori del fu Paolo (18): Domenica nata il 19 agosto 1814, Cusignana.\n- Giuseppe Zanata (28) e Paola Gusela (26), Giavera: Giuseppe nato il 25 settembre 1807; testimoni gli zii paterni Francesco (39) e Angelo (35) Zanata.\n- Santo Zanata (23) e Antonia Durigan (20): Pietro nato il 26 dicembre 1809. Loro matrimonio: pubblicazioni del 15 e 22 novembre 1807 (Santo, 21 anni, figlio del fu Antonio Zanata e di Antonia Fragnana[?]; Antonia, 19 anni, figlia di Giacomo Durigan e Domenica Zacol[?]).\n- Antonio Zanata (36) e Catterina Baldasso (28), Cusignana: Regina nata il 22 aprile 1810.\n- Francesco Zanata (32) e Orsola Santon (33), Cusignana: Simon nato il 29 novembre 1808, morto il 6 dicembre 1808.\n- Steffano Zanata del fu Domenico e della fu Armelina Catelan, nato a Villorba, 62 anni, marito di Gerolama Caberloto: morto il 21 luglio 1812 a Cusignana; testimoni il figlio Alessandro (31, calzolaio) e il vicino VINCENZO AMADIO del fu Giacomo (49).\n- Domenico Zanata e Caterina Zandonà: Teresa morta a 15 giorni il 15 gennaio 1810 a Cusignana; testimone ANTONIO PIEROBON, 60 anni, villico di Cusignana.\n- Note: Antonio Pierobon (60 anni nel 1810) corrisponde ad Antonio Pietrobon detto Merlo (58 nel 1808). Vincenzo Amadio del fu Giacomo (circa 1763), vicino di casa a Cusignana, forse parente (fratello?) di Maria Amadio, moglie di Antonio Pietrobon: non dichiarato.\n\n[Sesto gruppo, 1811-1813]\n- Paese (frazione del Comune di Treviso), 15 maggio 1813, n. 39: Zuanne di Pietro Pierobon (26), villico, colmello di Paese n. 23, e Maria del fu Pietro Pozzobon (24): Luigi nato il 14 maggio 1813; testimoni gli zii paterni Fermo di Pietro Pierobon (32) e Battista di Pietro Pierobon (24). Una famiglia Pierobon di Paese (Pietro e i figli Zuanne, Fermo, Battista), non collegata.\n- Paese, 27 maggio 1813, n. 41: Zuanne del fu Battista Brisolin (42), gastaldo, e Giovanna di Stefano Matarolo (38): Antonio nato il 25 maggio 1813 (colmello di Villa n. 113); testimone lo zio materno Carlo del fu Valentin Favaro. Bresolin di Paese, non collegati ai nostri di Padernello.\n- Paese, n. 40: Zuanne del fu Pietro Morao e Domenica del fu Marco Franchetto: Maria nata il 26 maggio 1813. NB: famiglia Morao di Paese, stesso cognome dato alla madre di Angela Pietrobon nel 1917.\n- Arcade, 30 luglio 1811, n. 53: morte di Fiovetta Sisto (80), nata a Postioma, moglie in seconde nozze di Bortolo Gazzarin; testimone il genero Pietro Zanatta del fu Angelo.\n- Susegana, 25 luglio 1811: morte di Valentina Merlo (35), nata a Cusignana da Antonio Merlo e Angela Barbon, moglie di Giuseppe Saldan (Collalto). Cognome Merlo, non il soprannome dei Pietrobon.",
+   "transcription": "[Altri atti napoleonici delle stesse ricerche, senza legame dichiarato con l'albero.]\n- Rossi detti Nardo di Porcellengo (comune di Castagnole): 14 ottobre 1806, muore a 9 giorni Giuseppe Rossi detto Nardo, figlio di Domenico Rossi detto Nardo e Santina Carniato; testimoni gli zii Angelo (30) e Antonio (22) Rossi detti Nardo. 11 ottobre [1806?], muore Angelo Rossi detto Nardo, figlio di Domenico e Santina Carniato; testimone Giovanni Rossi detto Nardo (30). Stesso soprannome dei Rossi di Padernello (Giovanni 1765, Giacomo 1789): forse un ramo parente.\n- Mattiazzo di Postioma: muore a Castagnole il 19 ottobre [anno?] Francesco Mattiazzo di Angelo, 47 anni, villico, nato a Postioma, figlio del fu Angelo Mattiazzo detto Paesan e della fu Maria Breda. Forse parente di Bernardina Mattiazzi (Postioma, 1835).\n- Zanata di Giavera e Cusignana: Antonio Zanata (37) e Lucia Beluso (30): Angela nata il 14 novembre 1808, morta il 15 novembre 1808; un altro Angelo morto il 2 aprile 1808 a 18 mesi. Matrimonio di Angelo Zanata (nato il 6 giugno 1785, figlio dei fu Antonio Zanata e Maria Rotin) con Lorenza Bortoleto (nata il 1° ottobre 1788, figlia del fu Mattio e di Catterina Mussato); loro figlio Antonio nato il 3 dicembre 1812. Angela Zanata del fu Antonio e della fu Maria Rotin, moglie di Mattio Visentin, morta a Nervesa il 21 settembre 1810 a 28 anni. Andrea Zanata, 74 anni, figlio dei fu Girolamo Zanata e Angela Marchiori, marito di Maria Taveri[?], morto ad Arcade il 19 maggio 1808 (testimoni il fratello Bortolo, 59, e il genero Mattio Bettiol). Pietro Zanata e Domenica Genovese: Angelo nato il 28 marzo 1809. Matteo Zanata del fu Antonio e Elisabetta Tonietto: Angela nata il 13 marzo 1813. Antonio Zanata del fu Angelo e Maria Lazareti del fu Bortolo: Angelo nato il 16 aprile 1813. Alessandro Zanata, calzolaio, e Valentina Tesera: Anna Maria nata il 23 novembre 1809.\n- Gottardo di Bavaria: Nadal Gottardo (29) e Lucia Favero (25): Anna nata il [aprile] 1809 a Bavaria.\n- Graziosa Pavan (29 luglio 1810, n. 39): già trascritta (L10-q07).\n\n[Secondo gruppo di atti Zanata di Cusignana e Giavera, 1807-1815]\n- Antonio Zanata (26-27 anni) e Paola Marchiori (23-24): Modesto nato il 22 aprile 1807 (testimoni Francesco Zanata, fratello del padre, e Carlo Zanata, zio), morto a 5 giorni; Catterina nata il 5 marzo 1808 (testimoni gli zii paterni Domenico e Carlo Zanata), morta il 17 marzo 1808 a 13 giorni.\n- Modesto Zanata (20) e Paola Pierazzo: Antonio nato il 12 luglio 1807 (testimone lo zio Mattio Zanata, 27), morto il 23 settembre 1807 a due mesi (testimone il nonno Giuseppe Zanata, 52).\n- Girolamo Zanata (37) e Maria Cechel[?] (36): Antonio nato il 27 aprile 1808, morto il 2 ottobre 1808 a cinque mesi (madre scritta Maria Zechel).\n- Mattio Zanata (28) e Paola Martinetto (26): Davide nato il 23 marzo 1809; Giulia nata nel marzo 1808.\n- Angelo Zanata (23) e Paola Gobbo[?]: Antonio nato il 2 aprile 1809 a Giavera.\n- Angelo Zanata (24) e Lorenza Bortoletto: Antonio nato il 7 novembre 1809 a Cusignana.\n- Carlo Zanata (32) e Angela Carer[?] (29): Biasio nato il 22 ottobre 1809; testimoni Angelo Marchiori (32) e ANGELO PIETROBON (26): quasi certamente Angelo Pietrobon detto Merlo, vicino di casa a Cusignana.\n- Pietro Zanata detto Zanatel (35) e Domenica Genovese (21): Antonio Angelo nato il 7 novembre 1807.\n- Francesco Zanata detto Bino (40) e Mattia Favero (40): Catterina nata il 20 maggio 1807.\n- Antonio Zanata (18) di Zuanne e Margarita Rosato sposa Orsola Strival (17), nata a Bavaria il 2 marzo 1791, figlia di Antonio Strival e Francesca Gottardo (ottobre 1808).\n- Morti 1815 (Arcade): Antonio Zanata, 21 anni, figlio di Giuseppe e Maria Meneguzzo (24 marzo); Catterina Zanata del fu Osvaldo e di Lucia Bianchin, 31 anni, moglie di Bortolomio Bortoleto (24 marzo).\n- Morte (Giavera, 2 ottobre 1807) di Gio. Battista Campeoto detto Alessi, 64 anni, figlio dei fu Francesco Campeoto e Domenica Santamaria; morte di Girolamo Santamaria detto Gregnol, figlio di Angelo e di Rosa Zanata.\n- Nota: Francesca Gottardo, madre di Orsola Strival, potrebbe appartenere ai Gottardo di Bavaria del nostro albero (non dichiarato).\n\n[Terzo gruppo di atti Zanata, 1807-1815]\n- Giuseppe Zanata del fu Biasio (circa 1757, Cusignana) e Maria Maccobelli[?] del fu Antonio: figli Francesco (circa 1786 - giugno 1812, marito di Giovanna Calesso; figlia Catterina nata il 29 gennaio 1807), Modesto (circa 1787, sposato con Paola Pierazzo e poi con Paola Zanata del fu Giovanni: Zuanne nato il 29 settembre 1809, Felice nato il 15 aprile 1813), Mattio (circa 1781), Benedetto (circa 1790, sposato con Teresa De Marchi di Marco: Giovanni nato e morto l'8 gennaio 1815). Il nonno Giuseppe presenta i nipoti.\n- Antonio Zanata del fu Giuseppe e Maria Meneguzzo: morto a 21 anni il 24 marzo 1815.\n- Angelo Zanata (24) e Paola Gobbo (23), Giavera: Giuseppe morto a 9 giorni il 15 gennaio 1808.\n- Giuseppe Zanata (30) e Paola Gucella[?] (28), Giavera: Domenico nato il 13 marzo 1809.\n- Francesco Zanata (40) e Domenica Pozzobon (36), Giavera: Francesco nato il 22 novembre 1807, morto il 28 novembre 1807 a 6 giorni.\n- Francesco Zanata e Maria Favero (Cusignana): Zuanne morto a 17 anni il 19 gennaio 1810 (testimone Sebastian Pavan, 52 anni).\n- Antonio Zanata (35) e Catterina Baldasso (28): Zuanne nato il 31 marzo 1809.\n- Antonio Zanata di Agostin (42) e Lucia Belusso del fu Pietro (32), Giavera: Giovanni Maria nato l'8 agosto 1812.\n- Gaetano Zanata del fu Antonio e della fu Lorenza Saccaretto[?], nato a Selva (Volpago), 46 anni, marito di Catterina Gobbo: morto il 28 gennaio 1814.\n- Gioachino Zanata, 24 anni, figlio di Domenico (58) e della fu Maria Messer[?]: morto il 15 marzo 1814 a Giavera (casa di Domenico Zanata del fu Apollonio).\n- Domenica Zanata del fu Pietro e della fu Maddalena Baldasso, 62 anni, vedova di Giuseppe Baldasso: morta a Cusignana il 14 dicembre 1813; testimone il nipote Giacomo Baldasso del fu Antonio.\n- Nota: nessuno di questi atti nomina persone del nostro albero. Il Sebastian Pavan di 52 anni (1810) non è Sebastian Pavan detto Ferro (n. 1766).\n\n[Quarto gruppo, 1807-1815]\n- Carlo Zanata detto Priuli (24) e Angela Code (26), Cusignana: Pietro nato il 5 novembre 1807 (testimone lo zio Domenico Zanata Priuli, 42), morto il 13 novembre 1807 a 9 giorni.\n- Giuseppe Zanata (19) e Angela da Roverè (20), Cusignana: Elisabetta nata il 3 febbraio 1807.\n- Antonio Zanata di Giovanni (23) e Orsola Strival di Antonio (23), Giavera: Maria nata il 4 maggio 1815, morta il 13 maggio 1815.\n- Antonio Zanata (38) e Lucia Belusso (38), Giavera: Orsola nata l'11 marzo 1810.\n- Modesto Zanata di Giuseppe (27) e Paola Zanata del fu Giovanni (28): Martino nato il 27 ottobre 1814.\n- Mattio Zanata del fu Antonio e Elisabetta Tonietto di Giuseppe: Angela morta a 6 giorni il 19 marzo 1813.\n- Alessandro Zanata del fu Steffano (30), calzolaio, e Valentina Messer di Bortolo (28): Maria Teresa nata il 27 maggio 1813, morta l'8 giugno 1813.\n- Giacomo Zanata e Maria Zechel: Marina morta a 8 giorni il 4 aprile 1810.\n- Santo Zanata e Antonia Durigan, Giavera: Pietro morto a 13 giorni il 9 gennaio 1810.\n- Antonio Zanata morto a 10 giorni il 13 dicembre 1812, in casa di Domenico Zanata del fu Lorenzo.\n- Matrimonio (Giavera, 1808): Mattio Vendramel (nato il 7 aprile 1788, figlio del fu Giovanni Battista e di Angela Pasqualin) con Marina Zanata (nata il 12 giugno 1789 ad Arcade, figlia di Andrea Zanata e Domenica Biasuzzo).\n- Testimone Giovanni Barbisan del fu Francesco, 32 anni, Giavera (1814): un altro ramo Barbisan.\n- Catterina Bovanga, figlia di Antonio di Prosdocimo Bovanga e di Domenica Durante del fu Giovanni Maria: morta bambina (1812). Un ramo Durante di Cusignana, forse parente di Monica Durante di Enrico (moglie di Angelo Pietrobon detto Merlo): non dichiarato.\n- Morte di Lorenzo Pavan (14 novembre 1807): già trascritta (L19-d01).\n\n[Quinto e ultimo gruppo Zanata, 1807-1814]\n- Francesco Zanata (25) e Giovanna Calesso (23), Cusignana: Valentin Antonio nato il 14 febbraio 1808 (il padre firma).\n- Matteo Zanata di Giuseppe (33) e Paola Martinetti di Domenico (32): Valentina nata il 5 luglio 1814.\n- Giuseppe Calesso del fu Francesco (35) e Catterina Sartori del fu Paolo (18): Domenica nata il 19 agosto 1814, Cusignana.\n- Giuseppe Zanata (28) e Paola Gusela (26), Giavera: Giuseppe nato il 25 settembre 1807; testimoni gli zii paterni Francesco (39) e Angelo (35) Zanata.\n- Santo Zanata (23) e Antonia Durigan (20): Pietro nato il 26 dicembre 1809. Loro matrimonio: pubblicazioni del 15 e 22 novembre 1807 (Santo, 21 anni, figlio del fu Antonio Zanata e di Antonia Fragnana[?]; Antonia, 19 anni, figlia di Giacomo Durigan e Domenica Zacol[?]).\n- Antonio Zanata (36) e Catterina Baldasso (28), Cusignana: Regina nata il 22 aprile 1810.\n- Francesco Zanata (32) e Orsola Santon (33), Cusignana: Simon nato il 29 novembre 1808, morto il 6 dicembre 1808.\n- Steffano Zanata del fu Domenico e della fu Armelina Catelan, nato a Villorba, 62 anni, marito di Gerolama Caberloto: morto il 21 luglio 1812 a Cusignana; testimoni il figlio Alessandro (31, calzolaio) e il vicino VINCENZO AMADIO del fu Giacomo (49).\n- Domenico Zanata e Caterina Zandonà: Teresa morta a 15 giorni il 15 gennaio 1810 a Cusignana; testimone ANTONIO PIEROBON, 60 anni, villico di Cusignana.\n- Note: Antonio Pierobon (60 anni nel 1810) corrisponde ad Antonio Pietrobon detto Merlo (58 nel 1808). Vincenzo Amadio del fu Giacomo (circa 1763), vicino di casa a Cusignana, forse parente (fratello?) di Maria Amadio, moglie di Antonio Pietrobon: non dichiarato.\n\n[Sesto gruppo, 1811-1813]\n- Paese (frazione del Comune di Treviso), 15 maggio 1813, n. 39: Zuanne di Pietro Pierobon (26), villico, colmello di Paese n. 23, e Maria del fu Pietro Pozzobon (24): Luigi nato il 14 maggio 1813; testimoni gli zii paterni Fermo di Pietro Pierobon (32) e Battista di Pietro Pierobon (24). Una famiglia Pierobon di Paese (Pietro e i figli Zuanne, Fermo, Battista), non collegata.\n- Paese, 27 maggio 1813, n. 41: Zuanne del fu Battista Brisolin (42), gastaldo, e Giovanna di Stefano Matarolo (38): Antonio nato il 25 maggio 1813 (colmello di Villa n. 113); testimone lo zio materno Carlo del fu Valentin Favaro. Bresolin di Paese, non collegati ai nostri di Padernello.\n- Paese, n. 40: Zuanne del fu Pietro Morao e Domenica del fu Marco Franchetto: Maria nata il 26 maggio 1813. NB: famiglia Morao di Paese, stesso cognome dato alla madre di Angela Pietrobon nel 1917.\n- Arcade, 30 luglio 1811, n. 53: morte di Fiovetta Sisto (80), nata a Postioma, moglie in seconde nozze di Bortolo Gazzarin; testimone il genero Pietro Zanatta del fu Angelo.\n- Susegana, 25 luglio 1811: morte di Valentina Merlo (35), nata a Cusignana da Antonio Merlo e Angela Barbon, moglie di Giuseppe Saldan (Collalto). Cognome Merlo, non il soprannome dei Pietrobon.\n\n[Settimo gruppo: altri Pietrobon di Paese, Postioma e Padernello, 1897-1933 (non collegati all'albero)]\n- Paese 1897 n. 22, 28 febbraio: Maria Anna Pietrobon, 12 giorni, morta a Postioma n. 2, figlia di Sante Pietrobon e Rossi Eufemia; dichiarante Costante Pietrobon (39). NB: Postioma n. 2 è la casa dove morirono Domenico Pietrobon (1895) e il figlio Antonio (1899): Sante e Costante (n. circa 1858) potrebbero essere altri figli di Domenico e Bernardina Mattiazzi, ma l'atto non lo dice.\n- Paese 1897 n. 21: Dorotea Bortolato, 61, vedova di Giovanni Pozzebon, Padernello n. 53; dichiarante Giovanni Pietrobon (47), Padernello.\n- Paese 1897 n. 51, 2 luglio: Anna Pietrobon, 20 mesi, figlia di Pietro e Carniel Maria Concetta, Paese n. 76.\n- Paese 1897 n. 9 (trascrizione da Treviso): Angelo Pietrobon, 5 mesi, figlio di Lorenzo[?] e di Berlese Santa, di Postioma, morto all'Ospedale civile di Treviso il 15 luglio 1897.\n- Paese 1899 n. 100, 23 novembre: Angelo Pietrobon, 82 anni, villico, Padernello n. 87, nato a Paese dai fu Angelo e Maria Marazzato[?], marito di Antonia Bellio.\n- Paese 1900 n. 110, 4 dicembre: Antonio Pietrobon, 66, celibe, Paese n. 76, figlio dei fu Battista e Regina De Lazzari.\n- Paese 1911 n. 96, 10 settembre: Angela Pietrobon, 43, Padernello n. 119, figlia di Giacomo e Maddalena De Rossi, moglie di Angelo Zaratin[?]; dichiarante Giuseppe Pietrobon (48).\n- Paese 1912 matrimonio n. 22, 7 maggio: Giovanni Marconato (23, figlio di Girolamo e Anna Tosello) sposa Antonia Pietrobon (21), di Padernello, figlia di Giovanni Pietrobon e Maria Bresolin.\n- Paese 1916 n. 40, 31 marzo: Assunta Pietrobon, 7 giorni, Padernello, figlia di Bortolo (37) e Santa Troncon[?].\n- Paese 1916 n. 79, 3 agosto: Antonia Pierobon, 76, Postioma n. 26, figlia dei fu Angelo e Pierina Bianchin, vedova di Pietro Marchetto.\n- Paese 1922 n. 26, 15 febbraio: Assunta Giovanna Pietrobon, 6 mesi, figlia di Arturo e Rosa Vanin; dichiarante Gio. Battista Pietrobon (58).\n- Paese 1933 n. 63, 30 luglio: Antonio Pietrobon, 8 mesi, figlio di Costantino (di Giovanni, 44, contadino) e Letizia Baratto.\n- Arcade 1811 n. 63 (Anna Maria Pietrobon detta Merlo): già trascritto.\n\n[Ottavo gruppo: altri Pietrobon di Paese, Postioma e Padernello (non collegati)]\n- Paese 1891 pubblicazioni n. 27: Francesco Pietrobon (49, di Fontane, nato a Ponzano Veneto, del fu Antonio e della fu Maria Genovese) con Carola Irene Vettori (30, di Postioma, di Giuseppe e di Regina Pietrobon).\n- Paese 1894 pubblicazioni n. 36: Giuseppe Matteo Pietrobon (23, Postioma, del fu Carlo e di Veronica Vidotto) con Marta Carlotta Favero (20, di Francesco e Luigia Piovesan).\n- Paese 1904 pubblicazioni n. 35 e 55: Gabriele Arcangelo Pietrobon (27-28, agricoltore, Postioma, del fu Carlo e di Veronica Vidotto) con Erminia Billio (21-22, di Vincenzo e Maddalena Tessaro[?], Porcellengo). NB: famiglia di Carlo Pietrobon e Veronica Vidotto, Postioma; uno dei figli si chiama Gabriele.\n- Paese 1808 (copia): battesimo del 29 giugno 1789 a San Martino di Paese di Gio. Batta, figlio di Pietro Pierobon di Zuanne e di Catterina Severin di Giambattista; padrino Gio. Batta de Rossi.\n- Paese 1897 n. 66: Fortunato Pietrobon, 9 anni, figlio di Giuseppe e Maria Volpato, Padernello n. 87; dichiarante Giovanni Pietrobon (49).\n- Paese 1918 n. 35 e n. 180: due bambine Giovanna Pietrobon (17 mesi, aprile; 1 mese, ottobre), figlie di Guglielmo Pietrobon e Colomba Martignago, Padernello n. 109.\n- Paese 1922 n. 72 e 1925 n. 65: Giuseppe Pietrobon (4 mesi) e Giuseppe Pietrobon (10 mesi), figli di Bortolo/Giuseppe Pietrobon e Santa Troncon, Padernello. 1925 n. 66: Lino Pietrobon, 1 mese, figlio di Ernesto e Giacinta Gemin.\n- Paese 1930 n. 39: Giovanni Bruno Pietrobon, 1 anno, figlio di Costantino e Letizia Baratto.\n- Arcade 1814 n. 17 (Giuditta Pietrobon detta Merlo): già trascritto.\n\n[Nono gruppo]\n- Ponzano 1807 n. 20, 8 maggio: DOMENICO PIEROBON DETTO MERLO, 37 anni (n. circa 1770), agricoltore a Ponzano, e Paola Benetton (36): Margherita nata l'8 maggio 1807. Stesso soprannome «Merlo»: forse un figlio di Antonio detto Merlo (n. circa 1749) o un parente, emigrato a Ponzano. Non dichiarato.\n- Paese 1893 n. 92: Luigi Pietrobon, 5 mesi, figlio di Gaetano e Giovanna Colusso, Postioma n. 112 (dichiarante Costante Pietrobon, 38).\n- Paese 1895 n. 61: Luigi Pietrobon, 2 anni, figlio di Antonio e Maria Amadio, Postioma n. 2 (già nell'albero, p582); dichiarante Costante Pietrobon (38).\n- Paese 1897 n. 85: Luigi Pietrobon, 20 giorni, figlio di Pietro e Giovanna Stefani, Postioma n. 2 (già nell'albero).\n- Paese 1910 n. 112: Luigi Pietrobon, 33, celibe, morto nel canale Brentella a Padernello, figlio di Giuseppe e Maria Volpato. 1918 n. 146: Ida Pietrobon, 17, figlia degli stessi.\n- Paese 1922 pubblicazioni n. 24: Luigi Pietrobon (28, di Fiorino e Santa Berlese) con Maria Pietrobon (24, nata in BRASILE, figlia di Giuseppe, oste, e Carlotta Favero). 1923 n. 86: Italia Veronica Pietrobon, 23, nata in AMERICA, figlia di Giuseppe (oste) e Marta Favero, moglie di Santo Billio, Postioma n. 118. NB: Giuseppe Matteo Pietrobon (del fu Carlo e Veronica Vidotto) e Marta Carlotta Favero, pubblicazioni 1894: emigrati in Brasile e tornati a Postioma.\n- Paese 1926 n. 54: Lucia Pietrobon, 1 anno, figlia di Novello e Maria Tessaro, Padernello. 1931 n. 76: Ines Maria Pietrobon, 8 giorni, figlia di Angelo e Elisabetta Bandiera.\n\n[Decimo gruppo]\n- Famiglia di Valentino Pietrobon e Orsola Pavan (Postioma, poi Porcellengo; entrambi morti prima del 1899): Giovanni (n. circa 1870, sposa Teresa Vendrame 1899) e OLIVO CATTERINO (n. circa 1863, agricoltore, sposa a Paese il 9 ottobre 1902 Teresa Maria Badesso, 20 anni, di Postioma, figlia del fu Domenico Badesso e di Margherita Pagnossin). Cognome Badesso come Valentina, moglie di Angelo Pietrobon: possibile parentela tra i rami di Postioma.\n- Paese 1807 n. 7: Fermo Pierobon (26) e Catterina Venturato[?]: Valentino nato il 9 febbraio 1807 (forse lo stesso Valentino, padre di Giovanni e Olivo?).\n- Paese 1893 matrimonio n. 10: Pietro Pietrobon (25, nato a Paese, di Bartolomeo e Moro Maria) con Maria Concetta Carniel (21, nata a Castelcucco[?] d'Asolo, di Angelo e Gazzola Prudenza).\n- Paese 1900 n. 86: Valentina Pietrobon, 72, figlia dei fu Battista e Regina De Lazzari, vedova di Angelo Gobbin.\n- Figli di Giuseppe Pietrobon e Maria Volpato (Padernello): Salute (16 mesi, morta 22 marzo 1896); Oliva Luigia (20, sposa Giovanni Francesco Tosello di Musano, 10 maggio 1901); Maria (24, sposa Fioravante Crosato di Morgano, 30 dicembre 1909); Salute Maria (24, pubblicazioni con Cesare Virginio Rossi, gennaio 1920).\n- Bortolo Pietrobon e Santa Troncon: Maria (11 giorni, aprile 1916), Mario (3 mesi, novembre 1923). Fiorino Pietrobon e Eleonora Pasato: Maria Maddalena (settembre 1917), Mario (maggio 1926). Guglielmo e Colomba Martignago: Olinda (giugno 1926). Abramo e Eugenia Gasparini: Olindo (settembre 1925). Giuseppe (oste) e Marta Carlotta Favero: Seconda Berona (febbraio 1913).\n\n[Undicesimo gruppo: Zatta e Cavallin di Padernello, Pezzan e Sala (Istrana)]\n- Istrana 1919 (trascrizione da Paese, 6 novembre 1919): Gaetano Ippindo (25, muratore, nato a Padova, figlio di ignoti) sposa Antonia Cavallin (28, nata a Istrana, figlia di Edoardo e Marta Volpato, Padernello): sorella di Ettore Salvatore Cavallin, marito di Maria Anna Pietrobon. Aggiunta all'albero.\n- Istrana 1807, pubblicazioni n. 23 e 26 e fascicolo n. 7: Bortolo Foresto (21 anni e 9 mesi, agricoltore, Pezzan, di Francesco e Giuseppa Frassetto) con Cattarina Zatta (21, lavoratrice di campagna, Pezzan, del fu Francesco Zatta del fu Domenico e della fu Pasqua Pozzebon del fu Domenico). Battesimo di Cattarina: Pezzan (S. Vito), 29 settembre[?] 1785, padrino Francesco q. Zuanne Casparin (copia del parroco Furlanetto, 18 aprile 1807). Pubblicazioni del 19 e 26 aprile 1807.\n- Istrana 1807, n. 24: Gioachino Carniel (20, Pezzan, di Angelo e Francesca Rossi) con Angela Marazatto (18, del fu Giovanni e della fu Maria Gonzo). N. 25 e 27: Giovanni Antonio Miotto (24, calzolaio, Padernello, di Lorenzo, campanaro, e Maria Visentin) con Elena Mattarolo (21, di Giacomo, sensale, e della fu Benedetta Schiavon). N. 22 (Ponte di Piave): Domenico Montin, maestro di scuola a Sala, con Margarita de Tavani.\n- Istrana 1809, n. 28-31: Santo Bertuse (di Angelo e Cattarina Frassetto), Francesco Gasparin (di Osvaldo e Angela Vedelago), Francesco ZATTA (nato il 6 maggio 1809, Pezzan, figlio di Giacomo Zatta detto Gagno, 34 anni, birrarolo[?], e Giacoma Carlonetto[?]), Orsola Condotta.\n- Paese 1895 n. 23 (28 marzo): Alfonso Zatta (28, Padernello, del fu Angelo e della fu Caterina Rossi) sposa Caterina Bordignon (30, del fu Domenico e di Maria Mestriner).\n- Istrana 1916 n. 3 (6 aprile): Novello Catterino Zatta (31, nato a Paese, di Pezzan, del fu Ferdinando e della fu Giovanna Gasparini) sposa Anna Paronetto (33, di Tito e Marina Franchetto). Istrana 1920 n. 24 (22 aprile): lo stesso, vedovo, sposa Maria Luigia Favaro (35, di Sala, del fu Luigi e di Angela Gasparini).\n- Istrana 1939 n. 25 (27 dicembre): Marcello Giocondo Pestrin (32, di Catterino e Antonia Foresto) sposa Ginevra Maria Zatta (37, del fu Domenico e di Antonia Bordignon), Pezzan.\n- Istrana 1920 n. 13 (24 marzo): Giovanni Antonio Cavallin (34, Villanova, di Pasquale e Giustina Sartori) sposa Enrichetta Ernesta Cendron (29, di Sante e Andreanna Rizzato).\n- Nota: nessun atto nomina Sebastiano Zatta (marito di Bernardina Rossi, padre di Luigia) né Fioravante Cavallin (padre di Candida). Gli Zatta di Pezzan e Padernello (Francesco del fu Domenico, Giacomo detto Gagno, Angelo, Ferdinando) potrebbero essere parenti di Sebastiano: da verificare con il suo battesimo.\n\n[Dodicesimo gruppo, Monastier 1812]\n- Monastier 1812 n. 6 (25 febbraio): Catterina, figlia di Battista Lovisetto (38, villico) e Lorenza Montagner (38). Battista Lovisetto, nato verso il 1774, potrebbe essere un fratello di Domenico o di Antonio Luisetto: non dichiarato.\n- N. 7 (3 marzo): Giacomo, figlio di Giuseppe Botter (31) e Lucia Steffani (35). N. 8: Gennaro, figlio di Giovanni Placa (21) e Maria Morosinotto (20).",
    "translation": "",
    "summary": "Atti di famiglie vicine al nostro albero (Zanata, Rossi detti Nardo di Porcellengo, Mattiazzo di Postioma, Gottardo di Bavaria) senza un legame dichiarato: tenuti come materiale di ricerca.",
    "data": [],
@@ -57908,6 +58369,74 @@
    "confidence": "alta"
   },
   {
+   "id": "L41-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Maria Pierobon, figlia di Antonio e della fu Angela Martini, moglie di Pietro Bettiol (Cusignana, 10 aprile 1809)",
+   "date": "1809-04-10",
+   "actDate": "",
+   "place": "Cusignana, Giavera",
+   "source": "Comune di Giavera, registro dei morti 1809, n. 17",
+   "language": "italiano",
+   "transcription": "N. 17. Regno d'Italia, Dipartimento del Tagliamento, Distretto di Treviso, Cantone di Montebelluna, Comune di Giavera, giorno di lunedì li dieci aprile mille ottocento e nove alle ore una pomeridiane. Il sottoscritto Officiale dello Stato Civile, dietro l'avviso pervenutogli, si è trasferito a Cusignana, Comune di Giavera, alla casa abitata da Pietro Bettiol, ove ha riconosciuto il cadavere di Maria Pierobon, morta lo stesso giorno alle ore cinque antimeridiane a Cusignana in età di anni trentadue, stata domiciliata in detta casa, ammogliata col vivente Pietro Bettiol sunnominato, di professione villico … Presenti alla ricognizione furono Domenico Durante di anni trenta e Antonio Calesso di anni ventiotto, ambi villici domiciliati a Cusignana … quali testimonj unitamente dichiarano che la suddetta defunta è nata a Cusignana, Comune di Giavera, dal vivente Antonio Pierobon e dalla decessa Angela Martini, di professione villici e domiciliati in Cusignana, giugali … Officiale dello Stato Civile Riedi.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 16, 9 aprile 1809] Maria Angela Crema, 4 giorni, figlia di Giuseppe Crema e Domenica Marcon[?], Cusignana; testimoni Vicenzo Amadio (47) e Paolo Bettiol. [n. 18, 13 aprile 1809] Maria Maddalena Pavan, 1 anno, figlia di Domenico Pavan e Domenica Zoldan, Cusignana.",
+   "translation": "",
+   "summary": "Maria Pierobon muore a Cusignana il 10 aprile 1809 a 32 anni, moglie di Pietro Bettiol. Figlia del vivente Antonio Pierobon e della defunta Angela Martini: con ogni probabilità una figlia di primo letto di Antonio detto Merlo, sorella maggiore di Angelo.",
+   "data": [
+    {
+     "label": "Defunta",
+     "value": "Maria Pierobon, 32 anni"
+    },
+    {
+     "label": "Morte",
+     "value": "10 aprile 1809, ore 5, Cusignana, casa di Pietro Bettiol"
+    },
+    {
+     "label": "Genitori",
+     "value": "vivente Antonio Pierobon e fu Angela Martini"
+    },
+    {
+     "label": "Marito",
+     "value": "Pietro Bettiol"
+    },
+    {
+     "label": "Testimoni",
+     "value": "Domenico Durante (30), Antonio Calesso (28)"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 16, 9 aprile 1809] Maria Angela Crema, 4 giorni, figlia di Giuseppe Crema e Domenica Marcon[?], Cusignana; testimoni Vicenzo Amadio (47) e Paolo Bettiol. [n. 18, 13 aprile 1809] Maria Maddalena Pavan, 1 anno, figlia di Domenico Pavan e Domenica Zoldan, Cusignana."
+    }
+   ],
+   "people": [
+    {
+     "written": "Maria Pierobon",
+     "role": "defunta",
+     "pid": "p1319"
+    },
+    {
+     "written": "Antonio Pierobon",
+     "role": "padre (vivente)",
+     "pid": "p651"
+    },
+    {
+     "written": "Angela Martini",
+     "role": "madre (defunta)",
+     "pid": "p1318"
+    },
+    {
+     "written": "Pietro Bettiol",
+     "role": "marito",
+     "pid": "p1320"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [
+    "Che l'Antonio Pierobon dell'atto sia Antonio detto Merlo è probabile ma non scritto."
+   ],
+   "confidence": "media"
+  },
+  {
    "id": "L12-t05",
    "code": "",
    "file": "(immagine incollata in chat il 13 ottobre 2026)",
@@ -58146,6 +58675,59 @@
     "Prima riga \"rirvi con tutto il genio\" (= aderirvi con tutto il genio)."
    ],
    "confidence": "media"
+  },
+  {
+   "id": "L39-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di un bambino nato senza vita da Angelo Pietrobon e Monica Durante (Cusignana, 23 maggio 1810)",
+   "date": "1810-05-23",
+   "actDate": "",
+   "place": "Cusignana, Giavera",
+   "source": "Comune di Giavera, registro dei morti 1810, n. 41",
+   "language": "italiano",
+   "transcription": "N. 41. Regno d'Italia, Dipartimento del Tagliamento, Distretto di Treviso, Cantone di Montebelluna, Comune di Giavera, giorno di giovedì li ventiquattro maggio milleottocentodieci alle ore sette antimeridiane. Si è presentato al sottoscritto Uffiziale dello Stato Civile Angelo Pierobon d'anni ventisei di professione villico, domiciliato a Giavera, parrocchia di Cusignana, portando seco un'infante di sesso mascolino senza vita, sortito dal seno di sua madre jeri alle ore tre pomeridiane a Cusignana suddetta. Testimonj alla presentazione furono Antonio Favero d'anni quaranta e Giacomo Marchiori d'anni trentaquattro, ambe di professione villici e domiciliati a Cusignana suddetta, non aventi alcun grado di parentella con il bambino suddetto né con li di lui genitori; quali testimonj unitamente dichiarano che il suddetto bambino senza vita è nato a Cusignana suddetta da Angelo Pierobon, d'età, professione e domicilio sopraindicati, e da Monica Durante jugali d'anni ventisette, di professione villica, domiciliata a Cusignana suddetta. Non si poté ritrarre la sottoscrizione delli testimonj perché hanno dichiarato di non saper scrivere … L'Uffiziale dello Stato Civile Zanata.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 39, fine] morte di Giustina Bianchetti, nata a Giavera da Giorgio Bianchetti ed Elisabetta Covelli[?]. [n. 40, 19 maggio 1810] Domenica dal Pin, 67 anni, vedova di Pietro Gottardo, nata a Bavaria dai fu Domenico dal Pin e Catarina Favaro. [n. 42, 3 giugno 1810] Luigi dal Col, 6 mesi, figlio di Bortolo dal Col e Maria da Roverè, Bavaria.",
+   "translation": "",
+   "summary": "Il 23 maggio 1810 Monica Durante, moglie di Angelo Pietrobon detto Merlo, partorisce un maschio senza vita a Cusignana; il padre lo presenta il giorno dopo.",
+   "data": [
+    {
+     "label": "Nato",
+     "value": "maschio senza vita, 23 maggio 1810, ore 15, Cusignana"
+    },
+    {
+     "label": "Padre",
+     "value": "Angelo Pierobon, 26 anni, villico"
+    },
+    {
+     "label": "Madre",
+     "value": "Monica Durante, 27 anni"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 39, fine] morte di Giustina Bianchetti, nata a Giavera da Giorgio Bianchetti ed Elisabetta Covelli[?]. [n. 40, 19 maggio 1810] Domenica dal Pin, 67 anni, vedova di Pietro Gottardo, nata a Bavaria dai fu Domenico dal Pin e Catarina Favaro. [n. 42, 3 giugno 1810] Luigi dal Col, 6 mesi, figlio di Bortolo dal Col e Maria da Roverè, Bavaria."
+    }
+   ],
+   "people": [
+    {
+     "written": "infante",
+     "role": "nato senza vita",
+     "pid": "p1315"
+    },
+    {
+     "written": "Angelo Pierobon",
+     "role": "padre",
+     "pid": "p652"
+    },
+    {
+     "written": "Monica Durante",
+     "role": "madre",
+     "pid": "p653"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
+   "confidence": "alta"
   },
   {
    "id": "L10-q05",
@@ -59085,6 +59667,96 @@
     "Cognome del secondo testimone (Goso/Groso; in z01-b forse «Goss[?]»)."
    ],
    "confidence": "media"
+  },
+  {
+   "id": "L44-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "fascicolo matrimoniale",
+   "title": "Allegati al matrimonio di Giovanni Battista Bassetto e Angela Luisetto, sorella di Antonio (Monastier/Fossalta, luglio-agosto 1811)",
+   "date": "1811-07-23",
+   "actDate": "",
+   "place": "Monastier / Losson (Fossalta di Piave) / Oderzo",
+   "source": "Comune di Monastier, allegati ai matrimoni 1811, fascicolo n. 12",
+   "language": "italiano",
+   "transcription": "[Copertina] N. 12. Allegati p. il matrimonio di Gio. Batta Bassetto con Angela Lovisetto.\n\n[1. Consenso notarile] Regno d'Italia. Giorno di martedì 23 ventitré del mese di luglio dell'anno 1811, regnando Napoleone I Imperatore de' Francesi e Re d'Italia. Giuseppe Bassetto del fu Domenico e Margarita Biondo del fu Vicenzo jugali, domiciliati nella parrocchia di Losson, Comune di Fossalta di Piave, Distretto di Treviso, Dipartimento del Tagliamento, villici di condizione, e così pure Domenico Lovisetto del fu Florian e Domenica Battistina del fu Giacomo jugali, domiciliati nella Comune di Monastier, … per villici, accordano il loro assenso a Gio. Battista Bassetto e ad Angela Lovisetto loro figli con essi conviventi, all'oggetto che possano tra di essi contrarre matrimonio … Fatto, letto e pubblicato … in questa Comune di Oderzo, Distretto di Conegliano, … nello studio di me notaio, essendo presenti le suddette parti e li signori Giacomo Spombolotto[?] del fu Biaggio e Francesco Gregorj di Giuseppe … testimonj … non essendosi potuto ritrarre le sottoscrizioni delli comparenti per essere illetterati. Gio. Domenico Zambaldi del fu Gio. Batista, pubblico notajo del Dipartimento del Tagliamento residente in Oderzo. [Registrato a Conegliano il 25 luglio 1811; attestato del 27 luglio 1811.]\n\n[2. Battesimo della sposa] Li 26 novembre 1793 (mille settecento novantatre), Monastier. Angela figlia di Domenico q.m Florian Lovisetto e di Domenica di Giacomo Battistin jugali, nacque jer l'altro alle ore 24 c.a, fu di licenza battezzata dal Rev.mo D. Michiele Zorzenoni parroco di Losson; padrino al S. Fonte fu il sig. Pietro Colauto[?] di Noventa; comare Maria Trevisana. Estratto il 22[?] luglio 1811, per D. Benedetto Bonetti arciprete, D. Luigi Bonetti cappellano curato, col sigillo.\n\n[3. Battesimo dello sposo] N. 397. Adì 16 dicembre 1791. Gio. Batta figlio di Giuseppe Bassetto q.m Domenico e di Margarita Biondo q.m Vicenzo sua legittima consorte, nato all'ore sette c.a della notte scorsa, fu battezzato da me D. Michiele Zorzenoni parroco; padrini al S. Fonte furono Batta Badin di Valentin della parrocchia di Meolo, ed Angela moglie di Antonio Cajar[?] … di questa; levatrice Lucia Nardo. [Estratto, Losson 1811; Fossalta, 6 agosto 1811, il sindaco Trentin certifica la firma del parroco.]\n\n[4. Pubblicazioni] Regno d'Italia, Dipartimento dell'Adriatico. Li 5 agosto 1811. L'Uffiziale dello Stato Civile del Comune di Fossalta di Piave certifica d'aver pubblicato nelli giorni ventuno e ventotto luglio 1811 alle ore dieci antimeridiane … la promessa di matrimonio di Giovanni Battista di Giuseppe Bassetto e Margherita Biondo della Comune di Fossalta, con Angela figlia di Domenico Lovisetto e di Domenica Battistin, domiciliata nella Comune di Monestier, senza che sia stata prodotta opposizione. Masch[?] Uffiziale dello Stato Civile.",
+   "translation": "",
+   "summary": "Fascicolo del matrimonio di Angela Luisetto, sorella del trisavolo Antonio Luisetto, con Giovanni Battista Bassetto di Losson (estate 1811). Il battesimo di Angela (Monastier, 26 novembre 1793) dà due nomi nuovi: il bisnonno FLORIAN Luisetto (padre di Domenico, già morto nel 1793) e GIACOMO Battistin (padre di Domenica). Domenico e Domenica sono vivi nel 1811 e danno il consenso davanti al notaio Zambaldi di Oderzo.",
+   "data": [
+    {
+     "label": "Sposa",
+     "value": "Angela Lovisetto, nata il 24 novembre 1793 a Monastier"
+    },
+    {
+     "label": "Genitori della sposa",
+     "value": "Domenico Lovisetto del fu Florian e Domenica Battistin del fu Giacomo"
+    },
+    {
+     "label": "Sposo",
+     "value": "Gio. Batta Bassetto, nato il 16 dicembre 1791 a Losson"
+    },
+    {
+     "label": "Genitori dello sposo",
+     "value": "Giuseppe Bassetto del fu Domenico e Margherita Biondo del fu Vicenzo"
+    },
+    {
+     "label": "Consenso",
+     "value": "23 luglio 1811, notaio Gio. Domenico Zambaldi, Oderzo"
+    },
+    {
+     "label": "Pubblicazioni",
+     "value": "21 e 28 luglio 1811, Fossalta di Piave"
+    }
+   ],
+   "people": [
+    {
+     "written": "Angela",
+     "role": "sposa",
+     "pid": "p1331"
+    },
+    {
+     "written": "Domenico Lovisetto del fu Florian",
+     "role": "padre della sposa",
+     "pid": "p188"
+    },
+    {
+     "written": "Florian",
+     "role": "nonno paterno (defunto)",
+     "pid": "p1329"
+    },
+    {
+     "written": "Domenica Battistin del fu Giacomo",
+     "role": "madre della sposa",
+     "pid": "p189"
+    },
+    {
+     "written": "Giacomo",
+     "role": "nonno materno (defunto)",
+     "pid": "p1330"
+    },
+    {
+     "written": "Gio. Batta Bassetto",
+     "role": "sposo",
+     "pid": "p1332"
+    },
+    {
+     "written": "Giuseppe Bassetto del fu Domenico",
+     "role": "padre dello sposo",
+     "pid": "p1333"
+    },
+    {
+     "written": "Margherita Biondo del fu Vicenzo",
+     "role": "madre dello sposo",
+     "pid": "p1334"
+    }
+   ],
+   "discrepancies": [
+    "Conferma che Domenico Luisetto e Domenica Battistin sono i genitori della famiglia di Monastier, ed erano vivi nel 1811."
+   ],
+   "uncertain": [
+    "Cognomi del padrino della sposa e dei testimoni."
+   ],
+   "confidence": "alta"
   },
   {
    "id": "L23-d02",
@@ -60450,6 +61122,61 @@
    "discrepancies": [
     "Bernardo Pavan è detto «del fu Domenico»; nell'albero suo padre è Giovanni Domenico Pavan detto Ferro: coerente.",
     "Bernardo ha 60 anni (nato 1752-53); l'albero aveva 1751: aggiornato a «circa 1752»."
+   ],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
+   "id": "L44-d02",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "atto di nascita",
+   "title": "Atto di nascita di Angela Luisetto, figlia di Antonio e Maria Fregonese (Monastier, 24 gennaio 1813)",
+   "date": "1813-01-24",
+   "actDate": "",
+   "place": "Monastier",
+   "source": "Comune di Monastier, registro delle nascite 1813, n. 3",
+   "language": "italiano",
+   "transcription": "N. 3. Regno d'Italia, Dipartimento Tagliamento, Distretto e Cantone di Treviso, Comune di Monastier. Venti sei gennaro mille ottocento tredici ore nove antimeridiane. Si è presentato al sottoscritto ufficiale dello stato civile Antonio Lovisetto d'anni venti otto villico qui domiciliato portando seco un infante di sesso femminile nata nella di lui casa il giorno venti quattro corrente alle ore undici pomeridiane, alla quale s'impose il nome di Angela. Il suddetto dichiara esser la neonata di lui figlia e di Maria Fregonese d'anni venti due villica qui domiciliata jugali. Testimonj alla presentazione furono Giovanni Battista Tosco d'anni quarantadue barcajuolo e Zuanne Tosco d'anni sessanta villico, ambi qui domiciliati non parenti … Torcellan[?] ufficiale.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 1, 12 gennaio 1813] Maria Luigia, figlia di Zuanne Morachiello (26, barcaiolo) e Andrianna Tonin (24, lavandaia); testimone Zuanne Antonio Bragadin. [n. 2, 18 gennaio 1813] Anna, figlia di Andrea Dal Ben detto Gobbator (20) ed Elisabetta Tonetto (19).",
+   "translation": "",
+   "summary": "Angela, figlia di Antonio Luisetto (28 anni) e Maria Fregonese (22), nasce a Monastier la sera del 24 gennaio 1813.",
+   "data": [
+    {
+     "label": "Nata",
+     "value": "Angela, 24 gennaio 1813, ore 23"
+    },
+    {
+     "label": "Padre",
+     "value": "Antonio Lovisetto, 28 anni, villico"
+    },
+    {
+     "label": "Madre",
+     "value": "Maria Fregonese, 22 anni"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 1, 12 gennaio 1813] Maria Luigia, figlia di Zuanne Morachiello (26, barcaiolo) e Andrianna Tonin (24, lavandaia); testimone Zuanne Antonio Bragadin. [n. 2, 18 gennaio 1813] Anna, figlia di Andrea Dal Ben detto Gobbator (20) ed Elisabetta Tonetto (19)."
+    }
+   ],
+   "people": [
+    {
+     "written": "Angela",
+     "role": "neonata",
+     "pid": "p164"
+    },
+    {
+     "written": "Antonio Lovisetto",
+     "role": "padre, dichiarante",
+     "pid": "p161"
+    },
+    {
+     "written": "Maria Fregonese",
+     "role": "madre",
+     "pid": "p162"
+    }
+   ],
+   "discrepancies": [
+    "L'albero aveva 26 gennaio (giorno della presentazione)."
    ],
    "uncertain": [],
    "confidence": "alta"
@@ -62127,6 +62854,61 @@
    "uncertain": [
     "Età del figlio (ventidue?)."
    ],
+   "confidence": "alta"
+  },
+  {
+   "id": "L44-d03",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "atto di nascita",
+   "title": "Atto di nascita di Domenica Luisetto, figlia di Antonio e Maria Fregonese (Monastier, 17 dicembre 1815)",
+   "date": "1815-12-17",
+   "actDate": "",
+   "place": "Monastier",
+   "source": "Comune di Monastier, registro delle nascite 1815, n. 61",
+   "language": "italiano",
+   "transcription": "N. 61. Dipartimento del Tagliamento, Distretto, Cantone di Treviso, Comune di Monastier. Diciotto decembre anno mille ottocento quindici alle ore dieci di mattina. Si è presentato al sottoscritto Uffiziale dello Stato Civile Antonio Lovisetto d'anni ventinove villico qui dimorante portando seco un'infante di sesso femminile nata nella di lui casa jeri alle ore due pomeridiane, a cui s'impose il nome di Domenica; il suddetto dichiara esser la neonata di lui figlia e di Maria Fregonese villica d'anni ventotto qui domiciliata jugali. Testimonj … Lorenzo Franzotto[?] cursore d'anni trentatre e … [seguito nella pagina successiva].\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 59] Rosa, figlia di Gio. Batta Maschio (29, agricoltore) e Margarita Cappelletto (24). [n. 60, 15 dicembre 1815] Eugenio, figlio di Pietro Marcassa (35, oste) e Margarita Sartori (34).",
+   "translation": "",
+   "summary": "Domenica, figlia di Antonio Luisetto e Maria Fregonese, nasce a Monastier il 17 dicembre 1815 alle 14.",
+   "data": [
+    {
+     "label": "Nata",
+     "value": "Domenica, 17 dicembre 1815, ore 14"
+    },
+    {
+     "label": "Padre",
+     "value": "Antonio Lovisetto, 29 anni"
+    },
+    {
+     "label": "Madre",
+     "value": "Maria Fregonese"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 59] Rosa, figlia di Gio. Batta Maschio (29, agricoltore) e Margarita Cappelletto (24). [n. 60, 15 dicembre 1815] Eugenio, figlio di Pietro Marcassa (35, oste) e Margarita Sartori (34)."
+    }
+   ],
+   "people": [
+    {
+     "written": "Domenica",
+     "role": "neonata",
+     "pid": "p165"
+    },
+    {
+     "written": "Antonio Lovisetto",
+     "role": "padre, dichiarante",
+     "pid": "p161"
+    },
+    {
+     "written": "Maria Fregonese",
+     "role": "madre",
+     "pid": "p162"
+    }
+   ],
+   "discrepancies": [
+    "L'albero aveva 18 dicembre (giorno della presentazione)."
+   ],
+   "uncertain": [],
    "confidence": "alta"
   },
   {
@@ -65656,6 +66438,74 @@
    "confidence": "alta"
   },
   {
+   "id": "L42-d03",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Teresa Pietrobon, figlia di Angelo e Valentina Badesso, moglie di Vincenzo Trentin (Postioma, 21 febbraio 1895)",
+   "date": "1895-02-21",
+   "actDate": "",
+   "place": "Postioma, Paese",
+   "source": "Comune di Paese, registro dei morti 1895, n. 22",
+   "language": "italiano",
+   "transcription": "N. 22. Pietrobon Teresa. L'anno milleottocentonovantacinque addì ventuno di febbraio a ore antimeridiane dieci nella Casa comunale. Avanti di me Giovanni Piazza Segretario delegato … sono comparsi Trentin Giuseppe di anni quarantanove, villico, domiciliato in Postioma, e Pietrobon Costante di anni trentotto, villico, domiciliato in Postioma, i quali mi hanno dichiarato che a ore antimeridiane cinque di oggi, nella casa posta in Postioma al numero ottantadue, è morta Pietrobon Teresa di anni quaranta, villica, residente in Postioma, nata in Postioma dal fu Angelo e dalla fu Badesso Valentina, moglie di Trentin Vincenzo. Testimoni Battista Perotto (48), possidente, e Augusto Lepes (71), cursore … ad eccezione dei dichiaranti perché illetterati.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 21, 18 febbraio 1895] Pietro Pacagnan, 9 giorni, figlio di Giovanni e Giustina Pizzolato, Padernello n. 60.",
+   "translation": "",
+   "summary": "Teresa Pietrobon, figlia dei defunti Angelo Pietrobon (1821-1893) e Valentina Badesso, muore a Postioma il 21 febbraio 1895 a 40 anni, moglie di Vincenzo Trentin. Conferma il cognome Badesso (non «Morao») e il marito indicato nello schema.",
+   "data": [
+    {
+     "label": "Defunta",
+     "value": "Teresa Pietrobon, 40 anni"
+    },
+    {
+     "label": "Morte",
+     "value": "21 febbraio 1895, ore 5, Postioma n. 82"
+    },
+    {
+     "label": "Genitori",
+     "value": "fu Angelo e fu Valentina Badesso"
+    },
+    {
+     "label": "Marito",
+     "value": "Vincenzo Trentin"
+    },
+    {
+     "label": "Dichiaranti",
+     "value": "Giuseppe Trentin (49), Costante Pietrobon (38)"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 21, 18 febbraio 1895] Pietro Pacagnan, 9 giorni, figlio di Giovanni e Giustina Pizzolato, Padernello n. 60."
+    }
+   ],
+   "people": [
+    {
+     "written": "Pietrobon Teresa",
+     "role": "defunta",
+     "pid": "p584"
+    },
+    {
+     "written": "fu Angelo",
+     "role": "padre (defunto)",
+     "pid": "p79"
+    },
+    {
+     "written": "fu Badesso Valentina",
+     "role": "madre (defunta)",
+     "pid": "p583"
+    },
+    {
+     "written": "Trentin Vincenzo",
+     "role": "marito",
+     "pid": "p1284"
+    }
+   ],
+   "discrepancies": [
+    "Conferma «Badesso Valentina»: il «Morao» dell'atto di Angela (1917) è probabilmente un errore. Numero di casa: 82 (l'albero aveva 72)."
+   ],
+   "uncertain": [],
+   "confidence": "alta"
+  },
+  {
    "id": "L3-e03",
    "code": "4PPP",
    "file": "4PPP - 1895 - Atto di matrimonio Abramo Vendrame e Gaetana Maria Pietrobon (n. 22)",
@@ -67435,6 +68285,66 @@
    "confidence": "alta"
   },
   {
+   "id": "L42-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "pubblicazione di matrimonio",
+   "title": "Pubblicazioni di matrimonio di Giovanni Pietrobon, figlio del fu Valentino, e Teresa Vendrame, figlia di Luigi e della fu Giulia Bettelli (Paese, 25 agosto 1899)",
+   "date": "1899-08-25",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Paese, pubblicazioni di matrimonio 1899, n. 30",
+   "language": "italiano",
+   "transcription": "N. 30. Pietrobon Giovanni – Vendrame Teresa. L'anno milleottocentonovantanove addì venticinque di agosto a ore pomeridiane quattro e minuti cinquanta nella Casa comunale. Avanti di me Bonali Natale Sindaco ed Ufficiale dello Stato Civile del Comune di Paese è comparso Pietrobon Giovanni di anni ventinove, villico, residente in Porcellengo, figlio del fu Valentino … e della fu Pavan Orsola … È pure comparsa Vendrame Teresa di anni ventitré, villica, residente in Padernello, figlia di Luigi di anni sessanta, villico, residente in Padernello, e della fu Giulia Bettelli … lo sposo nato in Postioma, la sposa in Padernello … lo sposo residente nel Comune di Paese ed in quello di Pergamino[?] (Argentina) … testimoni Gio. Batta Perotto e Augusto Lepes … documenti: copie degli atti di nascita rilasciate dall'Ufficio parrocchiale di Postioma il 10 agosto e da questo Ufficio … [Pubblicazioni affisse domenica 27 agosto e 3 settembre 1899.] Firme: Pietrobon Giovanni, Vendrame Teresa …",
+   "translation": "",
+   "summary": "Teresa Vendrame, sorella di Abramo e Giovanni Vendrame (che avevano sposato le gemelle Gaetana e Carolina Pietrobon, sorelle di Candido), fa le pubblicazioni con Giovanni Pietrobon di Postioma, figlio dei fu Valentino e Orsola Pavan, che risiede anche in Argentina.",
+   "data": [
+    {
+     "label": "Sposo",
+     "value": "Giovanni Pietrobon, 29 anni, villico, nato a Postioma, residente a Porcellengo (e in Argentina?)"
+    },
+    {
+     "label": "Genitori dello sposo",
+     "value": "fu Valentino Pietrobon e fu Orsola Pavan"
+    },
+    {
+     "label": "Sposa",
+     "value": "Teresa Vendrame, 23 anni, villica, Padernello"
+    },
+    {
+     "label": "Genitori della sposa",
+     "value": "Luigi Vendrame (60) e fu Giulia Bettelli"
+    }
+   ],
+   "people": [
+    {
+     "written": "Vendrame Teresa",
+     "role": "sposa",
+     "pid": "p1321"
+    },
+    {
+     "written": "Luigi",
+     "role": "padre della sposa",
+     "pid": "p693"
+    },
+    {
+     "written": "fu Giulia Bettelli",
+     "role": "madre della sposa (defunta)",
+     "pid": "p694"
+    },
+    {
+     "written": "Pietrobon Giovanni",
+     "role": "sposo",
+     "pid": "p1322"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [
+    "Località straniera di residenza dello sposo (Pergamino, Argentina?)."
+   ],
+   "confidence": "media"
+  },
+  {
    "id": "L7-k06",
    "code": "",
    "file": "(immagine incollata in chat il 13 ottobre 2026) Atti di morte n. 87 e 88, Paese 1899: Lepes Caterina (n. 87); Pietrobon Antonio (n. 88)",
@@ -67746,6 +68656,65 @@
    "discrepancies": [],
    "uncertain": [],
    "confidence": "alta"
+  },
+  {
+   "id": "L40-d01",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "morte",
+   "title": "Atto di morte di Giacomo Pietrobon, nato a Cusignana, figlio di Matteo e Caterina Guzzo[?] (Postioma, 22 ottobre 1900)",
+   "date": "1900-10-22",
+   "actDate": "",
+   "place": "Postioma, Paese",
+   "source": "Comune di Paese, registro dei morti 1900, n. 98",
+   "language": "italiano",
+   "transcription": "N. 98. Pietrobon Giacomo. L'anno millenovecento addì ventidue di ottobre a ore antimeridiane nove e minuti trenta nella Casa comunale. Avanti di me Giovanni Piazza Segretario delegato dal Sindaco con atto nove dicembre milleottocentonovantotto … Ufficiale dello Stato Civile del Comune di Paese, sono comparsi De Longhi[?] Felice di anni ventotto, villico, domiciliato in Postioma, e Pietrobon Costante di anni quarantasette, villico, domiciliato in Postioma, i quali mi hanno dichiarato che a ore antimeridiane sei e minuti … di oggi, nella casa posta in Postioma al numero centododici, è morto Pietrobon Giacomo di anni sessantasei, villico, residente in Postioma, nato in Cusignana dal fu Matteo … e dalla fu Caterina Guzzo[?] …, marito di Pavan Anna. Testimoni Battista Perotto di anni cinquantaquattro, possidente, e Augusto Lepes di anni settantasei, cursore … ad eccezione dei dichiaranti perché illetterati.\n\n— ATTI DI SCONOSCIUTI NELLA STESSA PAGINA —\n[n. 97, 14 ottobre 1900] Agata Gatto, 87 anni, nata a Fanzolo dai fu Agostino e Caterina Vettorazzi[?], vedova di Giuseppe Rossi[?], Postioma n. 86.",
+   "translation": "",
+   "summary": "Giacomo Pietrobon, nato a Cusignana verso il 1834 da Matteo Pietrobon e Caterina Guzzo[?], muore a Postioma il 22 ottobre 1900, marito di Anna Pavan; dichiarante Costante Pietrobon. Probabilmente nipote di Antonio detto Merlo, tramite Mattio (1808): non dichiarato.",
+   "data": [
+    {
+     "label": "Defunto",
+     "value": "Giacomo Pietrobon, 66 anni, villico, nato a Cusignana"
+    },
+    {
+     "label": "Morte",
+     "value": "22 ottobre 1900, ore 6, Postioma n. 112"
+    },
+    {
+     "label": "Genitori",
+     "value": "fu Matteo e fu Caterina Guzzo[?]"
+    },
+    {
+     "label": "Moglie",
+     "value": "Anna Pavan"
+    },
+    {
+     "label": "Dichiarante",
+     "value": "Costante Pietrobon, 47 anni"
+    },
+    {
+     "label": "Atti di sconosciuti nella stessa pagina",
+     "value": "[n. 97, 14 ottobre 1900] Agata Gatto, 87 anni, nata a Fanzolo dai fu Agostino e Caterina Vettorazzi[?], vedova di Giuseppe Rossi[?], Postioma n. 86."
+    }
+   ],
+   "people": [
+    {
+     "written": "Pietrobon Giacomo",
+     "role": "defunto",
+     "pid": "p1316"
+    },
+    {
+     "written": "Pavan Anna",
+     "role": "moglie",
+     "pid": "p1317"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [
+    "Cognome della madre (Guzzo?).",
+    "Legame con Mattio Pietrobon (1808) solo ipotetico."
+   ],
+   "confidence": "media"
   },
   {
    "id": "L7-k02",
@@ -69144,6 +70113,64 @@
    "uncertain": [
     "Cognome del primo testimone e dell'assessore; mestiere della sposa."
    ],
+   "confidence": "alta"
+  },
+  {
+   "id": "L42-d02",
+   "code": "",
+   "file": "Foto incollate in chat il 21 ottobre 2026",
+   "type": "matrimonio",
+   "title": "Atto di matrimonio di Maria Anna Pietrobon, figlia di Giorgio Virginio e Luigia Schiavon, ed Ettore Salvatore Cavallin (Paese, 16 aprile 1908)",
+   "date": "1908-04-16",
+   "actDate": "",
+   "place": "Paese",
+   "source": "Comune di Paese, registro dei matrimoni 1908, n. 17",
+   "language": "italiano",
+   "transcription": "N. 17. Cavallin Ettore Salvatore – Pietrobon Maria Anna. L'anno millenovecentootto addì sedici di aprile a ore pomeridiane tre e minuti quaranta nella Casa comunale di Paese … Avanti di me Lucatello Giovanni Sindaco … 1° Cavallin Ettore Salvatore, di anni ventiquattro, villico, nato in Istrana, residente in Padernello, figlio di Edoardo, residente in Padernello, e di Volpato Marta, residente in Padernello; 2° Pietrobon Maria Anna, di anni ventidue, villica, nata in Postioma, residente in Padernello, figlia di Giorgio Virginio, residente in Padernello, e di Schiavon Luigia, residente in Padernello … Testimoni Perotto Battista (61), possidente, e Milanese Giovanni (35), cursore … pubblicazioni nelle due domeniche nove e sedici febbraio … la sposa ottenne il prescritto consenso … Cavallin Ettore, Pietrobon Maria, …",
+   "translation": "",
+   "summary": "Maria Anna Pietrobon, figlia di Gregorio (Giorgio Virginio) Pietrobon, fratello di Candido, e di Luigia Schiavon, sposa Ettore Salvatore Cavallin a Paese il 16 aprile 1908: è una cugina prima di nonno Genio.",
+   "data": [
+    {
+     "label": "Sposo",
+     "value": "Ettore Salvatore Cavallin, 24 anni, nato a Istrana"
+    },
+    {
+     "label": "Genitori dello sposo",
+     "value": "Edoardo Cavallin e Marta Volpato"
+    },
+    {
+     "label": "Sposa",
+     "value": "Maria Anna Pietrobon, 22 anni, nata a Postioma, residente a Padernello"
+    },
+    {
+     "label": "Genitori della sposa",
+     "value": "Giorgio Virginio Pietrobon e Luigia Schiavon"
+    }
+   ],
+   "people": [
+    {
+     "written": "Pietrobon Maria Anna",
+     "role": "sposa",
+     "pid": "p1323"
+    },
+    {
+     "written": "Giorgio Virginio",
+     "role": "padre della sposa",
+     "pid": "p83"
+    },
+    {
+     "written": "Schiavon Luigia",
+     "role": "madre della sposa",
+     "pid": "p1281"
+    },
+    {
+     "written": "Cavallin Ettore Salvatore",
+     "role": "sposo",
+     "pid": "p1324"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
    "confidence": "alta"
   },
   {
