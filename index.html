@@ -79,7 +79,7 @@ svg.tree{width:100%;max-width:760px;display:block;margin:8px auto}svg.tree g{cur
 svg.tree rect{fill:var(--card);stroke:var(--line)}svg.tree g.has rect{stroke:var(--acc);stroke-width:2}
 svg.tree text{fill:var(--ink);font:600 12px system-ui,sans-serif}svg.tree text.y{fill:var(--mut);font-weight:400;font-size:9.5px}svg.tree text.c{fill:var(--acc);font-weight:600;font-size:9.5px}
 svg.tree path{fill:none;stroke:var(--line);stroke-width:1.5}
-svg.tree path.no{stroke-dasharray:4 3;opacity:.75}svg.tree path.ok{stroke:var(--ink);stroke-width:2.2}
+svg.tree path.no{stroke-dasharray:4 3;opacity:.75}svg.tree path.ok{stroke:var(--ink);stroke-width:2.2}svg.tree path.sure{stroke:var(--ink);stroke-width:2.6;stroke-dasharray:0.1 4.5;stroke-linecap:round}
 svg.tree .tb{fill:var(--bg);stroke:var(--acc);stroke-width:1}svg.tree text.tbt{fill:var(--acc);font:700 9px system-ui,sans-serif}svg.tree g.tmenu{cursor:pointer}
 .twrap{overflow:auto;-webkit-overflow-scrolling:touch}.tbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:6px 0}.tbar button{min-width:38px;font-size:18px;padding:4px 10px}.tbar select{flex:1;min-width:160px}
 .leg{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:13px;margin:4px 0}.leg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-1px;opacity:.75}.leg b{color:var(--mut);font-weight:400}
@@ -136,6 +136,8 @@ svg.tree .tb{fill:var(--bg);stroke:var(--acc);stroke-width:1}svg.tree text.tbt{f
   <label>Nome e cognome (anagrafe)</label><input id="pN">
   <label>Nome comune o soprannome personale (es. Coco Rosolin)</label><input id="pCo">
   <label>Soprannome di famiglia (es. Merlo)</label><input id="pSo">
+  <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="pFS" style="width:auto"> Il legame con il padre è sicuro (anche senza atto)</label>
+  <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="pMS" style="width:auto"> Il legame con la madre è sicuro (anche senza atto)</label>
   <div class="two"><div><label>Nascita</label><input id="pB"></div><div><label>Luogo di nascita</label><input id="pBP"></div>
   <div><label>Morte</label><input id="pD"></div><div><label>Luogo di morte</label><input id="pDP"></div>
   <div><label>Paese / nazionalità</label><input id="pC"></div><div><label>Ramo</label><input id="pR" list="rl"></div><div><label>Matrimonio (data, luogo)</label><input id="pMa"></div><div><label>Nome con cui scrive nelle chat</label><input id="pSp"></div><div><label>Altri nomi, soprannomi</label><input id="pA"></div></div>
@@ -333,7 +335,7 @@ function render(){nmLbl();
     ${nmInfo(pe)}<div class="mut">${[pe.birth&&'n. '+esc(pe.birth)+(pe.birthPlace?', '+esc(pe.birthPlace):''),pe.death&&'m. '+esc(pe.death)+(pe.deathPlace?', '+esc(pe.deathPlace):''),esc(pe.country),pe.alt&&'detto/a '+esc(pe.alt)].filter(Boolean).join(' · ')}</div>
     ${pe.ramo?`<div class="mut">Ramo: ${esc(pe.ramo)}</div>`:''}${pe.notes?`<p>${esc(pe.notes)}</p>`:''}
     ${pe.marriage?`<div class="mut">Matrimonio: ${esc(pe.marriage)}</div>`:''}${pe.fsid?`<div class="mut">FamilySearch: ${esc(pe.fsid)}</div>`:''}${(pe.terms||[]).length?`<div class="mut">Nei testi: ${esc(pe.terms.join(', '))}</div>`:''}
-    ${fa||mo?`<div><span class="mut">Genitori</span> ${chip(fa)}${chip(mo)}</div>`:''}
+    ${fa||mo?`<div><span class="mut">Genitori</span> ${chip(fa)}${chip(mo)}</div><div class="mut" style="font-size:13px">${[fa&&'padre: '+lkS(pe.id,fa.id),mo&&'madre: '+lkS(pe.id,mo.id)].filter(Boolean).join(' · ')}</div>`:''}
     ${pe.spouses.length?`<div><span class="mut">Coniugi</span> ${pe.spouses.map(i=>chip(P(i))).join('')}</div>`:''}
     ${sibs(pe).length?`<div><span class="mut">Fratelli e sorelle</span> ${sibs(pe).map(chip).join('')}</div>`:''}
     ${kids(pe.id).length?`<div><span class="mut">Figli</span> ${kids(pe.id).map(chip).join('')}</div>`:''}
@@ -439,6 +441,11 @@ function confMap(){if(_conf&&_cv2===DOCS().length)return _conf;_conf=new Set;_cv
     for(const c of ps){const pc=P(c.pid);if(!pc)continue;for(const par of [pc.father,pc.mother]){if(!par)continue;const q=ps.find(z=>z.pid===par);
       if(q&&(/padre|madre|genitor|nonn|avo|ava\b/i.test(q.role||'')||/figli|neonat|battezzat/i.test(c.role||'')))_conf.add(c.pid+'>'+par)}}}
   return _conf}
+let _sure=null,_sk='';
+function lkS(c,p){const k=c+'>'+p;if(confMap().has(k))return '<b>documentato</b> ━';const r=sureMap().get(k);return r?'<b>sicuro</b> ⋯ ('+esc(r)+')':'da verificare ┄'}
+function sureMap(){const c=confMap();const k=c.size+':'+DB.people.length+':'+DB.people.filter(p=>p.fatherSure||p.motherSure).length;if(_sure&&_sk===k)return _sure;_sk=k;_sure=new Map;
+  for(const p of DB.people){if(p.fatherSure&&p.father)_sure.set(p.id+'>'+p.father,'tua conferma');if(p.motherSure&&p.mother)_sure.set(p.id+'>'+p.mother,'tua conferma')}
+  return _sure}
 const FRZ={bavaria:'Nervesa',postioma:'Paese',padernello:'Paese',cusignana:'Giavera',rovare:'San Biagio di Callalta',cavrie:'San Biagio di Callalta',spercenigo:'San Biagio di Callalta',fagare:'San Biagio di Callalta',vallio:'Roncade',barbarana:'San Biagio di Callalta',"sant'andrea di barbarana":'San Biagio di Callalta',campolongo:'Zenson di Piave',zenson:'Zenson di Piave','zenson di piave':'Zenson di Piave',monestier:'Monastier','monastier di treviso':'Monastier',"giavera del montello":'Giavera','nervesa della battaglia':'Nervesa','croce di piave':'Musile di Piave','jau':'Jaú','jahu':'Jaú'};
 function comune(s){if(!s)return '';s=s.replace(/\(.*?\)|\[.*?\]/g,'').replace(/casa n\..*$|n\. ?\d+.*$/i,'').split(',')[0].replace(/^(villa|parrocchia|frazione|comune|colmel(lo)?) (di )?/i,'').trim();
   if(!s||/^(italia|italy|treviso|veneto|brasil|brasile)$/i.test(s))return '';const k=norm(s);return FRZ[k]||s.replace(/\b\w/g,c=>c.toUpperCase())}
@@ -482,7 +489,7 @@ function treeH(){try{return treeH_()}catch(e){return `<div class="card warn"><b>
 function treeH_(){
   const root=P(window._root)||DB.people.find(p=>p.name==='Massimo Pietrobon')||DB.people[0];if(!root)return '';
   const G=[[root]];for(let g=1;g<4;g++)G.push(G[g-1].flatMap(p=>p?[P(p.father)||null,P(p.mother)||null]:[null,null]));
-  const L=22,W=L+412+16,H=488,bw=92,bh=46,X=[L+2,L+102,L+204,L+306];let svg='',ln='',ui='';const pos=new Map;const conf=confMap();
+  const L=22,W=L+412+16,H=488,bw=92,bh=46,X=[L+2,L+102,L+204,L+306];let svg='',ln='',ui='';const pos=new Map;const conf=confMap(),sure=sureMap();
   const m=window._cm||'';const shownP=G.flat().filter(Boolean);
   const keys=[...new Set(shownP.map(p=>colKey(p,m)).filter(Boolean))];const pal=palette(keys.slice(),m);
   G.forEach((row,g)=>row.forEach((p,i)=>{if(!p)return;const y=H*(i+.5)/row.length-bh/2,x=X[g];pos.set(g+'-'+i,[x,y]);const n=chOf(p.id).length;
@@ -491,7 +498,7 @@ function treeH_(){
     if(ns)ui+=`<g class="tmenu sb" onclick="sibM(event,'${p.id}')"><rect class="tb" x="${x+bw-30}" y="${y+bh-3}" width="28" height="13" rx="6"/><text class="tbt" x="${x+bw-16}" y="${y+bh+7}" text-anchor="middle">▾ ${ns}</text></g>`;
     if(g===3&&(P(p.father)||P(p.mother)))ui+=`<g class="tmenu" onclick="upT(event,'${p.id}')"><rect class="tb" x="${x+bw+2}" y="${y+bh/2-9}" width="13" height="18" rx="5"/><text class="tbt" x="${x+bw+8.5}" y="${y+bh/2+4}" text-anchor="middle">▶</text></g>`;
     if(g===0&&kids(p.id).length)ui+=`<g class="tmenu" onclick="kidM(event,'${p.id}')"><rect class="tb" x="2" y="${y+bh/2-12}" width="18" height="24" rx="6"/><text class="tbt" x="11" y="${y+bh/2+4}" text-anchor="middle">◀</text></g>`;
-    if(g){const c=pos.get((g-1)+'-'+(i>>1));const ch=G[g-1][i>>1];if(c)ln+=`<path class="${ch&&conf.has(ch.id+'>'+p.id)?'ok':'no'}" d="M${c[0]+bw},${c[1]+bh/2} H${x-5} V${y+bh/2} H${x}"/>`}}));
+    if(g){const c=pos.get((g-1)+'-'+(i>>1));const ch=G[g-1][i>>1];if(c)ln+=`<path class="${ch&&conf.has(ch.id+'>'+p.id)?'ok':ch&&sure.has(ch.id+'>'+p.id)?'sure':'no'}" d="M${c[0]+bw},${c[1]+bh/2} H${x-5} V${y+bh/2} H${x}"/>`}}));
   let leg='';if(m){const cnt={};shownP.forEach(p=>{const k=colKey(p,m)||'—';cnt[k]=(cnt[k]||0)+1});
     leg=`<div class="leg">${keys.sort((a,b)=>m==='eta'?parseInt(a)-parseInt(b):cnt[b]-cnt[a]).map(k=>`<span><i style="background:${pal[k]}"></i>${esc(k)} <b>${cnt[k]}</b></span>`).join('')}${cnt['—']?`<span><i style="background:transparent;border:1px solid var(--line)"></i>dato mancante <b>${cnt['—']}</b></span>`:''}</div>`}
   const shown=new Set(shownP.map(p=>p.id));let ex='';const done=new Set(shown);
@@ -504,7 +511,7 @@ function treeH_(){
   if(rest.length)ex+=`<details class="tp" style="margin-top:10px"><summary>Altri parenti con capitoli<small>${rest.length} persone: prozii, zii, cugini, coniugi</small></summary><div>${rest.map(chipC).join('')}</div></details>`;
   const z=window._zoom||1;
   return `<div class="card"><div class="row"><h2 style="flex:1">Albero di ${esc(dn(root))}</h2>${window._root&&P(_root)?.name!=='Massimo Pietrobon'?`<button onclick="_root=null;render()">Torna a Massimo</button>`:''}</div>
-  <p class="mut">Tocca una persona per aprire la sua scheda. ▾ = fratelli e sorelle · ▶ = risali oltre · ◀ = scendi ai figli. Linea scura continua = legame confermato da un atto storico o da un archivio (archivista, parrocchia, Archivio di Stato); tratteggiata = da FamilySearch o dalle chat.</p>
+  <p class="mut">Tocca una persona per aprire la sua scheda. ▾ = fratelli e sorelle · ▶ = risali oltre · ◀ = scendi ai figli. Linea scura continua = legame confermato da un atto storico o da un archivio; scura a puntini = legame sicuro anche senza atto (confermato da te); tratteggiata chiara = da FamilySearch, schemi o chat, non verificato. Le conferme si mettono in «Modifica» della persona.</p>
   <div class="tbar"><button onclick="zoomT(-.15)" title="Riduci">−</button><button onclick="zoomT(.15)" title="Ingrandisci">+</button><button onclick="zoomT(0)" title="Dimensione normale">⟲</button>
   <select onchange="_cm=this.value;render()">${Object.entries(CM).map(([k,v])=>`<option value="${k}"${k===m?' selected':''}>${k?'Colora per: '+v:v}</option>`).join('')}</select></div>${leg}
   <div class="twrap"><svg id="treeSvg" class="tree" viewBox="0 0 ${W} ${H}" style="width:${100*z}%;max-width:${760*z}px">${ln}${svg}${ui}</svg></div>${ex}
@@ -575,12 +582,12 @@ $('q').addEventListener('keydown',e=>{if(e.key==='Enter'){const q=norm($('q').va
 
 /* --- persona --- */
 function editPerson(id){curP=id?P(id):null;const p=curP||{spouses:[]};
-  $('pN').value=p.name||'';$('pCo').value=p.common||'';$('pSo').value=p.soprannome||'';$('pB').value=p.birth||'';$('pBP').value=p.birthPlace||'';$('pD').value=p.death||'';$('pDP').value=p.deathPlace||'';$('pC').value=p.country||'';$('pR').value=p.ramo||'';$('pMa').value=p.marriage||'';$('pSp').value=p.speaker||'';$('pTe').value=(p.terms||[]).join('; ');$('pA').value=p.alt||'';$('pNo').value=p.notes||'';
+  $('pN').value=p.name||'';$('pCo').value=p.common||'';$('pSo').value=p.soprannome||'';$('pFS').checked=!!p.fatherSure;$('pMS').checked=!!p.motherSure;$('pB').value=p.birth||'';$('pBP').value=p.birthPlace||'';$('pD').value=p.death||'';$('pDP').value=p.deathPlace||'';$('pC').value=p.country||'';$('pR').value=p.ramo||'';$('pMa').value=p.marriage||'';$('pSp').value=p.speaker||'';$('pTe').value=(p.terms||[]).join('; ');$('pA').value=p.alt||'';$('pNo').value=p.notes||'';
   $('pF').value=P(p.father)?.name||'';$('pM').value=P(p.mother)?.name||'';$('pS').value=p.spouses.map(i=>P(i)?.name).filter(Boolean).join('; ');
   $('pK').value='';$('pG').value='';$('pDel').classList.toggle('hide',!curP);dlg('dp').showModal()}
 async function saveP(){const n=$('pN').value.trim();if(!n)return alert('Serve almeno il nome');
   let p=curP;if(!p){p={id:uid('p'),spouses:[],branch:''};DB.people.push(p)}
-  Object.assign(p,{name:n,birth:$('pB').value,birthPlace:$('pBP').value,death:$('pD').value,deathPlace:$('pDP').value,country:$('pC').value,ramo:$('pR').value,marriage:$('pMa').value,speaker:$('pSp').value.trim(),terms:names($('pTe').value),alt:$('pA').value,notes:$('pNo').value});{const c=$('pCo').value.trim();p.common=c;p.nick=c?c.split(' ')[0]:'';p.soprannome=$('pSo').value.trim()}
+  Object.assign(p,{name:n,birth:$('pB').value,birthPlace:$('pBP').value,death:$('pD').value,deathPlace:$('pDP').value,country:$('pC').value,ramo:$('pR').value,marriage:$('pMa').value,speaker:$('pSp').value.trim(),terms:names($('pTe').value),alt:$('pA').value,notes:$('pNo').value});{const c=$('pCo').value.trim();p.common=c;p.nick=c?c.split(' ')[0]:'';p.soprannome=$('pSo').value.trim();p.fatherSure=$('pFS').checked;p.motherSure=$('pMS').checked;_sure=null}
   p.father=$('pF').value.trim()?findP($('pF').value,true).id:'';p.mother=$('pM').value.trim()?findP($('pM').value,true).id:'';
   const old=p.spouses;p.spouses=names($('pS').value).map(x=>findP(x,true).id);
   old.filter(i=>!p.spouses.includes(i)).forEach(i=>{const s=P(i);if(s)s.spouses=s.spouses.filter(x=>x!==p.id)});

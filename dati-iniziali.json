@@ -1,5 +1,5 @@
 {
- "version": 73,
+ "version": 75,
  "people": [
   {
    "id": "p1",
@@ -66,7 +66,9 @@
      "src": "Chat Family Tree, ottobre 2026"
     }
    ],
-   "marriage": "20 maggio 2017"
+   "marriage": "20 maggio 2017",
+   "fatherSure": true,
+   "motherSure": true
   },
   {
    "id": "p3",
@@ -136,7 +138,9 @@
      "src": "Chat Family Tree, ottobre 2026"
     }
    ],
-   "marriage": "9 agosto 1975 Monastier di Treviso"
+   "marriage": "9 agosto 1975 Monastier di Treviso",
+   "fatherSure": true,
+   "motherSure": true
   },
   {
    "id": "p5",
@@ -174,7 +178,9 @@
      "src": "Chat Family Tree, ottobre 2026"
     }
    ],
-   "marriage": "9 agosto 1975 Monastier di Treviso"
+   "marriage": "9 agosto 1975 Monastier di Treviso",
+   "fatherSure": true,
+   "motherSure": true
   },
   {
    "id": "p6",
@@ -14879,7 +14885,9 @@
    "marriage": "15 aprile 1944 Monastier di Treviso",
    "nick": "Genio",
    "common": "Genio Pietrobon",
-   "soprannome": "Merlo"
+   "soprannome": "Merlo",
+   "fatherSure": true,
+   "motherSure": true
   },
   {
    "id": "p461",
@@ -14927,7 +14935,9 @@
    ],
    "marriage": "15 aprile 1944 Monastier di Treviso",
    "nick": "Iseta",
-   "common": "Iseta Gazzola"
+   "common": "Iseta Gazzola",
+   "fatherSure": true,
+   "motherSure": true
   },
   {
    "id": "p462",
@@ -15915,7 +15925,9 @@
    ],
    "marriage": "",
    "nick": "Coco",
-   "common": "Coco Rosolin"
+   "common": "Coco Rosolin",
+   "fatherSure": true,
+   "motherSure": true
   },
   {
    "id": "p482",
@@ -15957,7 +15969,9 @@
     }
    ],
    "marriage": "",
-   "soprannome": "Merletta"
+   "soprannome": "Merletta",
+   "fatherSure": true,
+   "motherSure": true
   },
   {
    "id": "p483",
