@@ -1,5 +1,5 @@
 {
- "version": 79,
+ "version": 80,
  "people": [
   {
    "id": "p1",
@@ -20004,7 +20004,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "Antonio Pietro Bon detto Merlo",
-   "notes": "«Antonio Pietro Bon detto Merlo del deceso Angelo», villico di 62 anni nel luglio 1811, nonno paterno di Anna Maria (atto di nascita n. 63, Arcade 1811); vive nella casa del figlio Angelo a Cusignana. Ipotesi da verificare: per età e soprannome potrebbe essere il padre (o un parente stretto) di Santa (n. 1782 circa), di Gabriele e di Girolamo Pietrobon detti Merlo/Merletto (n. 1800 circa), antenati della famiglia. Nessun atto lo dice ancora. Nel 1808 (nascita del figlio Mattio) ha 58 anni e la moglie è Maria Amadio (43): identificazione con Antonio detto Merlo probabile per età e luogo. Il 16 gennaio 1810 è testimone (60 anni, villico di Cusignana) alla morte di Teresa Zanata, figlia di Domenico e Caterina Zandonà: età coerente con i 58 anni del 1808. Figlio del fu Angelo Pierobon; sposato con Maria Amadio di Mattio a Villorba, prima del 1796 (battesimo della figlia Angela, 22 giugno 1796). Nel 1812 dà il consenso alle nozze di Angela con Appolonio Zanatta. Probabile prima moglie: Angela Martini (morta prima del 1809), madre di Maria Pierobon (circa 1777-1809, moglie di Pietro Bettiol). Se così, anche Santa (1782) e Angelo (1785) potrebbero essere figli di Angela e non di Maria Amadio.",
+   "notes": "«Antonio Pietro Bon detto Merlo del deceso Angelo», villico di 62 anni nel luglio 1811, nonno paterno di Anna Maria (atto di nascita n. 63, Arcade 1811); vive nella casa del figlio Angelo a Cusignana. Ipotesi da verificare: per età e soprannome potrebbe essere il padre (o un parente stretto) di Santa (n. 1782 circa), di Gabriele e di Girolamo Pietrobon detti Merlo/Merletto (n. 1800 circa), antenati della famiglia. Nessun atto lo dice ancora. Nel 1808 (nascita del figlio Mattio) ha 58 anni e la moglie è Maria Amadio (43): identificazione con Antonio detto Merlo probabile per età e luogo. Il 16 gennaio 1810 è testimone (60 anni, villico di Cusignana) alla morte di Teresa Zanata, figlia di Domenico e Caterina Zandonà: età coerente con i 58 anni del 1808. Figlio del fu Angelo Pierobon; sposato con Maria Amadio di Mattio a Villorba, prima del 1796 (battesimo della figlia Angela, 22 giugno 1796). Nel 1812 dà il consenso alle nozze di Angela con Appolonio Zanatta. Probabile prima moglie: Angela Martini (morta prima del 1809), madre di Maria Pierobon (circa 1777-1809, moglie di Pietro Bettiol). Se così, anche Santa (1782) e Angelo (1785) potrebbero essere figli di Angela e non di Maria Amadio. Nel Pedigree Resource File di FamilySearch (albero Ancestry) è dato nato nel 1740 (gli atti: 58 anni nel 1808, 60 nel 1810, 62 nel 1811 → circa 1749-1750). Figli indicati: Santa (1784), Angela (1796), Mattio (1808). Padre: Angelo Pietrobon.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -20088,19 +20088,19 @@
   {
    "id": "p655",
    "name": "Santa Pietrobon detta Merlo",
-   "father": "",
-   "mother": "",
+   "father": "p651",
+   "mother": "p1302",
    "spouses": [
     "p656"
    ],
    "birth": "circa 1782",
    "birthPlace": "Cusignana",
-   "death": "",
+   "death": "1844",
    "deathPlace": "",
    "country": "Italia",
    "branch": "",
    "alt": "Santa Pierobon",
-   "notes": "Moglie di Giuseppe Bettiol (1781-1844) di Cusignana, figlio di Carlo e Domenica Granziera; figli Domenica (1804), Valentino (1807), Carlo detto Rosso (1811) e Maria (1814) (rapporto genealogico della famiglia Bettiol, 2011). Genitori non indicati: per il soprannome Merlo e l'età è probabilmente figlia di Antonio Pietrobon detto Merlo (n. 1749 circa) e sorella di Angelo, Gabriele e Girolamo: da verificare nei registri di Cusignana.",
+   "notes": "Moglie di Giuseppe Bettiol (1781-1844) di Cusignana, figlio di Carlo e Domenica Granziera; figli Domenica (1804), Valentino (1807), Carlo detto Rosso (1811) e Maria (1814) (rapporto genealogico della famiglia Bettiol, 2011). Genitori non indicati: per il soprannome Merlo e l'età è probabilmente figlia di Antonio Pietrobon detto Merlo (n. 1749 circa) e sorella di Angelo, Gabriele e Girolamo: da verificare nei registri di Cusignana. Su FamilySearch (Pedigree Resource File, albero Ancestry di «Ana6,586», 2025) è figlia di Antonio Pierobon (n. 1740) e Maria Amadio (n. 1765), nata nel 1784 e morta nel 1844, moglie di Giuseppe Bettiol. Collegamento da albero online, non da atti; se Maria Amadio era nata nel 1765 avrebbe avuto 19 anni. Non si esclude che la madre fosse Angela Martini (prima moglie di Antonio).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -20158,21 +20158,24 @@
    "name": "Valentino Bettiol",
    "father": "p656",
    "mother": "p655",
-   "spouses": [],
+   "spouses": [
+    "p1336"
+   ],
    "birth": "1807",
    "birthPlace": "Cusignana",
    "death": "",
    "deathPlace": "",
    "country": "Italia",
    "branch": "",
-   "alt": "",
+   "alt": "Valentino Antonio Bettiol detto Tonin",
    "notes": "Figlio/a di Giuseppe Bettiol e Santa Pietrobon detta Merlo; sposa Domenica Cavallin; figli Teresa 1827, Luigi 1829, Maria 1830, Anna 1833, Giuseppe 1835, Giovanni 1836, Graziosa 1839, Antonia 1843 (rapporto genealogico Bettiol, 2011).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "10 ottobre 1825 Montebelluna",
+   "soprannome": "Tonin"
   },
   {
    "id": "p659",
@@ -20215,7 +20218,8 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "soprannome": "Tonin"
   },
   {
    "id": "p661",
@@ -35116,6 +35120,51 @@
    "speaker": "",
    "events": [],
    "marriage": ""
+  },
+  {
+   "id": "p1336",
+   "name": "Domenica Cavallin (moglie di Valentino Bettiol)",
+   "father": "",
+   "mother": "",
+   "spouses": [
+    "p658"
+   ],
+   "birth": "1808",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "Domenica Cavallin",
+   "notes": "Moglie di Valentino Antonio Bettiol detto Tonin; matrimonio a Montebelluna il 10 ottobre 1825 (FamilySearch, Pedigree Resource File).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "10 ottobre 1825 Montebelluna"
+  },
+  {
+   "id": "p1337",
+   "name": "Valentina Bettiol detta Tonin",
+   "father": "p656",
+   "mother": "p655",
+   "spouses": [],
+   "birth": "1814",
+   "birthPlace": "",
+   "death": "",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Figlia di Giuseppe Bettiol e Santa Pietrobon; forse gemella di Maria (1814). Da FamilySearch (Pedigree Resource File).",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "soprannome": "Tonin"
   }
  ],
  "stories": [
