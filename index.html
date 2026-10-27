@@ -545,8 +545,8 @@ const hdrB=()=>document.querySelector('header').getBoundingClientRect().bottom;
 function goHit(n){if(!HN)return;n=Math.max(1,Math.min(HN,n||1));const el=$('hit-'+n);if(!el)return;scrollTo(0,el.getBoundingClientRect().top+scrollY-hdrB()-56);HC=n;$('navN').value=n;el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1200);savePos()}
 function savePos(){if(!sel||!HC)return;try{const o=JSON.parse(LS.get('sf_pos')||'{}');o[sel]=HC;LS.set('sf_pos',JSON.stringify(o))}catch(e){}}
 const lastPos=id=>{try{return JSON.parse(LS.get('sf_pos')||'{}')[id]||0}catch(e){return 0}};
-let _sc=0;addEventListener('scroll',()=>{if(_sc||$('nav').classList.contains('hide'))return;_sc=1;requestAnimationFrame(()=>{_sc=0;const lim=hdrB()+70;let lo=0,hi=HN;
-  while(lo<hi){const m=(lo+hi+1)>>1;if($('hit-'+m).getBoundingClientRect().top<lim)lo=m;else hi=m-1}
+let _sc=0;addEventListener('scroll',()=>{if(_sc||$('nav').classList.contains('hide'))return;_sc=1;requestAnimationFrame(()=>{_sc=0;if(!HN||!$('hit-'+HN)){HN=0;return}const lim=hdrB()+70;let lo=0,hi=HN;
+  while(lo<hi){const m=(lo+hi+1)>>1,e=$('hit-'+m);if(e&&e.getBoundingClientRect().top<lim)lo=m;else hi=m-1}
   if(lo!==HC){HC=lo;if(document.activeElement!==$('navN'))$('navN').value=lo||'';if(lo)savePos()}})},{passive:true});
 function parseS(s){const out=[];let cur=null;
   for(const l of s.text.split('\n')){const m=/^(\d\d:\d\d) ([^:]{1,24}): (.*)$/.exec(l)||/^()([A-ZÀ-Ú][^:]{1,22}): (.*)$/.exec(l);
