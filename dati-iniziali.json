@@ -1,5 +1,5 @@
 {
- "version": 152,
+ "version": 153,
  "people": [
   {
    "id": "p1",
@@ -74219,14 +74219,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Durval de Barros Falcão",
+     "role": "figlio registrato",
+     "pid": "p63"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "\"Alferes\" Pedro de Barros Falcão",
+     "role": "padre",
+     "pid": "p57"
+    },
+    {
+     "written": "Lucinda Francisca de Souza",
+     "role": "madre",
+     "pid": "p58"
+    },
+    {
+     "written": "Carlos De Barros Falcão Cavalcanti de Albuquerque Lacerda",
+     "role": "nonno paterno",
+     "pid": "p68"
+    },
+    {
+     "written": "Jacintha Maria da Silva",
+     "role": "nonna paterna",
+     "pid": "p69"
+    },
+    {
+     "written": "Bento Martiniano de Souza",
+     "role": "nonno materno",
+     "pid": "p71"
+    },
+    {
+     "written": "Henriqueta Martiniana de Souza",
+     "role": "nonna materna",
+     "pid": "p72"
     }
    ],
    "discrepancies": [],
@@ -78068,14 +78093,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Benicio Franco Sarmento",
+     "role": "figlio registrato",
+     "pid": "p46"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Francisco Franco Sarmento",
+     "role": "padre",
+     "pid": "p43"
+    },
+    {
+     "written": "Virgulina Cardoso Sarmento",
+     "role": "madre",
+     "pid": "p44"
+    },
+    {
+     "written": "Herculano Franco Sarmento",
+     "role": "nonno paterno",
+     "pid": "p67"
+    },
+    {
+     "written": "Querubina[?] Gomes Sarmento",
+     "role": "nonna paterna",
+     "pid": "p1479"
+    },
+    {
+     "written": "José Pedro Da Silva",
+     "role": "nonno materno",
+     "pid": "p65"
+    },
+    {
+     "written": "Joaquina Lopes Cardoso",
+     "role": "nonna materna",
+     "pid": "p66"
     }
    ],
    "discrepancies": [
@@ -78101,9 +78151,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Odette Franco Sarmento",
+     "role": "figlia registrata",
+     "pid": "p933"
+    },
+    {
+     "written": "João Franco Sarmento",
+     "role": "padre",
+     "pid": "p31"
+    },
+    {
+     "written": "Josefina Franco Ferreira Sarmento",
+     "role": "madre",
+     "pid": "p32"
+    },
+    {
+     "written": "Francisco Franco Sarmento",
+     "role": "nonno paterno",
+     "pid": "p43"
+    },
+    {
+     "written": "Virgulina Cardoso Sarmento",
+     "role": "nonna paterna",
+     "pid": "p44"
+    },
+    {
+     "written": "Donatílio Matias Da Fonseca",
+     "role": "nonno materno",
+     "pid": "p47"
+    },
+    {
+     "written": "Maria Dias Feijó",
+     "role": "nonna materna",
+     "pid": "p48"
     }
    ],
    "discrepancies": [],
@@ -78127,19 +78207,34 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "José Franco Sarmento",
+     "role": "figlio registrato",
+     "pid": "p9"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "João Franco Sarmento",
+     "role": "padre",
+     "pid": "p31"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Josefina Franco Ferreira Sarmento",
+     "role": "madre",
+     "pid": "p32"
+    },
+    {
+     "written": "Francisco Franco Sarmento",
+     "role": "nonno paterno",
+     "pid": "p43"
+    },
+    {
+     "written": "Virgulina Cardoso Sarmento",
+     "role": "nonna paterna",
+     "pid": "p44"
+    },
+    {
+     "written": "Donatílio Matias Da Fonseca",
+     "role": "nonno materno",
+     "pid": "p47"
     }
    ],
    "discrepancies": [],
@@ -78449,9 +78544,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "João Franco Sarmento",
+     "role": "defunto, padre dei figli",
+     "pid": "p31"
+    },
+    {
+     "written": "Francisco Franco Sarmento",
+     "role": "padre",
+     "pid": "p43"
+    },
+    {
+     "written": "Virgulina Cardoso Sarmento",
+     "role": "madre",
+     "pid": "p44"
+    },
+    {
+     "written": "Josefina Franco Ferreira Sarmento",
+     "role": "moglie, madre dei figli",
+     "pid": "p32"
+    },
+    {
+     "written": "Euclides Franco Sarmento",
+     "role": "figlio/a",
+     "pid": "p934"
+    },
+    {
+     "written": "Odette Franco Sarmento",
+     "role": "figlio/a",
+     "pid": "p933"
+    },
+    {
+     "written": "José Franco Sarmento",
+     "role": "figlio/a",
+     "pid": "p9"
     }
    ],
    "discrepancies": [],
@@ -78475,9 +78600,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "José Carlos Araújo Cunha",
+     "role": "figlio registrato",
+     "pid": "p24"
+    },
+    {
+     "written": "Ivan Falcão da Cunha",
+     "role": "padre",
+     "pid": "p11"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "madre",
+     "pid": "p12"
+    },
+    {
+     "written": "Albino Vicente Da Silva Cunha",
+     "role": "nonno paterno",
+     "pid": "p35"
+    },
+    {
+     "written": "Ernestina De Barros Falcão",
+     "role": "nonna paterna",
+     "pid": "p36"
+    },
+    {
+     "written": "Antônio Da Silva Araujo",
+     "role": "nonno materno",
+     "pid": "p37"
+    },
+    {
+     "written": "Beatriz Maranhão De Araújo",
+     "role": "nonna materna",
+     "pid": "p38"
     }
    ],
    "discrepancies": [],
@@ -78542,9 +78697,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Ivone Araújo Cunha",
+     "role": "figlia registrata",
+     "pid": "p25"
+    },
+    {
+     "written": "Ivan Falcão da Cunha",
+     "role": "padre",
+     "pid": "p11"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "madre",
+     "pid": "p12"
+    },
+    {
+     "written": "Albino Vicente Da Silva Cunha",
+     "role": "nonno paterno",
+     "pid": "p35"
+    },
+    {
+     "written": "Ernestina De Barros Falcão",
+     "role": "nonna paterna",
+     "pid": "p36"
+    },
+    {
+     "written": "Antônio Da Silva Araujo",
+     "role": "nonno materno",
+     "pid": "p37"
+    },
+    {
+     "written": "Beatriz Maranhão De Araújo",
+     "role": "nonna materna",
+     "pid": "p38"
     }
    ],
    "discrepancies": [],
@@ -78568,9 +78753,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "José Carlos Sarmento",
+     "role": "figlio registrato",
+     "pid": "p13"
+    },
+    {
+     "written": "José Franco Sarmento",
+     "role": "padre",
+     "pid": "p9"
+    },
+    {
+     "written": "Dalva Sarmento",
+     "role": "madre",
+     "pid": "p10"
+    },
+    {
+     "written": "João Franco Sarmento",
+     "role": "nonno paterno",
+     "pid": "p31"
+    },
+    {
+     "written": "Josefina Franco Ferreira Sarmento",
+     "role": "nonna paterna",
+     "pid": "p32"
+    },
+    {
+     "written": "Oscar Ferreira",
+     "role": "nonno materno",
+     "pid": "p33"
+    },
+    {
+     "written": "Luzia Ferreira",
+     "role": "nonna materna",
+     "pid": "p34"
     }
    ],
    "discrepancies": [],
@@ -78594,14 +78809,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Fernando Da Silva Araujo",
+     "role": "figlio registrato",
+     "pid": "p41"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Antônio Da Silva Araujo",
+     "role": "padre",
+     "pid": "p37"
+    },
+    {
+     "written": "Beatriz Maranhão De Araújo",
+     "role": "madre",
+     "pid": "p38"
+    },
+    {
+     "written": "Manoel da Silva Araújo",
+     "role": "nonno paterno",
+     "pid": "p52"
+    },
+    {
+     "written": "Guilhermina Maria de Araújo",
+     "role": "nonna paterna",
+     "pid": "p53"
+    },
+    {
+     "written": "Antônio Salgado de Albuquerque Maranhão",
+     "role": "nonno materno",
+     "pid": "p50"
+    },
+    {
+     "written": "Maria da Conceição Maurina Maranhão",
+     "role": "nonna materna",
+     "pid": "p51"
     }
    ],
    "discrepancies": [],
@@ -78625,9 +78865,29 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Edilene Franco Sarmento",
+     "role": "figlia registrata",
+     "pid": "p1481"
+    },
+    {
+     "written": "Euclides Franco Sarmento",
+     "role": "padre",
+     "pid": "p934"
+    },
+    {
+     "written": "Benira[?] Pereira Sarmento",
+     "role": "madre",
+     "pid": "p1480"
+    },
+    {
+     "written": "João Franco Sarmento",
+     "role": "nonno paterno",
+     "pid": "p31"
+    },
+    {
+     "written": "Josefina Franco Ferreira Sarmento",
+     "role": "nonna paterna",
+     "pid": "p32"
     }
    ],
    "discrepancies": [],
@@ -78651,9 +78911,29 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Ana Maria Ferreira Sarmento",
+     "role": "figlia registrata",
+     "pid": "p20"
+    },
+    {
+     "written": "José Franco Sarmento",
+     "role": "padre",
+     "pid": "p9"
+    },
+    {
+     "written": "Dalva Sarmento",
+     "role": "madre",
+     "pid": "p10"
+    },
+    {
+     "written": "Josefina Franco Ferreira Sarmento",
+     "role": "nonna paterna",
+     "pid": "p32"
+    },
+    {
+     "written": "Luzia Ferreira",
+     "role": "nonna materna",
+     "pid": "p34"
     }
    ],
    "discrepancies": [],
@@ -78677,9 +78957,74 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Odilon Maroja Ribeiro Coutinho",
+     "role": "defunto, figlio",
+     "pid": "p401"
+    },
+    {
+     "written": "João Ribeiro da Silva Coutinho",
+     "role": "padre",
+     "pid": "p402"
+    },
+    {
+     "written": "Anna Clara Ferreira de Castro Maroja",
+     "role": "madre",
+     "pid": "p403"
+    },
+    {
+     "written": "Olívio (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1482"
+    },
+    {
+     "written": "Manoel (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1483"
+    },
+    {
+     "written": "Arnaldo (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1484"
+    },
+    {
+     "written": "Oscar (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1485"
+    },
+    {
+     "written": "Ernani (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1486"
+    },
+    {
+     "written": "Arnóbio (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1487"
+    },
+    {
+     "written": "Olimpio (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1488"
+    },
+    {
+     "written": "Halley (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1489"
+    },
+    {
+     "written": "Otavia (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1490"
+    },
+    {
+     "written": "Alaíde (irmã Odila) (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1491"
+    },
+    {
+     "written": "Maria Helena (figlio/a di Odilon Maroja)",
+     "role": "figlio/a",
+     "pid": "p1492"
     }
    ],
    "discrepancies": [],
@@ -78703,14 +79048,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Maria da Conceição Araújo Cunha",
+     "role": "figlia registrata",
+     "pid": "p14"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Ivan Falcão da Cunha",
+     "role": "padre",
+     "pid": "p11"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "madre",
+     "pid": "p12"
+    },
+    {
+     "written": "Albino Vicente Da Silva Cunha",
+     "role": "nonno paterno",
+     "pid": "p35"
+    },
+    {
+     "written": "Ernestina De Barros Falcão",
+     "role": "nonna paterna",
+     "pid": "p36"
+    },
+    {
+     "written": "Antônio Da Silva Araujo",
+     "role": "nonno materno",
+     "pid": "p37"
+    },
+    {
+     "written": "Beatriz Maranhão De Araújo",
+     "role": "nonna materna",
+     "pid": "p38"
     }
    ],
    "discrepancies": [],
@@ -78734,9 +79104,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Jacinta Francisca de Barros Falcão",
+     "role": "figlia registrata",
+     "pid": "p59"
+    },
+    {
+     "written": "\"Alferes\" Pedro de Barros Falcão",
+     "role": "padre",
+     "pid": "p57"
+    },
+    {
+     "written": "Lucinda Francisca de Souza",
+     "role": "madre",
+     "pid": "p58"
+    },
+    {
+     "written": "Carlos De Barros Falcão Cavalcanti de Albuquerque Lacerda",
+     "role": "nonno paterno",
+     "pid": "p68"
+    },
+    {
+     "written": "Jacintha Maria da Silva",
+     "role": "nonna paterna",
+     "pid": "p69"
+    },
+    {
+     "written": "Bento Martiniano de Souza",
+     "role": "nonno materno",
+     "pid": "p71"
+    },
+    {
+     "written": "Henriqueta Martiniana de Souza",
+     "role": "nonna materna",
+     "pid": "p72"
     }
    ],
    "discrepancies": [],
@@ -78760,14 +79160,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Lucinda Francisca de Souza",
+     "role": "defunta, madre dei figli",
+     "pid": "p58"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "\"Alferes\" Pedro de Barros Falcão",
+     "role": "marito, padre dei figli",
+     "pid": "p57"
+    },
+    {
+     "written": "Ernestina De Barros Falcão",
+     "role": "figlia",
+     "pid": "p36"
+    },
+    {
+     "written": "Amelia de Barros Falcão",
+     "role": "figlia",
+     "pid": "p62"
+    },
+    {
+     "written": "Jacinta Francisca de Barros Falcão",
+     "role": "figlia",
+     "pid": "p59"
+    },
+    {
+     "written": "Blandina de Barros Falcão",
+     "role": "figlia",
+     "pid": "p61"
+    },
+    {
+     "written": "Virginia de Barros Falcão",
+     "role": "figlia",
+     "pid": "p60"
     }
    ],
    "discrepancies": [],
@@ -78841,9 +79266,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Yara Maria Araújo Cunha",
+     "role": "defunta, figlia",
+     "pid": "p27"
+    },
+    {
+     "written": "Ivan Falcão da Cunha",
+     "role": "padre",
+     "pid": "p11"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "madre",
+     "pid": "p12"
     }
    ],
    "discrepancies": [],
@@ -78867,19 +79302,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Ivanise Falcão da Cunha",
+     "role": "defunta, figlia",
+     "pid": "p1003"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Albino Vicente Da Silva Cunha",
+     "role": "padre",
+     "pid": "p35"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Ernestina De Barros Falcão",
+     "role": "madre",
+     "pid": "p36"
     }
    ],
    "discrepancies": [],
@@ -78903,14 +79338,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Maria do Carmo Araújo Cunha",
+     "role": "figlia registrata",
+     "pid": "p28"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Ivan Falcão da Cunha",
+     "role": "padre",
+     "pid": "p11"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "madre",
+     "pid": "p12"
+    },
+    {
+     "written": "Albino Vicente Da Silva Cunha",
+     "role": "nonno paterno",
+     "pid": "p35"
+    },
+    {
+     "written": "Ernestina De Barros Falcão",
+     "role": "nonna paterna",
+     "pid": "p36"
+    },
+    {
+     "written": "Antônio Da Silva Araujo",
+     "role": "nonno materno",
+     "pid": "p37"
+    },
+    {
+     "written": "Beatriz Maranhão De Araújo",
+     "role": "nonna materna",
+     "pid": "p38"
     }
    ],
    "discrepancies": [],
@@ -78934,19 +79394,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Virginia de Barros Falcão",
+     "role": "figlia registrata",
+     "pid": "p60"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "\"Alferes\" Pedro de Barros Falcão",
+     "role": "padre",
+     "pid": "p57"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Lucinda Francisca de Souza",
+     "role": "madre",
+     "pid": "p58"
+    },
+    {
+     "written": "Carlos De Barros Falcão Cavalcanti de Albuquerque Lacerda",
+     "role": "nonno paterno",
+     "pid": "p68"
+    },
+    {
+     "written": "Jacintha Maria da Silva",
+     "role": "nonna paterna",
+     "pid": "p69"
+    },
+    {
+     "written": "Bento Martiniano de Souza",
+     "role": "nonno materno",
+     "pid": "p71"
+    },
+    {
+     "written": "Henriqueta Martiniana de Souza",
+     "role": "nonna materna",
+     "pid": "p72"
     }
    ],
    "discrepancies": [],
@@ -78970,19 +79450,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Terezinha de Jesus Araujo Da Silva",
+     "role": "figlia registrata",
+     "pid": "p42"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Antônio Da Silva Araujo",
+     "role": "padre",
+     "pid": "p37"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Beatriz Maranhão De Araújo",
+     "role": "madre",
+     "pid": "p38"
+    },
+    {
+     "written": "Manoel da Silva Araújo",
+     "role": "nonno paterno",
+     "pid": "p52"
+    },
+    {
+     "written": "Guilhermina Maria de Araújo",
+     "role": "nonna paterna",
+     "pid": "p53"
+    },
+    {
+     "written": "Antônio Salgado de Albuquerque Maranhão",
+     "role": "nonno materno",
+     "pid": "p50"
+    },
+    {
+     "written": "Maria da Conceição Maurina Maranhão",
+     "role": "nonna materna",
+     "pid": "p51"
     }
    ],
    "discrepancies": [],
@@ -79006,9 +79506,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Jacinta Francisca de Barros Falcão",
+     "role": "figlia registrata",
+     "pid": "p59"
+    },
+    {
+     "written": "\"Alferes\" Pedro de Barros Falcão",
+     "role": "padre",
+     "pid": "p57"
+    },
+    {
+     "written": "Lucinda Francisca de Souza",
+     "role": "madre",
+     "pid": "p58"
+    },
+    {
+     "written": "Carlos De Barros Falcão Cavalcanti de Albuquerque Lacerda",
+     "role": "nonno paterno",
+     "pid": "p68"
+    },
+    {
+     "written": "Jacintha Maria da Silva",
+     "role": "nonna paterna",
+     "pid": "p69"
+    },
+    {
+     "written": "Bento Martiniano de Souza",
+     "role": "nonno materno",
+     "pid": "p71"
+    },
+    {
+     "written": "Henriqueta Martiniana de Souza",
+     "role": "nonna materna",
+     "pid": "p72"
     }
    ],
    "discrepancies": [
@@ -79132,14 +79662,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "José Brasilino de Araújo",
+     "role": "defunto, figlio",
+     "pid": "p1473"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Manoel da Silva Araújo",
+     "role": "padre",
+     "pid": "p52"
+    },
+    {
+     "written": "Guilhermina Maria de Araújo",
+     "role": "madre",
+     "pid": "p53"
     }
    ],
    "discrepancies": [],
@@ -79163,9 +79698,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Ivan Falcão Da Cunha Filho",
+     "role": "figlio registrato",
+     "pid": "p30"
+    },
+    {
+     "written": "Ivan Falcão da Cunha",
+     "role": "padre",
+     "pid": "p11"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "madre",
+     "pid": "p12"
+    },
+    {
+     "written": "Albino Vicente Da Silva Cunha",
+     "role": "nonno paterno",
+     "pid": "p35"
+    },
+    {
+     "written": "Ernestina De Barros Falcão",
+     "role": "nonna paterna",
+     "pid": "p36"
+    },
+    {
+     "written": "Antônio Da Silva Araujo",
+     "role": "nonno materno",
+     "pid": "p37"
+    },
+    {
+     "written": "Beatriz Maranhão De Araújo",
+     "role": "nonna materna",
+     "pid": "p38"
     }
    ],
    "discrepancies": [],
@@ -79389,9 +79954,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Jacinta Francisca de Barros Falcão",
+     "role": "defunta, figlia",
+     "pid": "p59"
+    },
+    {
+     "written": "\"Alferes\" Pedro de Barros Falcão",
+     "role": "padre",
+     "pid": "p57"
+    },
+    {
+     "written": "Lucinda Francisca de Souza",
+     "role": "madre",
+     "pid": "p58"
     }
    ],
    "discrepancies": [],
@@ -79415,9 +79990,54 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Beatriz Maranhão De Araújo",
+     "role": "defunta, madre dei figli",
+     "pid": "p38"
+    },
+    {
+     "written": "Antônio Salgado de Albuquerque Maranhão",
+     "role": "padre",
+     "pid": "p50"
+    },
+    {
+     "written": "Maria da Conceição Maurina Maranhão",
+     "role": "madre",
+     "pid": "p51"
+    },
+    {
+     "written": "Antônio Da Silva Araujo",
+     "role": "marito, padre dei figli",
+     "pid": "p37"
+    },
+    {
+     "written": "Fernando Da Silva Araujo",
+     "role": "figlio/a",
+     "pid": "p41"
+    },
+    {
+     "written": "Gilvan Da Silva Araujo",
+     "role": "figlio/a",
+     "pid": "p39"
+    },
+    {
+     "written": "Ismar da Silva Araújo",
+     "role": "figlio/a",
+     "pid": "p931"
+    },
+    {
+     "written": "Lenilda da Silva Araújo",
+     "role": "figlio/a",
+     "pid": "p932"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "figlio/a",
+     "pid": "p12"
+    },
+    {
+     "written": "Terezinha de Jesus Araujo Da Silva",
+     "role": "figlio/a",
+     "pid": "p42"
     }
    ],
    "discrepancies": [],
@@ -79441,14 +80061,34 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "José Franco Sarmento",
+     "role": "defunto, padre dei figli",
+     "pid": "p9"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Josefina Franco Ferreira Sarmento",
+     "role": "madre",
+     "pid": "p32"
+    },
+    {
+     "written": "Dalva Sarmento",
+     "role": "moglie, madre dei figli",
+     "pid": "p10"
+    },
+    {
+     "written": "José Carlos Sarmento",
+     "role": "figlio/a",
+     "pid": "p13"
+    },
+    {
+     "written": "Ana Maria Ferreira Sarmento",
+     "role": "figlio/a",
+     "pid": "p20"
+    },
+    {
+     "written": "José Heros Ferreira Sarmento",
+     "role": "figlio/a",
+     "pid": "p21"
     }
    ],
    "discrepancies": [],
@@ -79472,9 +80112,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Ernestina De Barros Falcão",
+     "role": "defunta, madre dei figli",
+     "pid": "p36"
+    },
+    {
+     "written": "\"Alferes\" Pedro de Barros Falcão",
+     "role": "padre",
+     "pid": "p57"
+    },
+    {
+     "written": "Lucinda Francisca de Souza",
+     "role": "madre",
+     "pid": "p58"
+    },
+    {
+     "written": "Albino Vicente Da Silva Cunha",
+     "role": "marito, padre dei figli",
+     "pid": "p35"
+    },
+    {
+     "written": "Ivan Falcão da Cunha",
+     "role": "figlio/a",
+     "pid": "p11"
+    },
+    {
+     "written": "Ivete Falcão da Cunha",
+     "role": "figlio/a",
+     "pid": "p1002"
+    },
+    {
+     "written": "Miriam Falcão da Cunha",
+     "role": "figlio/a",
+     "pid": "p1004"
     }
    ],
    "discrepancies": [
@@ -79500,14 +80170,44 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Maia Deva Da Cunha Sarmento",
+     "role": "figlia registrata",
+     "pid": "p16"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Shiva Deva Da Cunha Sarmento",
+     "role": "figlia registrata",
+     "pid": "p17"
+    },
+    {
+     "written": "José Carlos Sarmento",
+     "role": "padre",
+     "pid": "p13"
+    },
+    {
+     "written": "Maria da Conceição Araújo Cunha",
+     "role": "madre",
+     "pid": "p14"
+    },
+    {
+     "written": "José Franco Sarmento",
+     "role": "nonno paterno",
+     "pid": "p9"
+    },
+    {
+     "written": "Dalva Sarmento",
+     "role": "nonna paterna",
+     "pid": "p10"
+    },
+    {
+     "written": "Ivan Falcão da Cunha",
+     "role": "nonno materno",
+     "pid": "p11"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "nonna materna",
+     "pid": "p12"
     }
    ],
    "discrepancies": [
@@ -79533,9 +80233,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Brahma Da Cunha Sarmento",
+     "role": "figlio registrato",
+     "pid": "p15"
+    },
+    {
+     "written": "José Carlos Sarmento",
+     "role": "padre",
+     "pid": "p13"
+    },
+    {
+     "written": "Maria da Conceição Araújo Cunha",
+     "role": "madre",
+     "pid": "p14"
+    },
+    {
+     "written": "José Franco Sarmento",
+     "role": "nonno paterno",
+     "pid": "p9"
+    },
+    {
+     "written": "Dalva Sarmento",
+     "role": "nonna paterna",
+     "pid": "p10"
+    },
+    {
+     "written": "Ivan Falcão da Cunha",
+     "role": "nonno materno",
+     "pid": "p11"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "nonna materna",
+     "pid": "p12"
     }
    ],
    "discrepancies": [],
@@ -79820,9 +80550,29 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Ivan Falcão da Cunha",
+     "role": "defunto",
+     "pid": "p11"
+    },
+    {
+     "written": "Albino Vicente Da Silva Cunha",
+     "role": "padre",
+     "pid": "p35"
+    },
+    {
+     "written": "Ernestina De Barros Falcão",
+     "role": "madre",
+     "pid": "p36"
+    },
+    {
+     "written": "Eny da Silva Araújo",
+     "role": "moglie",
+     "pid": "p12"
+    },
+    {
+     "written": "Ivan Falcão Da Cunha Filho",
+     "role": "figlio, dichiarante",
+     "pid": "p30"
     }
    ],
    "discrepancies": [],
