@@ -70,7 +70,7 @@ details.tp[open]>summary{border-bottom:1px solid var(--line);color:var(--acc)}
 details.tp>div{padding:6px 12px 12px}
 h3.grp{font:600 14px system-ui,sans-serif;color:var(--acc);margin:16px 0 4px;text-transform:uppercase;letter-spacing:.04em}
 .day{font:600 14px system-ui,sans-serif;margin:12px 0 2px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
-#nav{position:fixed;right:10px;z-index:6;background:var(--card);border:1px solid var(--acc);border-radius:999px;padding:4px 6px;display:flex;gap:4px;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+#nav{position:fixed;right:10px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:6;background:var(--card);border:1px solid var(--acc);border-radius:999px;padding:4px 6px;display:flex;gap:4px;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.25)}
 #nav.hide{display:none}#nav button{border-radius:999px;padding:6px 12px;font-size:18px;line-height:1}#nav input{width:52px;text-align:center;padding:5px 2px}#nav span{font-size:13px;color:var(--mut);padding-right:4px}
 .bubble .num{float:right;background:var(--acc);color:#fff;border-radius:999px;font-size:12px;padding:0 7px;margin-left:8px}
 .bubble.flash{box-shadow:0 0 0 4px var(--acc)}
@@ -207,6 +207,7 @@ async function start(){
   $('lockT').textContent=_blob?'Password':'Scegli una password';
   $('lockM').textContent=_blob?'':'Protegge i dati: senza password non si possono leggere né recuperare. Usa una password lunga: il file data.enc sarà pubblico.';
   $('lock').showModal();
+  let sp=null;try{sp=sessionStorage.getItem('sf_pw')}catch(e){}if(sp&&_blob){$('pw').value=sp;await unlock();if(KEY)return;$('pw').value='';try{sessionStorage.removeItem('sf_pw')}catch(e){}}
 }
 async function tryOpen(buf,pw){try{const salt=new Uint8Array(buf).slice(0,16),key=await deriveKey(pw,salt);const b=new Uint8Array(buf);
   const db=JSON.parse(dec.decode(new Uint8Array(await crypto.subtle.decrypt({name:'AES-GCM',iv:b.slice(16,28)},key,b.slice(28)))));return {db,key,salt}}catch(e){return null}}
@@ -215,13 +216,14 @@ function pend(){const p=(DB.savedAt||0)>exported();const b=$('upBtn');if(b){b.cl
   const i=$('setInfo');if(i)i.textContent=(DB.savedAt?'Ultima modifica: '+new Date(DB.savedAt).toLocaleString('it-IT')+'. ':'')+(p?'Ci sono modifiche non ancora caricate su GitHub.':'Tutto caricato su GitHub.');return p}
 async function unlock(){
   const pw=$('pw').value;if(!pw)return;
-  if(!_blob){SALT=crypto.getRandomValues(new Uint8Array(16));KEY=await deriveKey(pw,SALT);window._pw=pw;$('lock').close();st('Archivio nuovo');await seedCheck();render();pend();return}
+  if(!_blob){SALT=crypto.getRandomValues(new Uint8Array(16));KEY=await deriveKey(pw,SALT);window._pw=pw;try{sessionStorage.setItem('sf_pw',pw)}catch(e){}$('lock').close();st('Archivio nuovo');await seedCheck();render();pend();return}
   const R=_remote?await tryOpen(_remote,pw):null,L=_local?await tryOpen(_local,pw):null;
   if(!R&&!L){$('lockM').textContent='Password sbagliata.';return}
   let use=R&&L?((R.db.savedAt||0)>=(L.db.savedAt||0)?R:L):(R||L);
   DB=use.db;KEY=use.key;SALT=use.salt;window._pw=pw;
   if(use===R){LS.set('sf_data',b64(new Uint8Array(_remote)));if((R.db.savedAt||0)>exported())LS.set('sf_exported',String(R.db.savedAt||0))}
-  $('lock').close();await seedCheck();render();
+  try{sessionStorage.setItem('sf_pw',pw)}catch(e){}
+  $('lock').close();await seedCheck();restoreSt();render();
   st(pend()?'Ci sono modifiche su questo dispositivo non ancora caricate su GitHub':(R?'Dati aggiornati da GitHub':'Dati di questo dispositivo'));
 }
 async function seedCheck(){const el=$('seed');if(!el)return;let S;try{S=JSON.parse(el.textContent)}catch(e){return}
@@ -325,7 +327,15 @@ function go(v){view=v==='list'?'':(view===v?'':v);showList=v==='list'?!showList:
 function pick(id){view='';showList=false;ptab='';sel=id;$('q').value='';$('sug').classList.add('hide');render();scrollTo(0,0)}
 const chip=p=>p?`<span class="chip" onclick="pick('${p.id}')">${esc(dn(p))}${year(p.birth)?' <span class="mut">'+year(p.birth)+'</span>':''}</span>`:'';
 function nmLbl(){const b=$('nmBtn');if(b)b.textContent=OFFN()?'Nomi anagrafici':'Nomi comuni'}
-function render(){nmLbl();
+function render(){render0();histSync()}
+function treeBack(){const s=window._tstack||[];if(!s.length)return;window._popT=true;window._root=s.pop();view='tree';sel=null;render()}
+function goTree(n){const p=DB.people.find(x=>x.name===n);if(!p)return;window._root=p.id;view='tree';sel=null;render();scrollTo(0,0)}
+function curSt(){return {sel:sel||null,view:view||'',root:window._root||null,ptab:ptab||''}}
+function histSync(){if(!KEY)return;const st=curSt(),k=JSON.stringify(st);try{LS.set('sf_state',k)}catch(e){}
+  if(window._popping){window._popping=false;window._hk=k;return}if(k===window._hk)return;try{if(window._hk)history.pushState(st,'');else history.replaceState(st,'')}catch(e){}window._hk=k}
+addEventListener('popstate',e=>{const st=e.state;if(!st||!KEY)return;sel=st.sel;view=st.view;window._root=st.root;ptab=st.ptab;window._popping=true;window._popT=false;render()});
+function restoreSt(){try{const st=JSON.parse(LS.get('sf_state')||'null');if(!st)return;if(st.sel&&!P(st.sel))return;if(st.root&&!P(st.root))st.root=null;sel=st.sel;view=st.view;window._root=st.root;ptab=st.ptab}catch(e){}}
+function render0(){nmLbl();
   $('rl').innerHTML=[...new Set(DB.people.map(p=>p.ramo).filter(Boolean))].map(r=>`<option value="${esc(r)}">`).join('');
   $('pl').innerHTML=DB.people.map(p=>`<option value="${esc(p.name)}">`).join('');
   const q=norm($('q').value),fS=norm($('fS').value),fC=norm($('fC').value),fP=norm($('fP').value),a=+$('fA').value||null,b=+$('fB').value||null;
@@ -378,7 +388,7 @@ function render(){nmLbl();
     else if(ptab==='chat'){$('list').innerHTML=`<div class="card"><div>${HN} messaggi citano ${esc(dn(pe))}, numerati in ordine di data. Con ▼ e ▲ in alto a destra passi da una citazione all'altra; scrivendo un numero vai direttamente a quella.</div>
       ${lp?`<p><button class="p" onclick="goHit(${lp})">Riprendi dalla n. ${lp}</button></p>`:''}
       <label class="mut" style="margin-right:14px"><input type="checkbox" ${window._allchat?'checked':''} onchange="_allchat=this.checked;render()" style="width:auto"> mostra tutta la chat, anche i giorni in cui non è citato/a</label>${pe.speaker?`<label class="mut"><input type="checkbox" ${window._mine?'checked':''} onchange="_mine=this.checked;render()" style="width:auto"> conta anche i messaggi scritti da ${esc(pe.speaker)}</label>`:''}</div>`+chat;
-      if(HN){$('nav').classList.remove('hide');$('nav').style.top=(hdrB()+8)+'px';$('navT').textContent='/ '+HN;HC=0;$('navN').value=''}}
+      if(HN){$('nav').classList.remove('hide');$('navT').textContent='/ '+HN;HC=0;$('navN').value=''}}
     else $('list').innerHTML='';
     return}
   const ss=DB.stories.filter(s=>{
@@ -414,7 +424,8 @@ const DOCS=()=>DB.documents||[];
 const docOf=id=>DOCS().filter(x=>x.people.some(p=>p.pid===id));
 let _codes=null,_cv=null;
 function codes(){if(_codes&&_cv===DB.people.length)return _codes;_codes={};_cv=DB.people.length;const r=DB.people.find(p=>p.name==='Massimo Pietrobon'&&p.speaker);if(!r)return _codes;
-  (function up(p,path){if(!p||path.length>14||_codes[p.id])return;let c='';for(let i=0;i<path.length;i++)c+=Math.floor(i/3)%2?path[i].toLowerCase():path[i];_codes[p.id]=(path.length+1)+c;up(P(p.father),path+'P');up(P(p.mother),path+'M')})(r,'');return _codes}
+  (function up(p,path){if(!p||path.length>14||_codes[p.id])return;let c='';for(let i=0;i<path.length;i++)c+=Math.floor(i/3)%2?path[i].toLowerCase():path[i];_codes[p.id]=(path.length+1)+c;up(P(p.father),path+'P');up(P(p.mother),path+'M')})(r,'');
+  const v=DB.people.find(p=>p.name==='Visnu da Cunha Sarmento');if(v)(function up(p,path){if(!p||path.length>14||_codes[p.id])return;let c='';for(let i=0;i<path.length;i++)c+=Math.floor(i/3)%2?path[i].toLowerCase():path[i];_codes[p.id]=(path.length+1)+'/'+c;up(P(p.father),path+'P');up(P(p.mother),path+'M')})(v,'');return _codes}
 const docD=x=>`<details class="tp"><summary>${esc(x.title)}<small>${esc([x.type,x.date,x.place].filter(Boolean).join(' · '))}</small></summary><div>
   <p>${esc(x.summary)}</p>
   ${x.people.some(p=>p.pid)?`<div>${x.people.filter(p=>p.pid).map(p=>`<span class="chip" onclick="pick('${p.pid}')">${esc(P(p.pid)?.name||p.written)} <span class="mut">${esc(p.role)}</span></span>`).join('')}</div>`:''}
@@ -488,13 +499,14 @@ function upT(ev,id){ev.stopPropagation();_root=id;render()}
 function treeH(){try{return treeH_()}catch(e){return `<div class="card warn"><b>Errore nel disegnare l'albero</b><br>${esc(String(e&&e.message||e))}<br><small>${esc(String(e&&e.stack||'').split('\n').slice(0,3).join(' | '))}</small><p><button onclick="_root=null;_cm='';render()">Torna all'albero di Massimo</button></p></div>`}}
 function treeH_(){
   const root=P(window._root)||DB.people.find(p=>p.name==='Massimo Pietrobon')||DB.people[0];if(!root)return '';
+  if(window._lastRoot&&_lastRoot!==root.id&&!window._popT){(window._tstack=window._tstack||[]).push(_lastRoot);if(_tstack.length>40)_tstack.shift()}window._popT=false;window._lastRoot=root.id;
   const G=[[root]];for(let g=1;g<4;g++)G.push(G[g-1].flatMap(p=>p?[P(p.father)||null,P(p.mother)||null]:[null,null]));
   const L=22,W=L+412+16,H=488,bw=92,bh=46,X=[L+2,L+102,L+204,L+306];let svg='',ln='',ui='';const pos=new Map;const conf=confMap(),sure=sureMap();
   const m=window._cm||'';const shownP=G.flat().filter(Boolean);
   const keys=[...new Set(shownP.map(p=>colKey(p,m)).filter(Boolean))];const pal=palette(keys.slice(),m);
   G.forEach((row,g)=>row.forEach((p,i)=>{if(!p)return;const y=H*(i+.5)/row.length-bh/2,x=X[g];pos.set(g+'-'+i,[x,y]);const n=chOf(p.id).length;
     const k=m?colKey(p,m):'',fill=m?(k?pal[k]:''):'';const ns=sibs(p).length;
-    svg+=`<g class="${n?'has':''}" onclick="pick('${p.id}')"><rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="8"${fill?` style="fill:${fill};fill-opacity:.38"`:''}/><text x="${x+7}" y="${y+16}"${sh(p).length>11?` style="font-size:${Math.max(8,132/sh(p).length)}px"`:''}>${esc(sh(p))}</text><text class="y" x="${x+7}" y="${y+28}">${esc(surD(p).slice(0,12))} · ${year(p.birth)||'?'}${year(p.death)?'–'+String(year(p.death)).slice(2):''}</text><text class="c" x="${x+7}" y="${y+40}">${n?n+' cap.':''}${docOf(p.id).length?' · '+docOf(p.id).length+' doc.':''}</text><text class="y" x="${x+bw-5}" y="${y+16}" text-anchor="end">${(codes()[p.id]||'').length<=5?codes()[p.id]||'':''}</text></g>`;
+    svg+=`<g class="${n?'has':''}" onclick="pick('${p.id}')"><rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="8"${fill?` style="fill:${fill};fill-opacity:.38"`:''}/><text x="${x+7}" y="${y+16}"${sh(p).length>11?` style="font-size:${Math.max(8,132/sh(p).length)}px"`:''}>${esc(sh(p))}</text><text class="y" x="${x+7}" y="${y+28}">${esc(surD(p).slice(0,12))} · ${year(p.birth)||'?'}${year(p.death)?'–'+String(year(p.death)).slice(2):''}</text><text class="c" x="${x+7}" y="${y+40}">${n?n+' cap.':''}${docOf(p.id).length?' · '+docOf(p.id).length+' doc.':''}</text>${(()=>{const c=codes()[p.id]||'';if(c.replace('/','').length>5)return '';return c.includes('/')?`<text class="y" x="${x+bw-5}" y="${y+40}" text-anchor="end">${c}</text>`:`<text class="y" x="${x+bw-5}" y="${y+16}" text-anchor="end">${c}</text>`})()}</g>`;
     if(ns)ui+=`<g class="tmenu sb" onclick="sibM(event,'${p.id}')"><rect class="tb" x="${x+bw-30}" y="${y+bh-3}" width="28" height="13" rx="6"/><text class="tbt" x="${x+bw-16}" y="${y+bh+7}" text-anchor="middle">▾ ${ns}</text></g>`;
     if(g===3&&(P(p.father)||P(p.mother)))ui+=`<g class="tmenu" onclick="upT(event,'${p.id}')"><rect class="tb" x="${x+bw+2}" y="${y+bh/2-9}" width="13" height="18" rx="5"/><text class="tbt" x="${x+bw+8.5}" y="${y+bh/2+4}" text-anchor="middle">▶</text></g>`;
     if(g===0&&kids(p.id).length)ui+=`<g class="tmenu" onclick="kidM(event,'${p.id}')"><rect class="tb" x="2" y="${y+bh/2-12}" width="18" height="24" rx="6"/><text class="tbt" x="11" y="${y+bh/2+4}" text-anchor="middle">◀</text></g>`;
@@ -510,7 +522,7 @@ function treeH_(){
   const rest=DB.people.filter(p=>!done.has(p.id)&&chOf(p.id).length).sort((a,b)=>sur(a)<sur(b)?-1:sur(a)>sur(b)?1:a.name<b.name?-1:1);
   if(rest.length)ex+=`<details class="tp" style="margin-top:10px"><summary>Altri parenti con capitoli<small>${rest.length} persone: prozii, zii, cugini, coniugi</small></summary><div>${rest.map(chipC).join('')}</div></details>`;
   const z=window._zoom||1;
-  return `<div class="card"><div class="row"><h2 style="flex:1">Albero di ${esc(dn(root))}</h2>${window._root&&P(_root)?.name!=='Massimo Pietrobon'?`<button onclick="_root=null;render()">Torna a Massimo</button>`:''}</div>
+  return `<div class="card"><div class="row"><h2 style="flex:1">Albero di ${esc(dn(root))}</h2></div><div class="row" style="gap:6px;flex-wrap:wrap;margin:4px 0 6px">${(window._tstack||[]).length?`<button onclick="treeBack()" title="Torna all'albero visto prima">↶ Albero precedente</button>`:''}${root.name!=='Massimo Pietrobon'?`<button onclick="goTree('Massimo Pietrobon')">Albero di Massimo</button>`:''}${root.name!=='Visnu da Cunha Sarmento'?`<button onclick="goTree('Visnu da Cunha Sarmento')">Albero di Ubi</button>`:''}</div>
   <p class="mut">Tocca una persona per aprire la sua scheda. ▾ = fratelli e sorelle · ▶ = risali oltre · ◀ = scendi ai figli. Linea scura continua = legame confermato da un atto storico o da un archivio; scura a puntini = legame sicuro anche senza atto (confermato da te); tratteggiata chiara = da FamilySearch, schemi o chat, non verificato. Le conferme si mettono in «Modifica» della persona.</p>
   <div class="tbar"><button onclick="zoomT(-.15)" title="Riduci">−</button><button onclick="zoomT(.15)" title="Ingrandisci">+</button><button onclick="zoomT(0)" title="Dimensione normale">⟲</button>
   <select onchange="_cm=this.value;render()">${Object.entries(CM).map(([k,v])=>`<option value="${k}"${k===m?' selected':''}>${k?'Colora per: '+v:v}</option>`).join('')}</select></div>${leg}
