@@ -1,5 +1,5 @@
 {
- "version": 169,
+ "version": 171,
  "people": [
   {
    "id": "p1",
@@ -35672,8 +35672,8 @@
    "deathPlace": "",
    "country": "Italia",
    "branch": "",
-   "alt": "",
-   "notes": "",
+   "alt": "Maria Zanetin",
+   "notes": "Madre di Santina Ventorin, già morta nel 1808 («la quondam Maria Zanetti», fascicolo del matrimonio Cavallin-Ventorin, Istrana 1808). Su FamilySearch compare come «Maria Zanetin» (segnalazione di Massimo, novembre 2026): è la stessa persona. Zanetti, Zanetto e Zanetin sono varianti dello stesso cognome veneto e negli atti dell'epoca si alternano; la lettura «Zanetti» è mia e potrebbe anche essere «Zanettin».",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -59696,14 +59696,14 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Costante Golfetto detto Padovan",
+     "role": "sposo",
+     "pid": ""
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Pasqua Bonotto",
+     "role": "sposa",
+     "pid": ""
     }
    ],
    "discrepancies": [
@@ -62223,14 +62223,14 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Vicenzo Golfetto",
+     "role": "sposo",
+     "pid": ""
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Antonia Boligana",
+     "role": "sposa",
+     "pid": ""
     }
    ],
    "discrepancies": [],
@@ -62388,24 +62388,24 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Santo Steffani",
+     "role": "sposo",
+     "pid": ""
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Teresa Conte",
+     "role": "sposa",
+     "pid": ""
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Marco Stefani",
+     "role": "padre dello sposo",
+     "pid": ""
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Nicolò Steffani",
+     "role": "probabile nonno dello sposo",
+     "pid": ""
     }
    ],
    "discrepancies": [],
@@ -62639,24 +62639,24 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Antonio dei Bianchi del fu Giuseppe",
+     "role": "defunto, nonno della sposa",
+     "pid": "p363"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Giuseppe",
+     "role": "padre di Antonio",
+     "pid": "p1452"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Pasqualin Bianco di Antonio",
+     "role": "padre della sposa",
+     "pid": "p1453"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Cecilia Barbierato",
+     "role": "madre di Pasqualin",
+     "pid": "p513"
     }
    ],
    "discrepancies": [
@@ -62836,19 +62836,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Francesco",
+     "role": "neonato, figlio",
+     "pid": "p1522"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Valentin Davanzo",
+     "role": "padre",
+     "pid": "p595"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Vittoria Chinazzi",
+     "role": "madre",
+     "pid": "p340"
     }
    ],
    "discrepancies": [],
@@ -63103,14 +63103,14 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Antonio Montagner",
+     "role": "sposo",
+     "pid": ""
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Antonia Masarin",
+     "role": "sposa",
+     "pid": ""
     }
    ],
    "discrepancies": [],
@@ -63313,39 +63313,39 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Sebastian Pavan del fu Gio Domenico",
+     "role": "padre dello sposo",
+     "pid": "p1271"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Gio Domenico",
+     "role": "nonno dello sposo (defunto)",
+     "pid": "p296"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Santo Pavan",
+     "role": "sposo",
+     "pid": "p1428"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Giovanna Baldasso",
+     "role": "sposa",
+     "pid": "p1429"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Margherita Callesso",
+     "role": "madre dello sposo",
+     "pid": "p1427"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Domenico Pavan",
+     "role": "testimone, fratello dello sposo",
+     "pid": "p1423"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Bernardo Pavan",
+     "role": "testimone",
+     "pid": "p290"
     }
    ],
    "discrepancies": [],
@@ -63665,54 +63665,54 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Giuseppe Bianco",
+     "role": "sposo, figlio",
+     "pid": "p319"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Clemente d'Antonio Bianco",
+     "role": "padre dello sposo",
+     "pid": "p342"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Domenica di Lorenzo Maschio",
+     "role": "madre dello sposo",
+     "pid": "p343"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Antonio Bianco",
+     "role": "nonno paterno dello sposo",
+     "pid": "p363"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Lorenzo Maschio",
+     "role": "nonno materno dello sposo",
+     "pid": "p364"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Domenica dei Mori",
+     "role": "sposa, figlia",
+     "pid": "p320"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Benedetto di Domenico dei Mori",
+     "role": "padre della sposa (defunto)",
+     "pid": "p344"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Lucia di Giovanni Felizzon",
+     "role": "madre della sposa",
+     "pid": "p345"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Domenico dei Mori",
+     "role": "nonno paterno della sposa",
+     "pid": "p365"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Giovanni Felizzon",
+     "role": "nonno materno della sposa",
+     "pid": "p369"
     }
    ],
    "discrepancies": [
@@ -63893,19 +63893,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Sebastian Pavan del fu Domenico",
+     "role": "nonno",
+     "pid": "p1271"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Giovanni Domenico Pavan detto Ferro",
+     "role": "padre",
+     "pid": "p1423"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Domenica Soldan",
+     "role": "madre",
+     "pid": "p1424"
     }
    ],
    "discrepancies": [
@@ -65091,34 +65091,34 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Angelo Stefani",
+     "role": "sposo",
+     "pid": "p668"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Gioachin Stefani",
+     "role": "padre dello sposo",
+     "pid": "p667"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Santa Fratta",
+     "role": "madre dello sposo",
+     "pid": "p1465"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Catterina Davanzo",
+     "role": "sposa",
+     "pid": "p1466"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Giuseppe Davanzo detto Zanetto",
+     "role": "padre della sposa",
+     "pid": "p593"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Santa Favretto",
+     "role": "madre della sposa",
+     "pid": "p594"
     }
    ],
    "discrepancies": [
@@ -65144,34 +65144,34 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Giuseppe Bianco",
+     "role": "padre",
+     "pid": "p319"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Domenica Moro",
+     "role": "madre",
+     "pid": "p320"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Clemente Bianco, avolo",
+     "role": "nonno paterno",
+     "pid": "p342"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Benedetto",
+     "role": "figlio",
+     "pid": "p1437"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Angela",
+     "role": "figlia",
+     "pid": "p1438"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Antonio Benedetto",
+     "role": "figlio",
+     "pid": "p1439"
     }
    ],
    "discrepancies": [],
@@ -66226,19 +66226,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Lorenzo",
+     "role": "neonato",
+     "pid": "p1422"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Francesco Pavan del fu Lorenzo",
+     "role": "padre",
+     "pid": "p642"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Maddalena Zambon di Angelo",
+     "role": "madre",
+     "pid": "p1015"
     }
    ],
    "discrepancies": [
@@ -66264,14 +66264,14 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Gio Batta Montagner",
+     "role": "sposo",
+     "pid": ""
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Teresa Fuser detta Tocco",
+     "role": "sposa",
+     "pid": ""
     }
    ],
    "discrepancies": [],
@@ -66372,24 +66372,24 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Maddalena Pavan",
+     "role": "defunta",
+     "pid": "p1432"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "fu Lorenzo",
+     "role": "padre",
+     "pid": "p308"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Lucia Calegari",
+     "role": "madre",
+     "pid": "p641"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Martin Zilli",
+     "role": "marito",
+     "pid": "p1010"
     }
    ],
    "discrepancies": [],
@@ -67824,19 +67824,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Candida",
+     "role": "neonata, figlia",
+     "pid": "p89"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Fioravante Cavallin detto Rechia",
+     "role": "padre",
+     "pid": "p1369"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Santa Ventorin",
+     "role": "madre",
+     "pid": "p1370"
     }
    ],
    "discrepancies": [
@@ -70178,24 +70178,24 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Florian Pietro",
+     "role": "defunto, figlio",
+     "pid": "p247"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Angelo",
+     "role": "padre",
+     "pid": "p1518"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Teresa",
+     "role": "madre",
+     "pid": "p1519"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Anna Davanzo",
+     "role": "moglie",
+     "pid": "p248"
     }
    ],
    "discrepancies": [],
@@ -73697,44 +73697,44 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Florian Emma Amalia",
+     "role": "battezzata, figlia",
+     "pid": "p241"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Francesco fu Pietro",
+     "role": "padre",
+     "pid": "p238"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Stefani Ermenegilda",
+     "role": "madre",
+     "pid": "p239"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Pietro",
+     "role": "nonno paterno",
+     "pid": "p247"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Davanzo Anna",
+     "role": "nonna paterna",
+     "pid": "p248"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Giuseppe",
+     "role": "nonno materno",
+     "pid": "p263"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Pignato Regina",
+     "role": "nonna materna",
+     "pid": "p264"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Pietrobon Domenico",
+     "role": "marito (annotazione)",
+     "pid": "p219"
     }
    ],
    "discrepancies": [
@@ -78924,19 +78924,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Davanzo Anna",
+     "role": "defunta, figlia",
+     "pid": "p248"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "fu Francesco",
+     "role": "padre",
+     "pid": "p1520"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "fu Maria",
+     "role": "madre",
+     "pid": "p1521"
     }
    ],
    "discrepancies": [
@@ -81970,19 +81970,19 @@
    "data": [],
    "people": [
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Lucrezia Vaccher",
+     "role": "",
+     "pid": "p135"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Marco Vaccher",
+     "role": "",
+     "pid": "p1510"
     },
     {
-     "written": "written",
-     "role": "role",
-     "pid": "pid"
+     "written": "Cattarina Pavan",
+     "role": "",
+     "pid": "p1511"
     }
    ],
    "discrepancies": [],
