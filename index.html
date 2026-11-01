@@ -330,11 +330,11 @@ function nmLbl(){const b=$('nmBtn');if(b)b.textContent=OFFN()?'Nomi anagrafici':
 function render(){render0();histSync()}
 function treeBack(){const s=window._tstack||[];if(!s.length)return;window._popT=true;window._root=s.pop();view='tree';sel=null;render()}
 function goTree(n){const p=DB.people.find(x=>x.name===n);if(!p)return;window._root=p.id;view='tree';sel=null;render();scrollTo(0,0)}
-function curSt(){return {sel:sel||null,view:view||'',root:window._root||null,ptab:ptab||''}}
+function curSt(){return {fan:window._fan||null,sel:sel||null,view:view||'',root:window._root||null,ptab:ptab||''}}
 function histSync(){if(!KEY)return;const st=curSt(),k=JSON.stringify(st);try{LS.set('sf_state',k)}catch(e){}
   if(window._popping){window._popping=false;window._hk=k;return}if(k===window._hk)return;try{if(window._hk)history.pushState(st,'');else history.replaceState(st,'')}catch(e){}window._hk=k}
-addEventListener('popstate',e=>{const st=e.state;if(!st||!KEY)return;sel=st.sel;view=st.view;window._root=st.root;ptab=st.ptab;window._popping=true;window._popT=false;render()});
-function restoreSt(){try{const st=JSON.parse(LS.get('sf_state')||'null');if(!st)return;if(st.sel&&!P(st.sel))return;if(st.root&&!P(st.root))st.root=null;sel=st.sel;view=st.view;window._root=st.root;ptab=st.ptab}catch(e){}}
+addEventListener('popstate',e=>{const st=e.state;if(!st||!KEY)return;sel=st.sel;view=st.view;window._root=st.root;ptab=st.ptab;window._fan=st.fan;window._popping=true;window._popT=false;render()});
+function restoreSt(){try{const st=JSON.parse(LS.get('sf_state')||'null');if(!st)return;if(st.sel&&!P(st.sel))return;if(st.root&&!P(st.root))st.root=null;sel=st.sel;view=st.view;window._root=st.root;ptab=st.ptab;window._fan=st.fan}catch(e){}}
 function render0(){nmLbl();
   $('rl').innerHTML=[...new Set(DB.people.map(p=>p.ramo).filter(Boolean))].map(r=>`<option value="${esc(r)}">`).join('');
   $('pl').innerHTML=DB.people.map(p=>`<option value="${esc(p.name)}">`).join('');
@@ -360,7 +360,8 @@ function render0(){nmLbl();
       if(cc.length)h+=`<h2 class="sec">Capitoli (${cc.length})</h2>`+cc.map(c=>chapD(c,0).replace(/<span class="mut"[^>]*>1\.<\/span>/,`<span class="mut" style="font-weight:400">${esc(P(c.person)?.name||'')} ·</span>`)).join('');
       if(tc.length||cc.length||dc.length)h+='<h2 class="sec">Conversazioni che contengono il testo cercato</h2>'}}
   $('nav').classList.add('hide');
-  if(!pe&&!showList&&view!=='topics'&&view!=='docs'&&view!=='cal'&&view!=='all'&&!window._one&&!(q&&q.length>1)&&!fS&&!fC&&!fP&&!a&&!b&&DB.people.length){$('person').innerHTML=treeH();$('list').innerHTML='';return}
+  if(view==='fan'&&!pe){$('person').innerHTML=fanH();$('list').innerHTML='';return}
+  if(!pe&&!showList&&view!=='fan'&&view!=='topics'&&view!=='docs'&&view!=='cal'&&view!=='all'&&!window._one&&!(q&&q.length>1)&&!fS&&!fC&&!fP&&!a&&!b&&DB.people.length){$('person').innerHTML=treeH();$('list').innerHTML='';return}
   if(view==='cal'&&!pe){$('person').innerHTML=calH();$('list').innerHTML='';return}
   if(view==='docs'&&!pe){$('person').innerHTML=`<div class="card"><div class="row"><h2 style="flex:1">Documenti trascritti (${DOCS().length})</h2><button onclick="view='';render()">✕</button></div><p class="mut">Atti e registri letti dalle foto, in ordine di data. Tocca un titolo per vedere dati, trascrizione e persone collegate.</p></div>`+DOCS().map(docD).join('');$('list').innerHTML='';return}
   if(view==='topics'&&!pe){$('person').innerHTML=`<div class="card"><div class="row"><h2 style="flex:1">Argomenti (${TOP().length})</h2><button onclick="view='';render()">✕</button></div><p class="mut">Tocca un titolo per leggere i testi. Dentro ogni argomento ci sono le persone collegate.</p>${tfull()}</div>`+(topicsH(TOP(),true)||'<p class="mut">Nessun argomento: importa il file dati-iniziali.json aggiornato.</p>');$('list').innerHTML='';return}
@@ -496,6 +497,47 @@ function sibM(ev,id){const p=P(id);const ss=sibs(p).concat([p]).sort(byBirth);
 function kidM(ev,id){const ks=kids(id).sort(byBirth);if(ks.length===1){ev.stopPropagation();_root=ks[0].id;render();return}
   popOpen(ev,`<div class="ph">Scendi a un figlio</div>${ks.map(s=>`<div class="pi"><span onclick="popClose();_root='${s.id}';render()">${esc(dn(s))} <span class="mut">${year(s.birth)||'?'}</span></span></div>`).join('')}`)}
 function upT(ev,id){ev.stopPropagation();_root=id;render()}
+
+/* --- ventaglio degli antenati --- */
+function goFan(n){const p=DB.people.find(x=>x.name===n);if(!p)return;window._fan=p.id;view='fan';sel=null;render();scrollTo(0,0)}
+function fanGo(id){popClose();window._root=id;view='tree';sel=null;render();scrollTo(0,0)}
+function fanPop(ev,id){const p=P(id);if(!p)return;const b=p.birth?esc(p.birth):'?',dd=p.death&&!/^(vivente|deceduto)/i.test(p.death)?esc(p.death):'';
+  popOpen(ev,`<div class="ph">${esc(dn(p))}${codes()[p.id]?' <span class="mut">'+codes()[p.id]+'</span>':''}</div><div class="mut" style="padding:2px 8px 6px">n. ${b}${dd?' · m. '+dd:''}</div><div style="display:flex;gap:6px;padding:0 8px 8px"><button onclick="fanGo('${p.id}')">🌳 Vai all'albero</button><button onclick="popClose();pick('${p.id}')">Scheda</button></div>`)}
+function fanH(){
+  const root=P(window._fan)||DB.people.find(p=>p.name==='Massimo Pietrobon');if(!root)return '';
+  const base=DB.people.find(p=>p.name==='Fabio Pietrobon Sarmento');
+  // generazioni: G[0]=[root], G[k] slot 2^k
+  const G=[[root]];let D=0;
+  for(let k=1;k<15;k++){const row=G[k-1].flatMap(p=>p?[P(p.father)||null,P(p.mother)||null]:[null,null]);if(!row.some(Boolean))break;G.push(row);D=k}
+  const DG=Math.max(D+1,5);
+  const W=1000,cx=500,cy=560,r0=70,step=Math.min(64,(470-r0)/Math.max(DG,1));
+  const R=k=>r0+k*step,ang=(k,i)=>Math.PI-(i+.5)/Math.pow(2,k)*Math.PI;
+  const pt=(k,i)=>k<0?[cx,cy]:[cx+R(k)*Math.cos(ang(k,i)),cy-R(k)*Math.sin(ang(k,i))];
+  const sw=k=>Math.max(0.5,16*Math.pow(0.74,k+1));
+  const conf=confMap(),sure=sureMap();
+  const hueOf=(k,i)=>{const s=k>=3?(i>>(k-3)):null;if(k>=3)return 360*(s+.5)/8+10;const lo=i*Math.pow(2,3-k),hi=(i+1)*Math.pow(2,3-k)-1;return 360*((lo+hi)/2+.5)/8+10};
+  const col=(k,i)=>k<1?'var(--ink)':`hsl(${hueOf(k,i)%360} ${k<3?55:72}% ${k<3?42:48}%)`;
+  let grey='',ln='',dots='',rings='';
+  for(let k=0;k<=DG;k++)rings+=`<path d="M${cx-R(k)} ${cy} A${R(k)} ${R(k)} 0 0 1 ${cx+R(k)} ${cy}" fill="none" stroke="var(--line)" stroke-width="1"/>`;
+  // grigio: struttura completa
+  let grey2='';for(let k=1;k<=DG;k++){const n=Math.pow(2,k);for(let i=0;i<n;i++){const ch=G[k-1]&&G[k-1][i>>1];if(k>4&&!ch)continue;if(G[k]&&G[k][i])continue;const[a,b]=pt(k-1,i>>1),[c,d]=pt(k,i);const seg=`M${a.toFixed(1)} ${b.toFixed(1)}L${c.toFixed(1)} ${d.toFixed(1)}`;if(k<=4)grey+=seg;else grey2+=seg}}
+  const gw=Math.max(.6,sw(4));
+  // tronco: base -> root
+  const[tx,ty]=pt(0,0);
+  ln+=`<path d="M${cx} ${cy+14}L${tx} ${ty}" stroke="var(--ink)" stroke-width="${sw(-1)+4}" stroke-linecap="round"/>`;
+  G.forEach((row,k)=>row.forEach((p,i)=>{if(!p)return;const[x,y]=pt(k,i);
+    if(k>0){const ch=G[k-1][i>>1];const[a,b]=pt(k-1,i>>1);const key=ch.id+'>'+p.id,st=conf.has(key)?'':sure.has(key)?' stroke-dasharray="1 4"':' stroke-dasharray="5 3" stroke-opacity=".75"';
+      ln+=`<path d="M${a.toFixed(1)} ${b.toFixed(1)}L${x.toFixed(1)} ${y.toFixed(1)}" stroke="${col(k,i)}" stroke-width="${sw(k).toFixed(2)}" stroke-linecap="round"${st} onclick="fanPop(event,'${p.id}')"/>`}
+    const rr=Math.max(2.2,sw(k)*0.9+1.5);
+    dots+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" fill="${col(k,i)}" stroke="var(--card)" stroke-width="1" onclick="fanPop(event,'${p.id}')"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${Math.max(rr,9).toFixed(1)}" fill="transparent" onclick="fanPop(event,'${p.id}')"/>`}));
+  if(base)dots+=`<circle cx="${cx}" cy="${cy+14}" r="11" fill="var(--ink)" onclick="fanPop(event,'${base.id}')"/>`;
+  const known=G.flat().filter(Boolean).length-1;
+  const z=window._zoom||1;
+  return `<div class="card"><div class="row"><h2 style="flex:1">Ventaglio di ${esc(dn(root))}</h2><button onclick="view='tree';window._root='${root.id}';render()">✕</button></div>
+  <div class="row" style="gap:6px;flex-wrap:wrap;margin:4px 0 6px"><button onclick="goFan('Massimo Pietrobon')">◠ Massimo</button><button onclick="goFan('Visnu da Cunha Sarmento')">◠ Ubi</button><button onclick="fanGo('${root.id}')">🌳 Albero</button></div>
+  <p class="mut">Alla base Fabio, il tronco porta a ${esc(dn(root))}; ogni semicerchio è una generazione e ogni biforcazione sono i due genitori (padre a sinistra, madre a destra). Colori per settore fino ai bisnonni, poi ogni ramo continua con il colore del suo bisnonno. Grigio = antenato non ancora conosciuto. Linea piena = documentata, a puntini = sicura, tratteggiata = da verificare. ${known} antenati conosciuti su ${D} generazioni. Tocca un punto per nome e date.</p>
+  <div class="tbar"><button onclick="zoomT(-.15)">−</button><button onclick="zoomT(.15)">+</button><button onclick="zoomT(0)">⟲</button></div>
+  <div class="twrap"><svg viewBox="0 ${cy-R(DG)-20} ${W} ${R(DG)+60}" style="width:${100*z}%;max-width:${1000*z}px;display:block;margin:auto" fill="none">${rings}<path d="${grey}" stroke="var(--line)" stroke-width="${gw}" stroke-linecap="round"/><path d="${grey2}" stroke="var(--line)" stroke-width="0.9" stroke-linecap="round"/>${ln}${dots}</svg></div></div>`}
 function treeH(){try{return treeH_()}catch(e){return `<div class="card warn"><b>Errore nel disegnare l'albero</b><br>${esc(String(e&&e.message||e))}<br><small>${esc(String(e&&e.stack||'').split('\n').slice(0,3).join(' | '))}</small><p><button onclick="_root=null;_cm='';render()">Torna all'albero di Massimo</button></p></div>`}}
 function treeH_(){
   const root=P(window._root)||DB.people.find(p=>p.name==='Massimo Pietrobon')||DB.people[0];if(!root)return '';
@@ -522,7 +564,7 @@ function treeH_(){
   const rest=DB.people.filter(p=>!done.has(p.id)&&chOf(p.id).length).sort((a,b)=>sur(a)<sur(b)?-1:sur(a)>sur(b)?1:a.name<b.name?-1:1);
   if(rest.length)ex+=`<details class="tp" style="margin-top:10px"><summary>Altri parenti con capitoli<small>${rest.length} persone: prozii, zii, cugini, coniugi</small></summary><div>${rest.map(chipC).join('')}</div></details>`;
   const z=window._zoom||1;
-  return `<div class="card"><div class="row"><h2 style="flex:1">Albero di ${esc(dn(root))}</h2></div><div class="row" style="gap:6px;flex-wrap:wrap;margin:4px 0 6px">${(window._tstack||[]).length?`<button onclick="treeBack()" title="Torna all'albero visto prima">↶ Albero precedente</button>`:''}${root.name!=='Massimo Pietrobon'?`<button onclick="goTree('Massimo Pietrobon')">Albero di Massimo</button>`:''}${root.name!=='Visnu da Cunha Sarmento'?`<button onclick="goTree('Visnu da Cunha Sarmento')">Albero di Ubi</button>`:''}</div>
+  return `<div class="card"><div class="row"><h2 style="flex:1">Albero di ${esc(dn(root))}</h2></div><div class="row" style="gap:6px;flex-wrap:wrap;margin:4px 0 6px">${(window._tstack||[]).length?`<button onclick="treeBack()" title="Torna all'albero visto prima">↶ Albero precedente</button>`:''}${root.name!=='Massimo Pietrobon'?`<button onclick="goTree('Massimo Pietrobon')">Albero di Massimo</button>`:''}${root.name!=='Visnu da Cunha Sarmento'?`<button onclick="goTree('Visnu da Cunha Sarmento')">Albero di Ubi</button>`:''}<button onclick="goFan('Massimo Pietrobon')">◠ Ventaglio di Massimo</button><button onclick="goFan('Visnu da Cunha Sarmento')">◠ Ventaglio di Ubi</button></div>
   <p class="mut">Tocca una persona per aprire la sua scheda. ▾ = fratelli e sorelle · ▶ = risali oltre · ◀ = scendi ai figli. Linea scura continua = legame confermato da un atto storico o da un archivio; scura a puntini = legame sicuro anche senza atto (confermato da te); tratteggiata chiara = da FamilySearch, schemi o chat, non verificato. Le conferme si mettono in «Modifica» della persona.</p>
   <div class="tbar"><button onclick="zoomT(-.15)" title="Riduci">−</button><button onclick="zoomT(.15)" title="Ingrandisci">+</button><button onclick="zoomT(0)" title="Dimensione normale">⟲</button>
   <select onchange="_cm=this.value;render()">${Object.entries(CM).map(([k,v])=>`<option value="${k}"${k===m?' selected':''}>${k?'Colora per: '+v:v}</option>`).join('')}</select></div>${leg}
