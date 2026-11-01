@@ -1,5 +1,5 @@
 {
- "version": 171,
+ "version": 173,
  "people": [
   {
    "id": "p1",
@@ -35568,7 +35568,7 @@
   {
    "id": "p1368",
    "name": "Giovanna Munarini",
-   "father": "",
+   "father": "p1523",
    "mother": "",
    "spouses": [
     "p1367"
@@ -35603,13 +35603,13 @@
    "country": "Italia",
    "branch": "",
    "alt": "Ferrante Cavallin; Fioravante Cavalin; Fioravante Cavallin",
-   "notes": "Nato la sera del 17 maggio 1788, battezzato «Ferrante» il 18 a Santa Cristina; madrina Maria moglie di Girolamo Righetto della parrocchia di PADERNELLO. Sposa nel maggio 1808 a Istrana Santina Ventorin. IPOTESI FORTE: è il Fioravante Cavallin padre di Candida Cavallin (moglie di Domenico Bresolin, Padernello): nome raro, età compatibile, legami con Padernello. Non ancora provato (manca un atto che dica Candida figlia di Fioravante e Santina). Atto di nascita n. 5 (Morgano, frazione di Santa Cristina, 5 febbraio 1812): «Fioravante Cavallin detto Vecchia[?]», 24 anni, villico, casa n. 49 di Santa Cristina, sa firmare; con la moglie Santa Venturin (23) ha una figlia, Maria Teresa, nata il 3 febbraio 1812. Testimoni Nicola Bisi[?] (28, manzolo) e Francesco Cavallin detto «Tuonio[?]» (29). La nascita di Candida va quindi cercata nei registri napoleonici di MORGANO (Santa Cristina), 1809-1815. Quinto con Santa Cristina, 19 febbraio 1808 (nascita n. 10): Fioravante Cavallin è testimone, «villico domiciliato in Tiveron» (Quinto), e firma. Prima del matrimonio viveva quindi a Tiveron; nel 1812 è a Santa Cristina (Morgano), casa n. 49. Nel 1812 a Santa Cristina, casa n. 47, vive Antonio Cavallin «detto Vechia», 25 anni (moglie Pasqua Basejo, figlia Maria nata il 16 ottobre 1812): stesso soprannome di Fioravante («detto Vecchia»), quasi certamente un fratello. Unione del 1° novembre 2026: unita la scheda doppia «Fioravante Cavallin» (è lo stesso Fioravante: l'atto di nascita di Candida (Morgano 1814) dà Fioravante Cavallin di 26 anni, marito di Santa Ventorin). Note della scheda unita: Padre di Candida Cavallin (battesimo del figlio di lei Angelo Bresolin, Padernello 1842). Possibili parenti: Andrea Cavalin e Margherita Gajarin di Padernello (figli Lucia circa 1760 e Michiel circa 1767). Probabilmente la stessa persona di «Fioravante Cavallin (1788)», figlio di Angelo Cavallin del fu Santo e Giovanna Munarini, marito di Santina Ventorin (fascicolo Istrana 1808). Se confermato, Santina Ventorin sarebbe la madre di Candida. Le due schede sono tenute separate finché un atto non lo dimostri. Nuovo indizio (Morgano 1812): Fioravante Cavallin (n. 1788) e Santa Venturin vivono a Santa Cristina, comune di Morgano, e nel 1812 hanno una figlia Maria Teresa. Se Candida è loro figlia, la sua nascita è probabilmente nei registri napoleonici di Morgano (1809-1815). Istrana, nascite 1814 (Villanova e Ospedaletto): nessun figlio di Fioravante Cavallin; altre famiglie Cavallin nella zona (Andrea e Francesca Tonetto; Giovanni e Giacoma Volpato; Giuseppe e Mattia Basso; Alvise e Angela Marcon; Salvador e Vincenza Cavilla[?]). Vedi documento di ricerca L36-r01. Cavallin della zona (pubblicazioni e matrimoni 1807-1812): a Villanova d'Istrana i Cavallin detti «Biondo» (Osvaldo, padre di Carlo n. ~1779; Angelo, padre di Angela n. ~1790; Andrea, padre di Marco e di Domenica n. 24 marzo 1796); a Morgano i Cavallin detti «Rocco» (Giovachin e Maria Rizzante, padre di Giuseppe n. 15 maggio 1790); a Santa Cristina (Quinto) Antonio Cavallin detto «Rechia»[?] (n. ~1788), figlio di Andrea e Catterina Gasperin[?], sposa nel 1807 Pasqua Baseggio di Merlengo. Nessuno nomina Fioravante. Detto «Rechia» (atto di nascita della figlia Candida, 1814): 26 anni, villico a Santa Cristina (Morgano), casa n. 49; firma «Fioravante Cavallin». Lo stesso soprannome porta Antonio Cavallin detto «Rechia» di Santa Cristina (n. ~1788, figlio di Andrea e Catterina Gasperin[?]): probabilmente un cugino.",
+   "notes": "Nato la sera del 17 maggio 1788, battezzato «Ferrante» il 18 a Santa Cristina; madrina Maria moglie di Girolamo Righetto della parrocchia di PADERNELLO. Sposa nel maggio 1808 a Istrana Santina Ventorin. PROVATO (atto di nascita di Candida, Morgano 1814): è il padre di Candida Cavallin, moglie di Domenico Bresolin di Padernello. Atto di nascita n. 5 (Morgano, frazione di Santa Cristina, 5 febbraio 1812): «Fioravante Cavallin detto Vecchia[?]», 24 anni, villico, casa n. 49 di Santa Cristina, sa firmare; con la moglie Santa Venturin (23) ha una figlia, Maria Teresa, nata il 3 febbraio 1812. Testimoni Nicola Bisi[?] (28, manzolo) e Francesco Cavallin detto «Tuonio[?]» (29). La nascita di Candida va quindi cercata nei registri napoleonici di MORGANO (Santa Cristina), 1809-1815. Quinto con Santa Cristina, 19 febbraio 1808 (nascita n. 10): Fioravante Cavallin è testimone, «villico domiciliato in Tiveron» (Quinto), e firma. Prima del matrimonio viveva quindi a Tiveron; nel 1812 è a Santa Cristina (Morgano), casa n. 49. Nel 1812 a Santa Cristina, casa n. 47, vive Antonio Cavallin «detto Vechia», 25 anni (moglie Pasqua Basejo, figlia Maria nata il 16 ottobre 1812): stesso soprannome di Fioravante («detto Vecchia»), quasi certamente un fratello. Unione del 1° novembre 2026: unita la scheda doppia «Fioravante Cavallin» (è lo stesso Fioravante: l'atto di nascita di Candida (Morgano 1814) dà Fioravante Cavallin di 26 anni, marito di Santa Ventorin). Note della scheda unita: Padre di Candida Cavallin (battesimo del figlio di lei Angelo Bresolin, Padernello 1842). Possibili parenti: Andrea Cavalin e Margherita Gajarin di Padernello (figli Lucia circa 1760 e Michiel circa 1767). Probabilmente la stessa persona di «Fioravante Cavallin (1788)», figlio di Angelo Cavallin del fu Santo e Giovanna Munarini, marito di Santina Ventorin (fascicolo Istrana 1808). Se confermato, Santina Ventorin sarebbe la madre di Candida. Le due schede sono tenute separate finché un atto non lo dimostri. Nuovo indizio (Morgano 1812): Fioravante Cavallin (n. 1788) e Santa Venturin vivono a Santa Cristina, comune di Morgano, e nel 1812 hanno una figlia Maria Teresa. Se Candida è loro figlia, la sua nascita è probabilmente nei registri napoleonici di Morgano (1809-1815). Istrana, nascite 1814 (Villanova e Ospedaletto): nessun figlio di Fioravante Cavallin; altre famiglie Cavallin nella zona (Andrea e Francesca Tonetto; Giovanni e Giacoma Volpato; Giuseppe e Mattia Basso; Alvise e Angela Marcon; Salvador e Vincenza Cavilla[?]). Vedi documento di ricerca L36-r01. Cavallin della zona (pubblicazioni e matrimoni 1807-1812): a Villanova d'Istrana i Cavallin detti «Biondo» (Osvaldo, padre di Carlo n. ~1779; Angelo, padre di Angela n. ~1790; Andrea, padre di Marco e di Domenica n. 24 marzo 1796); a Morgano i Cavallin detti «Rocco» (Giovachin e Maria Rizzante, padre di Giuseppe n. 15 maggio 1790); a Santa Cristina (Quinto) Antonio Cavallin detto «Rechia»[?] (n. ~1788), figlio di Andrea e Catterina Gasperin[?], sposa nel 1807 Pasqua Baseggio di Merlengo. Nessuno nomina Fioravante. Detto «Rechia» (atto di nascita della figlia Candida, 1814): 26 anni, villico a Santa Cristina (Morgano), casa n. 49; firma «Fioravante Cavallin». Lo stesso soprannome porta Antonio Cavallin detto «Rechia» di Santa Cristina (n. ~1788, figlio di Andrea e Catterina Gasperin[?]): probabilmente un cugino.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": "maggio 1808 Istrana (pubblicazioni 1° e 8 maggio)",
+   "marriage": "maggio 1808, Istrana (pubblicazioni 1° e 8 maggio; consenso dei genitori dello sposo 10 maggio 1808)",
    "job": "contadino"
   },
   {
@@ -35627,13 +35627,13 @@
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Figlia dei fu Mattio Ventorin e Maria Zanetti; 18 anni nel 1808; domiciliata a Istrana. Sposa Fioravante Cavallin nel 1808. Possibile madre di Candida Cavallin (ipotesi). Nel 1812 «Santa Venturin», 23 anni, moglie di Fioravante Cavallin a Santa Cristina (Morgano): figlia Maria Teresa nata il 3 febbraio 1812. Possibile fratello: Giovanni Venturin, 32 anni nel 1813, villico a Ospedaletto (Istrana, nascite 1813 n. 45). Non dichiarato. Nel 1812 a Santa Cristina (Morgano) una Cattarina Venturin (30 anni) è moglie del calzolaio Domenico Cavallin (casa n. 32): forse sorella di Santina. Non dichiarato. A Padernello nel 1807 un Antonio Venturin, 28 anni, villico, sa firmare (testimone alla nascita di Paola Zanatta): forse fratello di Santina. Non dichiarato. Padernello 1814: testimone Bortolo Venturin, 63 anni, villico (nato verso il 1751): un Venturin anziano a Padernello, forse parente di Santina. Non dichiarato. Madre di Candida Cavallin, nata il 9 febbraio 1814 a Santa Cristina (Morgano): «Santa Ventorin sua legittima consorte, di anni 24». Ora è tua antenata diretta.",
+   "notes": "Figlia dei fu Mattio Ventorin e Maria Zanetti; 18 anni nel 1808; domiciliata a Istrana. Sposa Fioravante Cavallin nel 1808. Madre di Candida Cavallin (atto di nascita, Morgano 1814). Nel 1812 «Santa Venturin», 23 anni, moglie di Fioravante Cavallin a Santa Cristina (Morgano): figlia Maria Teresa nata il 3 febbraio 1812. Possibile fratello: Giovanni Venturin, 32 anni nel 1813, villico a Ospedaletto (Istrana, nascite 1813 n. 45). Non dichiarato. Nel 1812 a Santa Cristina (Morgano) una Cattarina Venturin (30 anni) è moglie del calzolaio Domenico Cavallin (casa n. 32): forse sorella di Santina. Non dichiarato. A Padernello nel 1807 un Antonio Venturin, 28 anni, villico, sa firmare (testimone alla nascita di Paola Zanatta): forse fratello di Santina. Non dichiarato. Padernello 1814: testimone Bortolo Venturin, 63 anni, villico (nato verso il 1751): un Venturin anziano a Padernello, forse parente di Santina. Non dichiarato. Madre di Candida Cavallin, nata il 9 febbraio 1814 a Santa Cristina (Morgano): «Santa Ventorin sua legittima consorte, di anni 24». Ora è tua antenata diretta.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": "maggio 1808 Istrana (pubblicazioni 1° e 8 maggio)"
+   "marriage": "maggio 1808, Istrana (pubblicazioni 1° e 8 maggio; consenso dei genitori dello sposo 10 maggio 1808)"
   },
   {
    "id": "p1371",
@@ -35810,7 +35810,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Figlia di Fioravante Cavallin detto «Vecchia[?]» (24 anni, villico) e di Santa Venturin (23); atto di nascita n. 5, Morgano – frazione di Santa Cristina, 5 febbraio 1812. Sorella di Candida, se Candida è figlia della stessa coppia.",
+   "notes": "Figlia di Fioravante Cavallin detto «Vecchia[?]» (24 anni, villico) e di Santa Venturin (23); atto di nascita n. 5, Morgano – frazione di Santa Cristina, 5 febbraio 1812. Sorella maggiore di Candida (stessi genitori, atto del 1814).",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -38989,6 +38989,27 @@
    "notes": "Atto di nascita n. 13 (Monastier, 22 febbraio 1809): Valentin Davanzo, 22 anni, agricoltore, presenta il figlio nato il 21 a mezzogiorno, chiamato Francesco, avuto da Vittoria Chinazzi (20); testimoni Leopoldo Bonomo (40) e Matteo Zanin (40). PISTA (indebolita dal registro di Breda 1849, che dà una coppia Francesco Davanzo – Maria Zago di Saletto con una figlia nata verso il 1821): potrebbe essere il Francesco Davanzo padre di Anna Davanzo (n. ~1834, moglie di Pietro Florian): avrebbe avuto circa 25 anni alla nascita di Anna, ed è di Monastier. Va confrontata con l'altra candidata (Francesco Davanzo n. 1790 e Maria Zago di Saletto, FamilySearch). Prova necessaria: matrimonio di Francesco e Maria o battesimo di Anna.",
    "fsid": "",
    "ramo": "Pietrobon-Florian (nonna Gemma)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": ""
+  },
+  {
+   "id": "p1523",
+   "name": "Gio. Batta Munarini",
+   "father": "",
+   "mother": "",
+   "spouses": [],
+   "birth": "",
+   "birthPlace": "",
+   "death": "prima del 1788",
+   "deathPlace": "",
+   "country": "Italia",
+   "branch": "",
+   "alt": "",
+   "notes": "Padre di Giovanna Munarini, moglie di Angelo Cavallin: il battesimo del nipote Fioravante (Santa Cristina, 18 maggio 1788) la dice «Giovanna q.m Gio. Batta Munarini». Già morto nel 1788. Bisnonno di Fioravante Cavallin.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
    "speaker": "",
    "events": [],
@@ -62063,6 +62084,11 @@
      "written": "fu Maria Zanetti",
      "role": "madre della sposa",
      "pid": "p1372"
+    },
+    {
+     "written": "q.m Gio. Batta Munarini",
+     "role": "nonno materno (defunto) del battezzato",
+     "pid": "p1523"
     }
    ],
    "discrepancies": [
