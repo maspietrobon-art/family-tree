@@ -550,7 +550,7 @@ function famH(){const pe=P(window._famId);if(!pe)return '<div class="card">Perso
   const sl=(fa||mo)?sib:[pe];sl.forEach((p,i)=>{const me=p.id===pe.id;const sx2=(fa||mo)?xs(sib.length)(i):xs(1)(0);const half=!me&&((pe.father&&p.father!==pe.father)||(pe.mother&&p.mother!==pe.mother));
     B(p,sx2,rows[2],me?'persona':(sexOf(p)==='f'?'sorella':'fratello')+(half?' (unilat.)':''),me);if(fa||mo){const px=(fa&&mo)?(xp(0)+xp(1))/2+bw/2:(fa?xp(0):xp(1))+bw/2;L(px,rows[1]+bh,sx2+bw/2,rows[2])}if(me)cen.me=sx2+bw/2});
   if(fa&&mo)ln+=`<path d="M${xp(0)+bw} ${rows[1]+bh/2}H${xp(1)}" stroke="var(--mut)" stroke-width="1.2"/>`;
-  const xc=xs(ch.length||1);ch.forEach((p,i)=>{const other=p.father===pe.id?P(p.mother):P(p.father);B(p,xc(i),rows[3],(sexOf(p)==='f'?'figlia':'figlio')+(other?' · '+sh(other):''));L(cen.me,rows[2]+bh,xc(i)+bw/2,rows[3])});
+  const xc=xs(ch.length||1);ch.forEach((p,i)=>{const other=p.father===pe.id?P(p.mother):P(p.father);B(p,xc(i),rows[3],(sexOf(p)==='f'?'figlia':'figlio')+(other?(p.father===pe.id?' · madre ':' · padre ')+sh(other):''));L(cen.me,rows[2]+bh,xc(i)+bw/2,rows[3])});
   const sp=pe.spouses.map(P).filter(Boolean);const z=window._zoom||1;
   return `<div class="card"><div class="row"><h2 style="flex:1">Famiglia di ${esc(dn(pe))}</h2><button onclick="view='';sel='${pe.id}';render()">✕</button></div>
   <div class="row" style="gap:6px;flex-wrap:wrap;margin:4px 0 6px"><button onclick="pick('${pe.id}')">Scheda</button><button onclick="fanGo('${pe.id}')">🌳 Albero</button><button onclick="svgSave('famSvg','famiglia-'+slug(dn(P('${pe.id}'))),'Famiglia di '+dn(P('${pe.id}')),'png')">⬇ Immagine</button><button onclick="svgSave('famSvg','famiglia-'+slug(dn(P('${pe.id}'))),'Famiglia di '+dn(P('${pe.id}')),'svg')">⬇ SVG</button></div>
