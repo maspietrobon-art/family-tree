@@ -1,5 +1,5 @@
 {
- "version": 212,
+ "version": 213,
  "people": [
   {
    "id": "p1",
@@ -2253,7 +2253,9 @@
     }
    ],
    "marriage": "",
-   "soprannome": "Merlo"
+   "soprannome": "Merlo",
+   "origin": "Cusignana",
+   "originDed": false
   },
   {
    "id": "p78",
@@ -2283,7 +2285,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Cusignana",
+   "originDed": false
   },
   {
    "id": "p79",
@@ -2915,7 +2919,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Padernello",
+   "originDed": true
   },
   {
    "id": "p94",
@@ -3170,7 +3176,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Padernello",
+   "originDed": false
   },
   {
    "id": "p103",
@@ -3393,7 +3401,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Padernello",
+   "originDed": false
   },
   {
    "id": "p109",
@@ -3434,7 +3444,9 @@
     }
    ],
    "marriage": "",
-   "soprannome": "Nardo"
+   "soprannome": "Nardo",
+   "origin": "Padernello",
+   "originDed": false
   },
   {
    "id": "p110",
@@ -3567,7 +3579,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Altivole",
+   "originDed": true
   },
   {
    "id": "p116",
@@ -3590,7 +3604,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Altivole",
+   "originDed": true
   },
   {
    "id": "p117",
@@ -3655,7 +3671,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Altivole",
+   "originDed": false
   },
   {
    "id": "p119",
@@ -3800,7 +3818,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Altivole",
+   "originDed": true
   },
   {
    "id": "p123",
@@ -3823,7 +3843,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Altivole",
+   "originDed": true
   },
   {
    "id": "p124",
@@ -4637,7 +4659,9 @@
    ],
    "marriage": "",
    "jobCat": "Agricoltura",
-   "job": "contadino"
+   "job": "contadino",
+   "origin": "Zenson di Piave",
+   "originDed": false
   },
   {
    "id": "p149",
@@ -4662,7 +4686,9 @@
    "events": [],
    "marriage": "",
    "jobCat": "Agricoltura",
-   "job": "contadina"
+   "job": "contadina",
+   "origin": "Zenson di Piave",
+   "originDed": false
   },
   {
    "id": "p150",
@@ -5314,7 +5340,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Roncade",
+   "originDed": true
   },
   {
    "id": "p170",
@@ -5663,7 +5691,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Sant’Andrea di Barbarana",
+   "originDed": false
   },
   {
    "id": "p183",
@@ -5693,7 +5723,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Sant’Andrea di Barbarana",
+   "originDed": false
   },
   {
    "id": "p184",
@@ -5724,7 +5756,9 @@
     }
    ],
    "marriage": "",
-   "soprannome": "Padovan"
+   "soprannome": "Padovan",
+   "origin": "Sant’Andrea di Barbarana",
+   "originDed": false
   },
   {
    "id": "p185",
@@ -5754,7 +5788,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Sant’Andrea di Barbarana",
+   "originDed": true
   },
   {
    "id": "p186",
@@ -5982,7 +6018,9 @@
    "events": [],
    "marriage": "",
    "jobCat": "Agricoltura",
-   "job": "agricoltori"
+   "job": "agricoltori",
+   "origin": "Fossalta / Losson",
+   "originDed": true
   },
   {
    "id": "p193",
@@ -6204,7 +6242,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Meolo",
+   "originDed": false
   },
   {
    "id": "p199",
@@ -6532,7 +6572,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Noventa di Piave",
+   "originDed": false
   },
   {
    "id": "p209",
@@ -6555,7 +6597,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Fossalta / Losson",
+   "originDed": false
   },
   {
    "id": "p210",
@@ -6649,7 +6693,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Rovarè",
+   "originDed": false
   },
   {
    "id": "p213",
@@ -6707,7 +6753,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Fagarè",
+   "originDed": false
   },
   {
    "id": "p215",
@@ -6737,7 +6785,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Fagarè",
+   "originDed": true
   },
   {
    "id": "p216",
@@ -7116,7 +7166,9 @@
    ],
    "marriage": "",
    "jobCat": "Agricoltura",
-   "job": "villica"
+   "job": "villica",
+   "origin": "Postioma",
+   "originDed": false
   },
   {
    "id": "p227",
@@ -8261,7 +8313,9 @@
     }
    ],
    "marriage": "",
-   "soprannome": "Merletto"
+   "soprannome": "Merletto",
+   "origin": "Cusignana",
+   "originDed": false
   },
   {
    "id": "p262",
@@ -8497,7 +8551,9 @@
    "events": [],
    "marriage": "",
    "jobCat": "Agricoltura",
-   "job": "agricoltore"
+   "job": "agricoltore",
+   "origin": "Volpago del Montello",
+   "originDed": false
   },
   {
    "id": "p268",
@@ -8522,7 +8578,9 @@
    "events": [],
    "marriage": "",
    "jobCat": "Agricoltura",
-   "job": "contadina"
+   "job": "contadina",
+   "origin": "Volpago del Montello",
+   "originDed": false
   },
   {
    "id": "p269",
@@ -9527,7 +9585,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Bavaria (Nervesa)",
+   "originDed": true
   },
   {
    "id": "p296",
@@ -9565,7 +9625,9 @@
     }
    ],
    "marriage": "",
-   "soprannome": "Ferro"
+   "soprannome": "Ferro",
+   "origin": "Bavaria (Nervesa)",
+   "originDed": true
   },
   {
    "id": "p297",
@@ -9667,7 +9729,9 @@
      "src": "Copia del battesimo, Bavaria (21 febbraio 1792)"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Bavaria (Nervesa)",
+   "originDed": false
   },
   {
    "id": "p300",
@@ -9697,7 +9761,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Bavaria (Nervesa)",
+   "originDed": true
   },
   {
    "id": "p301",
@@ -9863,7 +9929,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Bavaria (Nervesa)",
+   "originDed": false
   },
   {
    "id": "p306",
@@ -10001,7 +10069,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "1713"
+   "marriage": "1713",
+   "origin": "Breda di Piave",
+   "originDed": false
   },
   {
    "id": "p310",
@@ -10049,7 +10119,9 @@
      "src": "Email della parrocchia di Breda di Piave (21 e 29 settembre 2021)"
     }
    ],
-   "marriage": "1713"
+   "marriage": "1713",
+   "origin": "Breda di Piave",
+   "originDed": false
   },
   {
    "id": "p311",
@@ -10723,7 +10795,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1791"
+   "marriage": "circa 1791",
+   "origin": "Pero (Breda)",
+   "originDed": false
   },
   {
    "id": "p331",
@@ -10753,7 +10827,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1791"
+   "marriage": "circa 1791",
+   "origin": "Rovarè",
+   "originDed": false
   },
   {
    "id": "p332",
@@ -10920,7 +10996,9 @@
    ],
    "marriage": "circa 1777",
    "jobCat": "Agricoltura",
-   "job": "villica"
+   "job": "villica",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p337",
@@ -11724,7 +11802,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p359",
@@ -11747,7 +11827,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Spercenigo",
+   "originDed": false
   },
   {
    "id": "p360",
@@ -11770,7 +11852,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Spercenigo",
+   "originDed": false
   },
   {
    "id": "p361",
@@ -11791,7 +11875,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": true
   },
   {
    "id": "p362",
@@ -11886,7 +11972,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p365",
@@ -11946,7 +12034,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": true
   },
   {
    "id": "p367",
@@ -12090,7 +12180,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": true
   },
   {
    "id": "p372",
@@ -12113,7 +12205,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": true
   },
   {
    "id": "p373",
@@ -12136,7 +12230,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": true
   },
   {
    "id": "p374",
@@ -12159,7 +12255,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p375",
@@ -12182,7 +12280,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p376",
@@ -12212,7 +12312,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1712 Treviso"
+   "marriage": "circa 1712 Treviso",
+   "origin": "Lancenigo (Villorba)",
+   "originDed": false
   },
   {
    "id": "p377",
@@ -12278,7 +12380,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1740 Treviso"
+   "marriage": "circa 1740 Treviso",
+   "origin": "San Biagio di Callalta",
+   "originDed": false
   },
   {
    "id": "p379",
@@ -12398,7 +12502,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1712 Treviso"
+   "marriage": "circa 1712 Treviso",
+   "origin": "San Biagio di Callalta",
+   "originDed": true
   },
   {
    "id": "p383",
@@ -12472,7 +12578,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1713 Treviso"
+   "marriage": "circa 1713 Treviso",
+   "origin": "Fagarè",
+   "originDed": true
   },
   {
    "id": "p385",
@@ -12819,7 +12927,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1748 Treviso"
+   "marriage": "circa 1748 Treviso",
+   "origin": "Cavriè",
+   "originDed": false
   },
   {
    "id": "p395",
@@ -12879,7 +12989,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1745"
+   "marriage": "circa 1745",
+   "origin": "Cavriè",
+   "originDed": false
   },
   {
    "id": "p397",
@@ -12973,7 +13085,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1717"
+   "marriage": "circa 1717",
+   "origin": "Rovarè",
+   "originDed": false
   },
   {
    "id": "p400",
@@ -13003,7 +13117,9 @@
      "src": "Dati da schermata FamilySearch"
     }
    ],
-   "marriage": "circa 1717"
+   "marriage": "circa 1717",
+   "origin": "Rovarè",
+   "originDed": false
   },
   {
    "id": "p401",
@@ -16678,7 +16794,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p514",
@@ -18666,7 +18784,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Padernello",
+   "originDed": false
   },
   {
    "id": "p604",
@@ -18930,7 +19050,9 @@
    "events": [],
    "marriage": "",
    "jobCat": "Agricoltura",
-   "job": "villico"
+   "job": "villico",
+   "origin": "Volpago del Montello",
+   "originDed": false
   },
   {
    "id": "p615",
@@ -18955,7 +19077,9 @@
    "events": [],
    "marriage": "",
    "jobCat": "Agricoltura",
-   "job": "villica"
+   "job": "villica",
+   "origin": "Volpago del Montello",
+   "originDed": false
   },
   {
    "id": "p616",
@@ -34737,7 +34861,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p1330",
@@ -34758,7 +34884,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": true
   },
   {
    "id": "p1331",
@@ -35553,7 +35681,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Santa Cristina (Quinto)",
+   "originDed": false
   },
   {
    "id": "p1367",
@@ -35670,7 +35800,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Ospedaletto (Istrana)",
+   "originDed": false
   },
   {
    "id": "p1372",
@@ -35693,7 +35825,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Ospedaletto (Istrana)",
+   "originDed": false
   },
   {
    "id": "p1373",
@@ -35741,7 +35875,9 @@
    "speaker": "",
    "events": [],
    "marriage": "",
-   "job": "agricoltrice"
+   "job": "agricoltrice",
+   "origin": "Montebelluna",
+   "originDed": false
   },
   {
    "id": "p1375",
@@ -35762,7 +35898,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Montebelluna",
+   "originDed": false
   },
   {
    "id": "p1376",
@@ -35786,7 +35924,9 @@
    "speaker": "",
    "events": [],
    "marriage": "",
-   "job": "fornaio (servo fornaio nel 1810)"
+   "job": "fornaio (servo fornaio nel 1810)",
+   "origin": "Montebelluna",
+   "originDed": false
   },
   {
    "id": "p1377",
@@ -35809,7 +35949,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Montebelluna",
+   "originDed": false
   },
   {
    "id": "p1378",
@@ -37461,7 +37603,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p1453",
@@ -38352,7 +38496,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Rivarotta (Pasiano di Pordenone)",
+   "originDed": true
   },
   {
    "id": "p1494",
@@ -38375,7 +38521,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Rivarotta (Pasiano di Pordenone)",
+   "originDed": true
   },
   {
    "id": "p1495",
@@ -38444,7 +38592,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": "20 febbraio 1701 Ghirano (Prata)"
+   "marriage": "20 febbraio 1701 Ghirano (Prata)",
+   "origin": "Ghirano (Prata di Pordenone)",
+   "originDed": true
   },
   {
    "id": "p1498",
@@ -38679,7 +38829,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Ghirano (Prata di Pordenone)",
+   "originDed": true
   },
   {
    "id": "p1509",
@@ -38746,7 +38898,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": "1765"
+   "marriage": "1765",
+   "origin": "Bannia (Fiume Veneto)",
+   "originDed": false
   },
   {
    "id": "p1512",
@@ -38895,7 +39049,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p1519",
@@ -38918,7 +39074,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p1520",
@@ -38941,7 +39099,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Saletto",
+   "originDed": false
   },
   {
    "id": "p1521",
@@ -38964,7 +39124,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Saletto",
+   "originDed": false
   },
   {
    "id": "p1522",
@@ -39006,7 +39168,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Santa Cristina (Quinto)",
+   "originDed": false
   },
   {
    "id": "p1524",
@@ -39362,7 +39526,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p1540",
@@ -39385,7 +39551,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Monastier",
+   "originDed": false
   },
   {
    "id": "p1541",
@@ -39408,7 +39576,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Azzano Decimo",
+   "originDed": true
   },
   {
    "id": "p1542",
@@ -39431,7 +39601,9 @@
    "terms": [],
    "speaker": "",
    "events": [],
-   "marriage": ""
+   "marriage": "",
+   "origin": "Azzano Decimo",
+   "originDed": true
   },
   {
    "id": "p1543",
@@ -86552,5 +86724,131 @@
    "uncertain": [],
    "confidence": "alta"
   }
- ]
+ ],
+ "places": {
+  "Cusignana": {
+   "lat": 45.787,
+   "lon": 12.17
+  },
+  "Montebelluna": {
+   "lat": 45.772,
+   "lon": 12.042
+  },
+  "Padernello": {
+   "lat": 45.694,
+   "lon": 12.075
+  },
+  "Ospedaletto (Istrana)": {
+   "lat": 45.688,
+   "lon": 12.05
+  },
+  "Santa Cristina (Quinto)": {
+   "lat": 45.651,
+   "lon": 12.125
+  },
+  "Altivole": {
+   "lat": 45.75,
+   "lon": 11.953
+  },
+  "Asolo": {
+   "lat": 45.8,
+   "lon": 11.915
+  },
+  "Loria": {
+   "lat": 45.722,
+   "lon": 11.862
+  },
+  "Azzano Decimo": {
+   "lat": 45.882,
+   "lon": 12.692
+  },
+  "Bannia (Fiume Veneto)": {
+   "lat": 45.91,
+   "lon": 12.725
+  },
+  "Ghirano (Prata di Pordenone)": {
+   "lat": 45.862,
+   "lon": 12.585
+  },
+  "Rivarotta (Pasiano di Pordenone)": {
+   "lat": 45.83,
+   "lon": 12.605
+  },
+  "Sant’Andrea di Barbarana": {
+   "lat": 45.698,
+   "lon": 12.418
+  },
+  "Monastier": {
+   "lat": 45.655,
+   "lon": 12.437
+  },
+  "Noventa di Piave": {
+   "lat": 45.665,
+   "lon": 12.535
+  },
+  "Fossalta / Losson": {
+   "lat": 45.64,
+   "lon": 12.495
+  },
+  "Meolo": {
+   "lat": 45.617,
+   "lon": 12.455
+  },
+  "Rovarè": {
+   "lat": 45.704,
+   "lon": 12.403
+  },
+  "Fagarè": {
+   "lat": 45.733,
+   "lon": 12.413
+  },
+  "Roncade": {
+   "lat": 45.627,
+   "lon": 12.377
+  },
+  "Zenson di Piave": {
+   "lat": 45.682,
+   "lon": 12.485
+  },
+  "Bavaria (Nervesa)": {
+   "lat": 45.835,
+   "lon": 12.205
+  },
+  "Breda di Piave": {
+   "lat": 45.722,
+   "lon": 12.335
+  },
+  "Postioma": {
+   "lat": 45.703,
+   "lon": 12.098
+  },
+  "Volpago del Montello": {
+   "lat": 45.778,
+   "lon": 12.12
+  },
+  "Saletto": {
+   "lat": 45.745,
+   "lon": 12.392
+  },
+  "Spercenigo": {
+   "lat": 45.659,
+   "lon": 12.383
+  },
+  "Cavriè": {
+   "lat": 45.674,
+   "lon": 12.345
+  },
+  "San Biagio di Callalta": {
+   "lat": 45.688,
+   "lon": 12.378
+  },
+  "Lancenigo (Villorba)": {
+   "lat": 45.712,
+   "lon": 12.258
+  },
+  "Pero (Breda)": {
+   "lat": 45.712,
+   "lon": 12.375
+  }
+ }
 }
