@@ -1,5 +1,5 @@
 {
- "version": 213,
+ "version": 215,
  "people": [
   {
    "id": "p1",
@@ -2250,6 +2250,14 @@
      "what": "Nascita",
      "place": "Cusignana, Giavera del Montello, Treviso, Veneto, Italy",
      "src": "Dati da schermata FamilySearch"
+    },
+    {
+     "date": "1838",
+     "what": "I «Merli» si trasferiscono da Cusignana a Postioma",
+     "place": "Postioma",
+     "src": "Foto FAST CRV-F_0006979",
+     "vita": true,
+     "ded": false
     }
    ],
    "marriage": "",
@@ -2664,6 +2672,22 @@
      "what": "Arrivo a Ellis Island, New York (residenza Paese, sposato)",
      "place": "New York",
      "src": "FamilySearch, New York Passenger Arrival Lists (Ellis Island)"
+    },
+    {
+     "date": "1897",
+     "what": "Emigrazione in Brasile (nasce il figlio Giovanni a Jaú)",
+     "place": "Brasile",
+     "src": "atto di nascita di Giovanni",
+     "vita": true,
+     "ded": false
+    },
+    {
+     "date": "1911",
+     "what": "A Vallio di Roncade (nascita di Angelo Gregorio)",
+     "place": "Vallio (Roncade)",
+     "src": "nascite dei figli 1911–1918",
+     "vita": true,
+     "ded": false
     }
    ],
    "marriage": "18 giugno 1896 Paese",
@@ -3670,7 +3694,16 @@
    "ramo": "Gazzola (nonna Lisetta)",
    "terms": [],
    "speaker": "",
-   "events": [],
+   "events": [
+    {
+     "date": "1905",
+     "what": "Famiglia ad Altivole (matrimonio del figlio)",
+     "place": "Altivole",
+     "src": "matrimonio 1905",
+     "vita": true,
+     "ded": false
+    }
+   ],
    "marriage": "",
    "origin": "Altivole",
    "originDed": false
@@ -4211,6 +4244,22 @@
      "what": "Morte",
      "place": "Monastier di Treviso, Treviso, Veneto, Italia",
      "src": "Dati da schermata FamilySearch"
+    },
+    {
+     "date": "1800",
+     "what": "Vive a Bannia: matrimonio con Lucrezia e nascita delle gemelle (c. 1800–1806)",
+     "place": "Bannia (Fiume Veneto)",
+     "src": "Stato delle Anime di Monastier",
+     "vita": true,
+     "ded": false
+    },
+    {
+     "date": "1812",
+     "what": "A Monastier: nasce il figlio Giacomo",
+     "place": "Monastier",
+     "src": "Stato delle Anime di Monastier",
+     "vita": true,
+     "ded": false
     }
    ],
    "marriage": ""
@@ -4625,6 +4674,14 @@
      "what": "Nascita (da documento)",
      "place": "",
      "src": "Atti di nascita delle figlie, Zenson (1902-1903)"
+    },
+    {
+     "date": "1902",
+     "what": "Famiglia a Campolongo S. Antonio n. 157",
+     "place": "Zenson di Piave",
+     "src": "atti di nascita 1902–1906",
+     "vita": true,
+     "ded": false
     }
    ],
    "marriage": "",
@@ -4815,6 +4872,22 @@
      "what": "Luogo di morte (da documento)",
      "place": "",
      "src": "Atto di morte parrocchiale (1969)"
+    },
+    {
+     "date": "1898",
+     "what": "Nasce Carolina (famiglia a Campolongo di Zenson)",
+     "place": "Zenson di Piave",
+     "src": "luogo dedotto dalle nascite delle sorelle",
+     "vita": true,
+     "ded": true
+    },
+    {
+     "date": "1920",
+     "what": "Sposa Guglielmo Rosolin e va a Monastier",
+     "place": "Monastier",
+     "src": "",
+     "vita": true,
+     "ded": true
     }
    ],
    "marriage": ""
@@ -6953,6 +7026,14 @@
      "what": "Matrimonio (da documento)",
      "place": "",
      "src": "Annotazione a margine dell'atto di nascita"
+    },
+    {
+     "date": "1903",
+     "what": "Arriva a Monastier a circa 7 anni",
+     "place": "Monastier",
+     "src": "racconti di famiglia",
+     "vita": true,
+     "ded": false
     }
    ],
    "marriage": "15 dicembre 1921 Monastier",
@@ -8310,6 +8391,14 @@
      "what": "Nascita",
      "place": "Cusignana, Giavera del Montello, Treviso, Veneto, Italia",
      "src": "Dati da schermata FamilySearch"
+    },
+    {
+     "date": "1838",
+     "what": "I «Merli» si trasferiscono da Cusignana a Postioma",
+     "place": "Postioma",
+     "src": "Foto FAST CRV-F_0006979",
+     "vita": true,
+     "ded": false
     }
    ],
    "marriage": "",
@@ -15011,6 +15100,22 @@
      "what": "Matrimonio (da documento)",
      "place": "",
      "src": "Atto di matrimonio civile, Paese (18 giugno 1896)"
+    },
+    {
+     "date": "1897",
+     "what": "Emigrazione in Brasile con Candido",
+     "place": "Brasile",
+     "src": "",
+     "vita": true,
+     "ded": false
+    },
+    {
+     "date": "1911",
+     "what": "A Vallio di Roncade",
+     "place": "Vallio (Roncade)",
+     "src": "",
+     "vita": true,
+     "ded": false
     }
    ],
    "marriage": "18 giugno 1896 Paese",
@@ -66394,7 +66499,7 @@
    "place": "Azzano; Portogruaro (San Mauro)",
    "source": "FamilySearch: Italia, Udine, Stato civile 1806–1815 (Azzano); Stato civile napoleonico di Portogruaro",
    "language": "italiano",
-   "transcription": "1) FAMILYSEARCH, indice: «Italia, Udine, Stato Civile (Archivio di Stato), 1806-1815, 1871-1911», Giacoma Rosolen, nascita 3 ottobre 1810, AZZANO (riga 43); padre Vicenzo Rosolen, madre Margarita Zuchetto. https://www.familysearch.org/ark:/61903/1:1:74X7-19T2\n\n2) PORTOGRUARO 1815 — MATRIMONIO MAURIZIO DETTO ROSOLIN – SABATLAO[?] (Dipartimento dell’Adriatico, distretto e comune di Portogruaro; immagini «rosolin 1–3»)\n… [testimone] del fu Giacomo Bracetto[?], 31 anni, calzolaio; questi tre ultimi domiciliati nel circondario di San Michele. Sono comparsi per contrarre matrimonio GIACOMO MAURIZIO DETTO ROSOLIN, di anni 26 compiti, villico, domiciliato nella frazione di San Mauro soggetta a quest’agenzia, figlio del fu Francesco Maurizio detto Rosolin e della fu Giovanna Pizzolitto; e Bernardina Sabatlao[?], di anni 24 compiti, villica, domiciliata nella frazione di San Giorgio, figlia del fu Angelo Sabatlao[?] e di [I]sabbata[?] Gotardo del fu Giacomo.\nLetti: 1° l’atto di nascita di Giacomo, del 5 novembre 1814, che lo assicura nato il 10 marzo 1788 in San Mauro dal fu Francesco Maurizio detto Rosolin e dalla fu Giovanna Pizzolitto; 2° l’atto di nascita di Bernardina (5 novembre 1814): nata il 12 febbraio 1790 a San Giorgio dal fu Angelo Sabatlao[?] del fu Simeone e da [I]sabbata Gotardo del fu Giacomo; 3° certificato parrocchiale (5 novembre 1814) che lo sposo non ha alcun ascendente né paterno né materno; 4° l’atto di decesso del padre della sposa; 5° l’assenso della madre della sposa (27 gennaio 1815, notaio Marco Marossica[?] del fu Antonio, Portogruaro); 6° le pubblicazioni del 15 e 22 gennaio 1815. Gli sposi sono uniti in matrimonio; sposi e testimoni illetterati. (Segue l’atto n. 10.)\n\n3) FAMILYSEARCH, fonte «Legacy NFS Source» (albero compilato da utenti; caricata da Marie-Helene Legge, modificata l’11 giugno 2014): «Church record: birth-name: Giacoma Rosolen; female; birth: after 1779, Azzano Decimo, Pordenone; death: 14 April 1860». Non è un atto originale ma un riassunto di un vecchio albero (New FamilySearch). La nascita «dopo il 1779» è una stima: può trattarsi della stessa Giacoma nata il 3 ottobre 1810 (morta a 49 anni) oppure di una Giacoma più anziana.\n\n4) AZZANO 1810, NASCITE (ufficiale Giuseppe Dossato; immagini del 5 novembre 2026)\nN. 39 (domenica 9 settembre 1810, ore 3 pom.): Giuseppe di Domenico Rosolen, 21 anni, villico qui domiciliato, presenta un maschio nato il 7 settembre alle 2 pom. nella sua abitazione, chiamato Domenico, figlio suo e di Barbara di Marco Mazzin, 19 anni. Testimoni Santo di Sebastiano Zucheto (36) e Vicenzo del fu Domenico Belluzzo (48). Tutti illetterati.\nN. 43 (giovedì 4 ottobre 1810, ore 2 pom.): Vicenzo di Domenico Rosolen, 19 anni, villico qui domiciliato, presenta una femmina nata il 3 ottobre a mezzogiorno nella sua abitazione, chiamata Giacoma, figlia sua e di Margarita di Antonio Zuchetto, 20 anni. Testimoni Angelo del fu Giovanni Del Bianco (21) e Giacomo del fu Giambattista Moves[?] (70). Tutti illetterati.\n(Altri atti: n. 40 Marco di Liberale Belluzzo, 30; n. 44 Martino di Matteo Gasparetto, 26.)\nNota: Giuseppe (n. c. 1789) e Vicenzo (n. c. 1791) sono fratelli, figli di un DOMENICO Rosolen vivente nel 1810 ad Azzano. Il tuo Gio. Batta (n. 1780) è figlio di GIACOMO: Domenico potrebbe essere suo zio (fratello di Giacomo) e Giuseppe e Vicenzo suoi cugini; oppure un ramo diverso. Non dimostrato.",
+   "transcription": "1) FAMILYSEARCH, indice: «Italia, Udine, Stato Civile (Archivio di Stato), 1806-1815, 1871-1911», Giacoma Rosolen, nascita 3 ottobre 1810, AZZANO (riga 43); padre Vicenzo Rosolen, madre Margarita Zuchetto. https://www.familysearch.org/ark:/61903/1:1:74X7-19T2\n\n2) PORTOGRUARO 1815 — MATRIMONIO MAURIZIO DETTO ROSOLIN – SABATLAO[?] (Dipartimento dell’Adriatico, distretto e comune di Portogruaro; immagini «rosolin 1–3»)\n… [testimone] del fu Giacomo Bracetto[?], 31 anni, calzolaio; questi tre ultimi domiciliati nel circondario di San Michele. Sono comparsi per contrarre matrimonio GIACOMO MAURIZIO DETTO ROSOLIN, di anni 26 compiti, villico, domiciliato nella frazione di San Mauro soggetta a quest’agenzia, figlio del fu Francesco Maurizio detto Rosolin e della fu Giovanna Pizzolitto; e Bernardina Sabatlao[?], di anni 24 compiti, villica, domiciliata nella frazione di San Giorgio, figlia del fu Angelo Sabatlao[?] e di [I]sabbata[?] Gotardo del fu Giacomo.\nLetti: 1° l’atto di nascita di Giacomo, del 5 novembre 1814, che lo assicura nato il 10 marzo 1788 in San Mauro dal fu Francesco Maurizio detto Rosolin e dalla fu Giovanna Pizzolitto; 2° l’atto di nascita di Bernardina (5 novembre 1814): nata il 12 febbraio 1790 a San Giorgio dal fu Angelo Sabatlao[?] del fu Simeone e da [I]sabbata Gotardo del fu Giacomo; 3° certificato parrocchiale (5 novembre 1814) che lo sposo non ha alcun ascendente né paterno né materno; 4° l’atto di decesso del padre della sposa; 5° l’assenso della madre della sposa (27 gennaio 1815, notaio Marco Marossica[?] del fu Antonio, Portogruaro); 6° le pubblicazioni del 15 e 22 gennaio 1815. Gli sposi sono uniti in matrimonio; sposi e testimoni illetterati. (Segue l’atto n. 10.)\n\n3) FAMILYSEARCH, fonte «Legacy NFS Source» (albero compilato da utenti; caricata da Marie-Helene Legge, modificata l’11 giugno 2014): «Church record: birth-name: Giacoma Rosolen; female; birth: after 1779, Azzano Decimo, Pordenone; death: 14 April 1860». Non è un atto originale ma un riassunto di un vecchio albero (New FamilySearch). La nascita «dopo il 1779» è una stima: può trattarsi della stessa Giacoma nata il 3 ottobre 1810 (morta a 49 anni) oppure di una Giacoma più anziana.\n\n4) AZZANO 1810, NASCITE (ufficiale Giuseppe Dossato; immagini del 5 novembre 2026)\nN. 39 (domenica 9 settembre 1810, ore 3 pom.): Giuseppe di Domenico Rosolen, 21 anni, villico qui domiciliato, presenta un maschio nato il 7 settembre alle 2 pom. nella sua abitazione, chiamato Domenico, figlio suo e di Barbara di Marco Mazzin, 19 anni. Testimoni Santo di Sebastiano Zucheto (36) e Vicenzo del fu Domenico Belluzzo (48). Tutti illetterati.\nN. 43 (giovedì 4 ottobre 1810, ore 2 pom.): Vicenzo di Domenico Rosolen, 19 anni, villico qui domiciliato, presenta una femmina nata il 3 ottobre a mezzogiorno nella sua abitazione, chiamata Giacoma, figlia sua e di Margarita di Antonio Zuchetto, 20 anni. Testimoni Angelo del fu Giovanni Del Bianco (21) e Giacomo del fu Giambattista Moves[?] (70). Tutti illetterati.\n(Altri atti: n. 40 Marco di Liberale Belluzzo, 30; n. 44 Martino di Matteo Gasparetto, 26.)\nNota: Giuseppe (n. c. 1789) e Vicenzo (n. c. 1791) sono fratelli, figli di un DOMENICO Rosolen vivente nel 1810 ad Azzano. Il tuo Gio. Batta (n. 1780) è figlio di GIACOMO: Domenico potrebbe essere suo zio (fratello di Giacomo) e Giuseppe e Vicenzo suoi cugini; oppure un ramo diverso. Non dimostrato.\n\n5) AZZANO 1813, NASCITE (Comune di Azzano, Cantone e Distretto di Pordenone, DIPARTIMENTO DEL TAGLIAMENTO; ufficiale A. di Ronzai[?])\nN. 37 (6 settembre 1813, ore 11 antimeridiane): Vincenzo di Domenico Rosolen, 24 anni, villico qui domiciliato, presenta Domenico, nato ieri alle 2 pomeridiane da lui e da Margaritta figlia di Antonio Zuchet, 22 anni, sua sposa. Testimoni Angelo di Giambattista Gisarot[?] (34) e Antonio del fu Valentino Mores (33), villici. Tutti illetterati.\nNota: conferma la famiglia di Vincenzo Rosolen (n. c. 1789–1791) di Domenico ad Azzano; il primo figlio maschio porta il nome del nonno Domenico. Nel 1813 Azzano era nel Dipartimento del Tagliamento (distretto di Pordenone).",
    "translation": "",
    "summary": "Un ramo Rosolen vive ad Azzano nel 1810 (Vicenzo Rosolen e Margarita Zuchetto): rafforza l’ipotesi che il «Dazzan» di nascita di Gio. Batta Rosolin sia Azzano. A Portogruaro «Rosolin» è anche il soprannome della famiglia Maurizio di San Mauro (Giacomo, n. 1788, figlio del fu Francesco e della fu Giovanna Pizzolitto).",
    "data": [
@@ -86728,7 +86833,8 @@
  "places": {
   "Cusignana": {
    "lat": 45.787,
-   "lon": 12.17
+   "lon": 12.17,
+   "in": "Giavera del Montello"
   },
   "Montebelluna": {
    "lat": 45.772,
@@ -86736,15 +86842,23 @@
   },
   "Padernello": {
    "lat": 45.694,
-   "lon": 12.075
+   "lon": 12.075,
+   "in": "Paese",
+   "lab": "l"
   },
   "Ospedaletto (Istrana)": {
    "lat": 45.688,
-   "lon": 12.05
+   "lon": 12.05,
+   "alias": [
+    "Ospedaletto"
+   ]
   },
   "Santa Cristina (Quinto)": {
    "lat": 45.651,
-   "lon": 12.125
+   "lon": 12.125,
+   "alias": [
+    "Santa Cristina"
+   ]
   },
   "Altivole": {
    "lat": 45.75,
@@ -86760,35 +86874,63 @@
   },
   "Azzano Decimo": {
    "lat": 45.882,
-   "lon": 12.692
+   "lon": 12.692,
+   "alias": [
+    "Azzano"
+   ]
   },
   "Bannia (Fiume Veneto)": {
    "lat": 45.91,
-   "lon": 12.725
+   "lon": 12.725,
+   "alias": [
+    "Bannia",
+    "Fiume Veneto"
+   ]
   },
   "Ghirano (Prata di Pordenone)": {
    "lat": 45.862,
-   "lon": 12.585
+   "lon": 12.585,
+   "alias": [
+    "Ghirano"
+   ]
   },
   "Rivarotta (Pasiano di Pordenone)": {
    "lat": 45.83,
-   "lon": 12.605
+   "lon": 12.605,
+   "alias": [
+    "Rivarotta"
+   ]
   },
   "Sant’Andrea di Barbarana": {
    "lat": 45.698,
-   "lon": 12.418
+   "lon": 12.418,
+   "alias": [
+    "Sant'Andrea di Barbarana",
+    "Barbarana"
+   ],
+   "in": "San Biagio di Callalta"
   },
   "Monastier": {
    "lat": 45.655,
-   "lon": 12.437
+   "lon": 12.437,
+   "alias": [
+    "Monastier"
+   ]
   },
   "Noventa di Piave": {
    "lat": 45.665,
-   "lon": 12.535
+   "lon": 12.535,
+   "alias": [
+    "Noventa"
+   ]
   },
   "Fossalta / Losson": {
    "lat": 45.64,
-   "lon": 12.495
+   "lon": 12.495,
+   "alias": [
+    "Fossalta",
+    "Losson"
+   ]
   },
   "Meolo": {
    "lat": 45.617,
@@ -86796,11 +86938,16 @@
   },
   "Rovarè": {
    "lat": 45.704,
-   "lon": 12.403
+   "lon": 12.403,
+   "in": "San Biagio di Callalta"
   },
   "Fagarè": {
    "lat": 45.733,
-   "lon": 12.413
+   "lon": 12.413,
+   "alias": [
+    "Fagarè",
+    "Fagare"
+   ]
   },
   "Roncade": {
    "lat": 45.627,
@@ -86808,23 +86955,38 @@
   },
   "Zenson di Piave": {
    "lat": 45.682,
-   "lon": 12.485
+   "lon": 12.485,
+   "alias": [
+    "Zenson",
+    "Campolongo"
+   ]
   },
   "Bavaria (Nervesa)": {
    "lat": 45.835,
-   "lon": 12.205
+   "lon": 12.205,
+   "alias": [
+    "Bavaria",
+    "Nervesa"
+   ]
   },
   "Breda di Piave": {
    "lat": 45.722,
-   "lon": 12.335
+   "lon": 12.335,
+   "alias": [
+    "Breda"
+   ]
   },
   "Postioma": {
    "lat": 45.703,
-   "lon": 12.098
+   "lon": 12.098,
+   "in": "Paese"
   },
   "Volpago del Montello": {
    "lat": 45.778,
-   "lon": 12.12
+   "lon": 12.12,
+   "alias": [
+    "Volpago"
+   ]
   },
   "Saletto": {
    "lat": 45.745,
@@ -86832,11 +86994,13 @@
   },
   "Spercenigo": {
    "lat": 45.659,
-   "lon": 12.383
+   "lon": 12.383,
+   "in": "San Biagio di Callalta"
   },
   "Cavriè": {
    "lat": 45.674,
-   "lon": 12.345
+   "lon": 12.345,
+   "in": "San Biagio di Callalta"
   },
   "San Biagio di Callalta": {
    "lat": 45.688,
@@ -86844,11 +87008,41 @@
   },
   "Lancenigo (Villorba)": {
    "lat": 45.712,
-   "lon": 12.258
+   "lon": 12.258,
+   "alias": [
+    "Lancenigo"
+   ]
   },
   "Pero (Breda)": {
    "lat": 45.712,
-   "lon": 12.375
+   "lon": 12.375,
+   "alias": [
+    "Pero"
+   ]
+  },
+  "Paese": {
+   "lat": 45.675,
+   "lon": 12.168,
+   "lab": "l"
+  },
+  "Vallio (Roncade)": {
+   "lat": 45.648,
+   "lon": 12.393,
+   "alias": [
+    "Vallio"
+   ],
+   "in": "Roncade",
+   "lab": "l"
+  },
+  "Brasile": {
+   "lat": 0,
+   "lon": 0,
+   "far": true,
+   "alias": [
+    "Brasile",
+    "Jaú",
+    "San Paolo"
+   ]
   }
  }
 }
