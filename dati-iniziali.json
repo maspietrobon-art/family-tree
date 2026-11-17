@@ -1,5 +1,5 @@
 {
- "version": 251,
+ "version": 254,
  "people": [
   {
    "id": "p1",
@@ -4859,7 +4859,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Figlia di Angelo Carrer e Luigia Faganello. Dati da schermata FamilySearch. Morta all'ospedale di Belluno (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1969».",
+   "notes": "Figlia di Angelo Carrer e Luigia Faganello. Dati da schermata FamilySearch. Morta all'ospedale di Belluno (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1969». Ricordo di Giuliana Rosolin (chat di famiglia, 17 novembre 2026): la nonna Carolina metteva a covare le tacchine, più grandi delle galline, perché covavano più uova; quando non volevano più covare inzuppava del pane nel vino e glielo ficcava in gola, e le tacchine, ubriache fradice, restavano nel nido.",
    "fsid": "LY1J-4T1",
    "ramo": "Rosolin (nonno Coco)",
    "terms": [
@@ -40232,7 +40232,7 @@
   },
   {
    "id": "p1564",
-   "name": "Anna Tesser[?] (moglie di Domenico Camozzato)",
+   "name": "Anna Tesser (moglie di Domenico Camozzato)",
    "father": "",
    "mother": "",
    "spouses": [
@@ -40245,7 +40245,55 @@
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Moglie di Domenico Camozzato (c. 1800–1874), viva nel luglio 1874 (L64-d68). Cognome di lettura incerta (Teller/Tesser). Il cognome letto «Teller» è con ogni probabilità TESSER, cognome frequente a Montebelluna (es. Tesser Antonia del fu Giovanni Maria, morta a Posmon nel 1875; Tesser Vittorio dichiarante 1894).",
+   "notes": "Moglie di Domenico Camozzato (c. 1800–1874), viva nel luglio 1874 (L64-d68). Cognome di lettura incerta (Teller/Tesser). Il cognome letto «Teller» è con ogni probabilità TESSER, cognome frequente a Montebelluna (es. Tesser Antonia del fu Giovanni Maria, morta a Posmon nel 1875; Tesser Vittorio dichiarante 1894). CONFERMATO «Tesser Anna» (atto di morte del figlio Fiorino, Montebelluna 1901 n. 122, L64-d70). Già morta nel 1901.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "",
+   "origin": "Montebelluna",
+   "originDed": false
+  },
+  {
+   "id": "p1565",
+   "name": "Fiorino Camozzato (c. 1824–1901)",
+   "father": "p1563",
+   "mother": "p1564",
+   "spouses": [],
+   "birth": "circa 1824",
+   "birthPlace": "Montebelluna",
+   "death": "31 luglio 1901",
+   "deathPlace": "Montebelluna, Visnà n. 112",
+   "country": "",
+   "branch": "",
+   "alt": "",
+   "notes": "Atto di morte n. 122 (Montebelluna, 1 agosto 1901, L64-d70): «Camozzato Fiorino», 77 anni, contadino, nato e residente a Montebelluna, figlio dei fu Domenico e Tesser Anna, marito di Mazzocato Domenica; morto il 31 luglio 1901 alle 12 a Visnà n. 112. Cugino di primo grado di Pietro Camozzato (padre di Maddalena). Padre di Maria Carmela Camozzato (c. 1870–1915, moglie di Lodovico Cervi; L64-d58): il dichiarante Cervi Lodovico è il genero.",
+   "fsid": "",
+   "ramo": "Pietrobon (nonno Genio)",
+   "terms": [],
+   "speaker": "",
+   "events": [],
+   "marriage": "",
+   "job": "",
+   "origin": "Montebelluna",
+   "originDed": false
+  },
+  {
+   "id": "p1566",
+   "name": "Giovanna Camozzato (c. 1822–1903)",
+   "father": "p1563",
+   "mother": "p1564",
+   "spouses": [],
+   "birth": "circa 1822",
+   "birthPlace": "Montebelluna",
+   "death": "17 maggio 1903",
+   "deathPlace": "Montebelluna, Visnà n. 121",
+   "country": "",
+   "branch": "",
+   "alt": "",
+   "notes": "Atto di morte n. 71 (Montebelluna, 18 maggio 1903, L64-d70): «Camozzato Giovanna», 81 anni, contadina, nata e residente a Montebelluna, figlia dei fu Domenico e Anna, vedova di Michielon Luigi; morta il 17 maggio 1903 alle 15 a Visnà n. 121. Figlia di Domenico Camozzato e Anna Tesser (identificazione dai nomi dei genitori e dall’età), sorella di Fiorino: cugina di primo grado di Pietro Camozzato.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -80968,6 +81016,52 @@
     "Nome della madre della sposa non scritto.",
     "Titolo dell'ufficiale dopo il nome («Sindaco»?)."
    ],
+   "confidence": "alta"
+  },
+  {
+   "id": "L64-d70",
+   "code": "33S7-81XQ-ZZC",
+   "file": "3 immagini, 17 novembre 2026",
+   "type": "morte",
+   "title": "Morti di Fiorino (1901) e Giovanna (1903) Camozzato, figli di Domenico e Anna Tesser (Montebelluna)",
+   "date": "1901-07-31",
+   "actDate": "1 agosto 1901",
+   "place": "Montebelluna",
+   "source": "Stato civile italiano, Montebelluna, morti 1901 n. 122 (FamilySearch)",
+   "language": "italiano",
+   "transcription": "N. 122 (1 agosto 1901, sindaco Marin Conte Lodovico Antonio): comparsi Cervi Lodovico (33, contadino) e Robazza Giuseppe (65, giornaliero) dichiarano che alle ore dodici di ieri, nella casa posta in Visnà al numero centododici, è morto CAMOZZATO FIORINO, di anni settantasette, contadino, residente e nato in questo Comune, dal fu DOMENICO, contadino, e dalla fu TESSER ANNA, contadina, marito di MAZZOCATO DOMENICA. Testimoni Pellizzari Tommaso (57, impiegato) e Conte Leopoldo (28, cursore).\nNella stessa serie (1901): n. 37 Bresolin Antonio fu Giovanni e fu Rosa Gusolo[?], negoziante, Guarda; n. 38 Piccolo Giacomo; n. 57 Barbisan Paolo di Giovanni e fu Domenica Dunighello[?], Biadene; n. 58 Basso Amalia di Luigi e Elisabetta Gobbato; n. 121 Martinazzo Antonia (bambini e non parenti).\n\nN. 71 (18 maggio 1903, Innocente Dr. Antonio segretario delegato): comparsi Zamprogno Pietro (25, contadino) e Cabertotto[?] Giovanni (56, contadino) dichiarano che alle ore tre pomeridiane di ieri, nella casa posta in Visnà al numero centoventuno, è morta CAMOZZATO GIOVANNA, di anni ottantuno, contadina, nata e residente in questo Comune, dal fu DOMENICO, contadino, e dalla fu ANNA, contadina, vedova di MICHIELON LUIGI.\nAltri (non nostri): 1901 n. 125 Camozzato Rosa, neonata, di Ferdinando e Regina Andreazza (dichiarante Camozzato Eugenio, 39); 1903 n. 37 Camozzato Gaetano, 44 anni, del fu Angelo e fu Caterina Gobbato, marito di Martinazzo Anna (ramo di Gaetano/Angelo).",
+   "translation": "",
+   "summary": "Fiorino Camozzato (c. 1824–1901), figlio di Domenico (fratello di Bortolo) e Anna Tesser: cugino di primo grado di Pietro Camozzato. Conferma il cognome Tesser della moglie di Domenico. Anche Giovanna (c. 1822–1903), figlia dei fu Domenico e Anna, vedova di Luigi Michielon: sorella di Fiorino.",
+   "data": [],
+   "people": [
+    {
+     "written": "Camozzato Fiorino",
+     "role": "defunto",
+     "pid": "p1565"
+    },
+    {
+     "written": "Domenico",
+     "role": "padre",
+     "pid": "p1563"
+    },
+    {
+     "written": "Tesser Anna",
+     "role": "madre",
+     "pid": "p1564"
+    },
+    {
+     "written": "Mazzocato Domenica",
+     "role": "moglie",
+     "pid": ""
+    },
+    {
+     "written": "Camozzato Giovanna",
+     "role": "defunta 1903",
+     "pid": "p1566"
+    }
+   ],
+   "discrepancies": [],
+   "uncertain": [],
    "confidence": "alta"
   },
   {
