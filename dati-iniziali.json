@@ -1,5 +1,5 @@
 {
- "version": 264,
+ "version": 267,
  "people": [
   {
    "id": "p1",
@@ -35898,7 +35898,7 @@
    "country": "Italia",
    "branch": "",
    "alt": "",
-   "notes": "Figlia dei fu Mattio Ventorin e Maria Zanetti; 18 anni nel 1808; domiciliata a Istrana. Sposa Fioravante Cavallin nel 1808. Madre di Candida Cavallin (atto di nascita, Morgano 1814). Nel 1812 «Santa Venturin», 23 anni, moglie di Fioravante Cavallin a Santa Cristina (Morgano): figlia Maria Teresa nata il 3 febbraio 1812. Possibile fratello: Giovanni Venturin, 32 anni nel 1813, villico a Ospedaletto (Istrana, nascite 1813 n. 45). Non dichiarato. Nel 1812 a Santa Cristina (Morgano) una Cattarina Venturin (30 anni) è moglie del calzolaio Domenico Cavallin (casa n. 32): forse sorella di Santina. Non dichiarato. A Padernello nel 1807 un Antonio Venturin, 28 anni, villico, sa firmare (testimone alla nascita di Paola Zanatta): forse fratello di Santina. Non dichiarato. Padernello 1814: testimone Bortolo Venturin, 63 anni, villico (nato verso il 1751): un Venturin anziano a Padernello, forse parente di Santina. Non dichiarato. Madre di Candida Cavallin, nata il 9 febbraio 1814 a Santa Cristina (Morgano): «Santa Ventorin sua legittima consorte, di anni 24». Ora è tua antenata diretta. Battesimo (Ospedaletto, 7 ottobre 1789, nata «la scorsa notte»; L52-d01): «Santa figlia di Mattio Venturin q.m Giovanni, e di Maria Zanettin jugali»; padrina Maria moglie di Giovanni Busato di Istrana. Prima dell'aggiornamento del 19 novembre 2026 l'albero dava per nascita: «circa 1790».",
+   "notes": "Figlia dei fu Mattio Ventorin e Maria Zanetti; 18 anni nel 1808; domiciliata a Istrana. Sposa Fioravante Cavallin nel 1808. Madre di Candida Cavallin (atto di nascita, Morgano 1814). Nel 1812 «Santa Venturin», 23 anni, moglie di Fioravante Cavallin a Santa Cristina (Morgano): figlia Maria Teresa nata il 3 febbraio 1812. Possibile fratello: Giovanni Venturin, 32 anni nel 1813, villico a Ospedaletto (Istrana, nascite 1813 n. 45). Non dichiarato. Nel 1812 a Santa Cristina (Morgano) una Cattarina Venturin (30 anni) è moglie del calzolaio Domenico Cavallin (casa n. 32): forse sorella di Santina. Non dichiarato. A Padernello nel 1807 un Antonio Venturin, 28 anni, villico, sa firmare (testimone alla nascita di Paola Zanatta): forse fratello di Santina. Non dichiarato. Padernello 1814: testimone Bortolo Venturin, 63 anni, villico (nato verso il 1751): un Venturin anziano a Padernello, forse parente di Santina. Non dichiarato. Madre di Candida Cavallin, nata il 9 febbraio 1814 a Santa Cristina (Morgano): «Santa Ventorin sua legittima consorte, di anni 24». Ora è tua antenata diretta. Battesimo (Ospedaletto, 7 ottobre 1789, nata «la scorsa notte»; L52-d01): «Santa figlia di Mattio Venturin q.m Giovanni, e di Maria Zanettin jugali»; padrina Maria moglie di Giovanni Busato di Istrana. Prima dell'aggiornamento del 19 novembre 2026 l'albero dava per nascita: «circa 1790». Contesto Ventorin di Ospedaletto (atti napoleonici di Istrana, 1811–1812): il 17 febbraio 1812 muore Mattio Venturin, 8 giorni, figlio di Zuanne Venturin e Antonia Gatto, nella casa di Zuanne all'Ospedaletto n. 16 (il nome Mattio fa pensare che Zuanne sia il fratello di Santina, già ipotizzato: «Giovanni Venturin, 32 anni nel 1813»; non dimostrato). Altro ramo: Michele Venturin di Santo × Valentina Lazzari, figlio Francesco (n. 18.9.1791) che sposa nel 1811 Anna Cavallin detta Biondo. Antonia Venturin dei fu Domenico e Cattarina, moglie di Sebastian Dotto, muore a Villanova il 12 febbraio 1812 a 52 anni. CORREZIONE (allegati di matrimonio Morgano/Santa Cristina, gennaio 1809): Cattarina Venturin, moglie del calzolaio Domenico Cavallin, è nata il 12 agosto 1782 da Andrea Venturin di Domenico e Domenica q.m Giacomo Cappellaro; Domenico Cavallin (n. 11.9.1782) è figlio di Girolamo Cavallin q.m Angelo e Antonia Cocca. Quindi Cattarina NON è sorella di Santina (padre diverso): ipotesi esclusa. Domenico Cavallin, figlio di Girolamo q.m Angelo, potrebbe essere cugino di Fioravante (figlio di Angelo q.m Santo): non dimostrato.",
    "fsid": "",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [],
@@ -64652,6 +64652,11 @@
      "written": "q.m Gio. Batta Munarini",
      "role": "nonno materno (defunto) del battezzato",
      "pid": "p1523"
+    },
+    {
+     "written": "q.m Giovanni [Venturin]",
+     "role": "nonno paterno della sposa (defunto)",
+     "pid": "p1570"
     }
    ],
    "discrepancies": [
