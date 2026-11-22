@@ -1,5 +1,5 @@
 {
- "version": 290,
+ "version": 293,
  "people": [
   {
    "id": "p1",
@@ -123,7 +123,7 @@
    "country": "Italia",
    "branch": "Famiglia moderna (Fabio)",
    "alt": "",
-   "notes": "Figlio di Eugenio Pietrobon e Lisetta Gazzola. Padre di Massimo, Luca, Davide e Gloria Pietrobon. Matrimonio 9 agosto 1975 a Monastier di Treviso con Giuliana Rosolin. Fratello di Veronica, Clara e Maria Grazia.",
+   "notes": "Figlio di Eugenio Pietrobon e Lisetta Gazzola. Padre di Massimo, Luca, Davide e Gloria Pietrobon. Matrimonio 9 agosto 1975 a Monastier di Treviso con Giuliana Rosolin. Fratello di Veronica, Clara e Maria Grazia. Professione: agricoltore (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-456",
    "ramo": "Famiglia di Fabio",
    "terms": [],
@@ -144,7 +144,9 @@
    ],
    "marriage": "9 agosto 1975 Monastier di Treviso",
    "fatherSure": true,
-   "motherSure": true
+   "motherSure": true,
+   "job": "agricoltore",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p5",
@@ -161,7 +163,7 @@
    "country": "Italia",
    "branch": "Famiglia moderna (Fabio)",
    "alt": "",
-   "notes": "Figlia di Angelo Rosolin e Gemma Pietrobon. Madre di Massimo, Luca, Davide e Gloria Pietrobon. Matrimonio 9 agosto 1975 a Monastier di Treviso con Matteo Pietrobon. Sorella di Annarosa e Giulio Rosolin.",
+   "notes": "Figlia di Angelo Rosolin e Gemma Pietrobon. Madre di Massimo, Luca, Davide e Gloria Pietrobon. Matrimonio 9 agosto 1975 a Monastier di Treviso con Matteo Pietrobon. Sorella di Annarosa e Giulio Rosolin. Professione: agricoltrice (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-CFS",
    "ramo": "Famiglia di Fabio",
    "terms": [
@@ -184,7 +186,9 @@
    ],
    "marriage": "9 agosto 1975 Monastier di Treviso",
    "fatherSure": true,
-   "motherSure": true
+   "motherSure": true,
+   "job": "agricoltrice",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p6",
@@ -2596,7 +2600,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Candido",
-   "notes": "Figlio di Giovanni Pietrobon e Maddalena Camozzato. Nato a Paese (Postioma) il 13 luglio 1871, morto a Roncade il 17 marzo 1957. Emigrato in Brasile e a New York, un periodo in Francia (dalle chat di famiglia). Aggiornato il 13 ottobre 2026 secondo il documento (Atto di matrimonio civile, Paese (18 giugno 1896)): nel registro civile il giorno è «dieciotto». Prima l'albero dava per matrimonio: «». Prima dell'aggiornamento del 14 ottobre 2026 l'albero dava per nascita: «1871». Prima dell'aggiornamento del 14 ottobre 2026 l'albero dava per morte: «1957». Estratto di morte di Roncade (1957, n. 22): nato a Paese il 13 luglio 1871, residente a Roncade, vedovo di Candida Bresolin, morto a Roncade il 17 marzo 1957 alle 9.30. La famiglia visse a Jaú (San Paolo, Brasile) negli anni 1890: lì nasce il figlio Giovanni (1897). Dal libro del nipote Remo («The Canecutter»): secondo di sei figli (fratello maggiore Virginio, minore Eugenio, tre sorelle di cui due gemelle); lasciò casa verso il 1893 dopo una lite con i fratelli ed emigrò in Brasile; tornato, si sposò (il libro dice 1897; l'atto civile è del 18 giugno 1896) e ripartì con Candida per il Brasile, dove lavorarono circa sette anni soprattutto in piantagioni di caffè (il libro cita S. Francesco presso San Paolo e Jales; i battesimi sono di Jaú); lavorò anche in una miniera d'oro facendo la scorta armata ai carichi. Rientrati verso il 1903 comprarono terra a Padernello; dopo una grandinata ripartì per New York (arrivo 11 novembre 1905), dove lavorò circa tre anni come manovale e poi in una fabbrica legata alla seta; al ritorno vendette Padernello e comprò quattro ettari a Vallio (via Fornaci), dove costruì casa e stalla. Analfabeta, duro e autoritario; nel 1917-18 la famiglia fuggì di notte dal fronte del Piave e visse circa un anno nel fienile di un amico; al ritorno trovò casa e campi devastati. Nell'indice degli arrivi di Ellis Island (11 novembre 1905) è «Candido Matteo Pietrobon», residente a Paese, sposato, ma con età 24 anni (nascita 1881): l'età è sbagliata nell'indice, la data d'arrivo conferma il libro di Remo.",
+   "notes": "Figlio di Giovanni Pietrobon e Maddalena Camozzato. Nato a Paese (Postioma) il 13 luglio 1871, morto a Roncade il 17 marzo 1957. Emigrato in Brasile e a New York, un periodo in Francia (dalle chat di famiglia). Aggiornato il 13 ottobre 2026 secondo il documento (Atto di matrimonio civile, Paese (18 giugno 1896)): nel registro civile il giorno è «dieciotto». Prima l'albero dava per matrimonio: «». Prima dell'aggiornamento del 14 ottobre 2026 l'albero dava per nascita: «1871». Prima dell'aggiornamento del 14 ottobre 2026 l'albero dava per morte: «1957». Estratto di morte di Roncade (1957, n. 22): nato a Paese il 13 luglio 1871, residente a Roncade, vedovo di Candida Bresolin, morto a Roncade il 17 marzo 1957 alle 9.30. La famiglia visse a Jaú (San Paolo, Brasile) negli anni 1890: lì nasce il figlio Giovanni (1897). Dal libro del nipote Remo («The Canecutter»): secondo di sei figli (fratello maggiore Virginio, minore Eugenio, tre sorelle di cui due gemelle); lasciò casa verso il 1893 dopo una lite con i fratelli ed emigrò in Brasile; tornato, si sposò (il libro dice 1897; l'atto civile è del 18 giugno 1896) e ripartì con Candida per il Brasile, dove lavorarono circa sette anni soprattutto in piantagioni di caffè (il libro cita S. Francesco presso San Paolo e Jales; i battesimi sono di Jaú); lavorò anche in una miniera d'oro facendo la scorta armata ai carichi. Rientrati verso il 1903 comprarono terra a Padernello; dopo una grandinata ripartì per New York (arrivo 11 novembre 1905), dove lavorò circa tre anni come manovale e poi in una fabbrica legata alla seta; al ritorno vendette Padernello e comprò quattro ettari a Vallio (via Fornaci), dove costruì casa e stalla. Analfabeta, duro e autoritario; nel 1917-18 la famiglia fuggì di notte dal fronte del Piave e visse circa un anno nel fienile di un amico; al ritorno trovò casa e campi devastati. Nell'indice degli arrivi di Ellis Island (11 novembre 1905) è «Candido Matteo Pietrobon», residente a Paese, sposato, ma con età 24 anni (nascita 1881): l'età è sbagliata nell'indice, la data d'arrivo conferma il libro di Remo. Professione: agricoltore (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-3X5",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [
@@ -3727,7 +3731,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Modesto",
-   "notes": "Figlio di Pietro Gazzola e Elisabetta Citton. Dati da schermata FamilySearch. Detto Modesto (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per nascita: «1881». Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1960».",
+   "notes": "Figlio di Pietro Gazzola e Elisabetta Citton. Dati da schermata FamilySearch. Detto Modesto (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per nascita: «1881». Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1960». Professione: agricoltore (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-CMZ",
    "ramo": "Gazzola (nonna Lisetta)",
    "terms": [
@@ -3774,7 +3778,9 @@
    ],
    "marriage": "13 agosto 1905 Altivole",
    "nick": "Modesto",
-   "common": "Modesto Gazzola"
+   "common": "Modesto Gazzola",
+   "job": "agricoltore",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p120",
@@ -3899,7 +3905,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Figlia di Giacinto Murer e Domenica Zandonà. Dati da schermata FamilySearch. Nelle chat a volte chiamata Veronica Carrer; morta a circa 46 anni (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1931». Nello schema del 31 agosto 2020: morta il 6 aprile 1931.",
+   "notes": "Figlia di Giacinto Murer e Domenica Zandonà. Dati da schermata FamilySearch. Nelle chat a volte chiamata Veronica Carrer; morta a circa 46 anni (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1931». Nello schema del 31 agosto 2020: morta il 6 aprile 1931. Professione: agricoltrice (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-7QH",
    "ramo": "Gazzola (nonna Lisetta)",
    "terms": [
@@ -3935,7 +3941,9 @@
      "src": "Scheda parrocchiale di famiglia di Angelo Gazzola"
     }
    ],
-   "marriage": "13 agosto 1905 Altivole"
+   "marriage": "13 agosto 1905 Altivole",
+   "job": "agricoltrice",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p125",
@@ -4506,7 +4514,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Neno",
-   "notes": "Figlio di Costante Rosolin e Maria Lovisetto. Dati da schermata FamilySearch. Dai fogli matricolari: figlio di Costante; riformato nel 1909, richiamato nel 1916, bersagliere e poi fante fino al 1919; campagne 1916-1918 (dalle chat di famiglia). Detto anche Genio e Neno (da non confondere con nonno Genio, Eugenio Pietrobon). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per nascita: «20 aprile 1888». Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1971». I due fogli matricolari (matricole 26965 e 28496 bis) lo dicono nato il 20 aprile 1888: il battesimo dice 20 agosto 1888 (si tiene il battesimo). Dati: contadino, analfabeta, 1,61-1,63 m, capelli castani, occhi castani o celesti; soldato di 1ª categoria 1908; rinviato in attesa del congedo del fratello Giuseppe; riformato il 20 dicembre 1909; nulla osta per la Francia il 23 marzo 1912; richiamato il 29 aprile 1916, 8° e 7° bersaglieri, poi 77° fanteria dal 20 dicembre 1916; congedato nel 1919; campagne 1916-1918, medaglia commemorativa. In famiglia chiamato Genio (anche Neno).",
+   "notes": "Figlio di Costante Rosolin e Maria Lovisetto. Dati da schermata FamilySearch. Dai fogli matricolari: figlio di Costante; riformato nel 1909, richiamato nel 1916, bersagliere e poi fante fino al 1919; campagne 1916-1918 (dalle chat di famiglia). Detto anche Genio e Neno (da non confondere con nonno Genio, Eugenio Pietrobon). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per nascita: «20 aprile 1888». Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1971». I due fogli matricolari (matricole 26965 e 28496 bis) lo dicono nato il 20 aprile 1888: il battesimo dice 20 agosto 1888 (si tiene il battesimo). Dati: contadino, analfabeta, 1,61-1,63 m, capelli castani, occhi castani o celesti; soldato di 1ª categoria 1908; rinviato in attesa del congedo del fratello Giuseppe; riformato il 20 dicembre 1909; nulla osta per la Francia il 23 marzo 1912; richiamato il 29 aprile 1916, 8° e 7° bersaglieri, poi 77° fanteria dal 20 dicembre 1916; congedato nel 1919; campagne 1916-1918, medaglia commemorativa. In famiglia chiamato Genio (anche Neno). Professione: agricoltore (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-Q97",
    "ramo": "Rosolin (nonno Coco)",
    "terms": [
@@ -4861,7 +4869,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "",
-   "notes": "Figlia di Angelo Carrer e Luigia Faganello. Dati da schermata FamilySearch. Morta all'ospedale di Belluno (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1969». Ricordo di Giuliana Rosolin (chat di famiglia, 17 novembre 2026): la nonna Carolina metteva a covare le tacchine, più grandi delle galline, perché covavano più uova; quando non volevano più covare inzuppava del pane nel vino e glielo ficcava in gola, e le tacchine, ubriache fradice, restavano nel nido.",
+   "notes": "Figlia di Angelo Carrer e Luigia Faganello. Dati da schermata FamilySearch. Morta all'ospedale di Belluno (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per morte: «1969». Ricordo di Giuliana Rosolin (chat di famiglia, 17 novembre 2026): la nonna Carolina metteva a covare le tacchine, più grandi delle galline, perché covavano più uova; quando non volevano più covare inzuppava del pane nel vino e glielo ficcava in gola, e le tacchine, ubriache fradice, restavano nel nido. Professione: agricoltrice (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-4T1",
    "ramo": "Rosolin (nonno Coco)",
    "terms": [
@@ -4910,7 +4918,9 @@
      "ded": true
     }
    ],
-   "marriage": ""
+   "marriage": "",
+   "job": "agricoltrice",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p154",
@@ -7009,7 +7019,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Meno; Meno Bon; Menego Merletto",
-   "notes": "Figlio di Pietro Michele Pietrobon e Giovanna Stefani. Dati da schermata FamilySearch. Morto d'infarto; arrivato a Monastier a 7 anni (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per nascita: «1896». Data del matrimonio: il margine del battesimo di Emma dice 3 settembre 1921; FamilySearch dice 15 dicembre 1921. Scheda parrocchiale (scheda «Famiglia Pietrobon a Monastier» (archivio parrocchiale di Monastier, L64-d73)): nato a Postioma il 22.02.1896, morto a Monastier l'11.03.1968 «(?)» [l'albero: 13 marzo 1968]; matrimonio a Monastier il 03.09.1921 (conferma il margine del battesimo di Emma; FamilySearch 15 dicembre 1921). Prima dell'aggiornamento del 19 novembre 2026 l'albero dava per marriage: «15 dicembre 1921 Monastier».",
+   "notes": "Figlio di Pietro Michele Pietrobon e Giovanna Stefani. Dati da schermata FamilySearch. Morto d'infarto; arrivato a Monastier a 7 anni (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per nascita: «1896». Data del matrimonio: il margine del battesimo di Emma dice 3 settembre 1921; FamilySearch dice 15 dicembre 1921. Scheda parrocchiale (scheda «Famiglia Pietrobon a Monastier» (archivio parrocchiale di Monastier, L64-d73)): nato a Postioma il 22.02.1896, morto a Monastier l'11.03.1968 «(?)» [l'albero: 13 marzo 1968]; matrimonio a Monastier il 03.09.1921 (conferma il margine del battesimo di Emma; FamilySearch 15 dicembre 1921). Prima dell'aggiornamento del 19 novembre 2026 l'albero dava per marriage: «15 dicembre 1921 Monastier». Professione: agricoltore (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-3NZ",
    "ramo": "Pietrobon-Florian (nonna Gemma)",
    "terms": [
@@ -7059,7 +7069,9 @@
    "marriage": "3 settembre 1921 Monastier",
    "nick": "Meno",
    "common": "Meno Pietrobon",
-   "soprannome": "Bon; Merletto"
+   "soprannome": "Bon; Merletto",
+   "job": "agricoltore",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p220",
@@ -7817,7 +7829,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "nonna Emma",
-   "notes": "Figlia di Francesco Florian e Ermenegilda Stefani. Dati da schermata FamilySearch. Battesimo (Monastier, n. 77, 19 settembre 1897): «Florian Emma Amalia di Francesco fu Pietro e di Davanzo Anna, e di Stefani Ermenegilda di Giuseppe e Pignato Regina, maritati li 28 novembre 1884[sic; 1894], a Monastier», nata il 2 settembre 1897 alle 2 pomeridiane; padrino Pesce Luigi di Rovarè; levatrice Giordani Ermenegilda (D. Amedeo Favero, vicario spirituale). Annotazione a margine: «Contrasse il S. Matrimonio il 3-9-21 a Monastier con Pietrobon Domenico». Data del matrimonio: il margine del battesimo di Emma dice 3 settembre 1921; FamilySearch dice 15 dicembre 1921. Prima dell'aggiornamento del 19 novembre 2026 l'albero dava per marriage: «15 dicembre 1921 Monastier». Scheda parrocchiale (scheda «Famiglia Pietrobon a Monastier» (archivio parrocchiale di Monastier, L64-d73)): «nata a Monastier il 02.09.1897, morta a Monastier il 30.11.1937». DISCREPANZA EVIDENTE: nella stessa scheda nascono figli nel 1939 e nel 1940, quindi il 1937 è un errore (forse 30.11.1987?); si mantiene la data attuale (1985) da verificare.",
+   "notes": "Figlia di Francesco Florian e Ermenegilda Stefani. Dati da schermata FamilySearch. Battesimo (Monastier, n. 77, 19 settembre 1897): «Florian Emma Amalia di Francesco fu Pietro e di Davanzo Anna, e di Stefani Ermenegilda di Giuseppe e Pignato Regina, maritati li 28 novembre 1884[sic; 1894], a Monastier», nata il 2 settembre 1897 alle 2 pomeridiane; padrino Pesce Luigi di Rovarè; levatrice Giordani Ermenegilda (D. Amedeo Favero, vicario spirituale). Annotazione a margine: «Contrasse il S. Matrimonio il 3-9-21 a Monastier con Pietrobon Domenico». Data del matrimonio: il margine del battesimo di Emma dice 3 settembre 1921; FamilySearch dice 15 dicembre 1921. Prima dell'aggiornamento del 19 novembre 2026 l'albero dava per marriage: «15 dicembre 1921 Monastier». Scheda parrocchiale (scheda «Famiglia Pietrobon a Monastier» (archivio parrocchiale di Monastier, L64-d73)): «nata a Monastier il 02.09.1897, morta a Monastier il 30.11.1937». DISCREPANZA EVIDENTE: nella stessa scheda nascono figli nel 1939 e nel 1940, quindi il 1937 è un errore (forse 30.11.1987?); si mantiene la data attuale (1985) da verificare. Professione: agricoltrice (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-4YR",
    "ramo": "Pietrobon-Florian (nonna Gemma)",
    "terms": [
@@ -7845,7 +7857,9 @@
      "src": "Annotazione a margine dell'atto di nascita di Domenico Pietrobon"
     }
    ],
-   "marriage": "3 settembre 1921 Monastier"
+   "marriage": "3 settembre 1921 Monastier",
+   "job": "agricoltrice",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p242",
@@ -14976,7 +14990,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Jenio Merlo; Genio; nonno Genio",
-   "notes": "Figlio di Matteo Candido Pietrobon e Candida Bresolin. Matrimonio 15 aprile 1944 a Monastier (estratto ufficiale di Roncade; prima indicato 15 novembre) con Lisetta Gazzola. Padre di Veronica, Clara, Matteo e Maria Grazia Pietrobon. Fratello di Giovanni, Gilda, Attilio, Vittoria, Umberto, Angelo Gregorio, Virginio e Rinaldo. Scuola fino alla terza, disegnava cavalli; all'anagrafe nato il 16 novembre, festeggiava il 18 (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per matrimonio: «15 novembre 1944 Monastier». Prima dell'aggiornamento del 13 ottobre 2026 l'albero dava per nascita: «18 novembre 1918». Nato il 16 novembre 1918 alle 10 del mattino a Vallio n. 64; registrato il 20 dalla levatrice Maria Albera, perché il padre era «assente per lavoro». Il 18 novembre che avevamo era probabilmente la data ricordata in famiglia. Prima dell'aggiornamento del 14 ottobre 2026 l'albero dava per luogo di morte: «Roncade, Treviso, Veneto, Italia». Prima dell'aggiornamento del 14 ottobre 2026 l'albero dava per matrimonio: «15 aprile 1944 Monastier (mese di lettura incerta nella scheda; in chat il papà dice 13 aprile)». Estratto di Roncade: nato il 16 novembre 1918 a Roncade (atto n. 223); sposa Lisetta Gazzola il 15 aprile 1944 a Monastier di Treviso; morto a Treviso il 21 agosto 2002. Dal libro di Remo: da bambino ebbe un'infezione alla gamba e zoppicò per tutta la vita; cadde nel fiume dietro casa e fu salvato dal fratello Jack. Nacque pochi mesi dopo la fuga della famiglia dalla battaglia sul Piave (1918). Nella chat Family Tree la mamma ricorda che Candida diceva che era nato il 18 e che è sempre stato festeggiato il 18; l'atto dice 16 novembre 1918. Racconto di famiglia: Giovanni, tornato da militare, non sapeva della nascita del fratello; Candida partorì nella stalla. Il detto «spacar sope e copar cristiani le tuto tempo perso» era suo: lo conferma il figlio Matteo («Mio padre», chat Family Tree, ottobre 2026). Lo diceva quando si zappava l'orto e la terra non si sbriciolava.",
+   "notes": "Figlio di Matteo Candido Pietrobon e Candida Bresolin. Matrimonio 15 aprile 1944 a Monastier (estratto ufficiale di Roncade; prima indicato 15 novembre) con Lisetta Gazzola. Padre di Veronica, Clara, Matteo e Maria Grazia Pietrobon. Fratello di Giovanni, Gilda, Attilio, Vittoria, Umberto, Angelo Gregorio, Virginio e Rinaldo. Scuola fino alla terza, disegnava cavalli; all'anagrafe nato il 16 novembre, festeggiava il 18 (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per matrimonio: «15 novembre 1944 Monastier». Prima dell'aggiornamento del 13 ottobre 2026 l'albero dava per nascita: «18 novembre 1918». Nato il 16 novembre 1918 alle 10 del mattino a Vallio n. 64; registrato il 20 dalla levatrice Maria Albera, perché il padre era «assente per lavoro». Il 18 novembre che avevamo era probabilmente la data ricordata in famiglia. Prima dell'aggiornamento del 14 ottobre 2026 l'albero dava per luogo di morte: «Roncade, Treviso, Veneto, Italia». Prima dell'aggiornamento del 14 ottobre 2026 l'albero dava per matrimonio: «15 aprile 1944 Monastier (mese di lettura incerta nella scheda; in chat il papà dice 13 aprile)». Estratto di Roncade: nato il 16 novembre 1918 a Roncade (atto n. 223); sposa Lisetta Gazzola il 15 aprile 1944 a Monastier di Treviso; morto a Treviso il 21 agosto 2002. Dal libro di Remo: da bambino ebbe un'infezione alla gamba e zoppicò per tutta la vita; cadde nel fiume dietro casa e fu salvato dal fratello Jack. Nacque pochi mesi dopo la fuga della famiglia dalla battaglia sul Piave (1918). Nella chat Family Tree la mamma ricorda che Candida diceva che era nato il 18 e che è sempre stato festeggiato il 18; l'atto dice 16 novembre 1918. Racconto di famiglia: Giovanni, tornato da militare, non sapeva della nascita del fratello; Candida partorì nella stalla. Il detto «spacar sope e copar cristiani le tuto tempo perso» era suo: lo conferma il figlio Matteo («Mio padre», chat Family Tree, ottobre 2026). Lo diceva quando si zappava l'orto e la terra non si sbriciolava. Professione: agricoltore (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-H8B",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [
@@ -15026,7 +15040,9 @@
    "common": "Genio Pietrobon",
    "soprannome": "Merlo",
    "fatherSure": true,
-   "motherSure": true
+   "motherSure": true,
+   "job": "agricoltore",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p461",
@@ -15043,7 +15059,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Iseta; Isetta; Iseta; Doriana; Dory",
-   "notes": "Figlia di Angelo Gazzola e Veronica Murer. Matrimonio 15 aprile 1944 a Monastier (estratto ufficiale di Roncade; prima indicato 15 novembre) con Eugenio Pietrobon. Madre di Veronica, Clara, Matteo e Maria Grazia Pietrobon. Sorella di Maria, Enrichetta, Pietro, Solemi, Emma, Gina e Gino Gazzola. A servizio a Roma, Roccaraso e Bardonecchia prima di sposarsi (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per matrimonio: «15 novembre 1944 Monastier». Ricordo di Massimo (chat Family Tree, novembre 2026): la nonna Isetta una volta tirò il collo a una gallina nel dubbio che fosse la reincarnazione di una sua «amica». Secondo Giuliana Rosolin (chat Family Tree, novembre 2026) la nonna Isetta era molto più superstiziosa della nonna Gemma (storia s148). Ricordo di Giuliana Rosolin (chat Family Tree, novembre 2026, storia s148): quando arrivava il temporale la nonna Isetta accendeva la candela «serioa» (in veneto la candela benedetta della Candelora, la «Seriola») e, con un rametto d'olivo benedetto la Domenica delle Palme intinto nell'acqua santa, usciva a benedire.",
+   "notes": "Figlia di Angelo Gazzola e Veronica Murer. Matrimonio 15 aprile 1944 a Monastier (estratto ufficiale di Roncade; prima indicato 15 novembre) con Eugenio Pietrobon. Madre di Veronica, Clara, Matteo e Maria Grazia Pietrobon. Sorella di Maria, Enrichetta, Pietro, Solemi, Emma, Gina e Gino Gazzola. A servizio a Roma, Roccaraso e Bardonecchia prima di sposarsi (dalle chat di famiglia). Prima dell'aggiornamento del 6 ottobre 2026 l'albero dava per matrimonio: «15 novembre 1944 Monastier». Ricordo di Massimo (chat Family Tree, novembre 2026): la nonna Isetta una volta tirò il collo a una gallina nel dubbio che fosse la reincarnazione di una sua «amica». Secondo Giuliana Rosolin (chat Family Tree, novembre 2026) la nonna Isetta era molto più superstiziosa della nonna Gemma (storia s148). Ricordo di Giuliana Rosolin (chat Family Tree, novembre 2026, storia s148): quando arrivava il temporale la nonna Isetta accendeva la candela «serioa» (in veneto la candela benedetta della Candelora, la «Seriola») e, con un rametto d'olivo benedetto la Domenica delle Palme intinto nell'acqua santa, usciva a benedire. Professione: agricoltrice (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-87H",
    "ramo": "Gazzola (nonna Lisetta)",
    "terms": [
@@ -15076,7 +15092,9 @@
    "nick": "Iseta",
    "common": "Iseta Gazzola",
    "fatherSure": true,
-   "motherSure": true
+   "motherSure": true,
+   "job": "agricoltrice",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p462",
@@ -15093,7 +15111,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Candida Brezolim; nonna Candida",
-   "notes": "Moglie di Matteo Candido Pietrobon. Matrimonio 17 giugno 1896 a Paese (Treviso). Madre di Giovanni, Gilda, Attilio, Vittoria, Umberto, Angelo Gregorio, Virginio, Rinaldo e Eugenio Pietrobon. | Residenza: Vallio, Roncade. Figlia di Angelo Bresolin (G7P4-QH7) e Luigia Zatta. Matrimonio 17 giugno 1896 con Matteo Candido Pietrobon a Paese. Aggiornato il 13 ottobre 2026 secondo il documento (Atto di matrimonio civile, Paese (18 giugno 1896)): nel registro civile il giorno è «dieciotto». Prima l'albero dava per matrimonio: «17 giugno 1896 Paese (Treviso)». Dal libro di Remo: era di Padernello; nel 1918 era incinta di otto mesi di Eugenio quando la famiglia fuggì dalla battaglia; donna affettuosa e sottomessa al marito; morì di notte, nella sua casa, chiedendo aiuto al marito perché non riusciva a respirare (racconto di Angelo).",
+   "notes": "Moglie di Matteo Candido Pietrobon. Matrimonio 17 giugno 1896 a Paese (Treviso). Madre di Giovanni, Gilda, Attilio, Vittoria, Umberto, Angelo Gregorio, Virginio, Rinaldo e Eugenio Pietrobon. | Residenza: Vallio, Roncade. Figlia di Angelo Bresolin (G7P4-QH7) e Luigia Zatta. Matrimonio 17 giugno 1896 con Matteo Candido Pietrobon a Paese. Aggiornato il 13 ottobre 2026 secondo il documento (Atto di matrimonio civile, Paese (18 giugno 1896)): nel registro civile il giorno è «dieciotto». Prima l'albero dava per matrimonio: «17 giugno 1896 Paese (Treviso)». Dal libro di Remo: era di Padernello; nel 1918 era incinta di otto mesi di Eugenio quando la famiglia fuggì dalla battaglia; donna affettuosa e sottomessa al marito; morì di notte, nella sua casa, chiedendo aiuto al marito perché non riusciva a respirare (racconto di Angelo). Professione: agricoltrice (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-MLD",
    "ramo": "Pietrobon (nonno Genio)",
    "terms": [
@@ -16057,7 +16075,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Coco; Coco",
-   "notes": "Figlio di Guglielmo Rosolin e Carolina Carrer. Matrimonio con Gemma Pietrobon. Padre di Annarosa, Giuliana e Giulio Rosolin. Fratello di Jolanda (Jole), Palmira (Anna), Amadeo, Armida, Maria e Silvana. Detto Coco. Nelle chat la nascita e' 19 settembre 1927 (dalle chat di famiglia).",
+   "notes": "Figlio di Guglielmo Rosolin e Carolina Carrer. Matrimonio con Gemma Pietrobon. Padre di Annarosa, Giuliana e Giulio Rosolin. Fratello di Jolanda (Jole), Palmira (Anna), Amadeo, Armida, Maria e Silvana. Detto Coco. Nelle chat la nascita e' 19 settembre 1927 (dalle chat di famiglia). Professione: agricoltore (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-ZV2",
    "ramo": "Rosolin (nonno Coco)",
    "terms": [
@@ -16082,7 +16100,9 @@
    "nick": "Coco",
    "common": "Coco Rosolin",
    "fatherSure": true,
-   "motherSure": true
+   "motherSure": true,
+   "job": "agricoltore",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p482",
@@ -16099,7 +16119,7 @@
    "country": "Italia",
    "branch": "Ramo Massimo / Pietrobon (Veneto, Italia)",
    "alt": "Jema Merletta; nonna Gemma",
-   "notes": "Figlia di Domenico Pietrobon e Emma Florian. Moglie di Angelo Rosolin. Madre di Annarosa, Giuliana e Giulio Rosolin. Sorella di Livio, Tecla, Clara, Albino, Ermenegilda, Bruna, Enrico, Luisella e Pierina. Scheda parrocchiale di Monastier: «Gemma Giovanna», nato/a il 23 dicembre 1931, sposato/a con Rosolin Angelo il 16 dicembre 1953 (L64-d73). Ricordo di Giuliana Rosolin (chat Family Tree, novembre 2026): nelle case, quando arrivava un brutto temporale e si temeva la grandine, si pregava, si faceva la croce con due posate e si bruciava l'olivo benedetto; ma la nonna Gemma «non era molto di chiesa e neanche superstiziosa» (storia s148).",
+   "notes": "Figlia di Domenico Pietrobon e Emma Florian. Moglie di Angelo Rosolin. Madre di Annarosa, Giuliana e Giulio Rosolin. Sorella di Livio, Tecla, Clara, Albino, Ermenegilda, Bruna, Enrico, Luisella e Pierina. Scheda parrocchiale di Monastier: «Gemma Giovanna», nato/a il 23 dicembre 1931, sposato/a con Rosolin Angelo il 16 dicembre 1953 (L64-d73). Ricordo di Giuliana Rosolin (chat Family Tree, novembre 2026): nelle case, quando arrivava un brutto temporale e si temeva la grandine, si pregava, si faceva la croce con due posate e si bruciava l'olivo benedetto; ma la nonna Gemma «non era molto di chiesa e neanche superstiziosa» (storia s148). Professione: agricoltrice (indicazione di Massimo, 22 novembre 2026).",
    "fsid": "LY1J-ZVT",
    "ramo": "Pietrobon-Florian (nonna Gemma)",
    "terms": [
@@ -16126,7 +16146,9 @@
    "marriage": "16 dicembre 1953",
    "soprannome": "Merletta",
    "fatherSure": true,
-   "motherSure": true
+   "motherSure": true,
+   "job": "agricoltrice",
+   "jobCat": "Agricoltura"
   },
   {
    "id": "p483",
